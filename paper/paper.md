@@ -1382,7 +1382,7 @@ Cloudflare".
 
 # Data availability {.unnumbered}
 
-The companion repository, `sinequanone-org/kyeo`, contains the TypeScript port,
+The companion repository, `sinequanone-org/kyoei`, contains the TypeScript port,
 local tests, demonstration, paper source, and this PDF under Apache 2.0.
 Its `evidence/` directory contains the saved reports, frozen contracts, and
 Cloudflare run logs used by the paper. `paper/verify.py` checks the reported
