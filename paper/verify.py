@@ -254,7 +254,7 @@ p21_before = load('research/experiments/p2-1-comparison/attempt-before-isolation
 check('P2.1 count before the isolation fix',
       all(p21_before['measures'][a]['supplier_lines'] == 355 and not p21_before['falsifier'][a]['with_supplier']['fires']
           for a in ('kyoei-documents', 'kyoei-git')),
-      'an 8-line isolation fix made after the first runs')
+      'an 8-line isolation fix made after the first runs', 'before that fix, it was 355 lines')
 
 # 5.6 Dependency proposals.
 a = load('research/experiments/f2-v2/report.json')['calibration']

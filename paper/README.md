@@ -1,18 +1,17 @@
 # Paper: Kyoei, repairable collaboration across organizations
 
-Research preprint, 12 October 2026. Author: Captain Operator - Slyseed, Inc. &
+Research preprint, 12 October 2026. Author: Romain Pellerin - Slyseed, Inc. &
 Lemma Ventures AG. The paper distinguishes the specified protocol, the reviewed
 source, and the two historical Cloudflare runs.
 
-Two figures explain the specified workflow cycle and
-the Cloudflare experiment architecture. The introduction presents context,
-vision and goal before the request-signing example, requirements and approach.
-The queued-event counts are unchanged. A separate row reports the 13
-synchronous reliance exchanges in each deployed run. This revision follows the research-writing
-skill.
-The paper accompanies the Cloudflare contest entry. Its sections are:
-introduction, state of the art, model and definitions, protocol, implementation
-and evaluation, and conclusion with perspectives.
+Two figures explain the specified workflow cycle and the Cloudflare experiment
+architecture. The introduction presents context, vision and goal before the
+request-signing example, requirements and approach. The queued-event counts are
+unchanged. A separate row reports the 13 synchronous reliance exchanges in each
+deployed run. This revision follows the research-writing skill. The paper
+accompanies the Cloudflare contest entry. Its sections are: introduction, state
+of the art, model and definitions, protocol, implementation and evaluation, and
+conclusion with perspectives.
 
 | File | Purpose |
 | --- | --- |
@@ -23,10 +22,9 @@ and evaluation, and conclusion with perspectives.
 | `figures/*.pdf`, `figures/*.png` | Vector figures for the PDF and previews for Markdown. |
 | `verify.py` | Checks listed quantitative statements against saved evidence and selected source text, note numbers, placeholders, private names, and whether cited evidence is committed for release. |
 
-Build and check, from the repository root:
-
 The build uses pandoc, XeLaTeX with TikZ, and Poppler's `pdftoppm`. It rebuilds
 both figures before the manuscript, so the PDF and Markdown previews agree.
+Build and check, from the repository root:
 
 ```sh
 python3 paper/build.py
