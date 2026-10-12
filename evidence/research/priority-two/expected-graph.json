@@ -1,0 +1,219 @@
+{
+  "changes": [
+    {
+      "active_nodes": [
+        "p2.c.unrelated",
+        "p2.import.checker-5",
+        "p2.a.interpretation",
+        "p2.c.challenge",
+        "p2.b.note",
+        "p2.joint.draft",
+        "p2.joint.output",
+        "p2.public.package"
+      ],
+      "affected": [
+        "p2.import.checker-5",
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.joint.draft",
+        "p2.joint.output",
+        "p2.public.package"
+      ],
+      "blocked": [
+        "p2.import.checker-5",
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.joint.draft",
+        "p2.joint.output"
+      ],
+      "bytes_revoked": [],
+      "event": "f31",
+      "id": "checker-244",
+      "notice_only": [
+        "p2.public.package"
+      ],
+      "provenance_notices": [
+        "p2.c.challenge"
+      ],
+      "repair": "Replace contributions that used the old checker, retain dissent, renew consent, export a new package. Acknowledgment alone does not restore managed use. Published bytes and the platform record stay.",
+      "source": "p2.import.checker-5",
+      "unaffected": [
+        "p2.c.unrelated"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "child": "p2.a.interpretation",
+      "kind": "use",
+      "parent": "p2.import.checker-5"
+    },
+    {
+      "child": "p2.b.note",
+      "kind": "use",
+      "parent": "p2.a.interpretation"
+    },
+    {
+      "child": "p2.joint.draft",
+      "kind": "use",
+      "parent": "p2.a.interpretation"
+    },
+    {
+      "child": "p2.joint.draft",
+      "kind": "use",
+      "parent": "p2.b.note"
+    },
+    {
+      "child": "p2.joint.draft",
+      "kind": "use",
+      "parent": "p2.c.challenge"
+    },
+    {
+      "child": "p2.joint.output",
+      "kind": "use",
+      "parent": "p2.joint.draft"
+    },
+    {
+      "child": "p2.public.package",
+      "kind": "use",
+      "parent": "p2.joint.output"
+    },
+    {
+      "child": "p2.a.interpretation.v2",
+      "kind": "use",
+      "parent": "p2.import.checker-244"
+    },
+    {
+      "child": "p2.b.note.v2",
+      "kind": "use",
+      "parent": "p2.a.interpretation.v2"
+    },
+    {
+      "child": "p2.joint.output.v2",
+      "kind": "use",
+      "parent": "p2.a.interpretation.v2"
+    },
+    {
+      "child": "p2.joint.output.v2",
+      "kind": "use",
+      "parent": "p2.b.note.v2"
+    },
+    {
+      "child": "p2.joint.output.v2",
+      "kind": "use",
+      "parent": "p2.c.challenge"
+    },
+    {
+      "child": "p2.joint.output.v2",
+      "kind": "use",
+      "parent": "p2.import.checker-244"
+    },
+    {
+      "child": "p2.public.package.v2",
+      "kind": "use",
+      "parent": "p2.joint.output.v2"
+    }
+  ],
+  "exports": {
+    "p2.public.package": [
+      "p2.import.checker-5",
+      "p2.a.interpretation",
+      "p2.b.note",
+      "p2.c.challenge",
+      "p2.joint.output"
+    ],
+    "p2.public.package.v2": [
+      "p2.import.checker-244",
+      "p2.a.interpretation.v2",
+      "p2.b.note.v2",
+      "p2.c.challenge",
+      "p2.joint.output.v2"
+    ]
+  },
+  "fixture": "p2-public-continuation-v1",
+  "nodes": [
+    "p2.import.checker-5",
+    "p2.import.checker-244",
+    "p2.a.interpretation",
+    "p2.a.interpretation.v2",
+    "p2.b.note",
+    "p2.b.note.v2",
+    "p2.c.challenge",
+    "p2.joint.draft",
+    "p2.joint.output",
+    "p2.joint.output.v2",
+    "p2.public.package",
+    "p2.public.package.v2",
+    "p2.c.unrelated"
+  ],
+  "origin": "Hand-listed before any collaboration-2 capture or driver. Closure is checked, not generated from a running store.",
+  "relations": [
+    {
+      "child": "p2.a.interpretation",
+      "official_result": false,
+      "parent": "p2.import.checker-5",
+      "relation": "cites"
+    },
+    {
+      "child": "p2.a.interpretation.v2",
+      "official_result": false,
+      "parent": "p2.import.checker-244",
+      "relation": "cites"
+    },
+    {
+      "child": "p2.b.note",
+      "official_result": false,
+      "parent": "p2.a.interpretation",
+      "relation": "builds-on"
+    },
+    {
+      "child": "p2.b.note.v2",
+      "official_result": false,
+      "parent": "p2.a.interpretation.v2",
+      "relation": "builds-on"
+    },
+    {
+      "child": "p2.c.challenge",
+      "official_result": false,
+      "parent": "p2.import.checker-5",
+      "relation": "challenges"
+    },
+    {
+      "child": "p2.b.note.v2",
+      "official_result": false,
+      "parent": "p2.a.interpretation.v2",
+      "relation": "reproduces"
+    },
+    {
+      "child": "p2.import.checker-244",
+      "official_result": false,
+      "parent": "p2.import.checker-5",
+      "relation": "supersedes"
+    },
+    {
+      "child": "p2.a.interpretation.v2",
+      "official_result": false,
+      "parent": "p2.a.interpretation",
+      "relation": "supersedes"
+    },
+    {
+      "child": "p2.b.note.v2",
+      "official_result": false,
+      "parent": "p2.b.note",
+      "relation": "supersedes"
+    },
+    {
+      "child": "p2.joint.output.v2",
+      "official_result": false,
+      "parent": "p2.joint.output",
+      "relation": "supersedes"
+    },
+    {
+      "child": "p2.public.package.v2",
+      "official_result": false,
+      "parent": "p2.public.package",
+      "relation": "supersedes"
+    }
+  ],
+  "version": 1
+}

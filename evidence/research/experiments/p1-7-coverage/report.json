@@ -1,0 +1,615 @@
+{
+ "arms": {
+  "kyoei-documents": {
+   "arm": "kyoei",
+   "coverage": {
+    "all": {
+     "automatic_ratio": 0.9375,
+     "automatic_true_positive": 30,
+     "declared_true_positive": 2,
+     "expected": 32,
+     "extra": 0,
+     "missing": 0,
+     "ratio": 1.0,
+     "true_positive": 32
+    },
+    "exact": true,
+    "release-binding": {
+     "by_path": {
+      "automatic": 2,
+      "declared": 0
+     },
+     "expected": 2,
+     "extra": [],
+     "missing": [],
+     "observed": 2,
+     "ratio": 1.0,
+     "true_positive": 2
+    },
+    "use": {
+     "by_path": {
+      "automatic": 28,
+      "declared": 2
+     },
+     "expected": 30,
+     "extra": [],
+     "missing": [],
+     "observed": 30,
+     "ratio": 1.0,
+     "true_positive": 30
+    }
+   },
+   "declared_edges": [
+    [
+     "c.offline-draft",
+     "b.result.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "c.offline-draft",
+     "c.analysis.v2",
+     "use",
+     "declared"
+    ]
+   ],
+   "outside_fixture": [],
+   "seconds": 80.622,
+   "source_mode": "documents"
+  },
+  "kyoei-git": {
+   "arm": "kyoei",
+   "coverage": {
+    "all": {
+     "automatic_ratio": 0.9375,
+     "automatic_true_positive": 30,
+     "declared_true_positive": 2,
+     "expected": 32,
+     "extra": 0,
+     "missing": 0,
+     "ratio": 1.0,
+     "true_positive": 32
+    },
+    "exact": true,
+    "release-binding": {
+     "by_path": {
+      "automatic": 2,
+      "declared": 0
+     },
+     "expected": 2,
+     "extra": [],
+     "missing": [],
+     "observed": 2,
+     "ratio": 1.0,
+     "true_positive": 2
+    },
+    "use": {
+     "by_path": {
+      "automatic": 28,
+      "declared": 2
+     },
+     "expected": 30,
+     "extra": [],
+     "missing": [],
+     "observed": 30,
+     "ratio": 1.0,
+     "true_positive": 30
+    }
+   },
+   "declared_edges": [
+    [
+     "c.offline-draft",
+     "b.result.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "c.offline-draft",
+     "c.analysis.v2",
+     "use",
+     "declared"
+    ]
+   ],
+   "outside_fixture": [],
+   "seconds": 86.08,
+   "source_mode": "git"
+  },
+  "reference-documents": {
+   "arm": "reference",
+   "coverage": {
+    "all": {
+     "automatic_ratio": 0.625,
+     "automatic_true_positive": 20,
+     "declared_true_positive": 10,
+     "expected": 32,
+     "extra": 10,
+     "missing": 2,
+     "ratio": 0.9375,
+     "true_positive": 30
+    },
+    "exact": false,
+    "release-binding": {
+     "by_path": {
+      "automatic": 2,
+      "declared": 0
+     },
+     "expected": 2,
+     "extra": [],
+     "missing": [],
+     "observed": 2,
+     "ratio": 1.0,
+     "true_positive": 2
+    },
+    "use": {
+     "by_path": {
+      "automatic": 18,
+      "declared": 10
+     },
+     "expected": 30,
+     "extra": [
+      [
+       "joint.output.v1",
+       "a.challenge",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "a.method",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "a.question",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "b.result.v1",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "c.analysis.v1",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "c.reproduction",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "a.method",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "a.question",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "b.result.v2",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "c.analysis.v2",
+       "use"
+      ]
+     ],
+     "missing": [
+      [
+       "joint.output.v1",
+       "joint.draft.v1",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "joint.draft.v2",
+       "use"
+      ]
+     ],
+     "observed": 38,
+     "ratio": 0.933333,
+     "true_positive": 28
+    }
+   },
+   "declared_edges": [
+    [
+     "joint.draft.v1",
+     "a.challenge",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "b.result.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "c.analysis.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "c.reproduction",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "b.result.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "c.analysis.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "a.challenge",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "b.result.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "c.analysis.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "c.reproduction",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "b.result.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "c.analysis.v2",
+     "use",
+     "declared"
+    ]
+   ],
+   "outside_fixture": [
+    {
+     "artifact": "96677b2711aab8e2682d822cd649daa251ed68c7a250cf21831a42c8f9b795b9",
+     "inputs": 0,
+     "institution": "a",
+     "purpose": "p1-followup"
+    }
+   ],
+   "seconds": 61.333,
+   "source_mode": "documents"
+  },
+  "reference-git": {
+   "arm": "reference",
+   "coverage": {
+    "all": {
+     "automatic_ratio": 0.625,
+     "automatic_true_positive": 20,
+     "declared_true_positive": 10,
+     "expected": 32,
+     "extra": 10,
+     "missing": 2,
+     "ratio": 0.9375,
+     "true_positive": 30
+    },
+    "exact": false,
+    "release-binding": {
+     "by_path": {
+      "automatic": 2,
+      "declared": 0
+     },
+     "expected": 2,
+     "extra": [],
+     "missing": [],
+     "observed": 2,
+     "ratio": 1.0,
+     "true_positive": 2
+    },
+    "use": {
+     "by_path": {
+      "automatic": 18,
+      "declared": 10
+     },
+     "expected": 30,
+     "extra": [
+      [
+       "joint.output.v1",
+       "a.challenge",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "a.method",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "a.question",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "b.result.v1",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "c.analysis.v1",
+       "use"
+      ],
+      [
+       "joint.output.v1",
+       "c.reproduction",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "a.method",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "a.question",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "b.result.v2",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "c.analysis.v2",
+       "use"
+      ]
+     ],
+     "missing": [
+      [
+       "joint.output.v1",
+       "joint.draft.v1",
+       "use"
+      ],
+      [
+       "joint.output.v2",
+       "joint.draft.v2",
+       "use"
+      ]
+     ],
+     "observed": 38,
+     "ratio": 0.933333,
+     "true_positive": 28
+    }
+   },
+   "declared_edges": [
+    [
+     "joint.draft.v1",
+     "a.challenge",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "b.result.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "c.analysis.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v1",
+     "c.reproduction",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "b.result.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.draft.v2",
+     "c.analysis.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "a.challenge",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "b.result.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "c.analysis.v1",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v1",
+     "c.reproduction",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "a.method",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "a.question",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "b.result.v2",
+     "use",
+     "declared"
+    ],
+    [
+     "joint.output.v2",
+     "c.analysis.v2",
+     "use",
+     "declared"
+    ]
+   ],
+   "outside_fixture": [
+    {
+     "artifact": "96677b2711aab8e2682d822cd649daa251ed68c7a250cf21831a42c8f9b795b9",
+     "inputs": 0,
+     "institution": "a",
+     "purpose": "p1-followup"
+    }
+   ],
+   "seconds": 63.831,
+   "source_mode": "git"
+  }
+ },
+ "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+ "diagnostic": true,
+ "kind": "p1-7-dependency-coverage",
+ "path_rule": "automatic: the store registered exactly what the author read (capture context, workspace read, reads a shared draft accumulated); declared: a client listed the input.",
+ "rule": "Frozen expected edges are directed (child, parent, kind); use and release-binding counted separately over all 19 fixture nodes after e42; TP = observed & expected; automatic and declared paths reported separately.",
+ "sources": {
+  "scripts/contributions.py": "47f1d7a9a523aeb22a10923fca9ac5ecc2ec197dc75b4e52d30c673af9bc24d3",
+  "scripts/git_source.py": "6bdfaa4393a172aa0af9c7cfec1c3fda639ad65183348f8f232d4028e4e4df1e",
+  "scripts/institution_identity.py": "de8a82ad26a23ef217bfd3f26e94ccc092d14c6b02d41638dc87283a4781354f",
+  "scripts/institution_server.py": "359f62126c277716152a17295b16d9d2ff80cb65da6248098b29ec8919d2054e",
+  "scripts/lifecycle_diagnostic.py": "57b5e76a5f23fe82e88f31d6eb739853e17691c1d866017c0df236209d35e3aa",
+  "scripts/lifecycle_server.py": "ef39e892c76729982382f22b528ae090abe3a1a2d867cea57f3c63e6fa58d387",
+  "scripts/lifecycle_status.py": "c92feefa055b3ac978e9afb08f3967017b4f02cf1a882cfc302a037399cc6490",
+  "scripts/lifecycle_store.py": "c0c3dda71dd4f4611b56982979dbd79e270ab203494a312663c706e2baf10bf2",
+  "scripts/p1_7_coverage.py": "a36a18fc977e0f74116b48155ef84a104344fc11290d1667b684391dd505dbd2",
+  "scripts/pq_crypto.py": "78dd5b89fff8a62ba69343329198f8336290ec1ac35175b99a28363f5790bf99",
+  "scripts/reference_capture.py": "7f9677c5bad9a6cabfae3ef48c10415088f77de3cdf32730d7026973214530e3",
+  "scripts/reference_deployment.py": "c1befe126d215a6c2b7a9e40832e037c6f07530ac3c10fb4944a39e54eb32be1",
+  "scripts/reference_deployment_diagnostic.py": "467a09ff010c9dcbba3d9f6297e4f5e1063c7d3a4b155a45cfa625a738ca1292",
+  "scripts/reference_repair.py": "c62b2c0d20b93c6ca0bdd06bccea22caf2290d278aeb36182ae5ec9e30da05f0",
+  "scripts/reference_shared_draft.py": "b4227030f9563443f3381ced9336138b0b7b3376ee5a8991116645efd3c31c32",
+  "scripts/review_verdict.py": "2f4253cf79a953774f47484c002b83d2bf992b34c092f9bbcb4cf3bf0f4e3d97",
+  "scripts/shared_draft.py": "f3816a52f4ff925cf7f4fc3a6dc63f4d70992ff0b0d66461bd6de7e73b9461b6",
+  "scripts/workspace.py": "0f62d750eb065831923031afc62fbdc4ada0b1ac7f63861e344ba070cbc63626",
+  "scripts/workspace_capture.py": "fcb9720ff9fc37a20d5accf59239d231ea2b0e4b101b96e8b745884a19941845",
+  "scripts/workspace_diagnostic.py": "0317b66aaff5759ab21e00ebe63de8dfec854aee723b5749f6909c6dd2871530",
+  "scripts/workspace_driver.py": "a00d7a8004ab55a15beb7f728f055137e35eb0d48222a536c14c29efc8766615"
+ },
+ "unauthorized": "Not recomputed on the full fixture in either arm. Consumption outside grants is exercised by the fault schedule (prohibited-disclosure, new-purpose, delegation-escalation held on all three arms); Kyoei's e01-e18 prefix count is 0."
+}

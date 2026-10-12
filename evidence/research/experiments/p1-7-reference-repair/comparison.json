@@ -1,0 +1,433 @@
+{
+  "bindings": {
+    "reference_trace_sha256": "696078a9d764b70d4c1a1ed877eb0d83679926891d2507121d748e3a4f1cfdd1",
+    "research/experiments/p1-4/documents.events.json": "bcc941fb2a2b93b1964e1bf43823099b6eb46887edd69582921c1be7972ef309",
+    "research/experiments/p1-4/documents.json": "d8cb815e23ff57d0b707df983bff6c31d8d0310794117861ec182ee96a564283",
+    "research/experiments/p1-7-reference-repair/predictions.json": "b86bb65b4f30e6619db4e501b55e437eef9217126d0cd9edc23cb30b5d307695",
+    "research/experiments/p1-7-reference-repair/report.json": "2c2d526a719de0ab95d1929b0803facbf7bf7b6474e87bfac95536205beebc50",
+    "research/experiments/p1-reference-local-first/report.json": "4901cce51754b74f2f37d60d7f72e111977adb055c70ec8763ebca1d9ac2f6cc"
+  },
+  "code": {
+    "kyoei": {
+      "adopter": 0,
+      "lifecycle_named_modules": {
+        "logical_lines": 577,
+        "paths": [
+          "scripts/lifecycle_server.py",
+          "scripts/lifecycle_status.py",
+          "scripts/lifecycle_store.py"
+        ]
+      },
+      "paths": [
+        "scripts/actor_request.py",
+        "scripts/agent_adapter.py",
+        "scripts/context_shards.py",
+        "scripts/contributions.py",
+        "scripts/git_source.py",
+        "scripts/institution_identity.py",
+        "scripts/institution_server.py",
+        "scripts/lifecycle_server.py",
+        "scripts/lifecycle_status.py",
+        "scripts/lifecycle_store.py",
+        "scripts/node_wire.py",
+        "scripts/peer_http.py",
+        "scripts/review_custody.py",
+        "scripts/review_verdict.py",
+        "scripts/shared_draft.py",
+        "scripts/workspace.py",
+        "scripts/workspace_capture.py",
+        "scripts/workspace_client.py"
+      ],
+      "scope": "Supplier code covers shared drafting, sign-off, delegation, capture, Git and document sources, identity and transport as well as change and repair; module names are not a functional boundary. Adopters wrote no file: participants act through the Kyoei clients and the harness plays them.",
+      "supplier": 3646,
+      "supplier_modules": 18
+    },
+    "reference": {
+      "build_cost": 519,
+      "note": "whole_files also counts the local-first lease authority, which this segment does not use.",
+      "paths": [
+        "scripts/reference_local_first.py",
+        "scripts/reference_repair.py",
+        "scripts/release_scope.py"
+      ],
+      "reference_primitives_used": 141,
+      "runtime": 378,
+      "whole_files": 797
+    },
+    "rule": "python-logical-lines-v1 over the static import closure of each arm's entry modules; modules both arms import are shared primitives and left out of both.",
+    "shared_primitive": {
+      "logical_lines": 443,
+      "paths": [
+        "scripts/pq_crypto.py",
+        "scripts/research_evidence.py",
+        "scripts/task_data.py"
+      ]
+    }
+  },
+  "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+  "decision_rule": "If every outcome and set prediction holds, record an enforcement tie for the change-and-repair segment. Report the reference repair runtime lines as build cost beside Kyoei supplier lines; claim no total complexity reduction, no recovery-step advantage where equipment differs, and keep the six P1.7 measures null.",
+  "enforcement": {
+    "decisions": {
+      "agree": 14,
+      "condition_dependent": [
+        "e33:register:c.offline-draft",
+        "e35:use:b.result.v2"
+      ],
+      "note": "Kyoei's recorded P1.4 run held a lease at e33 and read the leased local draft at e35; the reference ran the strict condition, and leases are covered by the local-first reference component.",
+      "rows": [
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e18:read:joint.output.v1",
+          "kyoei_actual": null,
+          "reference": "e18:use:joint.output.v1",
+          "reference_actual": null
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e18:read:c.unrelated",
+          "kyoei_actual": null,
+          "reference": "e18:use:c.unrelated",
+          "reference_actual": null
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e20:read:joint.output.v1",
+          "kyoei_actual": "correction-pending",
+          "reference": "e20:use:joint.output.v1",
+          "reference_actual": "correction-pending"
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e21:ack",
+          "kyoei_actual": null,
+          "reference": "e21:ack",
+          "reference_actual": null
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e22:read:joint.output.v1",
+          "kyoei_actual": "replacement-required",
+          "reference": "e22:use:joint.output.v1",
+          "reference_actual": "replacement-required"
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e23:replacement-needs-release",
+          "kyoei_actual": "not-authorized",
+          "reference": "e23:replacement-needs-release",
+          "reference_actual": "not-authorized"
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e28:read:joint.output.v2",
+          "kyoei_actual": null,
+          "reference": "e28:use:joint.output.v2",
+          "reference_actual": null
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e28:read:c.unrelated",
+          "kyoei_actual": null,
+          "reference": "e28:use:c.unrelated",
+          "reference_actual": null
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e31:publish:c.local-draft",
+          "kyoei_actual": null,
+          "reference": "e31:register:c.local-draft",
+          "reference_actual": null
+        },
+        {
+          "agree": false,
+          "condition": "kyoei-lease-reference-strict",
+          "kyoei": "e33:derive:c.offline-draft",
+          "kyoei_actual": null,
+          "reference": "e33:register:c.offline-draft",
+          "reference_actual": "issuer-unavailable"
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e34:read:c.analysis.v2",
+          "kyoei_actual": "issuer-unavailable",
+          "reference": "e34:use:c.analysis.v2",
+          "reference_actual": "issuer-unavailable"
+        },
+        {
+          "agree": false,
+          "condition": "kyoei-lease-reference-strict",
+          "kyoei": "e35:use-local",
+          "kyoei_actual": "lease-expired",
+          "reference": "e35:use:b.result.v2",
+          "reference_actual": "issuer-unavailable"
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e37:read:joint.output.v2",
+          "kyoei_actual": "withdrawn",
+          "reference": "e37:use:joint.output.v2",
+          "reference_actual": "withdrawn"
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e38:read:joint.output.v2",
+          "kyoei_actual": "withdrawn",
+          "reference": "e38:use:joint.output.v2",
+          "reference_actual": "withdrawn"
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e39:read:c.unrelated",
+          "kyoei_actual": null,
+          "reference": "e39:use:c.unrelated",
+          "reference_actual": null
+        },
+        {
+          "agree": true,
+          "condition": "same",
+          "kyoei": "e39:read:c.local-draft",
+          "kyoei_actual": null,
+          "reference": "e39:use:c.local-draft",
+          "reference_actual": null
+        }
+      ],
+      "same_condition": 14
+    },
+    "other": {
+      "acknowledgment_changes_awareness_only": true,
+      "logical_lines": false,
+      "outage_is_explicit": true,
+      "private_sources_stay_at_b": true,
+      "restart_uses_stored_withdrawal": true
+    },
+    "predictions": {
+      "of": 16,
+      "outcomes": 16,
+      "sets": 4,
+      "sets_of": 4
+    },
+    "result": "tie",
+    "states": {
+      "correction": {
+        "affected": {
+          "kyoei": [
+            "a.challenge",
+            "b.result.v1",
+            "b.table.v1",
+            "c.analysis.v1",
+            "c.reproduction",
+            "c.task.v1",
+            "joint.draft.v1",
+            "joint.output.v1"
+          ],
+          "only_kyoei": [],
+          "only_reference": [],
+          "reference": [
+            "a.challenge",
+            "b.result.v1",
+            "b.table.v1",
+            "c.analysis.v1",
+            "c.reproduction",
+            "c.task.v1",
+            "joint.draft.v1",
+            "joint.output.v1"
+          ]
+        },
+        "states": 11,
+        "states_agree": 11,
+        "states_differ": {}
+      },
+      "withdrawal": {
+        "affected": {
+          "kyoei": [
+            "b.result.v2",
+            "c.analysis.v2",
+            "c.offline-draft",
+            "c.task.v2",
+            "joint.draft.v2",
+            "joint.output.v2"
+          ],
+          "only_kyoei": [
+            "c.offline-draft"
+          ],
+          "only_reference": [],
+          "reference": [
+            "b.result.v2",
+            "c.analysis.v2",
+            "c.task.v2",
+            "joint.draft.v2",
+            "joint.output.v2"
+          ]
+        },
+        "states": 11,
+        "states_agree": 10,
+        "states_differ": {
+          "c.offline-draft": {
+            "kyoei": "withdrawn",
+            "reference": "absent"
+          }
+        }
+      }
+    }
+  },
+  "human_fields": {
+    "adoption": null,
+    "cost_savings": null,
+    "human_effort_seconds": null,
+    "human_setup_seconds": null,
+    "independent_quality": null
+  },
+  "kind": "reference-repair-comparison",
+  "limitations": [
+    "The Kyoei values come from the recorded P1.4 run (documents source, lease condition), not from a measured P1.7 arm; that transcript and its action counts were available while the reference was built.",
+    "The reference is an enabling component, not the qualified reference: one operator, one host, API setup, no shared drafts, sign-offs, sessions or delegation.",
+    "One run per arm; durations are not compared."
+  ],
+  "measured_kyoei_arms": [],
+  "measures": {
+    "application_code": null,
+    "concurrent_throughput": null,
+    "configuration_burden": null,
+    "dependency_coverage": null,
+    "operational_failures": null,
+    "recovery_steps": null
+  },
+  "order": [
+    "reference recorded with source and trace hashes",
+    "Kyoei values read from the recorded P1.4 run"
+  ],
+  "product_result": null,
+  "reading": [
+    "Enforcement tie: the reference reproduced 16 of 16 predicted decisions and 4 of 4 affected sets; Kyoei's recorded decisions agree on 14 of 14 rows run under the same condition.",
+    "Recovery: 32 comparable actions in the reference and 32 in Kyoei. Kyoei spends 13 equipment-specific actions (shared drafting and sign-off, capture sessions, delegation) where the reference spends 3 (direct joint registration). Raw totals 45 for Kyoei and 35 for the reference: a raw loss for Kyoei and no recovery-step advantage for either arm.",
+    "Build cost: the reference's change-and-repair protocol is 378 logical lines, 519 with the reference primitives it imports, on shared primitives both arms use. Kyoei adopters wrote 0 lines; its supplier code is 3646 lines and covers far more than repair. No total complexity reduction is claimed.",
+    "Consequence: enforcement is not the reason to adopt Kyoei. What remains to prove is that one shared layer every partner runs, with drafting, sign-off and agent delegation on the same record, costs less to operate and reuse than each consortium building and running its own; the six measures stay null until that is measured."
+  ],
+  "recovery": {
+    "comparable_tie": true,
+    "kyoei": {
+      "actions": 45,
+      "by_phase": {
+        "e19": 11,
+        "e20": 1,
+        "e21": 2,
+        "e22": 4,
+        "e23": 5,
+        "e24": 4,
+        "e25": 5,
+        "e26": 8,
+        "e27": 4,
+        "e28": 1
+      },
+      "comparable": {
+        "actions": 32,
+        "by_phase": {
+          "e19": 11,
+          "e20": 1,
+          "e21": 2,
+          "e22": 1,
+          "e23": 5,
+          "e24": 3,
+          "e25": 4,
+          "e26": 4,
+          "e28": 1
+        }
+      },
+      "equipment_specific": {
+        "actions": 13,
+        "by_kind": {
+          "capture-sessions": [
+            "e22:close",
+            "e22:head",
+            "e22:close-b"
+          ],
+          "delegation": [
+            "e24:delegate:c.synthesizer",
+            "e25:initialize"
+          ],
+          "shared-drafting-and-signoff": [
+            "e26:open",
+            "e26:revise:a",
+            "e26:revise:b.researcher",
+            "e26:revise:c.specialist",
+            "e27:signoff:a.lead",
+            "e27:signoff:b.researcher",
+            "e27:signoff:c.specialist",
+            "e27:publish"
+          ]
+        }
+      },
+      "refused": 3
+    },
+    "raw": {
+      "kyoei": 45,
+      "reference": 35
+    },
+    "reference": {
+      "actions": 35,
+      "by_phase": {
+        "e19": 11,
+        "e20": 1,
+        "e21": 2,
+        "e22": 1,
+        "e23": 5,
+        "e24": 3,
+        "e25": 4,
+        "e26": 5,
+        "e27": 2,
+        "e28": 1
+      },
+      "comparable": {
+        "actions": 32,
+        "by_phase": {
+          "e19": 11,
+          "e20": 1,
+          "e21": 2,
+          "e22": 1,
+          "e23": 5,
+          "e24": 3,
+          "e25": 4,
+          "e26": 4,
+          "e28": 1
+        }
+      },
+      "equipment_specific": {
+        "actions": 3,
+        "by_kind": {
+          "direct-joint-registration": [
+            "e26:register:joint.draft.v2",
+            "e27:register:joint.output.v2",
+            "e27:release:joint.output.v2"
+          ]
+        }
+      },
+      "refused": 3
+    },
+    "rule": "All client actions after fault injection through first permitted repaired use, including failed attempts, acknowledgment, replacement release and re-derivation.",
+    "window": {
+      "kyoei": [
+        "after e19:replace",
+        "through e28:read:joint.output.v2"
+      ],
+      "reference": [
+        "after e19:supersede",
+        "through e28:use:joint.output.v2"
+      ]
+    }
+  },
+  "reference_qualified": false,
+  "status": "enabling-incomplete-reference"
+}

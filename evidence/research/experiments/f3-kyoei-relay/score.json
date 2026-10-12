@@ -1,0 +1,162 @@
+{
+ "arm": "kyoei",
+ "continuity_breaks": 0,
+ "contract_matches": true,
+ "derived": {
+  "delivered": 31,
+  "expected": 31,
+  "missed": [],
+  "unexpected": []
+ },
+ "disputed": {
+  "notified": 1,
+  "silent": 17
+ },
+ "experience": {
+  "complete": 3,
+  "completeness": 1.0,
+  "delivered": 3,
+  "missing": [],
+  "rows": [
+   {
+    "artifact": "derived.a.01",
+    "expected": true,
+    "fields_equal": {
+     "affected_claim": true,
+     "disagreement": true,
+     "evidence": true,
+     "repair": true,
+     "responsible": true,
+     "source_and_version": true
+    },
+    "institution": "a"
+   },
+   {
+    "artifact": "claim.m-0038ac539065",
+    "expected": true,
+    "fields_equal": {
+     "affected_claim": true,
+     "disagreement": true,
+     "evidence": true,
+     "repair": true,
+     "responsible": true,
+     "source_and_version": true
+    },
+    "institution": "b"
+   },
+   {
+    "artifact": "derived.c.01",
+    "expected": true,
+    "fields_equal": {
+     "affected_claim": true,
+     "disagreement": true,
+     "evidence": true,
+     "repair": true,
+     "responsible": true,
+     "source_and_version": true
+    },
+    "institution": "c"
+   }
+  ],
+  "unexpected": []
+ },
+ "false_alarms": {
+  "delivery": 0,
+  "label_limited": 0,
+  "m1_baseline": 58,
+  "structural": 0
+ },
+ "kind": "f3-score",
+ "leaks": {
+  "count": 0,
+  "rows": []
+ },
+ "lists": {
+  "false_alarm_label_limited": [],
+  "false_alarm_structural": [],
+  "missed_delivery": [],
+  "missed_label_limited": [
+   "claim.m-04f13e509645",
+   "claim.m-10ff0e29a2ed",
+   "claim.m-0dcddca3551f",
+   "claim.m-04db54825890",
+   "claim.m-0c3a01e5fdd2",
+   "claim.m-2eb1af102adb",
+   "claim.m-61e14294b532",
+   "claim.m-06234e4af9d7",
+   "claim.m-0d0612edd0bd",
+   "claim.m-00b3dfcd59d0",
+   "claim.m-0487d775be62",
+   "claim.m-021b90fcb111",
+   "claim.m-0037abe91152",
+   "claim.m-18370f9a46fb",
+   "claim.m-094ef54fe6ba",
+   "claim.m-f894e8434ce8"
+  ]
+ },
+ "missed_alerts": {
+  "delivery": 0,
+  "label_limited": 16
+ },
+ "notice_completeness": 1.0,
+ "relay_failures": [],
+ "states": {
+  "blocked_after_challenge": [],
+  "blocked_after_withdraw": {
+   "equal": true,
+   "expected": [
+    "claim.m-0038ac539065:v1",
+    "derived.a.01:v1",
+    "derived.c.01:v1",
+    "section.01:v1",
+    "section.02:v1"
+   ],
+   "observed": [
+    "claim.m-0038ac539065:v1",
+    "derived.a.01:v1",
+    "derived.c.01:v1",
+    "section.01:v1",
+    "section.02:v1"
+   ]
+  },
+  "continuity_breaks": [],
+  "disagreement_records": {
+   "expected": [
+    [
+     "c.specialist",
+     "c",
+     "r-66b7f31c4fc6"
+    ]
+   ],
+   "observed": [
+    [
+     "c.specialist",
+     "c",
+     "r-66b7f31c4fc6"
+    ]
+   ]
+  },
+  "reassessment_marked": {
+   "equal": true,
+   "expected": [
+    "claim.m-0038ac539065",
+    "derived.a.01",
+    "derived.c.01",
+    "section.01",
+    "section.02"
+   ],
+   "observed": [
+    "claim.m-0038ac539065",
+    "derived.a.01",
+    "derived.c.01",
+    "section.01",
+    "section.02"
+   ]
+  },
+  "unusable_after_challenge": [],
+  "usable_after_withdraw_missing": []
+ },
+ "status": "in-repair",
+ "undelivered": 0,
+ "wrong_institution": []
+}

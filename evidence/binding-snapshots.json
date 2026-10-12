@@ -1,0 +1,37 @@
+[
+  {
+    "origin": "research/experiments/p1-2/workspace-capture.json",
+    "origin_sha256": "ce6d4b5bfcf7a68f80000cd8f7dbc6f7ef7e5e7744951eab7fa90a77001ac4f6",
+    "path": "scripts/institution_identity.py",
+    "sha256": "1be08a8bb5e40acaa0f8cecd837b99cf36fd3a9b9b2fe16950d0562e2b004a91",
+    "snapshot": "research/experiments/p1-2/source-snapshot/institution_identity.py"
+  },
+  {
+    "origin": "research/experiments/p2-1-comparison/attempt-before-isolation/report.json",
+    "origin_sha256": "31b8e6bd4beccfad182e3bf3f6b3d84fbeeab35ae591b3c22e609930d822c4f6",
+    "path": "research/experiments/p2-1-kyoei/kyoei-documents.json",
+    "sha256": "80dbc0003cfd0f00427661be07d70ad24b43edd1f46b49853294cc95190ef73a",
+    "snapshot": "research/experiments/p2-1-kyoei/attempt-before-isolation/kyoei-documents.json"
+  },
+  {
+    "origin": "research/experiments/p2-1-comparison/attempt-before-isolation/report.json",
+    "origin_sha256": "31b8e6bd4beccfad182e3bf3f6b3d84fbeeab35ae591b3c22e609930d822c4f6",
+    "path": "research/experiments/p2-1-kyoei/kyoei-git.json",
+    "sha256": "ea5c9f1fc6493e062074af48bd600a943b933d9ff173f3728b3358e9598101fc",
+    "snapshot": "research/experiments/p2-1-kyoei/attempt-before-isolation/kyoei-git.json"
+  },
+  {
+    "origin": "research/experiments/p2-1-kyoei/attempt-before-isolation/kyoei-documents.json",
+    "origin_sha256": "80dbc0003cfd0f00427661be07d70ad24b43edd1f46b49853294cc95190ef73a",
+    "path": "scripts/continuation_store.py",
+    "sha256": "8f104f9e62bd45521de5d6997c2a8f4e4e8ce5e6cf15082f2c73ce9b3701b7ac",
+    "snapshot": "research/experiments/p2-1-kyoei/attempt-before-isolation/source-snapshot/continuation_store.py"
+  },
+  {
+    "origin": "research/experiments/p2-1-kyoei/attempt-before-isolation/kyoei-git.json",
+    "origin_sha256": "ea5c9f1fc6493e062074af48bd600a943b933d9ff173f3728b3358e9598101fc",
+    "path": "scripts/continuation_store.py",
+    "sha256": "8f104f9e62bd45521de5d6997c2a8f4e4e8ce5e6cf15082f2c73ce9b3701b7ac",
+    "snapshot": "research/experiments/p2-1-kyoei/attempt-before-isolation/source-snapshot/continuation_store.py"
+  }
+]

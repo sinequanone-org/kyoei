@@ -1,0 +1,5653 @@
+{
+ "arms": [
+  "reference",
+  "kyoei-documents",
+  "kyoei-git"
+ ],
+ "classes": 22,
+ "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+ "held": 198,
+ "kind": "p1-7-fault-schedule",
+ "not_run": 0,
+ "repeats": 3,
+ "results": [
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.374,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.475,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "document-mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "document-mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "document-mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "document-mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 0.146,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.134,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "expired"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.13,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.299,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.183,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 1.216,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "state-unavailable"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.21,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.237,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.224,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "onward-release-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.175,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 0.249,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.131,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.158,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 0.282,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.195,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-envelope"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 0,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 2,
+    "unseen": {
+     "allowed": false,
+     "code": "invalid-envelope"
+    }
+   },
+   "seconds": 0.469,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.119,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 1.423,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.13,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "owner-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.112,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.396,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.441,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "document-mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "document-mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "document-mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "document-mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 0.204,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.114,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "expired"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.204,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.154,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.252,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 1.053,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "state-unavailable"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.126,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.172,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.374,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "onward-release-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.125,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 0.353,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.103,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.149,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 0.23,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.244,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-envelope"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 1,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 2,
+    "unseen": {
+     "allowed": false,
+     "code": "invalid-envelope"
+    }
+   },
+   "seconds": 0.438,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.164,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 1.354,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.18,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "owner-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.132,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.5,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.524,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "document-mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "document-mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "document-mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "document-mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 0.19,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.156,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "expired"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.23,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.208,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.229,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 1.106,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "state-unavailable"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.113,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.252,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.184,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "onward-release-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.363,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 0.232,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.137,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.107,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 0.289,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.21,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-envelope"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 2,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 2,
+    "unseen": {
+     "allowed": false,
+     "code": "invalid-envelope"
+    }
+   },
+   "seconds": 0.396,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.177,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 1.487,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-authorized"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.135,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "reference",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "owner-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.153,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 1.307,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.76,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "dependency register mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 1.115,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.729,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.742,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.778,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.754,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 1.671,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "file is not a database"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.714,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer partitioned"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.694,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-actor-key"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.819,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.793,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 1.128,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.806,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.788,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "lease valid until now+50; derive tried with B offline",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 1.384,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.842,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 0,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 1,
+    "unseen": {
+     "allowed": false,
+     "code": "issuer-unavailable"
+    }
+   },
+   "seconds": 1.441,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.713,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 0.963,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-released"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.819,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "wrong-owner"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.755,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 1.271,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.739,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "dependency register mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 1.113,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.735,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.74,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.783,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.743,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 1.696,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "file is not a database"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.724,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer partitioned"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.685,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-actor-key"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.779,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.787,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 1.237,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.861,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.801,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "lease valid until now+50; derive tried with B offline",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 1.418,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.822,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 1,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 1,
+    "unseen": {
+     "allowed": false,
+     "code": "issuer-unavailable"
+    }
+   },
+   "seconds": 1.539,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.711,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 0.988,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-released"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.829,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "wrong-owner"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.763,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 1.185,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.775,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "dependency register mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 1.169,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.732,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.746,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.804,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.747,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 1.697,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "file is not a database"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.712,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer partitioned"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.689,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-actor-key"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.858,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.79,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 1.233,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.86,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.792,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "lease valid until now+50; derive tried with B offline",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 1.362,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.823,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 2,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 1,
+    "unseen": {
+     "allowed": false,
+     "code": "issuer-unavailable"
+    }
+   },
+   "seconds": 1.502,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.728,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 0.972,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-released"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.838,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-documents",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "wrong-owner"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.76,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 1.309,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.884,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "dependency register mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 1.237,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.877,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.905,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.895,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.886,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 1.872,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "file is not a database"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 0.888,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer partitioned"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.833,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-actor-key"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.971,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 0.955,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 1.79,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 1.589,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 2.133,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "lease valid until now+50; derive tried with B offline",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 3.064,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 2.169,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 0,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 1,
+    "unseen": {
+     "allowed": false,
+     "code": "issuer-unavailable"
+    }
+   },
+   "seconds": 4.046,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 0,
+   "seconds": 2.125,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 0,
+   "seconds": 3.693,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-released"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 2.877,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "wrong-owner"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 0,
+   "seconds": 2.039,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 3.435,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 2.89,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "dependency register mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 2.999,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 1.618,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 2.601,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 2.656,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 2.546,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 4.179,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "file is not a database"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 1.537,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer partitioned"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.865,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-actor-key"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 1.239,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.988,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 1.31,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 0.97,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.957,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "lease valid until now+50; derive tried with B offline",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 1.648,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 0.985,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 1,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 1,
+    "unseen": {
+     "allowed": false,
+     "code": "issuer-unavailable"
+    }
+   },
+   "seconds": 1.753,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 1,
+   "seconds": 1.202,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 1,
+   "seconds": 2.398,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-released"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 1.979,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "wrong-owner"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 1,
+   "seconds": 1.854,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "concurrent-correction-use",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "use before the correction allowed, use after it denied; no instantaneous revocation",
+   "obsolete_accepted": 0,
+   "order": [
+    [
+     "use",
+     true
+    ],
+    [
+     "correction",
+     true
+    ],
+    [
+     "use",
+     false
+    ]
+   ],
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 3.653,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "delegation-escalation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "human-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 4.423,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "corruptions": {
+    "add": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "drop": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    },
+    "substitute": {
+     "allowed": false,
+     "code": "dependency register mismatch"
+    }
+   },
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "dependency-corruption",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "dependency register mismatch"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 4.846,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "duplicate-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "idempotent"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 2.649,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "expired-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 2.655,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-actor",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 2.645,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "forged-message",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-actor-signature"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 2.307,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "git-history-change",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "unchanged"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 3.138,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "interrupted-write",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "file is not a database"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.946,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "issuer-outage",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "issuer partitioned"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.952,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "key-rotation",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-actor-key"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 1.017,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "license-conflict",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "A conflicting stated purpose blocks release; there is no separate license field",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 1.074,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "lost-push",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 1.619,
+   "stale": {
+    "allowed": false,
+    "code": "issuer-unavailable"
+   },
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "malicious-source",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "data-only"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.984,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "new-purpose",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "new-grant-required"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.953,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "observed-withdrawal-lease",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "lease valid until now+50; derive tried with B offline",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 1.591,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "prohibited-disclosure",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "invalid-request"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 1.027,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "reordered-status",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": "older signed active status replayed by the transport",
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "withdrawn"
+   },
+   "recovery_attempted": 5,
+   "recovery_steps": 5,
+   "repeat": 2,
+   "replay": {
+    "before": {
+     "allowed": true
+    },
+    "observed": {
+     "allowed": false,
+     "code": "withdrawn"
+    },
+    "served": 1,
+    "unseen": {
+     "allowed": false,
+     "code": "issuer-unavailable"
+    }
+   },
+   "seconds": 1.81,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "restart",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "persisted"
+   },
+   "recovery_attempted": 1,
+   "recovery_steps": 1,
+   "repeat": 2,
+   "seconds": 0.88,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "stale-draft-base",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "stale-base"
+   },
+   "race": {
+    "both_preserved": true,
+    "first_landed": true,
+    "loser_told_current": true
+   },
+   "recovery_attempted": 3,
+   "recovery_steps": 3,
+   "repeat": 2,
+   "seconds": 1.153,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "unreleased-draft-input",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "not-released"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 1.001,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  },
+  {
+   "arm": "kyoei-git",
+   "crash": null,
+   "disclosure_leak": false,
+   "duplicate_effects": 0,
+   "fault_class": "wrong-owner",
+   "held": true,
+   "lost_updates": 0,
+   "negative": {
+    "allowed": true,
+    "code": null
+   },
+   "note": null,
+   "obsolete_accepted": 0,
+   "positive": {
+    "allowed": false,
+    "code": "wrong-owner"
+   },
+   "recovery_attempted": 2,
+   "recovery_steps": 2,
+   "repeat": 2,
+   "seconds": 0.915,
+   "timeouts": 0,
+   "unauthorized_accepted": 0,
+   "wrongly_blocked": 0
+  }
+ ],
+ "rows": 198,
+ "sha256": "63a1c02b6d22478353363e1fa3332db2530656c127e839648f00b39fc0fc63ec",
+ "sources": {
+  "scripts/institution_identity.py": {
+   "sha256": "de8a82ad26a23ef217bfd3f26e94ccc092d14c6b02d41638dc87283a4781354f"
+  },
+  "scripts/lifecycle_status.py": {
+   "sha256": "c92feefa055b3ac978e9afb08f3967017b4f02cf1a882cfc302a037399cc6490"
+  },
+  "scripts/lifecycle_store.py": {
+   "sha256": "c0c3dda71dd4f4611b56982979dbd79e270ab203494a312663c706e2baf10bf2"
+  },
+  "scripts/p1_7_faults.py": {
+   "sha256": "ec8cfe442606f8d1854152b1f4c635dfa0aa0ba654b61cabf76299b0cffb20b7"
+  },
+  "scripts/reference_repair.py": {
+   "sha256": "c62b2c0d20b93c6ca0bdd06bccea22caf2290d278aeb36182ae5ec9e30da05f0"
+  },
+  "scripts/reference_shared_draft.py": {
+   "sha256": "b4227030f9563443f3381ced9336138b0b7b3376ee5a8991116645efd3c31c32"
+  },
+  "scripts/release_scope.py": {
+   "sha256": "ca16150fa4b339bf8f748ff12667c02bed4baafa999ae3bd2463a3c41e89f9a4"
+  },
+  "scripts/shared_draft.py": {
+   "sha256": "f3816a52f4ff925cf7f4fc3a6dc63f4d70992ff0b0d66461bd6de7e73b9461b6"
+  },
+  "scripts/workspace_capture.py": {
+   "sha256": "fcb9720ff9fc37a20d5accf59239d231ea2b0e4b101b96e8b745884a19941845"
+  }
+ }
+}

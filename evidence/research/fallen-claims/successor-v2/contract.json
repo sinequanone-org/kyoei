@@ -1,0 +1,244 @@
+{
+ "carried_predictions": [
+  {
+   "high": 0.2,
+   "id": "f0-pilot-agreement",
+   "low": 0.05,
+   "measure": "pilot_disagreement",
+   "source": "F0 prediction, unchanged"
+  },
+  {
+   "high": 0.85,
+   "id": "f2-labeller-kappa",
+   "low": 0.6,
+   "measure": "labeller_kappa",
+   "source": "F0 prediction, unchanged; F0 measured it against locator truth, v2 against reviewed labels"
+  }
+ ],
+ "changes_from_draft": [
+  "Mathematics plan raised from 120 to 160 units before any label, so the 100-eligible minimum survives reviewer disagreement.",
+  "SIDH pilot population: legacy post-break records with at least one non-empty context; the 82 records without context are excluded and counted.",
+  "All three roles use OpenRouter chat completions, one vendor each: Anthropic, OpenAI and Google.",
+  "Stage B (M3 and M4) and stage C (F3 replay) need their own stage freeze, recorded by digest before their model calls.",
+  "No temperature parameter: the zero-data-retention endpoints reject it (route check)."
+ ],
+ "claim_inventory": {
+  "math": "One claim per unit: the cited bibliography key with its locator, or the whole cited work when there is no locator.",
+  "sidh": [
+   {
+    "claim": "sidh:torsion-security",
+    "id": "A",
+    "in_scope": true,
+    "statement": "SIDH, SIKE, or a construction that publishes torsion-point images is secure; equivalently, recovering a secret isogeny is hard given torsion-point images. This claim fell on 2022-07-30."
+   },
+   {
+    "claim": "sidh:other",
+    "id": "B",
+    "in_scope": false,
+    "statement": "Other content of the cited work: supersingular isogeny graphs, isogeny arithmetic or algorithms, isogeny problems without torsion-point images, or general background. The 2022 attacks do not affect this content."
+   }
+  ],
+  "sign_off": "The inventory comes from the cases.json scope. The F0 rule that two simulated reviewers sign it did not run; this is a recorded gap."
+ },
+ "design_draft": {
+  "path": "research/fallen-claims/successor-v2/protocol.json",
+  "sha256": "062542f46774d462a7d8e70c6acbf490a5c480525713606c625733995f0d78be"
+ },
+ "exposure": "The SIDH population and the v1 keyword results were inspected before this freeze. SIDH reuse is a retrospective development pilot, not a fresh confirmatory test. No mathematics unit was labelled or inspected for labels before this freeze.",
+ "files": {
+  "research/experiments/f2-v2/route-check.json": "84f82b292e8fdc72f5a18b1b39cca297e1a327c0aa430f37bd2c87aed0bd2f85",
+  "research/fallen-claims/successor-v2/assemble_units.py": "951613ba75a5608d516e53fbb2cf5180618a4a3b826d10f5b47bef3265127ad4",
+  "research/fallen-claims/successor-v2/prompts/case-notes.json": "a6095a954b0ae96f77532bca2136cd30528677dbfb7407267c23ef43549cf645",
+  "research/fallen-claims/successor-v2/prompts/label-system.md": "c7347980ce02ecb8362fedbdf0f248e28f110cf6b78a55928901fb1da9bbd76e",
+  "research/fallen-claims/successor-v2/protocol.json": "062542f46774d462a7d8e70c6acbf490a5c480525713606c625733995f0d78be",
+  "research/fallen-claims/successor-v2/units-math.json": "a6e95eb8601b9874326713b0688762f828abfb8165f733f4da300e315f4d3b5d",
+  "research/fallen-claims/successor-v2/units-sidh.json": "d535979525d67928761cfba272b6529ec8366d803eb76a1497909220c941bedb",
+  "scripts/f2_labels.py": "f2dc47b464bcf653e4937515ef1339825a7c247a5716e2eacf3c00b386df8759",
+  "scripts/f2_v2.py": "0530e5c11a985e10e49af11668193db0d437a68ecec484b57df2be6aa4ad9d3a"
+ },
+ "frozen_at": "2026-10-04T11:54:20+00:00",
+ "id": "kyoei-fallen-claims-v2",
+ "labels": {
+  "affected_rule_sidh": "yes when depends and the chosen claim is sidh:torsion-security; no when does-not-depend or the claim is sidh:other; otherwise unknown.",
+  "depends_rule": "depends when the relation is builds-on or relies-on-assumption; unknown when the relation is unknown; otherwise does-not-depend. Derived, never typed.",
+  "relations": [
+   "builds-on",
+   "relies-on-assumption",
+   "reproduces",
+   "challenges",
+   "supersedes",
+   "cites",
+   "unknown"
+  ]
+ },
+ "limits": [
+  "Simulated reviewers from three AI vendors, one operator. Agreement is a simulated reference, not expert truth.",
+  "Batch calls: twenty units share one request, so labels within a batch are not fully independent.",
+  "Known-case model memory: the SIDH break is public and likely in model training data.",
+  "Mathematics texts have exact byte pins but unproven version labels.",
+  "SIDH contexts carry no text version; 82 post-break records without context are excluded.",
+  "Freeze and receipts are local files. No public timestamp exists until the user publishes them."
+ ],
+ "next_stages": {
+  "B": "M3 (pipeline with S2 intents, locator and the calibrated labeller) and M4 (declarant with a writing-time view) on SIDH units, with effort records. Sealed M3 output before M4. Needs its own frozen stage file.",
+  "C": "F3 replay through institution clients, equipped reference first. Needs its own frozen stage file."
+ },
+ "permitted_inputs": {
+  "math": [
+   "passage with <<TARGET>> markers around the target citation",
+   "target_citation",
+   "cite_locator",
+   "enclosing_environment",
+   "section_heading",
+   "cited_entry",
+   "claim_options"
+  ],
+  "never": [
+   "another role's output",
+   "Semantic Scholar intents or influence flags",
+   "v1 keyword categories",
+   "locator-derived labels",
+   "the private store path or any tool"
+  ],
+  "sidh": [
+   "passage (Semantic Scholar contexts joined by a separator line)",
+   "citing_title",
+   "citing_year",
+   "claim_options",
+   "case_notes"
+  ]
+ },
+ "predecessor_sha256": "fe766a24562025a7fd9421bd2d812fb1302f82f1c9b9178d42dac184d0f55b95",
+ "product_result": null,
+ "prompts": {
+  "case-notes": "research/fallen-claims/successor-v2/prompts/case-notes.json",
+  "label-system": "research/fallen-claims/successor-v2/prompts/label-system.md"
+ },
+ "reason": "Replace the v1 locator proxy truth with context-reviewed reference labels. Repair the invalid F2 evidence without editing the F0 contract.",
+ "response": {
+  "parser": "scripts/f2_v2.py parse_labels: one JSON object, optionally inside one code fence. Every unit exactly once. Any invalid row fails the whole attempt.",
+  "schema": "Strict JSON schema built per batch by scripts/f2_v2.py request_body: unit_id enum of batch-local ids, cited_claim enum of option ids plus unknown, relation enum, reason string."
+ },
+ "roles": {
+  "labeller": {
+   "sets": [
+    "math"
+   ],
+   "use": "method under calibration"
+  },
+  "reviewer-a": {
+   "sets": [
+    "math",
+    "sidh"
+   ],
+   "use": "reference"
+  },
+  "reviewer-b": {
+   "sets": [
+    "math",
+    "sidh"
+   ],
+   "use": "reference"
+  }
+ },
+ "route_check": {
+  "path": "research/experiments/f2-v2/route-check.json",
+  "rule": "Sampling uses provider defaults. Labels are not exactly reproducible; receipts keep every output."
+ },
+ "routes": {
+  "labeller": {
+   "max_tokens": 16000,
+   "model": "google/gemini-3.8-flash",
+   "provider": {
+    "data_collection": "deny",
+    "require_parameters": true
+   },
+   "timeout_seconds": 900,
+   "transport": "openrouter-chat-completions",
+   "vendor": "google"
+  },
+  "reviewer-a": {
+   "max_tokens": 16000,
+   "model": "anthropic/claude-sonnet-5.5",
+   "provider": {
+    "data_collection": "deny",
+    "require_parameters": true
+   },
+   "timeout_seconds": 900,
+   "transport": "openrouter-chat-completions",
+   "vendor": "anthropic"
+  },
+  "reviewer-b": {
+   "max_tokens": 16000,
+   "model": "openai/gpt-6-sol",
+   "provider": {
+    "data_collection": "deny",
+    "require_parameters": true
+   },
+   "timeout_seconds": 900,
+   "transport": "openrouter-chat-completions",
+   "vendor": "openai"
+  }
+ },
+ "run": {
+  "batch_size": 20,
+  "batching": "Units sorted by unit_id and cut into batches of 20. Every role receives identical batches.",
+  "max_attempts": 2,
+  "max_cost_usd": 20,
+  "order": "The three roles run in parallel threads. No role receives another role's output. Receipts are written once and never overwritten.",
+  "retry_rule": "A second attempt runs only after a transport failure, a non-200 response, missing content or a parse failure. Both attempts are kept. No third attempt. Units of a batch with no complete attempt are missing for that role.",
+  "untrusted_text": "Paper text is data. The calls are plain chat completions with no tools. The parser accepts only the pinned schema."
+ },
+ "scoring": {
+  "high_quantile": 0.975,
+  "interval_rule": "Percentile bootstrap over citing works, sorted values, index floor(q * (n - 1)).",
+  "low_quantile": 0.025,
+  "resamples": 2000,
+  "seed": 20261004
+ },
+ "stage": "A: two reference reviewers on mathematics and SIDH units, and labeller calibration on mathematics units.",
+ "status": "frozen-before-model-calls",
+ "stops": {
+  "labeller_kappa": {
+   "comparator": "<",
+   "eligible": "units where both reviewers give the same definite label",
+   "measure": "Cohen kappa between labeller and reference on eligible units",
+   "minimum_units": 100,
+   "on_trip": "After-the-fact labels from this labeller do not reach substantial agreement; M3 needs another labeller under a successor.",
+   "primary_rule": "labeller unknown and missing count as their own categories (never matching)",
+   "secondary": "kappa on eligible units where the labeller gives a definite label, reported beside the primary",
+   "set": "math",
+   "threshold": 0.6
+  },
+  "pilot_disagreement": {
+   "comparator": ">",
+   "measure": "share of reviewable units where the reviewers differ on relation or depends (F0 measure)",
+   "minimum_units": 60,
+   "on_trip": "The schema is too vague. Write a successor schema; do not tune reviewers to agree. Stage B does not start on SIDH.",
+   "reviewable": "units with a parsed row from both reviewers; unknown is a relation value",
+   "set": "sidh",
+   "threshold": 0.2
+  }
+ },
+ "units": {
+  "math": {
+   "manifest": "research/fallen-claims/successor-v2/units-math.json",
+   "minimum_eligible": 100,
+   "planned": 160,
+   "population": "Papers with a math.* primary category in the pinned arXiv-complete sample (revision cee894837962fede5612cccf2a4c7cacf49b4c3a, sample/train-00000-of-00001.parquet).",
+   "sampling": "Works in sha256('kyoei-fallen-claims-v2:' + arXiv id) order. Per work, at most two units: the single-key citation with an F0 claim locator, and the single-key citation without an optional argument, each chosen by the smallest sha256(id + ':' + character offset). Citations in comments, the preamble and the bibliography are excluded. Stop at 160 units. Every examined work and every skip reason is in the manifest.",
+   "verification": "Source bytes match the dataset text_sha256 column. Each passage and target citation is checked at its character offsets before any call.",
+   "version": "The text is the latest version at the dataset harvest. The dataset marks source_version_proven false for every sampled work, so the byte pin is exact and the version label is not proven."
+  },
+  "sidh": {
+   "manifest": "research/fallen-claims/successor-v2/units-sidh.json",
+   "minimum_reviewable": 60,
+   "planned": 80,
+   "population": "Records in the pinned Semantic Scholar citations snapshot (sha256 6f249d4bd0d7024ca62716b28ec9a13fb623ab69977ed546e4b3816b3793f733) with publicationDate on or after 2022-08-01, or no date and year 2023 or later, and at least one non-empty context.",
+   "sampling": "sha256('kyoei-fallen-claims-v2:' + Semantic Scholar paperId) order; the first 80 records. One unit per work; citing_claim is the whole work.",
+   "verification": "Each passage is rebuilt from the hash-checked snapshot by record and context index before any call.",
+   "version": "Semantic Scholar parsed an unidentified version. The snapshot pins the response bytes, not the citing text version."
+  }
+ },
+ "version": 2
+}

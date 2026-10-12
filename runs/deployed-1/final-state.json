@@ -1,0 +1,2051 @@
+{
+ "a": {
+  "org": "a",
+  "integrator": "c",
+  "fingerprint": "5e0699025bc720e72cd470041e67aae1c7e045def2f762654b85f2889bad4089",
+  "contributions": [
+   {
+    "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "org": "b",
+    "line": "b1",
+    "version": 1,
+    "agent": "b1",
+    "own": false,
+    "commit": "45f744371f558aaec79f3a3a2ea16491eecb6c5c",
+    "root": "428ee56ac5de7f45cf7fbd3105cd7e9e94c50cbd3f3b86179f51662aeeffa8a8",
+    "files": [
+     "src/sign.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [],
+    "task": "HMAC request signer",
+    "rationale": "HMAC-SHA256 request signer. One helper came from an outside snippet with an unverified license; recorded here.",
+    "verified": true,
+    "state": "withdrawn",
+    "cause": "origin of one snippet is not verified; license unknown",
+    "shipped": false,
+    "approved": false,
+    "released": [],
+    "held": {
+     "from": "b",
+     "purposes": [
+      "contribute",
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+    "org": "a",
+    "line": "a1",
+    "version": 1,
+    "agent": "a1",
+    "own": true,
+    "commit": "c6803a106475a895d204d4dbbb9472c4650de80f",
+    "root": "9f640225cf5f3ec45253cfe43ff4cb67608eb6b19f55454949f54dd5a073d8b6",
+    "files": [
+     "src/retry.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Add jitter to retry backoff",
+    "rationale": "Add full jitter so many clients do not retry in step.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "c",
+      "purposes": [
+       "contribute",
+       "integrate"
+      ],
+      "expires": 1791695479240,
+      "revoked": false,
+      "token": "tok_a9a4972db6978b4e"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "50f3a45510770debaa50208ba520507b93857b74d71bcecefe6f54b7bf3a1020",
+    "org": "c",
+    "line": "seed",
+    "version": 1,
+    "agent": "c.lead",
+    "own": false,
+    "commit": "98d6e7a8f6283701f5f551e9b76f77ac8ee2e30e",
+    "root": "139a56560d06252bba3448ce1c848b7f271f3e45f9b9a8822a9b21dba9f90603",
+    "files": [
+     "README.md",
+     "src/client.ts",
+     "src/ratelimit.ts",
+     "src/retry.ts",
+     "src/sign.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "seed the integration repository",
+    "rationale": "baseline for every agent fork",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [],
+    "held": {
+     "from": "c",
+     "purposes": [
+      "contribute"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "62332f72ecfd4c9d694064713d8aec2796d3daff1394a2b72c033dcbfde0a76a",
+    "org": "c",
+    "line": "c5",
+    "version": 1,
+    "agent": "c5",
+    "own": false,
+    "commit": "de365196424d45074887468279bc40c5fdb6885c",
+    "root": "8ddd0d06026a1c815ffb75b4d36c07994318197645ce62f3c926588594c06dc8",
+    "files": [
+     "src/sign-cove.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [],
+    "task": "Cove signer for the gateway",
+    "rationale": "Cove's own HMAC signer for its gateway; same Signer interface.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [],
+    "held": {
+     "from": "c",
+     "purposes": [
+      "contribute",
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+    "org": "a",
+    "line": "a3",
+    "version": 1,
+    "agent": "a3",
+    "own": true,
+    "commit": "739b7a4fe4f3f16d4e05ba3cc8e7829015f4aabb",
+    "root": "5e7c59abc332d49859911347de6162393fbf9e1bfec3b9a7851701c32fc10b26",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "builds-on",
+      "label": "b1"
+     },
+     {
+      "id": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+      "relation": "builds-on",
+      "label": "a1"
+     }
+    ],
+    "task": "Signed retries",
+    "rationale": "Signed retries: re-sign each attempt with Birch's signer. Inputs read: builds-on b/b1, builds-on a/a1.",
+    "verified": true,
+    "state": "withdrawn",
+    "cause": "origin of one snippet is not verified; license unknown",
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "c",
+      "purposes": [
+       "integrate"
+      ],
+      "expires": 1791695478704,
+      "revoked": false,
+      "token": "tok_8f61261e16a13173"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "ac87cd73e489eed4f215d47af9892a090b9c0125f5aa3261d1647adb550c6e41",
+    "org": "a",
+    "line": "a2",
+    "version": 1,
+    "agent": "a2",
+    "own": true,
+    "commit": "810fcd139e67761a6259f3754a64a57d0831b5c8",
+    "root": "01b2cf35a726822d123fe8989955fb5ba6f852573cdc0c57d043d991e61a0b82",
+    "files": [
+     "src/retry.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Cap the retry delay",
+    "rationale": "Cap the retry delay at maxMs (default 30 s).",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "c",
+      "purposes": [
+       "integrate"
+      ],
+      "expires": 1791695479561,
+      "revoked": false,
+      "token": "tok_2d83f0e57520fb68"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "b10654f80f137f4ec6450e3b574168ab94524344d140147d0e389ccb4c37ee55",
+    "org": "a",
+    "line": "a2",
+    "version": 2,
+    "agent": "a2r",
+    "own": true,
+    "commit": "85ebc7c5116ce9f6e9b62ece443c5b9190dbd0b3",
+    "root": "c0864415e205fd6e293c23674af2425fe8faebb58b83a846633e9a079f1c22b6",
+    "files": [
+     "src/retry.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Repair a2: Cap the retry delay",
+    "rationale": "Rebase the delay cap on the jittered retry now on main.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "c",
+      "purposes": [
+       "integrate"
+      ],
+      "expires": 1791695498372,
+      "revoked": false,
+      "token": "tok_e00ef5bd7cce8c29"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "dd48969362302b7bb173debd787267682a6de5e270b883bdff67c0a866990217",
+    "org": "a",
+    "line": "a3",
+    "version": 2,
+    "agent": "a3r",
+    "own": true,
+    "commit": "c29ab2ef5b964cbfeeb1fa47116b12dc1510a542",
+    "root": "54bffd75026b9f85cc3252ed10e21d037be291f33d1357ec2b25f6808042a1d6",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "62332f72ecfd4c9d694064713d8aec2796d3daff1394a2b72c033dcbfde0a76a",
+      "relation": "builds-on",
+      "label": "c5"
+     },
+     {
+      "id": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+      "relation": "builds-on",
+      "label": "a1"
+     }
+    ],
+    "task": "Repair a3: Signed retries",
+    "rationale": "Move onto Cove's released signer c5 after Birch withdrew b1. Inputs read: builds-on c/c5, builds-on a/a1.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "c",
+      "purposes": [
+       "integrate"
+      ],
+      "expires": 1791695479907,
+      "revoked": false,
+      "token": "tok_b34286ece88f4347"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+    "org": "b",
+    "line": "b1",
+    "version": 2,
+    "agent": "b4",
+    "own": false,
+    "commit": "33fd87709a1d0260737cb0131e5f12b964263c2e",
+    "root": "e64c79c685182dd0e9c06eaeabc7808a9cb2c97c1c3086c1049dde6dc64c59a6",
+    "files": [
+     "src/sign.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "supersedes",
+      "label": "b1"
+     }
+    ],
+    "task": "Clean signer written from the specification",
+    "rationale": "Clean replacement for b1, written from the specification. New signature hmacSigner(secret, keyId).",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [],
+    "held": {
+     "from": "b",
+     "purposes": [
+      "contribute",
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   }
+  ],
+  "notices": [
+   {
+    "id": "062af84913616e13:971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+    "item": "971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+    "evidence": {
+     "commit": "739b7a4fe4f3f16d4e05ba3cc8e7829015f4aabb",
+     "record": "971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+     "content": "5e7c59abc332d49859911347de6162393fbf9e1bfec3b9a7851701c32fc10b26"
+    },
+    "source": {
+     "event": "062af84913616e138e512570ddde2c21fa4888b42469ceb89d27ab43a736e663",
+     "kind": "correct",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "superseded by b1 v2"
+    },
+    "act": [
+     "a.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673947140,
+    "closed": 1791673947140
+   },
+   {
+    "id": "385eaabecd1c35b2:971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+    "item": "971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+    "evidence": {
+     "commit": "739b7a4fe4f3f16d4e05ba3cc8e7829015f4aabb",
+     "record": "971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+     "content": "5e7c59abc332d49859911347de6162393fbf9e1bfec3b9a7851701c32fc10b26"
+    },
+    "source": {
+     "event": "385eaabecd1c35b2b5fbda0b796051bad510be5e1c614cf736573da7c779f25d",
+     "kind": "withdraw",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "origin of one snippet is not verified; license unknown"
+    },
+    "act": [
+     "a.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673914387,
+    "closed": 1791673934502
+   }
+  ],
+  "intents": [
+   {
+    "org": "a",
+    "agent": "a1",
+    "line": "a1",
+    "files": [
+     "src/retry.ts"
+    ],
+    "task": "Add jitter to retry backoff",
+    "state": "closed",
+    "at": 1791673872124
+   },
+   {
+    "org": "a",
+    "agent": "a2",
+    "line": "a2",
+    "files": [
+     "src/retry.ts"
+    ],
+    "task": "Cap the retry delay",
+    "state": "closed",
+    "at": 1791673871599
+   },
+   {
+    "org": "a",
+    "agent": "a2r",
+    "line": "a2",
+    "files": [
+     "src/retry.ts"
+    ],
+    "task": "Repair a2: Cap the retry delay",
+    "state": "closed",
+    "at": 1791673894734
+   },
+   {
+    "org": "a",
+    "agent": "a3",
+    "line": "a3",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "task": "Signed retries",
+    "state": "closed",
+    "at": 1791673903760
+   },
+   {
+    "org": "a",
+    "agent": "a3r",
+    "line": "a3",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "task": "Repair a3: Signed retries",
+    "state": "closed",
+    "at": 1791673929815
+   }
+  ],
+  "overlaps": [
+   {
+    "id": "a/a1+a/a2",
+    "a": {
+     "org": "a",
+     "agent": "a2"
+    },
+    "b": {
+     "org": "a",
+     "agent": "a1"
+    },
+    "files": [
+     "src/retry.ts"
+    ],
+    "at": 1791673872138
+   }
+  ],
+  "main": [],
+  "ops": [],
+  "outbox": []
+ },
+ "b": {
+  "org": "b",
+  "integrator": "c",
+  "fingerprint": "99c7c034c628bf93514184f76449afcae06889c2101387e161d7e8be5b8d7efa",
+  "contributions": [
+   {
+    "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "org": "b",
+    "line": "b1",
+    "version": 1,
+    "agent": "b1",
+    "own": true,
+    "commit": "45f744371f558aaec79f3a3a2ea16491eecb6c5c",
+    "root": "428ee56ac5de7f45cf7fbd3105cd7e9e94c50cbd3f3b86179f51662aeeffa8a8",
+    "files": [
+     "src/sign.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [],
+    "task": "HMAC request signer",
+    "rationale": "HMAC-SHA256 request signer. One helper came from an outside snippet with an unverified license; recorded here.",
+    "verified": true,
+    "state": "withdrawn",
+    "cause": "origin of one snippet is not verified; license unknown",
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "a",
+      "purposes": [
+       "contribute",
+       "integrate"
+      ],
+      "expires": 1791695478704,
+      "revoked": true,
+      "token": "tok_0aef40d71779fc29"
+     },
+     {
+      "to": "c",
+      "purposes": [
+       "contribute",
+       "integrate"
+      ],
+      "expires": 1791695478704,
+      "revoked": true,
+      "token": "tok_281897e2b4e88bb9"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "50f3a45510770debaa50208ba520507b93857b74d71bcecefe6f54b7bf3a1020",
+    "org": "c",
+    "line": "seed",
+    "version": 1,
+    "agent": "c.lead",
+    "own": false,
+    "commit": "98d6e7a8f6283701f5f551e9b76f77ac8ee2e30e",
+    "root": "139a56560d06252bba3448ce1c848b7f271f3e45f9b9a8822a9b21dba9f90603",
+    "files": [
+     "README.md",
+     "src/client.ts",
+     "src/ratelimit.ts",
+     "src/retry.ts",
+     "src/sign.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "seed the integration repository",
+    "rationale": "baseline for every agent fork",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [],
+    "held": {
+     "from": "c",
+     "purposes": [
+      "contribute"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "634f4d9345a1d35b2834a86f9c797957f0b13ab2737f5c44e511a58e383787c7",
+    "org": "b",
+    "line": "b2",
+    "version": 1,
+    "agent": "b2",
+    "own": true,
+    "commit": "8b1655e52cda62e754c62e38e8491ac9f30147bc",
+    "root": "a3989cbac7e0fb76c1638e5f67b94fe386ae3bd52d7fa977f1efe81076c6f3f7",
+    "files": [
+     "test/sign.vectors.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "builds-on",
+      "label": "b1"
+     }
+    ],
+    "task": "Signer test vectors",
+    "rationale": "Test vectors for the signer. Inputs read: builds-on b/b1.",
+    "verified": true,
+    "state": "withdrawn",
+    "cause": "origin of one snippet is not verified; license unknown",
+    "shipped": false,
+    "approved": false,
+    "released": [],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "81a5b7d0f42a21183616769e7e06595a7ea106cbd391425fdf92f93ceaba86f6",
+    "org": "b",
+    "line": "b2",
+    "version": 2,
+    "agent": "b2r",
+    "own": true,
+    "commit": "2da8027880c244408f23b8ff3bb9c30911993b6f",
+    "root": "a16ebea962c881a2ff89aeaf9cd50e24f2ac4cdc42dc06b4650e279cfc28184e",
+    "files": [
+     "test/sign.vectors.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+      "relation": "builds-on",
+      "label": "b1 v2"
+     }
+    ],
+    "task": "Repair b2: Signer test vectors",
+    "rationale": "Rebase the vectors on b1 v2. Inputs read: builds-on b/b1.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "c",
+      "purposes": [
+       "integrate"
+      ],
+      "expires": 1791695555385,
+      "revoked": false,
+      "token": "tok_845fb7c7ea8d3bbd"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "org": "b",
+    "line": "b3",
+    "version": 1,
+    "agent": "b3",
+    "own": true,
+    "commit": "30416352d36e0c7be9ba814e6a98b3d7d52a8957",
+    "root": "1ffa1685bd56a1c341d0a498a055c1d21bb1e6301558a5f612e76dc036b459ff",
+    "files": [
+     "docs/signing.md"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "cites",
+      "label": "b1"
+     }
+    ],
+    "task": "Signing documentation",
+    "rationale": "Documentation for signing. Cites b1; does not build on it. Inputs read: cites b/b1.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "c",
+      "purposes": [
+       "integrate"
+      ],
+      "expires": 1791695523404,
+      "revoked": false,
+      "token": "tok_77788c5ad706c90e"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+    "org": "b",
+    "line": "b1",
+    "version": 2,
+    "agent": "b4",
+    "own": true,
+    "commit": "33fd87709a1d0260737cb0131e5f12b964263c2e",
+    "root": "e64c79c685182dd0e9c06eaeabc7808a9cb2c97c1c3086c1049dde6dc64c59a6",
+    "files": [
+     "src/sign.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "supersedes",
+      "label": "b1"
+     }
+    ],
+    "task": "Clean signer written from the specification",
+    "rationale": "Clean replacement for b1, written from the specification. New signature hmacSigner(secret, keyId).",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "a",
+      "purposes": [
+       "contribute",
+       "integrate"
+      ],
+      "expires": 1791695545612,
+      "revoked": false,
+      "token": "tok_f5b305026761391f"
+     },
+     {
+      "to": "c",
+      "purposes": [
+       "contribute",
+       "integrate"
+      ],
+      "expires": 1791695545612,
+      "revoked": false,
+      "token": "tok_39250dd27401bce8"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   }
+  ],
+  "notices": [
+   {
+    "id": "062af84913616e13:634f4d9345a1d35b2834a86f9c797957f0b13ab2737f5c44e511a58e383787c7",
+    "item": "634f4d9345a1d35b2834a86f9c797957f0b13ab2737f5c44e511a58e383787c7",
+    "evidence": {
+     "commit": "8b1655e52cda62e754c62e38e8491ac9f30147bc",
+     "record": "634f4d9345a1d35b2834a86f9c797957f0b13ab2737f5c44e511a58e383787c7",
+     "content": "a3989cbac7e0fb76c1638e5f67b94fe386ae3bd52d7fa977f1efe81076c6f3f7"
+    },
+    "source": {
+     "event": "062af84913616e138e512570ddde2c21fa4888b42469ceb89d27ab43a736e663",
+     "kind": "correct",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "superseded by b1 v2"
+    },
+    "act": [
+     "b.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673945321,
+    "closed": 1791673953340
+   },
+   {
+    "id": "062af84913616e13:ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "item": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "evidence": {
+     "commit": "30416352d36e0c7be9ba814e6a98b3d7d52a8957",
+     "record": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+     "content": "1ffa1685bd56a1c341d0a498a055c1d21bb1e6301558a5f612e76dc036b459ff"
+    },
+    "source": {
+     "event": "062af84913616e138e512570ddde2c21fa4888b42469ceb89d27ab43a736e663",
+     "kind": "correct",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "superseded by b1 v2"
+    },
+    "act": [
+     "b.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "dissent"
+    ],
+    "blocking": false,
+    "state": "open",
+    "opened": 1791673945321
+   },
+   {
+    "id": "385eaabecd1c35b2:634f4d9345a1d35b2834a86f9c797957f0b13ab2737f5c44e511a58e383787c7",
+    "item": "634f4d9345a1d35b2834a86f9c797957f0b13ab2737f5c44e511a58e383787c7",
+    "evidence": {
+     "commit": "8b1655e52cda62e754c62e38e8491ac9f30147bc",
+     "record": "634f4d9345a1d35b2834a86f9c797957f0b13ab2737f5c44e511a58e383787c7",
+     "content": "a3989cbac7e0fb76c1638e5f67b94fe386ae3bd52d7fa977f1efe81076c6f3f7"
+    },
+    "source": {
+     "event": "385eaabecd1c35b2b5fbda0b796051bad510be5e1c614cf736573da7c779f25d",
+     "kind": "withdraw",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "origin of one snippet is not verified; license unknown"
+    },
+    "act": [
+     "b.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673914168,
+    "closed": 1791673953340
+   },
+   {
+    "id": "385eaabecd1c35b2:ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "item": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "evidence": {
+     "commit": "30416352d36e0c7be9ba814e6a98b3d7d52a8957",
+     "record": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+     "content": "1ffa1685bd56a1c341d0a498a055c1d21bb1e6301558a5f612e76dc036b459ff"
+    },
+    "source": {
+     "event": "385eaabecd1c35b2b5fbda0b796051bad510be5e1c614cf736573da7c779f25d",
+     "kind": "withdraw",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "origin of one snippet is not verified; license unknown"
+    },
+    "act": [
+     "b.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "dissent"
+    ],
+    "blocking": false,
+    "state": "open",
+    "opened": 1791673914168
+   }
+  ],
+  "intents": [
+   {
+    "org": "b",
+    "agent": "b1",
+    "line": "b1",
+    "files": [
+     "src/sign.ts"
+    ],
+    "task": "HMAC request signer",
+    "state": "closed",
+    "at": 1791673871102
+   },
+   {
+    "org": "b",
+    "agent": "b2",
+    "line": "b2",
+    "files": [
+     "test/sign.vectors.ts"
+    ],
+    "task": "Signer test vectors",
+    "state": "closed",
+    "at": 1791673904043
+   },
+   {
+    "org": "b",
+    "agent": "b2r",
+    "line": "b2",
+    "files": [
+     "test/sign.vectors.ts"
+    ],
+    "task": "Repair b2: Signer test vectors",
+    "state": "closed",
+    "at": 1791673949910
+   },
+   {
+    "org": "b",
+    "agent": "b3",
+    "line": "b3",
+    "files": [
+     "docs/signing.md"
+    ],
+    "task": "Signing documentation",
+    "state": "closed",
+    "at": 1791673904607
+   },
+   {
+    "org": "b",
+    "agent": "b4",
+    "line": "b1",
+    "files": [
+     "src/sign.ts"
+    ],
+    "task": "Clean signer written from the specification",
+    "state": "closed",
+    "at": 1791673940949
+   }
+  ],
+  "overlaps": [],
+  "main": [],
+  "ops": [],
+  "outbox": []
+ },
+ "c": {
+  "org": "c",
+  "integrator": "c",
+  "fingerprint": "b90ab5c89b3a3c22fac877286f6376ffb6da53fb82b33428b1ad486403c1c932",
+  "contributions": [
+   {
+    "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "org": "b",
+    "line": "b1",
+    "version": 1,
+    "agent": "b1",
+    "own": false,
+    "commit": "45f744371f558aaec79f3a3a2ea16491eecb6c5c",
+    "root": "428ee56ac5de7f45cf7fbd3105cd7e9e94c50cbd3f3b86179f51662aeeffa8a8",
+    "files": [
+     "src/sign.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [],
+    "task": "HMAC request signer",
+    "rationale": "HMAC-SHA256 request signer. One helper came from an outside snippet with an unverified license; recorded here.",
+    "verified": true,
+    "state": "withdrawn",
+    "cause": "origin of one snippet is not verified; license unknown",
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "b",
+     "purposes": [
+      "contribute",
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+    "org": "a",
+    "line": "a1",
+    "version": 1,
+    "agent": "a1",
+    "own": false,
+    "commit": "c6803a106475a895d204d4dbbb9472c4650de80f",
+    "root": "9f640225cf5f3ec45253cfe43ff4cb67608eb6b19f55454949f54dd5a073d8b6",
+    "files": [
+     "src/retry.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Add jitter to retry backoff",
+    "rationale": "Add full jitter so many clients do not retry in step.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "a",
+     "purposes": [
+      "contribute",
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "50f3a45510770debaa50208ba520507b93857b74d71bcecefe6f54b7bf3a1020",
+    "org": "c",
+    "line": "seed",
+    "version": 1,
+    "agent": "c.lead",
+    "own": true,
+    "commit": "98d6e7a8f6283701f5f551e9b76f77ac8ee2e30e",
+    "root": "139a56560d06252bba3448ce1c848b7f271f3e45f9b9a8822a9b21dba9f90603",
+    "files": [
+     "README.md",
+     "src/client.ts",
+     "src/ratelimit.ts",
+     "src/retry.ts",
+     "src/sign.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "seed the integration repository",
+    "rationale": "baseline for every agent fork",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": false,
+    "released": [
+     {
+      "to": "a",
+      "purposes": [
+       "contribute"
+      ],
+      "expires": 1791717066609,
+      "revoked": false,
+      "token": "tok_cc91ea4ca51ea187"
+     },
+     {
+      "to": "b",
+      "purposes": [
+       "contribute"
+      ],
+      "expires": 1791717066609,
+      "revoked": false,
+      "token": "tok_b5c89b88a75df679"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "62332f72ecfd4c9d694064713d8aec2796d3daff1394a2b72c033dcbfde0a76a",
+    "org": "c",
+    "line": "c5",
+    "version": 1,
+    "agent": "c5",
+    "own": true,
+    "commit": "de365196424d45074887468279bc40c5fdb6885c",
+    "root": "8ddd0d06026a1c815ffb75b4d36c07994318197645ce62f3c926588594c06dc8",
+    "files": [
+     "src/sign-cove.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [],
+    "task": "Cove signer for the gateway",
+    "rationale": "Cove's own HMAC signer for its gateway; same Signer interface.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [
+     {
+      "to": "a",
+      "purposes": [
+       "contribute",
+       "integrate"
+      ],
+      "expires": 1791695479907,
+      "revoked": false,
+      "token": "tok_406976726f069737"
+     }
+    ],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "81a5b7d0f42a21183616769e7e06595a7ea106cbd391425fdf92f93ceaba86f6",
+    "org": "b",
+    "line": "b2",
+    "version": 2,
+    "agent": "b2r",
+    "own": false,
+    "commit": "2da8027880c244408f23b8ff3bb9c30911993b6f",
+    "root": "a16ebea962c881a2ff89aeaf9cd50e24f2ac4cdc42dc06b4650e279cfc28184e",
+    "files": [
+     "test/sign.vectors.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+      "relation": "builds-on",
+      "label": "b1 v2"
+     }
+    ],
+    "task": "Repair b2: Signer test vectors",
+    "rationale": "Rebase the vectors on b1 v2. Inputs read: builds-on b/b1.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "b",
+     "purposes": [
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+    "org": "a",
+    "line": "a3",
+    "version": 1,
+    "agent": "a3",
+    "own": false,
+    "commit": "739b7a4fe4f3f16d4e05ba3cc8e7829015f4aabb",
+    "root": "5e7c59abc332d49859911347de6162393fbf9e1bfec3b9a7851701c32fc10b26",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "builds-on",
+      "label": "b1"
+     },
+     {
+      "id": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+      "relation": "builds-on",
+      "label": "a1"
+     }
+    ],
+    "task": "Signed retries",
+    "rationale": "Signed retries: re-sign each attempt with Birch's signer. Inputs read: builds-on b/b1, builds-on a/a1.",
+    "verified": true,
+    "state": "withdrawn",
+    "cause": "origin of one snippet is not verified; license unknown",
+    "shipped": false,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "a",
+     "purposes": [
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "99d785cbd445dfb2f895bb1281129318a8a71e642b442058c65c66cc5da0c416",
+    "org": "c",
+    "line": "c3",
+    "version": 1,
+    "agent": "c3",
+    "own": true,
+    "commit": "d9c52a05054274369ac6499fba7ce7c204ab9011",
+    "root": "8e67280178714bb4d446129211c15eba4050b7bbbeeba8fb40757f02508e5515",
+    "files": [
+     "src/client.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Request timeout",
+    "rationale": "Add a request timeout (default 10 s).",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "ac87cd73e489eed4f215d47af9892a090b9c0125f5aa3261d1647adb550c6e41",
+    "org": "a",
+    "line": "a2",
+    "version": 1,
+    "agent": "a2",
+    "own": false,
+    "commit": "810fcd139e67761a6259f3754a64a57d0831b5c8",
+    "root": "01b2cf35a726822d123fe8989955fb5ba6f852573cdc0c57d043d991e61a0b82",
+    "files": [
+     "src/retry.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Cap the retry delay",
+    "rationale": "Cap the retry delay at maxMs (default 30 s).",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": false,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "a",
+     "purposes": [
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "b10654f80f137f4ec6450e3b574168ab94524344d140147d0e389ccb4c37ee55",
+    "org": "a",
+    "line": "a2",
+    "version": 2,
+    "agent": "a2r",
+    "own": false,
+    "commit": "85ebc7c5116ce9f6e9b62ece443c5b9190dbd0b3",
+    "root": "c0864415e205fd6e293c23674af2425fe8faebb58b83a846633e9a079f1c22b6",
+    "files": [
+     "src/retry.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Repair a2: Cap the retry delay",
+    "rationale": "Rebase the delay cap on the jittered retry now on main.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "a",
+     "purposes": [
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "b8f7ef643b46ea8beaa6f850ddb201d7fd11ff3eae1b5587417d5dfabe800cdf",
+    "org": "c",
+    "line": "c2",
+    "version": 2,
+    "agent": "c2r",
+    "own": true,
+    "commit": "c93522ff3ba4af68a676097e605d48e4dbd3a7fc",
+    "root": "3a9f4fd976e834fa6fc8a60ad265efad8bfd971ad2fc06e0ab722dbc29fa4db2",
+    "files": [
+     "src/client.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+      "relation": "builds-on",
+      "label": "b1 v2"
+     }
+    ],
+    "task": "Repair c2: Sign each request when a secret is set",
+    "rationale": "Rebase on b1 v2: pass the key id to the new signer. Inputs read: builds-on b/b1.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "c21dc87bb36ce6d11f68f75b675141c73ec58ea95fe617e9edeb8dab1f7dcc41",
+    "org": "c",
+    "line": "c1",
+    "version": 1,
+    "agent": "c1",
+    "own": true,
+    "commit": "ffd622f2f00a7df1e15b36fd8095bdc536b3ddb3",
+    "root": "ba1b4432892ff79d59210bac94b417a1cd09bdac549025ee8c0ae0be5cc4001a",
+    "files": [
+     "src/ratelimit.ts"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "Burst option for the rate limiter",
+    "rationale": "Add a burst option to the rate limiter.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "org": "c",
+    "line": "c2",
+    "version": 1,
+    "agent": "c2",
+    "own": true,
+    "commit": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+    "root": "1eac98d9f940df5dc7474db73e8175b08eddc027f2d9f395c245f0fca375acf1",
+    "files": [
+     "src/client.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "builds-on",
+      "label": "b1"
+     }
+    ],
+    "task": "Sign each request when a secret is set",
+    "rationale": "Sign each request when a secret is set. Inputs read: builds-on b/b1.",
+    "verified": true,
+    "state": "withdrawn",
+    "cause": "origin of one snippet is not verified; license unknown",
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "d9fe1c01ee8d725ec046aee9ab05f58425bf5a697393efefb7c54083ea1b9a00",
+    "org": "c",
+    "line": "c4",
+    "version": 1,
+    "agent": "c4",
+    "own": true,
+    "commit": "abb1a3bb1992a8aee4ac3bc7d813ed65462e0536",
+    "root": "c731a247be08429cd31fb1b1932b9ffa16a8821546e28aed1c26d8e77c558c59",
+    "files": [
+     "README.md"
+    ],
+    "provides": [],
+    "inputs": [],
+    "task": "README update",
+    "rationale": "Unrelated README update during the incident.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": null,
+    "challenges": 0
+   },
+   {
+    "id": "dd48969362302b7bb173debd787267682a6de5e270b883bdff67c0a866990217",
+    "org": "a",
+    "line": "a3",
+    "version": 2,
+    "agent": "a3r",
+    "own": false,
+    "commit": "c29ab2ef5b964cbfeeb1fa47116b12dc1510a542",
+    "root": "54bffd75026b9f85cc3252ed10e21d037be291f33d1357ec2b25f6808042a1d6",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "62332f72ecfd4c9d694064713d8aec2796d3daff1394a2b72c033dcbfde0a76a",
+      "relation": "builds-on",
+      "label": "c5"
+     },
+     {
+      "id": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+      "relation": "builds-on",
+      "label": "a1"
+     }
+    ],
+    "task": "Repair a3: Signed retries",
+    "rationale": "Move onto Cove's released signer c5 after Birch withdrew b1. Inputs read: builds-on c/c5, builds-on a/a1.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "a",
+     "purposes": [
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "org": "b",
+    "line": "b3",
+    "version": 1,
+    "agent": "b3",
+    "own": false,
+    "commit": "30416352d36e0c7be9ba814e6a98b3d7d52a8957",
+    "root": "1ffa1685bd56a1c341d0a498a055c1d21bb1e6301558a5f612e76dc036b459ff",
+    "files": [
+     "docs/signing.md"
+    ],
+    "provides": [],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "cites",
+      "label": "b1"
+     }
+    ],
+    "task": "Signing documentation",
+    "rationale": "Documentation for signing. Cites b1; does not build on it. Inputs read: cites b/b1.",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "b",
+     "purposes": [
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   },
+   {
+    "id": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+    "org": "b",
+    "line": "b1",
+    "version": 2,
+    "agent": "b4",
+    "own": false,
+    "commit": "33fd87709a1d0260737cb0131e5f12b964263c2e",
+    "root": "e64c79c685182dd0e9c06eaeabc7808a9cb2c97c1c3086c1049dde6dc64c59a6",
+    "files": [
+     "src/sign.ts"
+    ],
+    "provides": [
+     "signer@1"
+    ],
+    "inputs": [
+     {
+      "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+      "relation": "supersedes",
+      "label": "b1"
+     }
+    ],
+    "task": "Clean signer written from the specification",
+    "rationale": "Clean replacement for b1, written from the specification. New signature hmacSigner(secret, keyId).",
+    "verified": true,
+    "state": "usable",
+    "cause": null,
+    "shipped": true,
+    "approved": true,
+    "released": [],
+    "held": {
+     "from": "b",
+     "purposes": [
+      "contribute",
+      "integrate"
+     ]
+    },
+    "challenges": 0
+   }
+  ],
+  "notices": [
+   {
+    "id": "062af84913616e13:ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "item": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "evidence": {
+     "commit": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+     "record": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+     "content": "1eac98d9f940df5dc7474db73e8175b08eddc027f2d9f395c245f0fca375acf1"
+    },
+    "source": {
+     "event": "062af84913616e138e512570ddde2c21fa4888b42469ceb89d27ab43a736e663",
+     "kind": "correct",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "superseded by b1 v2"
+    },
+    "act": [
+     "c.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673947141,
+    "closed": 1791673955097
+   },
+   {
+    "id": "062af84913616e13:main:149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "item": "main:149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "evidence": {
+     "commit": "45f744371f558aaec79f3a3a2ea16491eecb6c5c",
+     "record": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "content": "428ee56ac5de7f45cf7fbd3105cd7e9e94c50cbd3f3b86179f51662aeeffa8a8"
+    },
+    "source": {
+     "event": "062af84913616e138e512570ddde2c21fa4888b42469ceb89d27ab43a736e663",
+     "kind": "correct",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "superseded by b1 v2"
+    },
+    "act": [
+     "c.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673947141,
+    "closed": 1791673958992
+   },
+   {
+    "id": "062af84913616e13:main:ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "item": "main:ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "evidence": {
+     "commit": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+     "record": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+     "content": "1eac98d9f940df5dc7474db73e8175b08eddc027f2d9f395c245f0fca375acf1"
+    },
+    "source": {
+     "event": "062af84913616e138e512570ddde2c21fa4888b42469ceb89d27ab43a736e663",
+     "kind": "correct",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "superseded by b1 v2"
+    },
+    "act": [
+     "c.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673947141,
+    "closed": 1791673961112
+   },
+   {
+    "id": "385eaabecd1c35b2:ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "item": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "evidence": {
+     "commit": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+     "record": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+     "content": "1eac98d9f940df5dc7474db73e8175b08eddc027f2d9f395c245f0fca375acf1"
+    },
+    "source": {
+     "event": "385eaabecd1c35b2b5fbda0b796051bad510be5e1c614cf736573da7c779f25d",
+     "kind": "withdraw",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "origin of one snippet is not verified; license unknown"
+    },
+    "act": [
+     "c.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673914304,
+    "closed": 1791673955097
+   },
+   {
+    "id": "385eaabecd1c35b2:main:149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "item": "main:149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "evidence": {
+     "commit": "45f744371f558aaec79f3a3a2ea16491eecb6c5c",
+     "record": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "content": "428ee56ac5de7f45cf7fbd3105cd7e9e94c50cbd3f3b86179f51662aeeffa8a8"
+    },
+    "source": {
+     "event": "385eaabecd1c35b2b5fbda0b796051bad510be5e1c614cf736573da7c779f25d",
+     "kind": "withdraw",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "origin of one snippet is not verified; license unknown"
+    },
+    "act": [
+     "c.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673914304,
+    "closed": 1791673958992
+   },
+   {
+    "id": "385eaabecd1c35b2:main:ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "item": "main:ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "evidence": {
+     "commit": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+     "record": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+     "content": "1eac98d9f940df5dc7474db73e8175b08eddc027f2d9f395c245f0fca375acf1"
+    },
+    "source": {
+     "event": "385eaabecd1c35b2b5fbda0b796051bad510be5e1c614cf736573da7c779f25d",
+     "kind": "withdraw",
+     "org": "b",
+     "target": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+     "reason": "origin of one snippet is not verified; license unknown"
+    },
+    "act": [
+     "c.lead"
+    ],
+    "dissent": [],
+    "repairs": [
+     "rebase",
+     "withdraw",
+     "dissent"
+    ],
+    "blocking": true,
+    "state": "closed",
+    "opened": 1791673914304,
+    "closed": 1791673961112
+   }
+  ],
+  "intents": [
+   {
+    "org": "a",
+    "agent": "a1",
+    "line": "a1",
+    "files": [
+     "src/retry.ts"
+    ],
+    "task": "Add jitter to retry backoff",
+    "state": "closed",
+    "at": 1791673877468
+   },
+   {
+    "org": "a",
+    "agent": "a2",
+    "line": "a2",
+    "files": [
+     "src/retry.ts"
+    ],
+    "task": "Cap the retry delay",
+    "state": "closed",
+    "at": 1791673878855
+   },
+   {
+    "org": "a",
+    "agent": "a2r",
+    "line": "a2",
+    "files": [
+     "src/retry.ts"
+    ],
+    "task": "Repair a2: Cap the retry delay",
+    "state": "closed",
+    "at": 1791673898824
+   },
+   {
+    "org": "a",
+    "agent": "a3",
+    "line": "a3",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "task": "Signed retries",
+    "state": "closed",
+    "at": 1791673911459
+   },
+   {
+    "org": "a",
+    "agent": "a3r",
+    "line": "a3",
+    "files": [
+     "src/signed-retry.ts"
+    ],
+    "task": "Repair a3: Signed retries",
+    "state": "closed",
+    "at": 1791673935533
+   },
+   {
+    "org": "b",
+    "agent": "b1",
+    "line": "b1",
+    "files": [
+     "src/sign.ts"
+    ],
+    "task": "HMAC request signer",
+    "state": "closed",
+    "at": 1791673876063
+   },
+   {
+    "org": "b",
+    "agent": "b2",
+    "line": "b2",
+    "files": [
+     "test/sign.vectors.ts"
+    ],
+    "task": "Signer test vectors",
+    "state": "closed",
+    "at": 1791673908529
+   },
+   {
+    "org": "b",
+    "agent": "b2r",
+    "line": "b2",
+    "files": [
+     "test/sign.vectors.ts"
+    ],
+    "task": "Repair b2: Signer test vectors",
+    "state": "closed",
+    "at": 1791673953878
+   },
+   {
+    "org": "b",
+    "agent": "b3",
+    "line": "b3",
+    "files": [
+     "docs/signing.md"
+    ],
+    "task": "Signing documentation",
+    "state": "closed",
+    "at": 1791673908757
+   },
+   {
+    "org": "b",
+    "agent": "b4",
+    "line": "b1",
+    "files": [
+     "src/sign.ts"
+    ],
+    "task": "Clean signer written from the specification",
+    "state": "closed",
+    "at": 1791673947141
+   },
+   {
+    "org": "c",
+    "agent": "c1",
+    "line": "c1",
+    "files": [
+     "src/ratelimit.ts"
+    ],
+    "task": "Burst option for the rate limiter",
+    "state": "closed",
+    "at": 1791673871819
+   },
+   {
+    "org": "c",
+    "agent": "c2",
+    "line": "c2",
+    "files": [
+     "src/client.ts"
+    ],
+    "task": "Sign each request when a secret is set",
+    "state": "closed",
+    "at": 1791673904336
+   },
+   {
+    "org": "c",
+    "agent": "c2r",
+    "line": "c2",
+    "files": [
+     "src/client.ts"
+    ],
+    "task": "Repair c2: Sign each request when a secret is set",
+    "state": "closed",
+    "at": 1791673950084
+   },
+   {
+    "org": "c",
+    "agent": "c3",
+    "line": "c3",
+    "files": [
+     "src/client.ts"
+    ],
+    "task": "Request timeout",
+    "state": "closed",
+    "at": 1791673871806
+   },
+   {
+    "org": "c",
+    "agent": "c4",
+    "line": "c4",
+    "files": [
+     "README.md"
+    ],
+    "task": "README update",
+    "state": "closed",
+    "at": 1791673917902
+   },
+   {
+    "org": "c",
+    "agent": "c5",
+    "line": "c5",
+    "files": [
+     "src/sign-cove.ts"
+    ],
+    "task": "Cove signer for the gateway",
+    "state": "closed",
+    "at": 1791673871518
+   }
+  ],
+  "overlaps": [
+   {
+    "id": "a/a1+a/a2",
+    "a": {
+     "org": "a",
+     "agent": "a2"
+    },
+    "b": {
+     "org": "a",
+     "agent": "a1"
+    },
+    "files": [
+     "src/retry.ts"
+    ],
+    "at": 1791673872138
+   }
+  ],
+  "main": [
+   {
+    "head": "98d6e7a8f6283701f5f551e9b76f77ac8ee2e30e",
+    "id": null,
+    "files": []
+   },
+   {
+    "head": "ffd622f2f00a7df1e15b36fd8095bdc536b3ddb3",
+    "id": "c21dc87bb36ce6d11f68f75b675141c73ec58ea95fe617e9edeb8dab1f7dcc41",
+    "files": [
+     "src/ratelimit.ts"
+    ]
+   },
+   {
+    "head": "a81a97ba048113c0fa157b5b03162e3dd9a9b913",
+    "id": "99d785cbd445dfb2f895bb1281129318a8a71e642b442058c65c66cc5da0c416",
+    "files": [
+     "src/client.ts"
+    ]
+   },
+   {
+    "head": "13c76c35c44e45febff84903191f37ed0ca48665",
+    "id": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+    "files": [
+     "src/retry.ts"
+    ]
+   },
+   {
+    "head": "968e252f45e89ba511bc418defd638b39fa3dc52",
+    "id": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "files": [
+     "src/sign.ts"
+    ]
+   },
+   {
+    "head": "51a63ba4fa0d10a21ec2adde8a3f30331e4a8d46",
+    "id": "62332f72ecfd4c9d694064713d8aec2796d3daff1394a2b72c033dcbfde0a76a",
+    "files": [
+     "src/sign-cove.ts"
+    ]
+   },
+   {
+    "head": "85ebc7c5116ce9f6e9b62ece443c5b9190dbd0b3",
+    "id": "b10654f80f137f4ec6450e3b574168ab94524344d140147d0e389ccb4c37ee55",
+    "files": [
+     "src/retry.ts"
+    ]
+   },
+   {
+    "head": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+    "id": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "files": [
+     "src/client.ts"
+    ]
+   },
+   {
+    "head": "abb1a3bb1992a8aee4ac3bc7d813ed65462e0536",
+    "id": "d9fe1c01ee8d725ec046aee9ab05f58425bf5a697393efefb7c54083ea1b9a00",
+    "files": [
+     "README.md"
+    ]
+   },
+   {
+    "head": "5b0c153857a63fa61dc2908a31fea2c05b8d0fcd",
+    "id": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "files": [
+     "docs/signing.md"
+    ]
+   },
+   {
+    "head": "c29ab2ef5b964cbfeeb1fa47116b12dc1510a542",
+    "id": "dd48969362302b7bb173debd787267682a6de5e270b883bdff67c0a866990217",
+    "files": [
+     "src/signed-retry.ts"
+    ]
+   },
+   {
+    "head": "33fd87709a1d0260737cb0131e5f12b964263c2e",
+    "id": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+    "files": [
+     "src/sign.ts"
+    ]
+   },
+   {
+    "head": "4f95b550dc90c4203e5462f363393b6c372a3f67",
+    "id": "b8f7ef643b46ea8beaa6f850ddb201d7fd11ff3eae1b5587417d5dfabe800cdf",
+    "files": [
+     "src/client.ts"
+    ]
+   },
+   {
+    "head": "27930240ee21dd1879a4002be4eed18616bbed02",
+    "id": "81a5b7d0f42a21183616769e7e06595a7ea106cbd391425fdf92f93ceaba86f6",
+    "files": [
+     "test/sign.vectors.ts"
+    ]
+   }
+  ],
+  "ops": [
+   {
+    "id": "0a0f80f88ea5741bf90ca6dbfc964d0e",
+    "contribution": "62332f72ecfd4c9d694064713d8aec2796d3daff1394a2b72c033dcbfde0a76a",
+    "expectedHead": "968e252f45e89ba511bc418defd638b39fa3dc52",
+    "state": "merged",
+    "at": 1791673890106,
+    "head": "51a63ba4fa0d10a21ec2adde8a3f30331e4a8d46"
+   },
+   {
+    "id": "2e471a3f22dfa9aacc9d0b703e3b4c1b",
+    "contribution": "34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660",
+    "expectedHead": "a81a97ba048113c0fa157b5b03162e3dd9a9b913",
+    "state": "merged",
+    "at": 1791673886652,
+    "head": "13c76c35c44e45febff84903191f37ed0ca48665"
+   },
+   {
+    "id": "3a3110cac9b86396c04af569ca169160",
+    "contribution": "b10654f80f137f4ec6450e3b574168ab94524344d140147d0e389ccb4c37ee55",
+    "expectedHead": "51a63ba4fa0d10a21ec2adde8a3f30331e4a8d46",
+    "state": "merged",
+    "at": 1791673899375,
+    "head": "85ebc7c5116ce9f6e9b62ece443c5b9190dbd0b3"
+   },
+   {
+    "id": "43db8dc3fb7e55e4ed94fe6f15964f4a",
+    "contribution": "d9fe1c01ee8d725ec046aee9ab05f58425bf5a697393efefb7c54083ea1b9a00",
+    "expectedHead": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+    "state": "merged",
+    "at": 1791673921568,
+    "head": "abb1a3bb1992a8aee4ac3bc7d813ed65462e0536"
+   },
+   {
+    "id": "4b558f01aba7678b5853210b4b5e60b9",
+    "contribution": "81a5b7d0f42a21183616769e7e06595a7ea106cbd391425fdf92f93ceaba86f6",
+    "expectedHead": "4f95b550dc90c4203e5462f363393b6c372a3f67",
+    "state": "merged",
+    "at": 1791673961332,
+    "head": "27930240ee21dd1879a4002be4eed18616bbed02"
+   },
+   {
+    "id": "4cc0f3ba59f6e4cc83d9644196a7ac01",
+    "contribution": "ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217",
+    "expectedHead": "abb1a3bb1992a8aee4ac3bc7d813ed65462e0536",
+    "state": "merged",
+    "at": 1791673925242,
+    "head": "5b0c153857a63fa61dc2908a31fea2c05b8d0fcd"
+   },
+   {
+    "id": "826e99acb451f637dcb0d8c38e7975c9",
+    "contribution": "b8f7ef643b46ea8beaa6f850ddb201d7fd11ff3eae1b5587417d5dfabe800cdf",
+    "expectedHead": "33fd87709a1d0260737cb0131e5f12b964263c2e",
+    "state": "merged",
+    "at": 1791673959276,
+    "head": "4f95b550dc90c4203e5462f363393b6c372a3f67"
+   },
+   {
+    "id": "8a3dea96fdcfe1876615cde9a98016ce",
+    "contribution": "c21dc87bb36ce6d11f68f75b675141c73ec58ea95fe617e9edeb8dab1f7dcc41",
+    "expectedHead": "98d6e7a8f6283701f5f551e9b76f77ac8ee2e30e",
+    "state": "merged",
+    "at": 1791673883184,
+    "head": "ffd622f2f00a7df1e15b36fd8095bdc536b3ddb3"
+   },
+   {
+    "id": "a63dbd073ac395ae04a2731b109710f4",
+    "contribution": "f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af",
+    "expectedHead": "c29ab2ef5b964cbfeeb1fa47116b12dc1510a542",
+    "state": "merged",
+    "at": 1791673957395,
+    "head": "33fd87709a1d0260737cb0131e5f12b964263c2e"
+   },
+   {
+    "id": "b4c77204dfda1a7a1cb1d4da4df7392c",
+    "contribution": "ac87cd73e489eed4f215d47af9892a090b9c0125f5aa3261d1647adb550c6e41",
+    "expectedHead": "51a63ba4fa0d10a21ec2adde8a3f30331e4a8d46",
+    "state": "refused",
+    "code": "stale-base",
+    "at": 1791673892073
+   },
+   {
+    "id": "c0c8ecd2876c141db9d86f5295fb9e41",
+    "contribution": "149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99",
+    "expectedHead": "13c76c35c44e45febff84903191f37ed0ca48665",
+    "state": "merged",
+    "at": 1791673888204,
+    "head": "968e252f45e89ba511bc418defd638b39fa3dc52"
+   },
+   {
+    "id": "c340abe242b5b75fc8d203efccee91dd",
+    "contribution": "ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028",
+    "expectedHead": "85ebc7c5116ce9f6e9b62ece443c5b9190dbd0b3",
+    "state": "merged",
+    "at": 1791673912003,
+    "head": "c1fcd047d705931918fd8f84984fb0a97c2198f2"
+   },
+   {
+    "id": "cc89176b7ac4f08e04ffe641bb288c55",
+    "contribution": "971056021fe1c59889986cd710c8d2651d6301e6dafdb254d643d272da20e951",
+    "expectedHead": "c1fcd047d705931918fd8f84984fb0a97c2198f2",
+    "state": "refused",
+    "code": "withdrawn",
+    "at": 1791673915141
+   },
+   {
+    "id": "e963deb6f2011d9d2894c85a3fa274c1",
+    "contribution": "dd48969362302b7bb173debd787267682a6de5e270b883bdff67c0a866990217",
+    "expectedHead": "5b0c153857a63fa61dc2908a31fea2c05b8d0fcd",
+    "state": "merged",
+    "at": 1791673936113,
+    "head": "c29ab2ef5b964cbfeeb1fa47116b12dc1510a542"
+   },
+   {
+    "id": "ee348b730ac29a10221174f5ab8dcb7c",
+    "contribution": "99d785cbd445dfb2f895bb1281129318a8a71e642b442058c65c66cc5da0c416",
+    "expectedHead": "ffd622f2f00a7df1e15b36fd8095bdc536b3ddb3",
+    "state": "merged",
+    "at": 1791673884957,
+    "head": "a81a97ba048113c0fa157b5b03162e3dd9a9b913"
+   }
+  ],
+  "outbox": []
+ }
+}

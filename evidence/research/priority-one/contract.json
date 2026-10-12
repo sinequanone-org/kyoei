@@ -1,0 +1,235 @@
+{
+  "alert_rule": {
+    "consequential": "First permitted notification matching frozen active descendant closure.",
+    "fail": "Ratio greater than 1, any false positive/negative in exact-set acceptance, or repair consisting only of bulk acknowledgment fails P1.6. This chosen tolerance is not observed human preference.",
+    "max_unnecessary_per_consequential": 1,
+    "unit": "Unique (change_id, recipient, affected managed output) notification requiring attention; repeated prompts for the same triple count as unnecessary. Delivery retry without another prompt is not another alert.",
+    "unnecessary": "False-positive output or repeated prompt; missing required alerts reported separately.",
+    "zero_denominator": "0/0 is 0; positive/0 is infinity; report counts beside ratio."
+  },
+  "arms": [
+    {
+      "equipment": "Per-institution Git repos, standard-library workflow glue, R121 current-status pulls, signed actors/grants/statuses, dependency register and citation bounds/packet membership/claim binding/expiry checks. Implement equivalent capture, lease, shared draft, repair, proof interfaces and automation; existing tested crypto primitives may be reused in both.",
+      "id": "reference",
+      "order": 0
+    },
+    {
+      "equipment": "Document client, Kyoei workspace and agent adapter; Git not required to participate.",
+      "id": "kyoei-documents",
+      "order": 1
+    },
+    {
+      "equipment": "Same Kyoei clients/authority, optional read-only committed-blob adapter.",
+      "id": "kyoei-git",
+      "order": 2
+    }
+  ],
+  "artifacts": {
+    "expected-graph.json": "7b3e8ae14ddf2eee26624f0c0a034743304c84900d9afb599436033a982eb70d",
+    "scenario.json": "8118f3e0d5340ce7c0daab04784ade8dd4e69c3618960066a49912262e396b58"
+  },
+  "authority": [
+    "docs/PRODUCT-VISION.md",
+    "docs/MRD.md",
+    "docs/PRD.md",
+    "docs/ROADMAP.md"
+  ],
+  "comparison": {
+    "failure": "Never hide an unimplemented or failing reference path; report it and withhold superiority on that measure until equipment matches.",
+    "falsifier": "If reference requires no more application code/configuration/recovery and matches throughput/failures, report tie and apply MRD market/scope gate. Do not add mechanism to create a gap.",
+    "human_fields": [
+      "human_effort_seconds",
+      "independent_quality",
+      "human_setup_seconds",
+      "cost_savings",
+      "adoption"
+    ],
+    "human_value": null,
+    "reference_first": "Implement, qualify and record reference values with source/config/trace hashes before executing measured Kyoei arms. Identical host budgets, payloads, fault ordering, actors, trust roots, automation and proof guarantee; no extra reviewer. Exclude warm-up from both. Record run order and machine load; no population inference from one-host timing."
+  },
+  "decided": "2026-09-26",
+  "equivalence": {
+    "deny_all": "Successful baseline, repaired output, local draft and unrelated-use controls mandatory.",
+    "fields": [
+      "decision",
+      "reason",
+      "affected_outputs",
+      "repair_routes",
+      "attribution",
+      "content_digest",
+      "purpose",
+      "recipients",
+      "expiry",
+      "assessment",
+      "proof_state"
+    ],
+    "forbidden_authority": [
+      "commit",
+      "push",
+      "merge",
+      "tag",
+      "force-push",
+      "history-rewrite",
+      "tag-delete"
+    ],
+    "ignored": [
+      "source_locator",
+      "transport_request_id",
+      "signature_bytes",
+      "wall_timing"
+    ],
+    "key": [
+      "event_id",
+      "fault_class",
+      "freshness_mode"
+    ],
+    "normalization": "Only explicit source locators and generated request/signature/timing fields may differ. Compare aliases via digest map, sorted set-valued fields, stable refusal codes. Do not discard arbitrary IDs, reasons, dependency structure or authorization fields."
+  },
+  "id": "kyoei-priority-one-v1",
+  "interface_rule": "Scenario actions only via workspace CLI and one agent adapter; driver must not import stores, sqlite/database libraries or edit databases. A separate evaluator may inspect snapshots read-only for graph/secret-leak audits. Fault injector is separate, labelled and limited to fault cases; its calls never count as participant workflow.",
+  "lifecycle": {
+    "amendment": "Never edit v1 in place. Create a versioned successor with rationale and new digest before collecting affected data; retain and report v1 results and deviations.",
+    "archive": "Local bytes and code pin only; not committed/pushed or externally timestamped by this freeze. Record external archive separately if later authorized.",
+    "reports": "Every subsequent Priority 1 report contains contract_digest, source digests, arm, source mode, freshness mode, environment, raw event/timing paths, deviations and missing fields. Missing is null, never zero."
+  },
+  "limits": [
+    "One host/operator controls simulated institutions; separate keys/stores are not independent administration.",
+    "Signatures do not establish human expertise or legal authority.",
+    "Declared unmanaged inputs and copied plaintext are outside capture; revocation is not erasure.",
+    "D-1 is not D-2 proof delivery, and P1.0 is neither."
+  ],
+  "measures": {
+    "application_code": {
+      "exclusions": "Fixtures, tests, measurement harness, declarative config and installed third-party crypto implementations excluded from adopter lines but listed separately by digest/version/license and supplier size where available. Equal crypto dependency in both arms. Report supplier code so moving code into a library cannot be called total complexity reduction.",
+      "inventory": "List each authored executable file by role, SHA-256, arm, maintained-by and logical lines. Kyoei adopter adapters/glue count; reusable Kyoei runtime is supplier code reported separately. Reference includes all workflow, policy, federation, copied/reused R121 glue beyond Git/stdlib. Shared adopter files count in full in each arm once, not once per institution. Identical renamed/copied blobs deduplicate by digest within an arm. Do not omit generated maintained logic.",
+      "rule": "Parse Python with ast without execution; tokenize source. Count each nonempty logical NEWLINE segment and each semicolon-separated nonempty segment. Ignore blank/comment/indent/dedent/NL tokens. Multiline strings including docstrings count once. One-line suites count once per semicolon segment. All executable/config glue must be Python for a comparable total; otherwise report unsupported separately and no total advantage.",
+      "unit": "python-logical-lines-v1"
+    },
+    "concurrent_throughput": {
+      "actors": [
+        1,
+        3,
+        9,
+        27
+      ],
+      "issuer_delay_ms": [
+        0,
+        250
+      ],
+      "measured_operations_per_actor": 20,
+      "repetitions": 5,
+      "timeout_ms": 5000,
+      "timing": "Barrier release starts cell timer; end after all completions/timeouts. Latency from client dispatch including queueing, IPC/status/locking to final result; report all-attempt and successful latency separately. p50/p95 are nearest-rank sorted observations ceil(p*n), null when n=0. Throughput is successful expected results / wall seconds; report attempted throughput, errors, conflicts and timeout counts. Report five cell values and median; never silently retry/drop failures. Also record CPU time, peak RSS method, bytes and status fetch count.",
+      "unit": "successful expected operations/second; nanoseconds",
+      "warmup_operations_per_actor": 5,
+      "workload": "Separate retrieval-only and mixed workloads; mixed each actor repeats [retrieve, local-draft, retrieve, shared-draft-CAS] five times after warmup. Each CAS uses observed head; conflicts are reported, never dropped. Fresh isolated fixture per cell/arm/repetition. Fixed B issuer delay before each response outside DB; concurrency across distinct requests permitted. Same 19-node fixture, below the current 1024 cap."
+    },
+    "configuration_burden": {
+      "commands": "Count every top-level setup client invocation from empty persistent state through first exchange, including failures/retries. Internal RPCs counted separately; no batching hides decisions. Machine setup time uses perf_counter_ns from first setup process start to first successful exchange; report cached dependency setup separately, no human-time substitution.",
+      "rule": "A decision is each named user-chosen semantic field required before first successful exchange: per institution count credential/trust pin/endpoint/store/delegation/release/retention/terms values by distinct config key, even when a template fills them. Derived identifiers and fixed invariant defaults are not decisions; record them. List shared choices separately and count full shared choices in each arm, not multiply by three.",
+      "unit": "decisions, commands, nanoseconds"
+    },
+    "dependency_coverage": {
+      "coverage": "Automatic supported retrieval/derivation paths separate from manually declared/imported paths. Denominator authored before implementation, never regenerated by capture. Attempt bypass via undeclared copy explicitly reports unmanaged/out-of-coverage, not a successful capture.",
+      "ratio": "TP/expected; empty expected is null with counts, never 100%. Pass requires exact expected edges on supported paths, zero unauthorized edges, zero bypasses. Shared expected graph is evaluator-only; validate B-local release bindings without exporting private graph.",
+      "rule": "Frozen expected edges are directed (child,parent,kind). Count use and release-binding edges separately on each active snapshot. TP=observed intersect expected; missing=expected minus observed; extra=observed minus expected. Unauthorized means edges exposing/consuming outside grants; extra legitimate declared relations are reported separately, never silently unioned into capture.",
+      "unit": "edge counts and ratio per source path"
+    },
+    "operational_failures": {
+      "rule": "Each frozen fault class has positive and negative control, repeated 3 times per arm/source/freshness condition. Report expected and actual allowed/denied, wrongly blocked valid uses, obsolete/unauthorized accepted uses, lost updates, disclosure leaks, crash/timeouts, duplicate effects and recovery outcome. Missing case is null/not-run, never pass.",
+      "staleness": "Count owner-withdrawn local uses inside unseen valid leases separately as bounded stale local use; never report zero stale use from zero obsolete exchange. Zero unauthorized or obsolete exchanges, zero lost updates and zero prohibited disclosures required.",
+      "unit": "counts by fault class and consequence"
+    },
+    "recovery_steps": {
+      "constraints": "No bulk acknowledgment masquerades as repair; zero revived withdrawn use. Count shared-draft rebase/retry and file-exchange reference steps by same rule.",
+      "rule": "For each injected fault count all client actions after fault injection through first permitted repaired use, including failed attempts, acknowledgment, replacement request, re-derivation and assessment. Fault injection/restart infrastructure are separately counted; automatic background repair requests count as machine actions. Compound client action counts once but list its semantic transitions/RPCs. Unrepaired state is null with attempted count, never zero.",
+      "unit": "top-level client actions"
+    }
+  },
+  "predictions": [
+    {
+      "id": "enforcement",
+      "prediction": "Equipped reference and Kyoei tie; zero unauthorized/obsolete exchange on supported paths."
+    },
+    {
+      "id": "latency",
+      "prediction": "Kyoei is slower per strict read; R121 prior medians 32.3 vs 15.6 ms are context, not new measurements."
+    },
+    {
+      "id": "integration",
+      "prediction": "Possible advantage in adopter code/configuration/recovery, not guaranteed; report ties and losses."
+    },
+    {
+      "id": "git-equivalence",
+      "prediction": "Git and documents produce identical semantic outcomes."
+    },
+    {
+      "id": "local-first",
+      "prediction": "Local-only drafting continues during outage; lease reduces valid refusals but admits bounded staleness; strict exchange remains mandatory."
+    },
+    {
+      "id": "shared-drafts",
+      "prediction": "CAS prevents lost updates; whether it reduces steps/code versus exchange is unknown."
+    },
+    {
+      "id": "human-benefit",
+      "prediction": "Unmeasured; no productivity, independent quality, market demand or institutional-independence inference."
+    }
+  ],
+  "proof_profile": {
+    "crypto_qualification": "Proof system, library/version, commitment construction, circuit/verifier digests, setup assumptions and cryptographic review are NOT SELECTED by P1.0. Freeze a supplemental implementation profile before D-2 prover code or result collection; both arms use the same guarantee. An attestation/mock never satisfies P-06.",
+    "delivery": "D-2; D-1 returns unsupported and cannot pass P-06.",
+    "id": "p1-table-shape-v1",
+    "k": 8,
+    "leakage": "Public profile bounds and success (n>=8), hiding commitment and approved release context; exact n, rows and blinding remain private. One fixed k per table version per purpose; owner refuses adaptive threshold requests.",
+    "max_rows": 16,
+    "min_rows": 0,
+    "negative_cases": [
+      "n=7",
+      "n=17",
+      "duplicate-row-id",
+      "score=1001",
+      "wrong-column",
+      "wrong-commitment",
+      "tampered-proof",
+      "wrong-recipient",
+      "wrong-purpose",
+      "wrong-artifact",
+      "expired-wrapper",
+      "replayed-request",
+      "withdrawn-release",
+      "unsupported-profile"
+    ],
+    "predicate": "The committed table has 8 <= n <= 16 rows; every active row satisfies S1; inactive slots canonical padded; row IDs strictly increasing. Does not prove real-world uniqueness, correctness, clinical validity or the released aggregate computation.",
+    "public_inputs": [
+      "profile_id",
+      "predicate_version",
+      "hiding_commitment",
+      "released_artifact_digest",
+      "request_nonce",
+      "recipient",
+      "purpose"
+    ],
+    "schema": {
+      "additional_columns": false,
+      "columns": {
+        "arm": "integer in {0,1}",
+        "row_id": "integer 1..65535, pairwise distinct",
+        "score": "integer 0..1000"
+      },
+      "id": "S1",
+      "row_order": "ascending row_id"
+    },
+    "task": "C may mark assessment proof-qualified only after verifying this predicate, exact context and current release authority; failure/unsupported defers that task. D-1 non-proof diagnostic analysis is visibly separate.",
+    "witness": "B-local ordered table, row count, padding and fresh secret commitment blinding; no raw row/guessable-value hash is an acceptable hiding commitment.",
+    "wrapper": [
+      "institution_signature",
+      "expiry",
+      "grant_version",
+      "replay_id"
+    ]
+  },
+  "scope": "P1.0 only: prospective contract, not D-1 execution, product evidence or externally archived preregistration.",
+  "status": "frozen-enabling",
+  "version": 1
+}

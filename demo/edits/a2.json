@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/retry.ts",
+   "text": "export interface RetryOptions { retries: number; baseMs: number; maxMs?: number }\n\n// Cap the delay so a long outage does not produce very long waits.\nexport function delayFor(attempt: number, o: RetryOptions): number {\n  return Math.min(o.maxMs ?? 30_000, o.baseMs * 2 ** attempt);\n}\n"
+  }
+ ],
+ "rationale": "Cap the retry delay at maxMs (default 30 s).",
+ "delayMs": 5600
+}

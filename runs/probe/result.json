@@ -1,0 +1,202 @@
+{
+ "date": "2026-10-11",
+ "worker": "kyoei-probe",
+ "note": "tools/probe/probe.ts on a live account; repositories deleted after the run",
+ "checks": [
+  {
+   "check": "create repository",
+   "ok": true,
+   "ms": 1895,
+   "detail": "kyoei-probe/src-mv2zx235"
+  },
+  {
+   "check": "mint write token",
+   "ok": true,
+   "ms": 69,
+   "detail": "art_v2_"
+  },
+  {
+   "check": "commit and push from Worker (root commit)",
+   "ok": true,
+   "ms": 706,
+   "detail": "a9818cece3e66d4caee4e7d29ca28477808e6849"
+  },
+  {
+   "check": "commit on parent",
+   "ok": true,
+   "ms": 340,
+   "detail": "bf2dd2debf72736bbb1a5e9ec287096cc9eb2767"
+  },
+  {
+   "check": "non-fast-forward push is refused",
+   "ok": true,
+   "ms": 236,
+   "detail": "Push rejected because it was not a simple fast-forward. Use \"force: true\" to override."
+  },
+  {
+   "check": "push git note refs/notes/kyoei",
+   "ok": true,
+   "ms": 382
+  },
+  {
+   "check": "mint read token",
+   "ok": true,
+   "ms": 71,
+   "detail": "art_v2_"
+  },
+  {
+   "check": "read head with read token",
+   "ok": true,
+   "ms": 123,
+   "detail": "bf2dd2debf72736bbb1a5e9ec287096cc9eb2767"
+  },
+  {
+   "check": "read note with read token",
+   "ok": true,
+   "ms": 338,
+   "detail": "{\"probe\":true}\n"
+  },
+  {
+   "check": "snapshot with read token",
+   "ok": true,
+   "ms": 167,
+   "detail": [
+    "100644 README.md 6",
+    "100644 src/a.ts 20"
+   ]
+  },
+  {
+   "check": "push with read token is refused",
+   "ok": true,
+   "ms": 207,
+   "detail": "HTTP Error: 403 Forbidden"
+  },
+  {
+   "check": "fork in namespace",
+   "ok": true,
+   "ms": 2912,
+   "detail": "kyoei-probe/fork-mv2zx235"
+  },
+  {
+   "check": "create second repository and copy by read token",
+   "ok": true,
+   "ms": 2524,
+   "detail": "bf2dd2debf72736bbb1a5e9ec287096cc9eb2767"
+  },
+  {
+   "check": "merge into stale expected head is refused",
+   "ok": true,
+   "ms": 332,
+   "detail": "stale"
+  },
+  {
+   "check": "revoke read token",
+   "ok": true,
+   "ms": 57,
+   "detail": true
+  },
+  {
+   "check": "read with revoked token is refused",
+   "ok": true,
+   "ms": 36,
+   "detail": "HTTP Error: 403 Forbidden"
+  },
+  {
+   "check": "ML-DSA-65 sign and verify",
+   "ok": true,
+   "ms": 0,
+   "detail": {
+    "verified": true,
+    "tampered": false
+   }
+  },
+  {
+   "check": "Workers AI raw @cf/moonshotai/kimi-k2.7-code",
+   "ok": true,
+   "ms": 1133,
+   "detail": {
+    "keys": [
+     "id",
+     "object",
+     "created",
+     "model",
+     "choices",
+     "usage"
+    ],
+    "responseType": "undefined",
+    "sample": "{\"id\":\"aa6b3cc38e504c778faa9e48cfc9fe1a\",\"object\":\"chat.completion\",\"created\":1791673134,\"model\":\"@cf/moonshotai/kimi-k2.7-code\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"rationale\\\": \\\"ok\\\", \\\"files\\\": []}\",\"reasoning_content\":\"We need answer with exact JSON? User says Return JSON {\\\"rationale\\\": \\\"ok\\\", \\\"files\\\": []}. So we should output just that JSON.\"},\"finish_reason\""
+   }
+  },
+  {
+   "check": "Workers AI raw @cf/openai/gpt-oss-120b",
+   "ok": true,
+   "ms": 555,
+   "detail": {
+    "keys": [
+     "id",
+     "object",
+     "created",
+     "model",
+     "choices",
+     "service_tier",
+     "usage",
+     "prompt_logprobs",
+     "prompt_token_ids",
+     "prompt_text",
+     "kv_transfer_params",
+     "ec_transfer_params",
+     "metrics"
+    ],
+    "responseType": "undefined",
+    "sample": "{\"id\":\"chatcmpl-e0f90d36-2246-4100-a0d3-e9a683073709\",\"object\":\"chat.completion\",\"created\":1791673135,\"model\":\"@cf/openai/gpt-oss-120b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"rationale\\\": \\\"ok\\\",\\n  \\\"files\\\": []\\n}\",\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"reasoning\":\"User wants a JSON response with those fields. Just output that.\",\"reaso"
+   }
+  },
+  {
+   "check": "server advertises refs/notes/kyoei",
+   "ok": true,
+   "ms": 126,
+   "detail": [
+    "refs/heads/main",
+    "refs/notes/kyoei"
+   ]
+  },
+  {
+   "check": "Workers AI JSON output",
+   "ok": true,
+   "ms": 1814,
+   "detail": {
+    "files": [
+     {
+      "path": "src/a.ts",
+      "text": "export const a = 4;\n"
+     }
+    ],
+    "rationale": "Changed the exported constant `a` from `2` to `4` as requested, while preserving the original statement structure and trailing newline so the rest of the file r"
+   }
+  },
+  {
+   "check": "revoke write token",
+   "ok": true,
+   "ms": 55,
+   "detail": true
+  },
+  {
+   "check": "delete src-mv2zx235",
+   "ok": true,
+   "ms": 1439,
+   "detail": true
+  },
+  {
+   "check": "delete fork-mv2zx235",
+   "ok": true,
+   "ms": 1440,
+   "detail": true
+  },
+  {
+   "check": "delete other-mv2zx235",
+   "ok": true,
+   "ms": 2105,
+   "detail": true
+  }
+ ]
+}

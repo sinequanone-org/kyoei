@@ -1,0 +1,947 @@
+{
+ "all_predictions_held": true,
+ "boundary": "Not a fourth arm; amends nothing in P1.0. Counts what Git and a shared document leave to people. Zero flagged outputs and zero recorded edges hold by construction: neither tool stores them. Refusal by absence (e09) and Git's stale-push refusal are the tools' own.",
+ "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+ "diagnostic": true,
+ "enters_a_measure": false,
+ "environment": {
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12"
+ },
+ "kind": "p1-7-plain-tools-ablation",
+ "observed": {
+  "affected_outputs_flagged_by_tools": {
+   "flagged": 0,
+   "of": 19
+  },
+  "decisions_matching_expected": 34,
+  "delegation_bounds_enforced": {
+   "enforced": 0,
+   "of": 3
+  },
+  "dependency_edges_recorded_by_tools": {
+   "of": 32,
+   "recorded": 0
+  },
+  "lost_updates": {
+   "git": 0,
+   "shared-document": 1
+  },
+  "mismatched_events": [
+   "e20",
+   "e22",
+   "e34",
+   "e35",
+   "e37",
+   "e38",
+   "e40",
+   "e42"
+  ],
+  "obsolete_uses_accepted": 5,
+  "prohibited_exchanges_or_public_releases": 2,
+  "purpose_violations": 1,
+  "refused_by_absence": [
+   "e09"
+  ],
+  "signoffs_bound_to_a_version": {
+   "git": true,
+   "shared-document": false
+  },
+  "withdrawn_items_in_exit_export": [
+   "b.result.v2",
+   "c.analysis.v2",
+   "c.offline-draft",
+   "c.task.v2",
+   "joint.output.v2"
+  ]
+ },
+ "predictions": "research/experiments/p1-7-plain-tools/predictions.json",
+ "predictions_digest": "c985fddec9e94da981ad07372049fa7e307f053fa1c140ad45ba506c858ab0b4",
+ "predictions_held": {
+  "affected_outputs_flagged_by_tools": true,
+  "decisions_matching_expected": true,
+  "delegation_bounds_enforced": true,
+  "dependency_edges_recorded_by_tools": true,
+  "lost_updates": true,
+  "mismatched_events": true,
+  "obsolete_uses_accepted": true,
+  "prohibited_exchanges_or_public_releases": true,
+  "purpose_violations": true,
+  "refused_by_absence": true,
+  "signoffs_bound_to_a_version": true,
+  "withdrawn_items_in_exit_export": true
+ },
+ "reference_qualified": false,
+ "scenario_sha256": "8118f3e0d5340ce7c0daab04784ade8dd4e69c3618960066a49912262e396b58",
+ "sources": {
+  "scripts/plain_tools_ablation.py": "f2c9bdd9b40a6b04d037b79c824ac0fa33963b226fd0aab75bee7a2265939fd3",
+  "scripts/reference_shared_draft.py": "b4227030f9563443f3381ced9336138b0b7b3376ee5a8991116645efd3c31c32"
+ },
+ "variants": {
+  "git": {
+   "drafts": [
+    {
+     "event": "e15",
+     "lost_updates": 0,
+     "refused_stale": 1,
+     "retried": 1
+    },
+    {
+     "event": "e26",
+     "lost_updates": 0,
+     "refused_stale": 0,
+     "retried": 0
+    }
+   ],
+   "lost_updates": 0,
+   "mismatched_events": [
+    "e20",
+    "e22",
+    "e34",
+    "e35",
+    "e37",
+    "e38",
+    "e40",
+    "e42"
+   ],
+   "outcomes": {
+    "match": 34,
+    "obsolete-use-accepted": 5,
+    "prohibited-exchange-or-public-release": 2,
+    "purpose-violation": 1
+   },
+   "refused_by_absence": [
+    "e09"
+   ],
+   "signoffs_bound_to_a_version": true,
+   "steps": {
+    "by_kind": {
+     "file": 41,
+     "git": 238
+    },
+    "total": 279
+   },
+   "trace": [
+    {
+     "action": "propose-agreement",
+     "event": "e01",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "accept-agreement",
+     "event": "e02",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "accept-agreement",
+     "event": "e03",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "publish",
+     "event": "e04",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 8
+    },
+    {
+     "action": "load-private-source",
+     "event": "e05",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 5
+    },
+    {
+     "action": "delegate",
+     "event": "e06",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "derive-local-result",
+     "event": "e07",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 8
+    },
+    {
+     "action": "release",
+     "event": "e08",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "request-private-rows",
+     "event": "e09",
+     "expected": "deny",
+     "outcome": "match",
+     "plain": "deny",
+     "reason": "not-authorized",
+     "steps": 0
+    },
+    {
+     "action": "proof-gated-task",
+     "event": "e10",
+     "expected": "defer",
+     "outcome": "match",
+     "plain": "defer",
+     "reason": "proof-unsupported",
+     "steps": 0
+    },
+    {
+     "action": "assign-analysis",
+     "event": "e11",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 9
+    },
+    {
+     "action": "derive",
+     "event": "e12",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 9
+    },
+    {
+     "action": "challenge",
+     "event": "e13",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 10
+    },
+    {
+     "action": "reproduce",
+     "event": "e14",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 10
+    },
+    {
+     "action": "shared-draft",
+     "event": "e15",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 35
+    },
+    {
+     "action": "assess-and-publish",
+     "event": "e16",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 17
+    },
+    {
+     "action": "publish",
+     "event": "e17",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 11
+    },
+    {
+     "action": "use",
+     "event": "e18",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "correct-source",
+     "event": "e19",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 9
+    },
+    {
+     "action": "use",
+     "event": "e20",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "correction-pending",
+     "steps": 0
+    },
+    {
+     "action": "acknowledge",
+     "event": "e21",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "use",
+     "event": "e22",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "replacement-required",
+     "steps": 0
+    },
+    {
+     "action": "derive-and-release-replacement",
+     "event": "e23",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 10
+    },
+    {
+     "action": "assign-analysis",
+     "event": "e24",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 14
+    },
+    {
+     "action": "derive",
+     "event": "e25",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 15
+    },
+    {
+     "action": "shared-draft",
+     "event": "e26",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 35
+    },
+    {
+     "action": "assess-and-publish",
+     "event": "e27",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 21
+    },
+    {
+     "action": "use",
+     "event": "e28",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "lease",
+     "event": "e29",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "inject-outage",
+     "event": "e30",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "draft-offline",
+     "event": "e31",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 16
+    },
+    {
+     "action": "withdraw",
+     "event": "e32",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 2
+    },
+    {
+     "action": "draft-under-lease",
+     "event": "e33",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 17
+    },
+    {
+     "action": "exchange",
+     "event": "e34",
+     "expected": "deny",
+     "outcome": "prohibited-exchange-or-public-release",
+     "plain": "allow",
+     "reason": "issuer-unavailable",
+     "steps": 1
+    },
+    {
+     "action": "use-offline",
+     "event": "e35",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "lease-expired",
+     "steps": 0
+    },
+    {
+     "action": "heal-outage",
+     "event": "e36",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "use",
+     "event": "e37",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "withdrawn",
+     "steps": 0
+    },
+    {
+     "action": "restart-and-use",
+     "event": "e38",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "withdrawn",
+     "steps": 0
+    },
+    {
+     "action": "use",
+     "event": "e39",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 0
+    },
+    {
+     "action": "request-new-purpose",
+     "event": "e40",
+     "expected": "deny",
+     "outcome": "purpose-violation",
+     "plain": "allow",
+     "reason": "new-grant-required",
+     "steps": 1
+    },
+    {
+     "action": "export-and-exit",
+     "event": "e41",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "record-public-release",
+     "event": "e42",
+     "expected": "deny",
+     "outcome": "prohibited-exchange-or-public-release",
+     "plain": "allow",
+     "reason": "withdrawn",
+     "steps": 1
+    }
+   ],
+   "variant": "git",
+   "withdrawn_items_in_exit_export": [
+    "b.result.v2",
+    "c.analysis.v2",
+    "c.offline-draft",
+    "c.task.v2",
+    "joint.output.v2"
+   ]
+  },
+  "shared-document": {
+   "drafts": [
+    {
+     "event": "e15",
+     "lost_updates": 1,
+     "refused_stale": 0,
+     "retried": 0
+    },
+    {
+     "event": "e26",
+     "lost_updates": 0,
+     "refused_stale": 0,
+     "retried": 0
+    }
+   ],
+   "lost_updates": 1,
+   "mismatched_events": [
+    "e20",
+    "e22",
+    "e34",
+    "e35",
+    "e37",
+    "e38",
+    "e40",
+    "e42"
+   ],
+   "outcomes": {
+    "match": 34,
+    "obsolete-use-accepted": 5,
+    "prohibited-exchange-or-public-release": 2,
+    "purpose-violation": 1
+   },
+   "refused_by_absence": [
+    "e09"
+   ],
+   "signoffs_bound_to_a_version": false,
+   "steps": {
+    "by_kind": {
+     "file": 51,
+     "git": 196
+    },
+    "total": 247
+   },
+   "trace": [
+    {
+     "action": "propose-agreement",
+     "event": "e01",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "accept-agreement",
+     "event": "e02",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "accept-agreement",
+     "event": "e03",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "publish",
+     "event": "e04",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 8
+    },
+    {
+     "action": "load-private-source",
+     "event": "e05",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 5
+    },
+    {
+     "action": "delegate",
+     "event": "e06",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "derive-local-result",
+     "event": "e07",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 8
+    },
+    {
+     "action": "release",
+     "event": "e08",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "request-private-rows",
+     "event": "e09",
+     "expected": "deny",
+     "outcome": "match",
+     "plain": "deny",
+     "reason": "not-authorized",
+     "steps": 0
+    },
+    {
+     "action": "proof-gated-task",
+     "event": "e10",
+     "expected": "defer",
+     "outcome": "match",
+     "plain": "defer",
+     "reason": "proof-unsupported",
+     "steps": 0
+    },
+    {
+     "action": "assign-analysis",
+     "event": "e11",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 9
+    },
+    {
+     "action": "derive",
+     "event": "e12",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 9
+    },
+    {
+     "action": "challenge",
+     "event": "e13",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 10
+    },
+    {
+     "action": "reproduce",
+     "event": "e14",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 10
+    },
+    {
+     "action": "shared-draft",
+     "event": "e15",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 18
+    },
+    {
+     "action": "assess-and-publish",
+     "event": "e16",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 16
+    },
+    {
+     "action": "publish",
+     "event": "e17",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 11
+    },
+    {
+     "action": "use",
+     "event": "e18",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "correct-source",
+     "event": "e19",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 9
+    },
+    {
+     "action": "use",
+     "event": "e20",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "correction-pending",
+     "steps": 0
+    },
+    {
+     "action": "acknowledge",
+     "event": "e21",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "use",
+     "event": "e22",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "replacement-required",
+     "steps": 0
+    },
+    {
+     "action": "derive-and-release-replacement",
+     "event": "e23",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 10
+    },
+    {
+     "action": "assign-analysis",
+     "event": "e24",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 14
+    },
+    {
+     "action": "derive",
+     "event": "e25",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 15
+    },
+    {
+     "action": "shared-draft",
+     "event": "e26",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 22
+    },
+    {
+     "action": "assess-and-publish",
+     "event": "e27",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 20
+    },
+    {
+     "action": "use",
+     "event": "e28",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "lease",
+     "event": "e29",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "inject-outage",
+     "event": "e30",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "draft-offline",
+     "event": "e31",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 16
+    },
+    {
+     "action": "withdraw",
+     "event": "e32",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 2
+    },
+    {
+     "action": "draft-under-lease",
+     "event": "e33",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 17
+    },
+    {
+     "action": "exchange",
+     "event": "e34",
+     "expected": "deny",
+     "outcome": "prohibited-exchange-or-public-release",
+     "plain": "allow",
+     "reason": "issuer-unavailable",
+     "steps": 1
+    },
+    {
+     "action": "use-offline",
+     "event": "e35",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "lease-expired",
+     "steps": 0
+    },
+    {
+     "action": "heal-outage",
+     "event": "e36",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "use",
+     "event": "e37",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "withdrawn",
+     "steps": 0
+    },
+    {
+     "action": "restart-and-use",
+     "event": "e38",
+     "expected": "deny",
+     "outcome": "obsolete-use-accepted",
+     "plain": "allow",
+     "reason": "withdrawn",
+     "steps": 0
+    },
+    {
+     "action": "use",
+     "event": "e39",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 0
+    },
+    {
+     "action": "request-new-purpose",
+     "event": "e40",
+     "expected": "deny",
+     "outcome": "purpose-violation",
+     "plain": "allow",
+     "reason": "new-grant-required",
+     "steps": 1
+    },
+    {
+     "action": "export-and-exit",
+     "event": "e41",
+     "expected": "allow",
+     "outcome": "match",
+     "plain": "allow",
+     "reason": null,
+     "steps": 1
+    },
+    {
+     "action": "record-public-release",
+     "event": "e42",
+     "expected": "deny",
+     "outcome": "prohibited-exchange-or-public-release",
+     "plain": "allow",
+     "reason": "withdrawn",
+     "steps": 1
+    }
+   ],
+   "variant": "shared-document",
+   "withdrawn_items_in_exit_export": [
+    "b.result.v2",
+    "c.analysis.v2",
+    "c.offline-draft",
+    "c.task.v2",
+    "joint.output.v2"
+   ]
+  }
+ },
+ "variants_agree_outside_the_draft": true
+}

@@ -1,0 +1,1181 @@
+{
+  "arm": "kyoei-git",
+  "boundary": [
+    "One operator runs every node and holds every actor key.",
+    "Simulation only; imports are facts with official_result false.",
+    "The contract predicted zero new application code on both arms. This arm counts zero; the reference counts its second-purpose adapter under new_application_code, so the prediction's zero-code half does not hold, itemized for both arms.",
+    "product_result is null; scripts/p3_comparison.py is a separate step."
+  ],
+  "checks": {
+    "correction_set_exact": true,
+    "every_event_held_in_every_run": true,
+    "isolation_zero": true,
+    "no_unexpected_refusal": true,
+    "old_package_stops_being_used": true,
+    "processes_exited_cleanly": true,
+    "reopened_with_same_keys": true,
+    "replacement_reaches_first_permitted_use": true
+  },
+  "components_rebuilt": {
+    "count": 0,
+    "paths": []
+  },
+  "components_reused": {
+    "count": 22,
+    "paths": [
+      "scripts/actor_request.py",
+      "scripts/agent_adapter.py",
+      "scripts/context_shards.py",
+      "scripts/contributions.py",
+      "scripts/git_source.py",
+      "scripts/institution_identity.py",
+      "scripts/institution_server.py",
+      "scripts/joint_result.py",
+      "scripts/lifecycle_server.py",
+      "scripts/lifecycle_status.py",
+      "scripts/lifecycle_store.py",
+      "scripts/node_wire.py",
+      "scripts/peer_http.py",
+      "scripts/pq_crypto.py",
+      "scripts/repair_brief.py",
+      "scripts/research_evidence.py",
+      "scripts/review_custody.py",
+      "scripts/review_verdict.py",
+      "scripts/shared_draft.py",
+      "scripts/task_data.py",
+      "scripts/workspace_capture.py",
+      "scripts/workspace_client.py"
+    ]
+  },
+  "decisions": {
+    "allowed": 20,
+    "refused": 0
+  },
+  "elapsed_seconds": 353.554,
+  "environment": {
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.12"
+  },
+  "events": {
+    "g01": {
+      "action": "propose-agreement",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g02": {
+      "action": "initiate-transport",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g03": {
+      "action": "enroll-institution",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g04": {
+      "action": "enroll-institution",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g05": {
+      "action": "import-record",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g06": {
+      "action": "originate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g07": {
+      "action": "originate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g08": {
+      "action": "draft",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g09": {
+      "action": "mark-signoff",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g10": {
+      "action": "mark-signoff",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g11": {
+      "action": "publish-release",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g12": {
+      "action": "correction",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g13": {
+      "action": "draft",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "g14": {
+      "action": "publish-release",
+      "actual": null,
+      "expected": null,
+      "held": true
+    }
+  },
+  "kind": "p3-kyoei-arm",
+  "measures": {
+    "components_rebuilt": {
+      "count": 0,
+      "paths": []
+    },
+    "components_reused": {
+      "count": 22,
+      "paths": [
+        "scripts/actor_request.py",
+        "scripts/agent_adapter.py",
+        "scripts/context_shards.py",
+        "scripts/contributions.py",
+        "scripts/git_source.py",
+        "scripts/institution_identity.py",
+        "scripts/institution_server.py",
+        "scripts/joint_result.py",
+        "scripts/lifecycle_server.py",
+        "scripts/lifecycle_status.py",
+        "scripts/lifecycle_store.py",
+        "scripts/node_wire.py",
+        "scripts/peer_http.py",
+        "scripts/pq_crypto.py",
+        "scripts/repair_brief.py",
+        "scripts/research_evidence.py",
+        "scripts/review_custody.py",
+        "scripts/review_verdict.py",
+        "scripts/shared_draft.py",
+        "scripts/task_data.py",
+        "scripts/workspace_capture.py",
+        "scripts/workspace_client.py"
+      ]
+    },
+    "configuration_decisions": {
+      "count": 9,
+      "names": [
+        "agreement:p3:v1:terms",
+        "draft-participants:a.lead,b.researcher,c.specialist",
+        "expiry:900",
+        "export-consents:a,b,c",
+        "import-record-label:platform-import",
+        "joint-draft:name=p3-joint:participants=a.lead,b.researcher,c.specialist",
+        "license:CC-BY-4.0",
+        "purpose:p3-revisit",
+        "release-recipients:a.lead,b.researcher,c.specialist"
+      ]
+    },
+    "failures": {
+      "cases": 2,
+      "held": 6,
+      "not_run": 0,
+      "reason_matched": 1,
+      "rows": [
+        {
+          "actual": "stale-base",
+          "allow_event": "g06",
+          "control_allowed": true,
+          "denied": true,
+          "deny_event": "g12",
+          "held": true,
+          "id": "stale-draft-base",
+          "reason_matched": true,
+          "scenario_expected": "stale-base"
+        },
+        {
+          "actual": "new-grant-required",
+          "allow_event": "g08",
+          "control_allowed": true,
+          "denied": true,
+          "deny_event": "g08",
+          "held": true,
+          "id": "wrong-purpose",
+          "reason_matched": false,
+          "scenario_expected": "wrong-purpose"
+        }
+      ],
+      "trials": 6
+    },
+    "isolation_breaches": {
+      "count": 0,
+      "items": [],
+      "labels": [],
+      "leaked_files": []
+    },
+    "new_application_code": {
+      "files": {},
+      "lines": 0,
+      "role": "kyoei-adopter",
+      "supplier": {
+        "files": {},
+        "lines": 0
+      }
+    },
+    "repair_steps": {
+      "diagnostic_excluded": 2,
+      "failed_attempts": 0,
+      "labels": [
+        "fault:stale-base:open",
+        "g12:publish:p3.b.method.v2:open",
+        "g12:publish:p3.b.method.v2",
+        "g12:release:p3.b.method.v2",
+        "g12:originate:p3.b.method.v2:builds-on",
+        "g12:replace:p3.b.method",
+        "g13:gather:open",
+        "g13:read:p3.b.method.v2",
+        "g13:read:p3.c.observation",
+        "g13:draft-open",
+        "g13:draft-revise:a.lead",
+        "g13:signoff:b.researcher",
+        "g13:signoff:c.specialist",
+        "g13:signoff:a.lead",
+        "g13:draft-publish",
+        "g14:consent:a.lead",
+        "g14:consent:b.steward",
+        "g14:deposit-consent:b.steward",
+        "g14:consent:c.specialist",
+        "g14:deposit-consent:c.specialist",
+        "g14:export",
+        "g14:use:p3.joint.output.v2"
+      ],
+      "restarts": 0,
+      "steps": 22
+    },
+    "setup_commands": {
+      "client": 24,
+      "operator": [
+        "restart:a:store=continuation",
+        "restart:b:store=continuation",
+        "restart:c:store=continuation"
+      ],
+      "restarts": 3,
+      "through": "g08 first cross-institution read"
+    }
+  },
+  "new_application_code": 0,
+  "normalizations": [
+    "Import record: the frozen record (id, kind, title, source, source_id, year) is mapped by scripts/p3_scenario.py onto the nine fields both suppliers import contract admits; commit and fingerprint are deterministic digests of the frozen record, so both arms send identical input.",
+    "enroll-institution: enrollment is reused, not rebuilt. Each institution re-fetches its own live credential under the new purpose, which is what reopening an enrollment means for both arms.",
+    "mark-signoff: the participant signs the shared draft off. Both arms' `mark_signoff` operations refuse by design (they reject turning a recorded challenge into a sign-off, priority two f50); the sign-off path is `draft_signoff` on Kyoei and the draft host `signoff` on the reference.",
+    "publish-release: the shared draft is published, which releases its output to the other participants, then exported as a public package under CC-BY-4.0 after each contributing institution's administrator consents. The consents have no frozen event of their own, so they run inside g11 and g14.",
+    "The draft opener (a.lead) has no sign-off event of its own in the frozen scenario; without it neither arm may publish. Its sign-off runs as a non-primary row inside g11.",
+    "The frozen expected graph lists p3.draft and p3.draft.v2 as analysis artifacts. Both drivers hold them as the shared draft's ids, and both arms publish contribution text from that draft.",
+    "Fault reason `wrong-purpose`: no operation in either arm ever returns that string. The attempt at g08 is the cross-purpose reuse both arms do refuse, and both return `new-grant-required` outside their literal expected value.",
+    "Consent delivery: each institution's administrator (the fixture's consent actor) must be able to use the published output. The reference administrator needs the output's own release first (one release row per publication); Kyoei grants its administrators by institution and carries each foreign consent envelope to A itself. Both patterns stay counted where they happen.",
+    "Purpose-bound probes: the scenario asks each probe actor to use the collaboration-3 package for purpose p2-continuation with the literal reason `new-grant-required`. Both arms refuse it at the residency/reader boundary first (`not-authorized`): no purpose-check row exists for a public package on that actor yet. Both arms return the same reason; the literal expected string is itemized for both, not scored as a difference."
+  ],
+  "order": 3,
+  "packages": {
+    "v1": "1909ba6b2b5d6602c6ac2804e290199a93d732d706ff41cd36b9020bd35d8655",
+    "v2": "d32890c3f052daf7b9c04cd85ee0b69e720be371bfa4c6426ebff1796f2053c0"
+  },
+  "predictions_held": {
+    "bytes-not-revoked": true,
+    "correction-tie": true,
+    "enforcement-tie": true,
+    "isolation-zero": true,
+    "repair-not-predicted": null,
+    "reuse-all-code": false,
+    "setup-not-predicted": null
+  },
+  "probes": {
+    "b.researcher": {
+      "actual": "not-authorized",
+      "expected": "new-grant-required",
+      "layer": "lifecycle",
+      "operation": "request_new_purpose"
+    },
+    "c.specialist": {
+      "actual": "not-authorized",
+      "expected": "new-grant-required",
+      "layer": "lifecycle",
+      "operation": "request_new_purpose"
+    }
+  },
+  "product_result": null,
+  "purpose": "p3-revisit",
+  "repetitions": 3,
+  "sets": {
+    "actual": {
+      "affected": [
+        "p3.b.method",
+        "p3.draft"
+      ],
+      "blocked": [
+        "p3.draft"
+      ],
+      "unaffected": [
+        "p3.c.observation",
+        "p3.import.checker-244"
+      ]
+    },
+    "expected": {
+      "affected": [
+        "p3.b.method",
+        "p3.draft"
+      ],
+      "blocked": [
+        "p3.draft"
+      ],
+      "unaffected": [
+        "p3.c.observation",
+        "p3.import.checker-244"
+      ]
+    },
+    "held": true
+  },
+  "source": "git",
+  "sources": {
+    "scripts/continuation_server.py": {
+      "logical_lines": 20,
+      "sha256": "ea559ac3c20fc445c521d3bb2d353bf30fd1db759fb39fe960c0dfc2b720e364"
+    },
+    "scripts/continuation_store.py": {
+      "logical_lines": 343,
+      "sha256": "952f85e7f147e18a9ece1adf31810683d416c71f97e9aff0bc517683cdce5448"
+    },
+    "scripts/p3_kyoei.py": {
+      "logical_lines": 302,
+      "sha256": "6ac4541abdfb38bf3d2bf9420aab7ad840f9df1838243d7b98105f57df9e3a32"
+    }
+  },
+  "states": {
+    "p3.b.method": "correction-pending",
+    "p3.b.method.v2": "active",
+    "p3.c.observation": "active",
+    "p3.draft": "correction-pending",
+    "p3.draft.v2": "active",
+    "p3.import.checker-244": "active",
+    "p3.joint.output": "correction-pending",
+    "p3.joint.output.v2": "active"
+  },
+  "trace": [
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 650,
+      "diagnostic": false,
+      "event": "g01",
+      "expected": null,
+      "label": "g01:accept:a.lead",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 650,
+      "diagnostic": false,
+      "event": "g01",
+      "expected": null,
+      "label": "g01:accept:b.steward",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 650,
+      "diagnostic": false,
+      "event": "g01",
+      "expected": null,
+      "label": "g01:accept:c.specialist",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 651,
+      "diagnostic": false,
+      "event": "g02",
+      "expected": null,
+      "label": "g02:credential:a.lead",
+      "operation": "credential",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 652,
+      "diagnostic": false,
+      "event": "g03",
+      "expected": null,
+      "label": "g03:credential:b.researcher",
+      "operation": "credential",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 652,
+      "diagnostic": false,
+      "event": "g03",
+      "expected": null,
+      "label": "g03:credential:b.steward",
+      "operation": "credential",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 653,
+      "diagnostic": false,
+      "event": "g04",
+      "expected": null,
+      "label": "g04:credential:c.specialist",
+      "operation": "credential",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 654,
+      "diagnostic": false,
+      "event": "g05",
+      "expected": null,
+      "label": "g05:import:p3.import.checker-244",
+      "operation": "import_record",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 655,
+      "diagnostic": false,
+      "event": "g06",
+      "expected": null,
+      "label": "g06:receive:p3.import.checker-244:open",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 655,
+      "diagnostic": false,
+      "event": "g06",
+      "expected": null,
+      "label": "g06:read:p3.import.checker-244",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 655,
+      "diagnostic": false,
+      "event": "g06",
+      "expected": null,
+      "label": "g06:close:p3.import.checker-244",
+      "operation": "close",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 655,
+      "diagnostic": false,
+      "event": "g06",
+      "expected": null,
+      "label": "g06:publish:p3.b.method:open",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 655,
+      "diagnostic": false,
+      "event": "g06",
+      "expected": null,
+      "label": "g06:publish:p3.b.method",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 655,
+      "diagnostic": false,
+      "event": "g06",
+      "expected": null,
+      "label": "g06:release:p3.b.method",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 655,
+      "diagnostic": false,
+      "event": "g06",
+      "expected": null,
+      "label": "g06:originate:p3.b.method:builds-on",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 656,
+      "diagnostic": false,
+      "event": "g07",
+      "expected": null,
+      "label": "g07:receive:p3.import.checker-244:open",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 656,
+      "diagnostic": false,
+      "event": "g07",
+      "expected": null,
+      "label": "g07:read:p3.import.checker-244",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 656,
+      "diagnostic": false,
+      "event": "g07",
+      "expected": null,
+      "label": "g07:close:p3.import.checker-244",
+      "operation": "close",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 656,
+      "diagnostic": false,
+      "event": "g07",
+      "expected": null,
+      "label": "g07:publish:p3.c.observation:open",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 656,
+      "diagnostic": false,
+      "event": "g07",
+      "expected": null,
+      "label": "g07:publish:p3.c.observation",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 656,
+      "diagnostic": false,
+      "event": "g07",
+      "expected": null,
+      "label": "g07:release:p3.c.observation",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 656,
+      "diagnostic": false,
+      "event": "g07",
+      "expected": null,
+      "label": "g07:originate:p3.c.observation:builds-on",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "new-grant-required",
+      "at": 657,
+      "diagnostic": true,
+      "event": "g08",
+      "expected": "new-grant-required",
+      "label": "fault:wrong-purpose:g08",
+      "operation": "retrieve",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 657,
+      "diagnostic": false,
+      "event": "g08",
+      "expected": null,
+      "label": "g08:gather:open",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 657,
+      "diagnostic": false,
+      "event": "g08",
+      "expected": null,
+      "label": "g08:read:p3.b.method",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 657,
+      "diagnostic": false,
+      "event": "g08",
+      "expected": null,
+      "label": "g08:read:p3.c.observation",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 657,
+      "diagnostic": false,
+      "event": "g08",
+      "expected": null,
+      "label": "g08:draft-open",
+      "operation": "draft_open",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 657,
+      "diagnostic": false,
+      "event": "g08",
+      "expected": null,
+      "label": "g08:draft-revise:a.lead",
+      "operation": "draft_revise",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 658,
+      "diagnostic": false,
+      "event": "g09",
+      "expected": null,
+      "label": "g09:signoff:b.researcher",
+      "operation": "draft_signoff",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 659,
+      "diagnostic": false,
+      "event": "g10",
+      "expected": null,
+      "label": "g10:signoff:c.specialist",
+      "operation": "draft_signoff",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:signoff:a.lead",
+      "operation": "draft_signoff",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:draft-publish",
+      "operation": "draft_publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:consent:a.lead",
+      "operation": "consent",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:consent:b.steward",
+      "operation": "consent",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:deposit-consent:b.steward",
+      "operation": "accept_consent",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:consent:c.specialist",
+      "operation": "consent",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:deposit-consent:c.specialist",
+      "operation": "accept_consent",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 660,
+      "diagnostic": false,
+      "event": "g11",
+      "expected": null,
+      "label": "g11:export",
+      "operation": "public_export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 661,
+      "diagnostic": false,
+      "event": "g12",
+      "expected": null,
+      "label": "fault:stale-base:open",
+      "operation": "draft_open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 661,
+      "diagnostic": true,
+      "event": "g12",
+      "expected": null,
+      "label": "fault:stale-base:revise",
+      "operation": "draft_revise",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "stale-base",
+      "at": 661,
+      "diagnostic": true,
+      "event": "g12",
+      "expected": "stale-base",
+      "label": "fault:stale-draft-base:g12",
+      "operation": "draft_revise",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 661,
+      "diagnostic": false,
+      "event": "g12",
+      "expected": null,
+      "label": "g12:publish:p3.b.method.v2:open",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 661,
+      "diagnostic": false,
+      "event": "g12",
+      "expected": null,
+      "label": "g12:publish:p3.b.method.v2",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 661,
+      "diagnostic": false,
+      "event": "g12",
+      "expected": null,
+      "label": "g12:release:p3.b.method.v2",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 661,
+      "diagnostic": false,
+      "event": "g12",
+      "expected": null,
+      "label": "g12:originate:p3.b.method.v2:builds-on",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 661,
+      "diagnostic": false,
+      "event": "g12",
+      "expected": null,
+      "label": "g12:replace:p3.b.method",
+      "operation": "replace",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:gather:open",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:read:p3.b.method.v2",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:read:p3.c.observation",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:draft-open",
+      "operation": "draft_open",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:draft-revise:a.lead",
+      "operation": "draft_revise",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:signoff:b.researcher",
+      "operation": "draft_signoff",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:signoff:c.specialist",
+      "operation": "draft_signoff",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:signoff:a.lead",
+      "operation": "draft_signoff",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 662,
+      "diagnostic": false,
+      "event": "g13",
+      "expected": null,
+      "label": "g13:draft-publish",
+      "operation": "draft_publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:consent:a.lead",
+      "operation": "consent",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:consent:b.steward",
+      "operation": "consent",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:deposit-consent:b.steward",
+      "operation": "accept_consent",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:consent:c.specialist",
+      "operation": "consent",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:deposit-consent:c.specialist",
+      "operation": "accept_consent",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:export",
+      "operation": "public_export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:use:p3.joint.output.v2",
+      "operation": "use",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "correction-blocked",
+      "at": 663,
+      "diagnostic": false,
+      "event": "g14",
+      "expected": "correction-blocked",
+      "label": "g14:use:p3.joint.output",
+      "operation": "use",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.import.checker-244",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.b.method",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.c.observation",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.b.method.v2",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.joint.output",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.joint.output.v2",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.draft",
+      "operation": "draft_head",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 663,
+      "diagnostic": true,
+      "event": "g14",
+      "expected": null,
+      "label": "g14:repair:p3.draft.v2",
+      "operation": "draft_head",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "not-authorized",
+      "at": 663,
+      "diagnostic": true,
+      "event": "probe",
+      "expected": "new-grant-required",
+      "label": "probe:b.researcher:request_new_purpose",
+      "operation": "request_new_purpose",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "not-authorized",
+      "at": 663,
+      "diagnostic": true,
+      "event": "probe",
+      "expected": "new-grant-required",
+      "label": "probe:c.specialist:request_new_purpose",
+      "operation": "request_new_purpose",
+      "primary": false
+    }
+  ]
+}

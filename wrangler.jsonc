@@ -1,0 +1,125 @@
+// One Worker per organization: npx wrangler deploy --env org-a (org-b, org-c).
+// PUBLIC_URL is set at deploy time; ADMIN_TOKEN_SHA256 is a secret.
+{
+ "$schema": "./node_modules/wrangler/config-schema.json",
+ "name": "kyoei",
+ "main": "src/worker/index.ts",
+ "compatibility_date": "2026-10-10",
+ "compatibility_flags": [
+  "nodejs_compat",
+  "webcrypto_modern_algorithms",
+  "global_fetch_strictly_public"
+ ],
+ "observability": {
+  "enabled": true
+ },
+ "limits": {
+  "cpu_ms": 300000
+ },
+ "migrations": [
+  {
+   "tag": "v1",
+   "new_sqlite_classes": [
+    "OrgNodeObject"
+   ]
+  }
+ ],
+ "env": {
+  "org-a": {
+   "name": "kyoei-org-a",
+   "vars": {
+    "ORG": "a",
+    "NAMESPACE": "kyoei-a",
+    "DEPLOYMENT": "contest",
+    "COLLABORATION": "shared-sdk",
+    "INTEGRATOR": "c",
+    "INTEGRATION_REPO": "kyoei-c/shared-sdk",
+    "PUBLIC_URL": "",
+    "SIGNATURE": "ML-DSA-65",
+    "MODEL_MODE": "workers-ai",
+    "ACTORS": "[{\"name\": \"a.lead\", \"kind\": \"person\"}, {\"name\": \"a1\", \"kind\": \"agent\", \"delegate\": \"a.lead\"}, {\"name\": \"a2\", \"kind\": \"agent\", \"delegate\": \"a.lead\"}, {\"name\": \"a3\", \"kind\": \"agent\", \"delegate\": \"a.lead\"}, {\"name\": \"a2r\", \"kind\": \"agent\", \"delegate\": \"a.lead\"}, {\"name\": \"a3r\", \"kind\": \"agent\", \"delegate\": \"a.lead\"}]"
+   },
+   "artifacts": [
+    {
+     "binding": "ARTIFACTS",
+     "namespace": "kyoei-a"
+    }
+   ],
+   "ai": {
+    "binding": "AI"
+   },
+   "durable_objects": {
+    "bindings": [
+     {
+      "name": "ORG_NODE",
+      "class_name": "OrgNodeObject"
+     }
+    ]
+   }
+  },
+  "org-b": {
+   "name": "kyoei-org-b",
+   "vars": {
+    "ORG": "b",
+    "NAMESPACE": "kyoei-b",
+    "DEPLOYMENT": "contest",
+    "COLLABORATION": "shared-sdk",
+    "INTEGRATOR": "c",
+    "INTEGRATION_REPO": "kyoei-c/shared-sdk",
+    "PUBLIC_URL": "",
+    "SIGNATURE": "ML-DSA-65",
+    "MODEL_MODE": "workers-ai",
+    "ACTORS": "[{\"name\": \"b.lead\", \"kind\": \"person\"}, {\"name\": \"b1\", \"kind\": \"agent\", \"delegate\": \"b.lead\"}, {\"name\": \"b2\", \"kind\": \"agent\", \"delegate\": \"b.lead\"}, {\"name\": \"b3\", \"kind\": \"agent\", \"delegate\": \"b.lead\"}, {\"name\": \"b4\", \"kind\": \"agent\", \"delegate\": \"b.lead\"}, {\"name\": \"b2r\", \"kind\": \"agent\", \"delegate\": \"b.lead\"}]"
+   },
+   "artifacts": [
+    {
+     "binding": "ARTIFACTS",
+     "namespace": "kyoei-b"
+    }
+   ],
+   "ai": {
+    "binding": "AI"
+   },
+   "durable_objects": {
+    "bindings": [
+     {
+      "name": "ORG_NODE",
+      "class_name": "OrgNodeObject"
+     }
+    ]
+   }
+  },
+  "org-c": {
+   "name": "kyoei-org-c",
+   "vars": {
+    "ORG": "c",
+    "NAMESPACE": "kyoei-c",
+    "DEPLOYMENT": "contest",
+    "COLLABORATION": "shared-sdk",
+    "INTEGRATOR": "c",
+    "INTEGRATION_REPO": "kyoei-c/shared-sdk",
+    "PUBLIC_URL": "",
+    "SIGNATURE": "ML-DSA-65",
+    "MODEL_MODE": "workers-ai",
+    "ACTORS": "[{\"name\": \"c.lead\", \"kind\": \"person\"}, {\"name\": \"c1\", \"kind\": \"agent\", \"delegate\": \"c.lead\"}, {\"name\": \"c2\", \"kind\": \"agent\", \"delegate\": \"c.lead\"}, {\"name\": \"c3\", \"kind\": \"agent\", \"delegate\": \"c.lead\"}, {\"name\": \"c4\", \"kind\": \"agent\", \"delegate\": \"c.lead\"}, {\"name\": \"c5\", \"kind\": \"agent\", \"delegate\": \"c.lead\"}, {\"name\": \"c2r\", \"kind\": \"agent\", \"delegate\": \"c.lead\"}]"
+   },
+   "artifacts": [
+    {
+     "binding": "ARTIFACTS",
+     "namespace": "kyoei-c"
+    }
+   ],
+   "ai": {
+    "binding": "AI"
+   },
+   "durable_objects": {
+    "bindings": [
+     {
+      "name": "ORG_NODE",
+      "class_name": "OrgNodeObject"
+     }
+    ]
+   }
+  }
+ }
+}

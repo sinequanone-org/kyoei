@@ -1,0 +1,3073 @@
+{
+  "artifacts": {
+    "a.challenge": "e3c88abdc350e438f742792cb8b71a57e63a744807b685354dfce4f8f7554e30",
+    "a.method": "f5240724044b3ad5363e9d5c032dd29dd37e34372c33acc3abc1cb677568e154",
+    "a.question": "d02f28bc61e934545a78299f3678c9cc984ccb0dc8ea9fbcdc003f2a3233f9b6",
+    "b.result.v1": "ac58f9f3c8c85d5f94345e9f10335d0b78a8ed84f25bdfc81c60db75df0d94ca",
+    "b.result.v2": "6a33e7067e346d37b9cb893fc41bbc03ac5f883721d5fd9000ed199284daf50c",
+    "b.table.v1": "82147705de26523ca07aedf99505d5e5b067ba7a11928a39fdf62b06fe3d01e2",
+    "b.table.v2": "f351d098eb1289657c9c23329f303fa29de6d00671a7a3a42d3972fbdb0e850d",
+    "c.analysis.v1": "ab5fe20f895de5ccc115439d651789948a0ab7f7406db82733e1c1577a69322a",
+    "c.analysis.v2": "d45a2e3f7ba2e48a9d270a5cc949731c3a2c0acd3e41da0dc84dc72d4aa2792b",
+    "c.local-draft": "25cc357d4ec036174093a3af507496d0dd9ecf542f3fca2a243634e27178971d",
+    "c.offline-draft": "883ebcb601366530e1f9a52b1cfed0373accbd8d96e3232d161a1d5967a4439b",
+    "c.reproduction": "a258fefc560de265aebd53c082152b617730de1ea4c5ad622f3e9df6b49e35bf",
+    "c.task.v1": "798d86f3120d2017a4b4f4bdd180c72f47b6efbfb36fcab97d99b742da59154e",
+    "c.task.v2": "68ee3a1c558d1d3173624462eb602dfae24da6e3f42cc28585a05554c9c39edc",
+    "c.unrelated": "5e1448aa466e9ff4262ee0284afa15edda1e291bfbec45fdb648f8edc1226d17",
+    "joint.draft.v1": "02c2455204ddf27744e7975a5b27bbebb13ec0347d7cef108d6d85856b0bec4b",
+    "joint.draft.v2": "bbf8a77d908c4cc81c1a31f10e65031b3597d63f2c196ab8929f87f818d42230",
+    "joint.output.v1": "fdc36267fabe0479599cba1f3f9391183f9fa10f29f674e46f8f73a4a8b8314c",
+    "joint.output.v2": "36d57756228c3b3cda2875e66b5b6006e712e5081bd5877902ca46f900481654"
+  },
+  "boundary": [
+    "One operator runs every node and holds every actor key; no independent administration.",
+    "e10 is the symmetric proof gap in every arm. Source mode is documents.",
+    "Enabling evidence only: none of the six measures and no Kyoei arm is reported."
+  ],
+  "checks": {
+    "authority_does_not_travel": true,
+    "controls_held": true,
+    "correction_set_exact": true,
+    "every_run_event_held": true,
+    "keys_unchanged_after_restart": true,
+    "no_private_marker_at_a_or_c": true,
+    "no_unexpected_refusal": true,
+    "processes_exited_cleanly": true,
+    "symmetric_gap_only_e10": true,
+    "three_institution_authors": true,
+    "withdrawal_set_exact": true
+  },
+  "condition": "lease",
+  "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+  "controls": [
+    {
+      "actual": "not-releasable",
+      "expected": "not-releasable",
+      "label": "e05:release:b.table.v1"
+    },
+    {
+      "actual": "human-required",
+      "expected": "human-required",
+      "label": "e12:release:c.analysis.v1"
+    },
+    {
+      "actual": "stale-base",
+      "expected": "stale-base",
+      "label": "e15:race:c.specialist"
+    },
+    {
+      "actual": "human-required",
+      "expected": "human-required",
+      "label": "e16:signoff-by-agent"
+    },
+    {
+      "actual": "signoff-required",
+      "expected": "signoff-required",
+      "label": "e16:publish-before-signoffs"
+    },
+    {
+      "actual": "onward-release-required",
+      "expected": "onward-release-required",
+      "label": "e18:onward-release"
+    },
+    {
+      "actual": "not-authorized",
+      "expected": "not-authorized",
+      "label": "e23:replacement-needs-release"
+    },
+    {
+      "actual": "administrator-required",
+      "expected": "administrator-required",
+      "label": "e23:release:b.result.v2"
+    },
+    {
+      "actual": "delegation-budget",
+      "expected": "delegation-budget",
+      "label": "e25:session-over-budget"
+    },
+    {
+      "actual": "stale-base",
+      "expected": "stale-base",
+      "label": "e26:race:c.specialist"
+    },
+    {
+      "actual": "human-required",
+      "expected": "human-required",
+      "label": "e27:signoff-by-agent"
+    },
+    {
+      "actual": "signoff-required",
+      "expected": "signoff-required",
+      "label": "e27:publish-before-signoffs"
+    },
+    {
+      "actual": "replacement-required",
+      "expected": "replacement-required",
+      "label": "e28:control:old-output-stays-refused"
+    },
+    {
+      "actual": "issuer-unavailable",
+      "expected": "issuer-unavailable",
+      "label": "e33:strict-read"
+    },
+    {
+      "actual": "new-grant-required",
+      "expected": "new-grant-required",
+      "label": "e40:control:no-revival"
+    },
+    {
+      "actual": "withdrawn",
+      "expected": "withdrawn",
+      "label": "e41:control:withdrawn-export"
+    }
+  ],
+  "deployment_lines": 322,
+  "diagnostic": true,
+  "drafts": {
+    "v1": {
+      "authors": [
+        "a.lead",
+        "b.researcher",
+        "c.specialist"
+      ],
+      "institutions": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "v2": {
+      "authors": [
+        "a.lead",
+        "b.researcher",
+        "c.specialist"
+      ],
+      "institutions": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  },
+  "elapsed_seconds": 62.905,
+  "enabling": true,
+  "environment": {
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.12"
+  },
+  "events": {
+    "e01": {
+      "action": "propose-agreement",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e02": {
+      "action": "accept-agreement",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e03": {
+      "action": "accept-agreement",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e04": {
+      "action": "publish",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e05": {
+      "action": "load-private-source",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e06": {
+      "action": "delegate",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e07": {
+      "action": "derive-local-result",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e08": {
+      "action": "release",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e09": {
+      "action": "request-private-rows",
+      "actual": "not-authorized",
+      "expected": {
+        "decision": "deny",
+        "reason": "not-authorized"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e10": {
+      "action": "proof-gated-task",
+      "actual": "proof-unsupported",
+      "expected": {
+        "decision": "defer",
+        "reason": "proof-unsupported"
+      },
+      "held": true,
+      "ran": false
+    },
+    "e11": {
+      "action": "assign-analysis",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e12": {
+      "action": "derive",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e13": {
+      "action": "challenge",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e14": {
+      "action": "reproduce",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e15": {
+      "action": "shared-draft",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e16": {
+      "action": "assess-and-publish",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e17": {
+      "action": "publish",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e18": {
+      "action": "use",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e19": {
+      "action": "correct-source",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e20": {
+      "action": "use",
+      "actual": "correction-pending",
+      "expected": {
+        "decision": "deny",
+        "reason": "correction-pending"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e21": {
+      "action": "acknowledge",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e22": {
+      "action": "use",
+      "actual": "replacement-required",
+      "expected": {
+        "decision": "deny",
+        "reason": "replacement-required"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e23": {
+      "action": "derive-and-release-replacement",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e24": {
+      "action": "assign-analysis",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e25": {
+      "action": "derive",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e26": {
+      "action": "shared-draft",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e27": {
+      "action": "assess-and-publish",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e28": {
+      "action": "use",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e29": {
+      "action": "lease",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e30": {
+      "action": "inject-outage",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e31": {
+      "action": "draft-offline",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e32": {
+      "action": "withdraw",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e33": {
+      "action": "draft-under-lease",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e34": {
+      "action": "exchange",
+      "actual": "issuer-unavailable",
+      "expected": {
+        "decision": "deny",
+        "reason": "issuer-unavailable"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e35": {
+      "action": "use-offline",
+      "actual": "lease-expired",
+      "expected": {
+        "decision": "deny",
+        "reason": "lease-expired"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e36": {
+      "action": "heal-outage",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e37": {
+      "action": "use",
+      "actual": "withdrawn",
+      "expected": {
+        "decision": "deny",
+        "reason": "withdrawn"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e38": {
+      "action": "restart-and-use",
+      "actual": "withdrawn",
+      "expected": {
+        "decision": "deny",
+        "reason": "withdrawn"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e39": {
+      "action": "use",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e40": {
+      "action": "request-new-purpose",
+      "actual": "new-grant-required",
+      "expected": {
+        "decision": "deny",
+        "reason": "new-grant-required"
+      },
+      "held": true,
+      "ran": true
+    },
+    "e41": {
+      "action": "export-and-exit",
+      "actual": null,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "held": true,
+      "ran": true
+    },
+    "e42": {
+      "action": "record-public-release",
+      "actual": "withdrawn",
+      "expected": {
+        "decision": "deny",
+        "reason": "withdrawn"
+      },
+      "held": true,
+      "ran": true
+    }
+  },
+  "export": {
+    "authority": "does-not-travel",
+    "records": 2,
+    "relations": []
+  },
+  "kind": "p1-7-reference-deployment",
+  "kyoei_arms_measured": [],
+  "measures": {
+    "application_code": null,
+    "concurrent_throughput": null,
+    "configuration_burden": null,
+    "dependency_coverage": null,
+    "operational_failures": null,
+    "recovery_steps": null
+  },
+  "predictions": {
+    "path": "research/experiments/p1-7-completion/predictions.json",
+    "sha256": "07b7ff19938a97ae90a4d4b0602561bc4319d35bcbea2622326366d1e0ed6fa1"
+  },
+  "qualification_blockers": [
+    "fault schedule and throughput harness (completion steps 3-4) not run",
+    "PROV/CiTO five-relation consumer check open; export carries prov:used only"
+  ],
+  "reference_qualified": false,
+  "requests": {
+    "by_actor": {
+      "a.lead": 58,
+      "a.planner": 2,
+      "b.analyst": 4,
+      "b.researcher": 9,
+      "b.steward": 19,
+      "c.specialist": 89,
+      "c.synthesizer": 12
+    },
+    "setup": 10,
+    "total": 193
+  },
+  "restart": {
+    "keys_unchanged": true
+  },
+  "scenario_sha256": "8118f3e0d5340ce7c0daab04784ade8dd4e69c3618960066a49912262e396b58",
+  "sets": {
+    "correction": {
+      "actual": [
+        "a.challenge",
+        "b.result.v1",
+        "b.table.v1",
+        "c.analysis.v1",
+        "c.reproduction",
+        "c.task.v1",
+        "joint.draft.v1",
+        "joint.output.v1"
+      ],
+      "expected": [
+        "a.challenge",
+        "b.result.v1",
+        "b.table.v1",
+        "c.analysis.v1",
+        "c.reproduction",
+        "c.task.v1",
+        "joint.draft.v1",
+        "joint.output.v1"
+      ],
+      "held": true
+    },
+    "withdrawal": {
+      "actual": [
+        "b.result.v2",
+        "c.analysis.v2",
+        "c.offline-draft",
+        "c.task.v2",
+        "joint.draft.v2",
+        "joint.output.v2"
+      ],
+      "expected": [
+        "b.result.v2",
+        "c.analysis.v2",
+        "c.offline-draft",
+        "c.task.v2",
+        "joint.draft.v2",
+        "joint.output.v2"
+      ],
+      "held": true
+    }
+  },
+  "source_mode": "documents",
+  "sources": {
+    "scripts/reference_capture.py": {
+      "logical_lines": 167,
+      "sha256": "7f9677c5bad9a6cabfae3ef48c10415088f77de3cdf32730d7026973214530e3"
+    },
+    "scripts/reference_deployment.py": {
+      "logical_lines": 322,
+      "sha256": "c1befe126d215a6c2b7a9e40832e037c6f07530ac3c10fb4944a39e54eb32be1"
+    },
+    "scripts/reference_deployment_diagnostic.py": {
+      "logical_lines": 518,
+      "sha256": "467a09ff010c9dcbba3d9f6297e4f5e1063c7d3a4b155a45cfa625a738ca1292"
+    },
+    "scripts/reference_draft_lifecycle.py": {
+      "logical_lines": 81,
+      "sha256": "0563c9b6a2aedeb937e3d4bee054c241f49a9c0e23c22aab12d3ddab90ee8975"
+    },
+    "scripts/reference_enrollment.py": {
+      "logical_lines": 250,
+      "sha256": "45b4a507d242c0327e7bca3d50beca02e489f069ac7dcb4b58e9c87059cc2906"
+    },
+    "scripts/reference_lifecycle.py": {
+      "logical_lines": 208,
+      "sha256": "9e40540ab5e44b62b102cc8b866500f3172f070aa2925c67ab6e258d57f9d4dd"
+    },
+    "scripts/reference_local_first.py": {
+      "logical_lines": 406,
+      "sha256": "6f748f6d2c3f8ab05944b783308500f1ef9dd7bc38f1188c112d9a270efd869b"
+    },
+    "scripts/reference_repair.py": {
+      "logical_lines": 378,
+      "sha256": "c62b2c0d20b93c6ca0bdd06bccea22caf2290d278aeb36182ae5ec9e30da05f0"
+    },
+    "scripts/reference_session.py": {
+      "logical_lines": 179,
+      "sha256": "5800fbe0c48287157e1899d355a33d005b1c3bf89210deaf8a19eccd1b739f18"
+    },
+    "scripts/reference_shared_draft.py": {
+      "logical_lines": 366,
+      "sha256": "b4227030f9563443f3381ced9336138b0b7b3376ee5a8991116645efd3c31c32"
+    },
+    "scripts/reference_source.py": {
+      "logical_lines": 93,
+      "sha256": "e64a06f6f9128582ab2549e9d6b082464a5a821c545e2489f4aa9fae6a574414"
+    }
+  },
+  "trace": [
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:trust:a:b",
+      "layer": "enrollment",
+      "operation": "trust",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:trust:a:c",
+      "layer": "enrollment",
+      "operation": "trust",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:enroll:a.planner",
+      "layer": "enrollment",
+      "operation": "enroll",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:trust:b:a",
+      "layer": "enrollment",
+      "operation": "trust",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:trust:b:c",
+      "layer": "enrollment",
+      "operation": "trust",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:enroll:b.analyst",
+      "layer": "enrollment",
+      "operation": "enroll",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:enroll:b.researcher",
+      "layer": "enrollment",
+      "operation": "enroll",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:trust:c:a",
+      "layer": "enrollment",
+      "operation": "trust",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:trust:c:b",
+      "layer": "enrollment",
+      "operation": "trust",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 90,
+      "event": "setup",
+      "expected": null,
+      "label": "setup:enroll:c.synthesizer",
+      "layer": "enrollment",
+      "operation": "enroll",
+      "primary": false,
+      "setup": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 100,
+      "event": "e01",
+      "expected": null,
+      "label": "e01:accept",
+      "layer": "enrollment",
+      "operation": "accept",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 101,
+      "event": "e02",
+      "expected": null,
+      "label": "e02:accept",
+      "layer": "enrollment",
+      "operation": "accept",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 102,
+      "event": "e03",
+      "expected": null,
+      "label": "e03:accept",
+      "layer": "enrollment",
+      "operation": "accept",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 103,
+      "event": "e04",
+      "expected": null,
+      "label": "e04:publish:a.question:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 103,
+      "event": "e04",
+      "expected": null,
+      "label": "e04:publish:a.question",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 103,
+      "event": "e04",
+      "expected": null,
+      "label": "e04:publish:a.method:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 103,
+      "event": "e04",
+      "expected": null,
+      "label": "e04:read:a.question",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 103,
+      "event": "e04",
+      "expected": null,
+      "label": "e04:publish:a.method",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 103,
+      "event": "e04",
+      "expected": null,
+      "label": "e04:release:a.method",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 104,
+      "event": "e05",
+      "expected": null,
+      "label": "e05:publish:b.table.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 104,
+      "event": "e05",
+      "expected": null,
+      "label": "e05:publish:b.table.v1",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": "not-releasable",
+      "at": 104,
+      "event": "e05",
+      "expected": "not-releasable",
+      "label": "e05:release:b.table.v1",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 105,
+      "event": "e06",
+      "expected": null,
+      "label": "e06:delegate",
+      "layer": "enrollment",
+      "operation": "delegate",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": null,
+      "at": 106,
+      "event": "e07",
+      "expected": null,
+      "label": "e07:publish:b.result.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": null,
+      "at": 106,
+      "event": "e07",
+      "expected": null,
+      "label": "e07:read:a.method",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": null,
+      "at": 106,
+      "event": "e07",
+      "expected": null,
+      "label": "e07:read:b.table.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": null,
+      "at": 106,
+      "event": "e07",
+      "expected": null,
+      "label": "e07:publish:b.result.v1",
+      "layer": "capture",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 107,
+      "event": "e08",
+      "expected": null,
+      "label": "e08:release:b.result.v1",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 108,
+      "event": "e09",
+      "expected": null,
+      "label": "e09:use:b.table.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "not-authorized",
+      "at": 108,
+      "event": "e09",
+      "expected": "not-authorized",
+      "label": "e09:use:b.table.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "proof-unsupported",
+      "at": 109,
+      "event": "e10",
+      "expected": "proof-unsupported",
+      "label": "e10:proof:symmetric-gap",
+      "layer": null,
+      "operation": null,
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 110,
+      "event": "e11",
+      "expected": null,
+      "label": "e11:publish:c.task.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 110,
+      "event": "e11",
+      "expected": null,
+      "label": "e11:read:b.result.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 110,
+      "event": "e11",
+      "expected": null,
+      "label": "e11:read:a.method",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 110,
+      "event": "e11",
+      "expected": null,
+      "label": "e11:publish:c.task.v1",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 110,
+      "event": "e11",
+      "expected": null,
+      "label": "e11:delegate",
+      "layer": "enrollment",
+      "operation": "delegate",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 110,
+      "event": "e11",
+      "expected": null,
+      "label": "e11:assign",
+      "layer": "session",
+      "operation": "assign",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 111,
+      "event": "e12",
+      "expected": null,
+      "label": "e12:publish:c.analysis.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 111,
+      "event": "e12",
+      "expected": null,
+      "label": "e12:read:a.method",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 111,
+      "event": "e12",
+      "expected": null,
+      "label": "e12:read:b.result.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 111,
+      "event": "e12",
+      "expected": null,
+      "label": "e12:publish:c.analysis.v1",
+      "layer": "capture",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 111,
+      "event": "e12",
+      "expected": null,
+      "label": "e12:session-derive",
+      "layer": "session",
+      "operation": "derive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 111,
+      "event": "e12",
+      "expected": null,
+      "label": "e12:release:c.analysis.v1",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "human-required",
+      "at": 111,
+      "event": "e12",
+      "expected": "human-required",
+      "label": "e12:release:c.analysis.v1",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 112,
+      "event": "e13",
+      "expected": null,
+      "label": "e13:publish:a.challenge:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 112,
+      "event": "e13",
+      "expected": null,
+      "label": "e13:read:c.analysis.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 112,
+      "event": "e13",
+      "expected": null,
+      "label": "e13:publish:a.challenge",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 113,
+      "event": "e14",
+      "expected": null,
+      "label": "e14:publish:c.reproduction:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 113,
+      "event": "e14",
+      "expected": null,
+      "label": "e14:read:a.method",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 113,
+      "event": "e14",
+      "expected": null,
+      "label": "e14:read:b.result.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 113,
+      "event": "e14",
+      "expected": null,
+      "label": "e14:read:c.analysis.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 113,
+      "event": "e14",
+      "expected": null,
+      "label": "e14:publish:c.reproduction",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:release:a.question",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:release:c.reproduction",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:release:a.challenge",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:gather:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:read:b.result.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:read:c.reproduction",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:draft-open",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:draft-receive:a.question",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:draft-receive:a.method",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:draft-receive:b.result.v1",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:draft-receive:c.analysis.v1",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:draft-receive:a.challenge",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:draft-receive:c.reproduction",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:head:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:revise:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:race:b.researcher",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "stale-base",
+      "at": 114,
+      "event": "e15",
+      "expected": "stale-base",
+      "label": "e15:race:c.specialist",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:head-after-race",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:rebase:c.specialist",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 114,
+      "event": "e15",
+      "expected": null,
+      "label": "e15:authors",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.planner",
+      "actual": "human-required",
+      "at": 115,
+      "event": "e16",
+      "expected": "human-required",
+      "label": "e16:signoff-by-agent",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 115,
+      "event": "e16",
+      "expected": null,
+      "label": "e16:signoff:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "signoff-required",
+      "at": 115,
+      "event": "e16",
+      "expected": "signoff-required",
+      "label": "e16:publish-before-signoffs",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 115,
+      "event": "e16",
+      "expected": null,
+      "label": "e16:signoff:b.researcher",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 115,
+      "event": "e16",
+      "expected": null,
+      "label": "e16:signoff:c.specialist",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 115,
+      "event": "e16",
+      "expected": null,
+      "label": "e16:publish",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 116,
+      "event": "e17",
+      "expected": null,
+      "label": "e17:publish:c.unrelated:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 116,
+      "event": "e17",
+      "expected": null,
+      "label": "e17:publish:c.unrelated",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 117,
+      "event": "e18",
+      "expected": null,
+      "label": "e18:use:joint.output.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 117,
+      "event": "e18",
+      "expected": null,
+      "label": "e18:use:joint.output.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 117,
+      "event": "e18",
+      "expected": null,
+      "label": "e18:use:c.unrelated:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 117,
+      "event": "e18",
+      "expected": null,
+      "label": "e18:use:c.unrelated",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "onward-release-required",
+      "at": 117,
+      "event": "e18",
+      "expected": "onward-release-required",
+      "label": "e18:onward-release",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:correct:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:supersede",
+      "layer": "deployment",
+      "operation": "supersede",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:a.question",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:a.method",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:a.challenge",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:joint.output.v1",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:b.table.v1",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:b.result.v1",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:c.task.v1",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:c.analysis.v1",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:c.reproduction",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:repair:c.unrelated",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 200,
+      "event": "e19",
+      "expected": null,
+      "label": "e19:draft-report:joint.draft.v1",
+      "layer": "deployment",
+      "operation": "draft_report",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 201,
+      "event": "e20",
+      "expected": null,
+      "label": "e20:use:joint.output.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "correction-pending",
+      "at": 201,
+      "event": "e20",
+      "expected": "correction-pending",
+      "label": "e20:use:joint.output.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 202,
+      "event": "e21",
+      "expected": null,
+      "label": "e21:repair:b.result.v1",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 202,
+      "event": "e21",
+      "expected": null,
+      "label": "e21:acknowledge",
+      "layer": "deployment",
+      "operation": "acknowledge",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 203,
+      "event": "e22",
+      "expected": null,
+      "label": "e22:use:joint.output.v1:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "replacement-required",
+      "at": 203,
+      "event": "e22",
+      "expected": "replacement-required",
+      "label": "e22:use:joint.output.v1",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 210,
+      "event": "e23",
+      "expected": null,
+      "label": "e23:publish:b.result.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 210,
+      "event": "e23",
+      "expected": null,
+      "label": "e23:read:a.method",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 210,
+      "event": "e23",
+      "expected": null,
+      "label": "e23:read:b.table.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 210,
+      "event": "e23",
+      "expected": null,
+      "label": "e23:publish:b.result.v2",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 210,
+      "event": "e23",
+      "expected": null,
+      "label": "e23:replacement-needs-release:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "not-authorized",
+      "at": 210,
+      "event": "e23",
+      "expected": "not-authorized",
+      "label": "e23:replacement-needs-release",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "administrator-required",
+      "at": 210,
+      "event": "e23",
+      "expected": "administrator-required",
+      "label": "e23:release:b.result.v2",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 210,
+      "event": "e23",
+      "expected": null,
+      "label": "e23:release:b.result.v2",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 211,
+      "event": "e24",
+      "expected": null,
+      "label": "e24:publish:c.task.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 211,
+      "event": "e24",
+      "expected": null,
+      "label": "e24:read:b.result.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 211,
+      "event": "e24",
+      "expected": null,
+      "label": "e24:read:a.method",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 211,
+      "event": "e24",
+      "expected": null,
+      "label": "e24:publish:c.task.v2",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 211,
+      "event": "e24",
+      "expected": null,
+      "label": "e24:delegate",
+      "layer": "enrollment",
+      "operation": "delegate",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 211,
+      "event": "e24",
+      "expected": null,
+      "label": "e24:assign",
+      "layer": "session",
+      "operation": "assign",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 212,
+      "event": "e25",
+      "expected": null,
+      "label": "e25:publish:c.analysis.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 212,
+      "event": "e25",
+      "expected": null,
+      "label": "e25:read:a.method",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 212,
+      "event": "e25",
+      "expected": null,
+      "label": "e25:read:b.result.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 212,
+      "event": "e25",
+      "expected": null,
+      "label": "e25:publish:c.analysis.v2",
+      "layer": "capture",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 212,
+      "event": "e25",
+      "expected": null,
+      "label": "e25:session-derive",
+      "layer": "session",
+      "operation": "derive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "delegation-budget",
+      "at": 212,
+      "event": "e25",
+      "expected": "delegation-budget",
+      "label": "e25:session-over-budget",
+      "layer": "session",
+      "operation": "derive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 212,
+      "event": "e25",
+      "expected": null,
+      "label": "e25:release:c.analysis.v2",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:gather:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:read:b.result.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:read:c.analysis.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:draft-open",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:draft-receive:a.question",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:draft-receive:a.method",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:draft-receive:b.result.v2",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:draft-receive:c.analysis.v2",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:head:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:revise:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:race:b.researcher",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "stale-base",
+      "at": 213,
+      "event": "e26",
+      "expected": "stale-base",
+      "label": "e26:race:c.specialist",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:head-after-race",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:rebase:c.specialist",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 213,
+      "event": "e26",
+      "expected": null,
+      "label": "e26:authors",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.planner",
+      "actual": "human-required",
+      "at": 214,
+      "event": "e27",
+      "expected": "human-required",
+      "label": "e27:signoff-by-agent",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 214,
+      "event": "e27",
+      "expected": null,
+      "label": "e27:signoff:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "signoff-required",
+      "at": 214,
+      "event": "e27",
+      "expected": "signoff-required",
+      "label": "e27:publish-before-signoffs",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 214,
+      "event": "e27",
+      "expected": null,
+      "label": "e27:signoff:b.researcher",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 214,
+      "event": "e27",
+      "expected": null,
+      "label": "e27:signoff:c.specialist",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 214,
+      "event": "e27",
+      "expected": null,
+      "label": "e27:publish",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 215,
+      "event": "e28",
+      "expected": null,
+      "label": "e28:use:joint.output.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 215,
+      "event": "e28",
+      "expected": null,
+      "label": "e28:use:joint.output.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 215,
+      "event": "e28",
+      "expected": null,
+      "label": "e28:use:c.unrelated:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 215,
+      "event": "e28",
+      "expected": null,
+      "label": "e28:use:c.unrelated",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 215,
+      "event": "e28",
+      "expected": null,
+      "label": "e28:control:old-output-stays-refused:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "replacement-required",
+      "at": 215,
+      "event": "e28",
+      "expected": "replacement-required",
+      "label": "e28:control:old-output-stays-refused",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 216,
+      "event": "e42",
+      "expected": null,
+      "label": "e42:control:public-before-withdrawal",
+      "layer": "lifecycle",
+      "operation": "public",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 230,
+      "event": "e29",
+      "expected": null,
+      "label": "e29:lease",
+      "layer": "deployment",
+      "operation": "lease",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 230,
+      "event": "e29",
+      "expected": null,
+      "label": "e29:accept-lease",
+      "layer": "deployment",
+      "operation": "accept_lease",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "operator",
+      "actual": null,
+      "at": 240,
+      "event": "e30",
+      "expected": null,
+      "label": "e30:inject-outage",
+      "layer": null,
+      "operation": "online",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 245,
+      "event": "e31",
+      "expected": null,
+      "label": "e31:publish:c.local-draft:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 245,
+      "event": "e31",
+      "expected": null,
+      "label": "e31:read:c.unrelated",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 245,
+      "event": "e31",
+      "expected": null,
+      "label": "e31:publish:c.local-draft",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 250,
+      "event": "e32",
+      "expected": null,
+      "label": "e32:withdraw:b.result.v2",
+      "layer": "deployment",
+      "operation": "withdraw",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 260,
+      "event": "e33",
+      "expected": null,
+      "label": "e33:publish:c.offline-draft:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "issuer-unavailable",
+      "at": 260,
+      "event": "e33",
+      "expected": "issuer-unavailable",
+      "label": "e33:strict-read",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 260,
+      "event": "e33",
+      "expected": null,
+      "label": "e33:read:b.result.v2",
+      "layer": "deployment",
+      "operation": "offline",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 260,
+      "event": "e33",
+      "expected": null,
+      "label": "e33:read:c.analysis.v2",
+      "layer": "deployment",
+      "operation": "offline",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 260,
+      "event": "e33",
+      "expected": null,
+      "label": "e33:publish:c.offline-draft",
+      "layer": "deployment",
+      "operation": "offline",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "issuer-unavailable",
+      "at": 261,
+      "event": "e34",
+      "expected": "issuer-unavailable",
+      "label": "e34:release:c.offline-draft",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 290,
+      "event": "e35",
+      "expected": null,
+      "label": "e35:use-offline:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "lease-expired",
+      "at": 290,
+      "event": "e35",
+      "expected": "lease-expired",
+      "label": "e35:use-offline:b.result.v2",
+      "layer": "deployment",
+      "operation": "offline",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "operator",
+      "actual": null,
+      "at": 310,
+      "event": "e36",
+      "expected": null,
+      "label": "e36:heal-outage",
+      "layer": null,
+      "operation": "online",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:use:joint.output.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "withdrawn",
+      "at": 311,
+      "event": "e37",
+      "expected": "withdrawn",
+      "label": "e37:use:joint.output.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:a.question",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:a.method",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:joint.output.v2",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:b.table.v2",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:b.result.v2",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:c.task.v2",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:c.analysis.v2",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:c.unrelated",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:c.local-draft",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:repair:c.offline-draft",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 311,
+      "event": "e37",
+      "expected": null,
+      "label": "e37:draft-report:joint.draft.v2",
+      "layer": "deployment",
+      "operation": "draft_report",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 312,
+      "event": "e38",
+      "expected": null,
+      "label": "e38:use:joint.output.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "withdrawn",
+      "at": 312,
+      "event": "e38",
+      "expected": "withdrawn",
+      "label": "e38:use:joint.output.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 313,
+      "event": "e39",
+      "expected": null,
+      "label": "e39:use:c.unrelated:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 313,
+      "event": "e39",
+      "expected": null,
+      "label": "e39:use:c.unrelated",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 313,
+      "event": "e39",
+      "expected": null,
+      "label": "e39:use:c.local-draft:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 313,
+      "event": "e39",
+      "expected": null,
+      "label": "e39:use:c.local-draft",
+      "layer": "capture",
+      "operation": "read",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "new-grant-required",
+      "at": 314,
+      "event": "e40",
+      "expected": "new-grant-required",
+      "label": "e40:request-new-purpose",
+      "layer": "lifecycle",
+      "operation": "request",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 314,
+      "event": "e40",
+      "expected": null,
+      "label": "e40:accept-followup",
+      "layer": "enrollment",
+      "operation": "accept",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 314,
+      "event": "e40",
+      "expected": null,
+      "label": "e40:grant",
+      "layer": "lifecycle",
+      "operation": "grant",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 314,
+      "event": "e40",
+      "expected": null,
+      "label": "e40:control:granted-reuse",
+      "layer": "lifecycle",
+      "operation": "request",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "new-grant-required",
+      "at": 314,
+      "event": "e40",
+      "expected": "new-grant-required",
+      "label": "e40:control:no-revival",
+      "layer": "lifecycle",
+      "operation": "request",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 315,
+      "event": "e41",
+      "expected": null,
+      "label": "e41:export",
+      "layer": "lifecycle",
+      "operation": "export",
+      "primary": true,
+      "setup": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "withdrawn",
+      "at": 315,
+      "event": "e41",
+      "expected": "withdrawn",
+      "label": "e41:control:withdrawn-export",
+      "layer": "lifecycle",
+      "operation": "export",
+      "primary": false,
+      "setup": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "withdrawn",
+      "at": 316,
+      "event": "e42",
+      "expected": "withdrawn",
+      "label": "e42:record-public-release",
+      "layer": "lifecycle",
+      "operation": "public",
+      "primary": true,
+      "setup": false
+    }
+  ],
+  "unexpected_refusals": [],
+  "unused_components": {
+    "enrollment": "Enrollment release: the repair layer serves releases to peers.",
+    "local_first": "LeaseAuthority and LocalWorkspace: C keeps its work in the repair layer, so the lease fallback is added there; only the module primitives and lease format run.",
+    "session": "Assessment open/record/signoff/publish: the draft host already records sign-off."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "artifacts": {
+    "p3.import.checker-244": {"kind": "imported-record", "title": "p3.import.checker-244"},
+    "p3.b.method": {"kind": "method", "title": "p3.b.method"},
+    "p3.c.observation": {"kind": "observation", "title": "p3.c.observation"},
+    "p3.draft": {"kind": "analysis", "title": "p3.draft"},
+    "p3.b.method.v2": {"kind": "method", "title": "p3.b.method.v2"},
+    "p3.draft.v2": {"kind": "analysis", "title": "p3.draft.v2"},
+    "p3.joint.output": {"kind": "published-output", "title": "p3.joint.output"},
+    "p3.joint.output.v2": {"kind": "published-output", "title": "p3.joint.output.v2"}
+  },
+  "correction_source": "p3.b.method",
+  "blocked_after_correction": ["p3.draft"],
+  "not_affected": ["p3.import.checker-244", "p3.c.observation"],
+  "affected_by_correction": ["p3.b.method", "p3.draft"],
+  "nodes": [
+    {"id": "p3.import.checker-244", "kind": "imported-record", "title": "p3.import.checker-244"},
+    {"id": "p3.b.method", "kind": "method", "title": "p3.b.method"},
+    {"id": "p3.c.observation", "kind": "observation", "title": "p3.c.observation"},
+    {"id": "p3.draft", "kind": "analysis", "title": "p3.draft"},
+    {"id": "p3.b.method.v2", "kind": "method", "title": "p3.b.method.v2"},
+    {"id": "p3.draft.v2", "kind": "analysis", "title": "p3.draft.v2"}
+  ],
+  "edges": [
+    {"source": "p3.b.method", "relation": "builds-on", "target": "p3.import.checker-244"},
+    {"source": "p3.c.observation", "relation": "builds-on", "target": "p3.import.checker-244"},
+    {"source": "p3.draft", "relation": "builds-on", "target": "p3.b.method"},
+    {"source": "p3.draft", "relation": "builds-on", "target": "p3.c.observation"},
+    {"source": "p3.b.method.v2", "relation": "builds-on", "target": "p3.import.checker-244"},
+    {"source": "p3.b.method.v2", "relation": "supersedes", "target": "p3.b.method"},
+    {"source": "p3.draft.v2", "relation": "builds-on", "target": "p3.b.method.v2"},
+    {"source": "p3.draft.v2", "relation": "builds-on", "target": "p3.c.observation"}
+  ],
+  "corrections": {"p3.b.method": "p3.b.method.v2"},
+  "isolation": {
+    "collaboration-2-private": [],
+    "p3-public": ["p3.import.checker-244", "p3.b.method", "p3.c.observation", "p3.draft",
+                   "p3.b.method.v2", "p3.draft.v2"]
+  }
+}

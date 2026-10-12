@@ -1,0 +1,258 @@
+{
+ "F3_falsifier": "not-applicable-mathematics-diagnostic",
+ "M3_original_effort_160_units": {
+  "labeller": {
+   "calls": 9,
+   "completion_tokens": 63297,
+   "cost_usd": 0.278922,
+   "prompt_tokens": 55411,
+   "service_seconds": 376.65599999999995
+  }
+ },
+ "SIDH_score": null,
+ "authorizes_replay": false,
+ "contract_sha256": "62e03c44a4a86052fddba987966ee8e18e70cc3faf2d1b8366c09accece5a5c1",
+ "disputed_ids": [
+  "m-011965fa1e3e",
+  "m-0aa197b13a6c",
+  "m-7b7cd8905190",
+  "m-04927e84d9c0",
+  "m-fdeb82f9fd03",
+  "m-09980e7c5323",
+  "m-0d796535edf2",
+  "m-0348bfa2345d",
+  "m-2f023aaa082b",
+  "m-0040bdc5e5e3",
+  "m-05d2a00298f8",
+  "m-021fbe136ea7",
+  "m-0428423baee4",
+  "m-04bd19b6e95c",
+  "m-0ee25c996394",
+  "m-07ef2226a6d6",
+  "m-22eaa75a5f43",
+  "m-00b8d2e8ea9c"
+ ],
+ "effort": {
+  "M4": {
+   "calls": 92,
+   "completion_tokens": 146193,
+   "cost_usd": 2.571086999999999,
+   "prompt_tokens": 2697151,
+   "service_seconds": 1101.3150000000005
+  },
+  "reviewer-a": {
+   "calls": 92,
+   "completion_tokens": 20071,
+   "cost_usd": 8.564642000000001,
+   "prompt_tokens": 4181966,
+   "service_seconds": 333.4910000000001
+  },
+  "reviewer-b": {
+   "calls": 92,
+   "completion_tokens": 29827,
+   "cost_usd": 7.046919499999999,
+   "prompt_tokens": 2699515,
+   "service_seconds": 472.9300000000001
+  }
+ },
+ "kind": "f2-stage-b-full-context-pilot",
+ "limits": [
+  "Same inspected calibration population; no held-out generalization.",
+  "Mathematics dependence is not dependence on a documented failed theorem.",
+  "Dataset bytes are pinned; arXiv version labels remain unproven.",
+  "Simulated model agreement is not expert truth or proof of correctness.",
+  "M4 tests added context, not institutional software or actual author effort.",
+  "Only the citing source is provided; the cited theorem is not proved by this experiment.",
+  "Long-source exclusions limit coverage. No SIDH or M1/M2 score is produced.",
+  "An earlier run exhausted 552 attempts on a local TLS trust-store error. Those failed attempts remain separate from the new provider calls."
+ ],
+ "minimum_reference_met": true,
+ "missing": [],
+ "population": {
+  "excluded": 24,
+  "planned": 136,
+  "rule": "All stage A mathematics units with complete source <=160000 bytes; no label-based selection.",
+  "works": 92
+ },
+ "product_result": null,
+ "status": "complete",
+ "variants": {
+  "agreed-subset": {
+   "common_support": 118,
+   "coverage": {
+    "M3": {
+     "positive_unknown": 0,
+     "recall_unknown_as_miss": 0.5333333333333333,
+     "reference_positive": 60,
+     "unknown_ids": []
+    },
+    "M4": {
+     "positive_unknown": 0,
+     "recall_unknown_as_miss": 0.7333333333333333,
+     "reference_positive": 60,
+     "unknown_ids": []
+    }
+   },
+   "excluded_ids": [
+    "m-011965fa1e3e",
+    "m-0aa197b13a6c",
+    "m-7b7cd8905190",
+    "m-04927e84d9c0",
+    "m-fdeb82f9fd03",
+    "m-09980e7c5323",
+    "m-0d796535edf2",
+    "m-0348bfa2345d",
+    "m-2f023aaa082b",
+    "m-0040bdc5e5e3",
+    "m-05d2a00298f8",
+    "m-021fbe136ea7",
+    "m-0428423baee4",
+    "m-04bd19b6e95c",
+    "m-0ee25c996394",
+    "m-07ef2226a6d6",
+    "m-22eaa75a5f43",
+    "m-00b8d2e8ea9c"
+   ],
+   "f1_difference": 0.1579818031430934,
+   "known_reference": 118,
+   "methods": {
+    "M3": {
+     "f1": 0.6881720430107527,
+     "false_alarms_per_true_positive": 0.03125,
+     "fn": 28,
+     "fp": 1,
+     "precision": 0.9696969696969697,
+     "recall": 0.5333333333333333,
+     "tn": 57,
+     "tp": 32,
+     "units": 118
+    },
+    "M4": {
+     "f1": 0.8461538461538461,
+     "false_alarms_per_true_positive": 0.0,
+     "fn": 16,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.7333333333333333,
+     "tn": 58,
+     "tp": 44,
+     "units": 118
+    }
+   },
+   "paired_interval": {
+    "defined_resamples": 2000,
+    "high": 0.2559,
+    "low": 0.0669,
+    "resamples": 2000,
+    "seed": 20261004,
+    "unit": "citing work"
+   }
+  },
+  "reviewer-a": {
+   "common_support": 135,
+   "coverage": {
+    "M3": {
+     "positive_unknown": 0,
+     "recall_unknown_as_miss": 0.5245901639344263,
+     "reference_positive": 61,
+     "unknown_ids": []
+    },
+    "M4": {
+     "positive_unknown": 0,
+     "recall_unknown_as_miss": 0.7213114754098361,
+     "reference_positive": 61,
+     "unknown_ids": []
+    }
+   },
+   "excluded_ids": [
+    "m-07ef2226a6d6"
+   ],
+   "f1_difference": 0.17039486481229338,
+   "known_reference": 135,
+   "methods": {
+    "M3": {
+     "f1": 0.6597938144329897,
+     "false_alarms_per_true_positive": 0.125,
+     "fn": 29,
+     "fp": 4,
+     "precision": 0.8888888888888888,
+     "recall": 0.5245901639344263,
+     "tn": 70,
+     "tp": 32,
+     "units": 135
+    },
+    "M4": {
+     "f1": 0.8301886792452831,
+     "false_alarms_per_true_positive": 0.022727272727272728,
+     "fn": 17,
+     "fp": 1,
+     "precision": 0.9777777777777777,
+     "recall": 0.7213114754098361,
+     "tn": 73,
+     "tp": 44,
+     "units": 135
+    }
+   },
+   "paired_interval": {
+    "defined_resamples": 2000,
+    "high": 0.2722,
+    "low": 0.0754,
+    "resamples": 2000,
+    "seed": 20261004,
+    "unit": "citing work"
+   }
+  },
+  "reviewer-b": {
+   "common_support": 136,
+   "coverage": {
+    "M3": {
+     "positive_unknown": 0,
+     "recall_unknown_as_miss": 0.4605263157894737,
+     "reference_positive": 76,
+     "unknown_ids": []
+    },
+    "M4": {
+     "positive_unknown": 0,
+     "recall_unknown_as_miss": 0.5921052631578947,
+     "reference_positive": 76,
+     "unknown_ids": []
+    }
+   },
+   "excluded_ids": [],
+   "f1_difference": 0.11880165289256195,
+   "known_reference": 136,
+   "methods": {
+    "M3": {
+     "f1": 0.625,
+     "false_alarms_per_true_positive": 0.02857142857142857,
+     "fn": 41,
+     "fp": 1,
+     "precision": 0.9722222222222222,
+     "recall": 0.4605263157894737,
+     "tn": 59,
+     "tp": 35,
+     "units": 136
+    },
+    "M4": {
+     "f1": 0.743801652892562,
+     "false_alarms_per_true_positive": 0.0,
+     "fn": 31,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.5921052631578947,
+     "tn": 60,
+     "tp": 45,
+     "units": 136
+    }
+   },
+   "paired_interval": {
+    "defined_resamples": 2000,
+    "high": 0.2108,
+    "low": 0.033,
+    "resamples": 2000,
+    "seed": 20261004,
+    "unit": "citing work"
+   }
+  }
+ }
+}

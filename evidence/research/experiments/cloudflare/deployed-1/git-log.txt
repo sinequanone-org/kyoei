@@ -1,0 +1,62 @@
+2793024 kyoei: ship 2da8027880c2
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"81a5b7d0f42a21183616769e7e06595a7ea106cbd391425fdf92f93ceaba86f6","kyoei":"ship/1","line":"b2","op":"4b558f01aba7678b5853210b4b5e60b9","version":2}
+
+4f95b55 kyoei: ship c93522ff3ba4
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"b8f7ef643b46ea8beaa6f850ddb201d7fd11ff3eae1b5587417d5dfabe800cdf","kyoei":"ship/1","line":"c2","op":"826e99acb451f637dcb0d8c38e7975c9","version":2}
+
+c93522f c2: Repair c2: Sign each request when a secret is set
+
+2da8027 b2: Repair b2: Signer test vectors
+
+33fd877 b1: Clean signer written from the specification
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"f8158277ddf2c7f9b9165366de4faf26547c69ff5c199a20bd3ba0cb2777f5af","kyoei":"ship/1","line":"b1","op":"a63dbd073ac395ae04a2731b109710f4","version":2}
+
+c29ab2e a3: Repair a3: Signed retries
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"dd48969362302b7bb173debd787267682a6de5e270b883bdff67c0a866990217","kyoei":"ship/1","line":"a3","op":"e963deb6f2011d9d2894c85a3fa274c1","version":2}
+
+5b0c153 kyoei: ship 30416352d36e
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"ee93a9baf0829753fbc49fbed37e4bd82c7f2c7ed0cf8db142cd2bf8a9f6f217","kyoei":"ship/1","line":"b3","op":"4cc0f3ba59f6e4cc83d9644196a7ac01","version":1}
+
+abb1a3b c4: README update
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"d9fe1c01ee8d725ec046aee9ab05f58425bf5a697393efefb7c54083ea1b9a00","kyoei":"ship/1","line":"c4","op":"43db8dc3fb7e55e4ed94fe6f15964f4a","version":1}
+
+3041635 b3: Signing documentation
+
+c1fcd04 c2: Sign each request when a secret is set
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"ce68c692cc97968b3182884f33aed3e62dc87d37a69dd91d30f81f2f7ef66028","kyoei":"ship/1","line":"c2","op":"c340abe242b5b75fc8d203efccee91dd","version":1}
+
+85ebc7c a2: Repair a2: Cap the retry delay
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"b10654f80f137f4ec6450e3b574168ab94524344d140147d0e389ccb4c37ee55","kyoei":"ship/1","line":"a2","op":"3a3110cac9b86396c04af569ca169160","version":2}
+
+51a63ba kyoei: ship de365196424d
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"62332f72ecfd4c9d694064713d8aec2796d3daff1394a2b72c033dcbfde0a76a","kyoei":"ship/1","line":"c5","op":"0a0f80f88ea5741bf90ca6dbfc964d0e","version":1}
+
+968e252 kyoei: ship 45f744371f55
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"149603fb1042b3004f95d7be8427342fa4647913daad2c708a2889e6746e1c99","kyoei":"ship/1","line":"b1","op":"c0c8ecd2876c141db9d86f5295fb9e41","version":1}
+
+13c76c3 kyoei: ship c6803a106475
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"34101183b48d097b8d20a04f4ee6bce595a0caeee7925334bc9135d53bf24660","kyoei":"ship/1","line":"a1","op":"2e471a3f22dfa9aacc9d0b703e3b4c1b","version":1}
+
+a81a97b kyoei: ship d9c52a050542
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"99d785cbd445dfb2f895bb1281129318a8a71e642b442058c65c66cc5da0c416","kyoei":"ship/1","line":"c3","op":"ee348b730ac29a10221174f5ab8dcb7c","version":1}
+
+de36519 c5: Cove signer for the gateway
+
+c6803a1 a1: Add jitter to retry backoff
+
+45f7443 b1: HMAC request signer
+
+ffd622f c1: Burst option for the rate limiter
+{"approvedBy":"c.lead","checks":["signature:ok","content:ok","release:ok","inputs:ok","approval:ok","base:ok"],"contribution":"c21dc87bb36ce6d11f68f75b675141c73ec58ea95fe617e9edeb8dab1f7dcc41","kyoei":"ship/1","line":"c1","op":"8a3dea96fdcfe1876615cde9a98016ce","version":1}
+
+d9c52a0 c3: Request timeout
+
+98d6e7a seed
+kyoei-record: 50f3a45510770debaa50208ba520507b93857b74d71bcecefe6f54b7bf3a1020
+org: c  agent: c.lead  line: seed v1
+task: seed the integration repository
+why: baseline for every agent fork
+content: blake3-snapshot-v1 139a56560d06252bba3448ce1c848b7f271f3e45f9b9a8822a9b21dba9f90603
+model: scripted
+signed-record: {"id":"50f3a45510770debaa50208ba520507b93857b74d71bcecefe6f54b7bf3a1020","body":{"v":1,"deployment":"contest","collaboration":"shared-sdk","org":"c","actor":"c.lead","repo":"kyoei-c/shared-sdk","commit":"98d6e7a8f6283701f5f551e9b76f77ac8ee2e30e","base":"98d6e7a8f6283701f5f551e9b76f77ac8ee2e30e","content":{"alg":"blake3-snapshot-v1","root":"139a56560d06252bba3448ce1c848b7f271f3e45f9b9a8822a9b21dba9f90603","files":5,"bytes":626},"task":"seed the integration repository","rationale":"baseline for every agent fork","files":["README.md","src/client.ts","src/ratelimit.ts","src/retry.ts","src/sign.ts"],"inputs":[],"provides":[],"model":null,"prompt":null,"version":1,"line":"seed","created":1791673866037},"signature":"OffF1zkRTFi1yi2Slqu8Q0c34MLLcmAjyzFp577G5Q3_l3JncvPcQ1pwg-zicOgJhKmim7us3yAF8NEkGq-Mi8TJOp2oYPkl37hhUfWVUcDJeharYzZjTX4RH0HCM9yqUN89cYIEraUV_aKTiKanWDW2ByvGjW-pB18DaiNw2H19qmqSxJFob91tpSyxbYVuHoR2zZESK2HIGVplivMcMMd8rw7DJm7sziIzbNeWcwDyUvlUltVfmeCtyB_vt2Np2qAsxPqCdTOh0ZxZBsx5hT24NooYX-gBt8l4l3arfK6_9Cqzk8iZs1aF3TWaEfMXojUKjCwqbZx5jrCUu9jK1SHUQbhEfzNoAYwAm_qpnnVsMP2EAw2k0IDPGm0TdaQLnblYcoIIX4RRYhd0ildO0SQPy_5ph2ae6xPl1IQCafk1_F04z1iApn75AJlBjfdbzMZEHJ2uByyGxVLxdiMjMgmbOke9EmNBf2xzA28bcQ8FYrnbcc3_AnVpfuAQZWqkE1avnsV4-NkG7d27nVmNNV4EFE0mhuFK0GQTExHInL7ynPDzgNrMzB8VaYP90z8ozrsyj4tLCnfuo3uWUPwZE5_gprjmtKIC0DYNkZRBZI2E6f5qh7bTcQrJNAYvPEr2BiRA2LRkKQd9J8625wnyc33FZiHMpYyhE2gMoAIzCi6WAaATk-FiTBbe70Di-nKtsgIYduMATjWm61VGf3FCOwBeE8P2qMeCCBMMJxka7hvEVv54234ZoquNjB-IuHxG3yZrub73G6wlI4vHcSnp2pRZXeLA0ZtLQWxGdRuQOddDJK00K8ZSfs4wDwAiEZsczW5apGc3-Q0wOF_omk0iXp-YU_ONoiCQwuAXJEGCznCfRszUm8_0lo9N5O3s3wsdJ-wsnLzNFHCk5KzkLQNj5yzx-9fbaXY9LwEVVz_SORRvhdpmDFXYQd2I9GcFNvqWlbDIydlO48orqdKtQBDYosfe9hA8_Ye7cQaxlshsMBnMALsMSJhNztNH5Anj2V_f0e2TC9yT_M8Uy4G3iyw9rwznRNsWLPfgtyhq0zYXyM1vyWzHfbKdZCi9qiRtxKgeOFsLGREqRwnKOUMvIqkndwOnEodmnGMn4BFsEGTkhVWcrCsh2Ggc696LIT_TqhjUFtTWMJXcxTAPIuhcKWpga2XxkQn65q9w1xBxxBhGnsmVAzJP-1E8B34YhhgRGtXL2GpSsqOxV8kPfMYWxb4HAcp0r3q04jw639NOjCCpGLDFQpY_1Q4vhI6SmY9Aa4MS5_d0oOlgMmj9_Ul1mhU9RqAFCL-vBucKztrPJVemutQEm8VQV62wgTnsyPcJL7q0FWeblrey4B4LVZvuOBrcycasfg3vU5iJx-pE92XMIQ8PVvuekibsOsyPiN85iwHLipxFELcaB1cXWxOBrJVLCdhEy0-elqyQq6Ud74aScGjCafJ6wNsWn8_zuuO-FrGDzD9CQUvnQB77AcUhjh7Q2yMLUK3T0Ejw-Poams_D5cFw-uWjiXUCxhkrwV3SYZFlOzDTaoINWcm2ab4kWhz-5RSH--9dbUyp40-HN7dGTfB1WUsZ1gSt_xo0t4QLGG-cl75lVZ-WlYRQGLXxCoOpkUlp1aw8oV05wB3ko-1UCscKMQuHzP756MKQ-UKYHxgWUVY9sCLzaWq5RfTfdZbUCFn5T9_4fremC9PGF8TxtFqJCbCHTkiEzYpVxLjTNYLj5Im568VWuaI3zXthxTrycWApBU--18GgItkgM-a61A59mZSc0XXHOXOtUVZCNAs5mNqwoj8--4mMgm-FMfujGiyMbMBuRaMTE-3a0FMhXvHC6zEqK4tE2iYNPaao5eowlWkJYUDukBG4SW8uo6Hm39m7k_hffJuLwPM8vWqJvqCnIxFHemOnEFu4VA7WaITqHMj861TPaeZLKaVWaQwhwVVycWsgEqGgZiiqxVhQMWgp4E58Vb06kZ3n4C3UA_vqW_JCADbp0yLsA3yqML_iFAyGrWumr3xxD0sfxe-zqInWmGcT4FE0ygShiP74c2TIlAu4F2PIA7NUC7FzdopPoxCew4yvqkg3s5McGORUsmJCCp6WQhI9GHdVzfonePqwBLaj_sgr4DGG3aZtsW65vuG61xwcUh1VWdeGgiwcMheICGjpDMa4J4DZq7CBRKAvHNKfgK9gSPAHEYsn1EEZqUkPlR5Od4kiFg9CIlRcywomTSBhUsX6r5t3A8GnW0i3dFC_G0Y2dbR03Q8A1BwGWQyvs7XUDq8DW3mAs9SuSOI6cUkQCmRuOzGzXe7kuTSZebw1uF6I5hIZoS4zKwWBXy3_AjZ9v2jeKcT7pbyunFZfHf552cXxihMhyJPAZqd-odLHlHyTqyUSO5pr2bqdZWtP258tgD4GYgbwSjtUtzl-5ALv7UtvEPNz9SMlvn1FFvQrkG6qocNb-DbD7K4UjZxQqkBUURKFKANoXL5qSptR1pkWN_XOge3k-yqqIGjoDyFoswgRFUuD60XYW3m6uf9mGw5IcyoO1XS_BNb4A8-1CtvImy-4zGURakxqKnCGNSbtYj2GorYF4V-R4XPbpKJVSN-Satj_JweFfjsqQVPWOsP9eSegO8uy2Zcskx-KzuhWjPVSwrd3jWB2MIXSQF4tQpSDWrFbrrHg6uQc4y_EiiVhvBQR9NjGagyivNdHKTDp7kOjrMKvHZdE3zoNV9auOcz0bO8SH-f4fUwDqOigkNHaU2R-g9-EMdAohOS5BdxtldWs5QzJU5I6lDRCwkP8znUsu_kBxAxuFas3CJoXLetK_Z8oL9yRpGpgsBfzJpsCZadChYXw2rA2d4B9mdW_BnHMiPSHiHWRbUmWly5tFGQHR40ZLFLtAw9tvXl_W6_8O9iDSvcQe4DtkagYNKl2Hjoz7n0b7uAi2R4ajO0oVqO9BFVGgD2AM6XEQr2-0z0lbSrfxCLVeeg3WhQ5aPDbHyhBP7IlGQhmOfIkYsT8UMiBjo5CudGs7mo-oTBH2aPfwgf6AlQngoArSVGhlO2t-R3wV0D2O_YekKg464fSE-pvTEwKvPTP8ZBGRh9iSetyk4SA1BZt74qEx0dvJoX9WERC_cecdUY0eCJkmt4It8AtWjJ9SYDNGfhFOyZrHw3kn9QjGzd9w498toR9qDvBOG65KSRzS2VC3lCJv64OZp_ldZa1T04VtpCPArtqM0a_WXa6HS01QHeZqe9iM4cy6R2gEgK-eDAbCGoM96LNmPnfcWFlsGxOsukARPHuvr5FuTWqHEMo3fR2jYhL-lRaPxunbvjfWHrrQMk1bpRmP3Hlhw1mWPuGSZTf4UW9xg0TMrwwQc6-G6UtTjzdihHLT1ItK6CLpGyEcr6mVvkx6GYycw-7MYdPvsZPkpL87URyldO8U4_MSYSrPWAg1vWPZQ7LJ838CkcHXYTGPHuBdT_FKe0bLQdoVRdkvi08a6teb0kA1dHNyKgEkUylroERBe7h-PpLjKfXAftTKjsz2G_EvI7_UU021g_7lV62HOno7uPjGg6i6KKGCmSf2PsPm5dyJRipuQ1zOVsQ32PCMAJEf_coarkiubK5MCtY3_fWKUp3kERTPJSLDhjROlfxKC58LFhcHG5Cwowigcm8vmPdlTsG0qUs7yzobeprhLv0fGvDYEGr7Et80ZsLpXQHxoOB0Q9wPJcIimr_9tYauZVsPUjJsNsFsbJ2r59eB_52pfKSo39ehy6TjWmvBck_jvlda-KyUfkZxXzEqWtm2PILerD6Is_bxXmdlkhvEuv701_nPuhaBT35gchsZ2Ap7-z9BdHJ_gQI0hlpaRnLOY4ZJQreFAgZOjzskLx8YxE2rMVjnFHKqTP1Ko83rCkJX7eiqXNtRvk6pRHLpvjC4--Z7qWLGU1qwEyIIEY7ZkGAYt5r8dcM52ZC7mUHflW70Kk920a6oKsF-7F3C2hnhkV_tZUozRyJB58EWfeaG72KChjf4h7yZ0jraRi3kgFKqW-zSmCyrs2T4ld0U8L9fzESs9TFpZEAesp4Nl2nhwmLbLOm82WEdqbadsCOa7BDB9VcvQAD3S3LLHxY61aj9zrmPwESoYvu4QgEgLoJ551OsVfrVGbSBzUaLOqH2wQ_yafObxPeCxA_Fjn7kV3zCdi7Rm6_oGqsom9P9KI0cna_uGQMqRxVDqh7kfwGcHXiPpJtPazw8mT_gjAoIuUsLCMPvVBZ232K5eh5k0ZJ4OKGeLqbXzMUqAp8_kmLt93c4VUTJ_9O9LIgD97h4Sah0R_jLRrqUNwx6AvjI-jcLjaHw7wLrJBwJpI59FV431szu3Hi4lGK7SHGv4ij_-wCqcfM3PH5D3OYs7_E9h6q6QKBvBBRrer2REZ2e46Qkpe3w9TkAAAAAAAAAAAAAAAAAAAAAAAABw4RFBkl"}
+

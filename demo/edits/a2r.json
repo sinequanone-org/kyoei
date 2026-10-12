@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/retry.ts",
+   "text": "export interface RetryOptions { retries: number; baseMs: number; maxMs?: number }\n\n// Full jitter under a cap: random delay between 0 and min(maxMs, exponential bound).\nexport function delayFor(attempt: number, o: RetryOptions): number {\n  return Math.random() * Math.min(o.maxMs ?? 30_000, o.baseMs * 2 ** attempt);\n}\n"
+  }
+ ],
+ "rationale": "Rebase the delay cap on the jittered retry now on main.",
+ "delayMs": 2600
+}

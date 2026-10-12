@@ -1,0 +1,69 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage{fontspec}
+\setsansfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf]
+\usetikzlibrary{arrows.meta}
+\definecolor{ink}{HTML}{183C42}
+\definecolor{peer}{HTML}{375E91}
+\definecolor{acme}{HTML}{EDF4FA}
+\definecolor{birch}{HTML}{FFF4E5}
+\definecolor{cove}{HTML}{ECF4ED}
+\begin{document}
+\begin{tikzpicture}[
+  font=\sffamily\fontsize{9.5}{11.5}\selectfont,text=ink,draw=ink,
+  box/.style={draw,rounded corners=3pt,fill=white,align=center,inner sep=6pt},
+  flow/.style={-{Stealth[length=2mm]},line width=0.8pt},
+  peers/.style={{Stealth[length=2mm]}-{Stealth[length=2mm]},
+    draw=peer,line width=0.9pt,dashed},
+  label/.style={fill=white,inner sep=2pt,font=\sffamily\fontsize{8.5}{10}\selectfont}
+]
+\draw[rounded corners=5pt,line width=0.8pt] (2.85,2.15) rectangle (16.4,-8.7);
+\node[anchor=west,fill=white,inner sep=4pt] at (3.1,2.15)
+  {\textbf{ONE CLOUDFLARE ACCOUNT}\quad Three organization deployments};
+\node[box,text width=1.95cm,minimum height=4.25cm] (operator) at (1.2,-3.3)
+  {\textbf{Operator's machine}\\[7pt]
+   Local script\\
+   and CLI\\[7pt]
+   Plays all\\
+   people\\[7pt]
+   Reads logs\\
+   for recount\\[7pt]
+   One admin\\
+   token per org};
+\foreach \org/\name/\y/\colour in {a/Acme/0/acme,b/Birch/-3.3/birch,c/Cove/-6.6/cove} {
+  \fill[\colour,rounded corners=3pt] (3.02,\y+1.65) rectangle (16.2,\y-1.5);
+  \node[anchor=west,font=\sffamily\fontsize{10}{12}\selectfont\bfseries]
+    at (3.2,\y+1.37) {\name};
+  \node[box,text width=2cm,minimum height=1.15cm] (worker-\org) at (4.25,\y)
+    {\textbf{Worker}\\[3pt]\texttt{kyoei-org-\org}\\HTTPS routes};
+  \node[box,text width=4.05cm,minimum height=1.72cm] (node-\org) at (8.8,\y)
+    {\textbf{OrgNode Durable Object}\\[4pt]
+     Agents + Git operations\\[3pt]
+     SQLite: ledger, key, peers,\\
+     inbox/outbox and event log};
+  \node[box,text width=3.05cm,minimum height=1.0cm] (repo-\org) at (14.25,\y+0.52)
+    {\textbf{Artifacts: \texttt{kyoei-\org}}\\
+     Per-run repositories};
+  \node[box,text width=3.05cm,minimum height=0.66cm] (ai-\org) at (14.25,\y-0.85)
+    {\textbf{Workers AI}\\Model calls for edits};
+  \draw[flow] (worker-\org) -- node[label,above] {dispatch} (node-\org);
+  \draw[flow] ([yshift=4mm]node-\org.east) -- (repo-\org.west);
+  \draw[flow] ([yshift=-5mm]node-\org.east) -- (ai-\org.west);
+}
+\draw[flow] (operator.north) -- (1.2,0) -- (worker-a.west);
+\draw[flow] (operator.east) -- (worker-b.west);
+\draw[flow] (operator.south) -- (1.2,-6.6) -- (worker-c.west);
+\draw[peers] (node-a.south) -- node[label,right] {peer HTTPS} (node-b.north);
+\draw[peers] (node-b.south) -- node[label,right] {peer HTTPS} (node-c.north);
+\draw[peers] ([yshift=-6mm]node-a.west) -- (6.1,-0.6)
+  -- (6.1,-8.18) -- (8.8,-8.18) -- (node-c.south);
+\node[anchor=west,font=\sffamily\fontsize{8.5}{10}\selectfont,fill=white,inner sep=2pt]
+  at (11.45,-8.35) {Cove: integration repository too.};
+\node[align=left,anchor=north west,text width=16cm,font=\sffamily\fontsize{9.5}{12}\selectfont]
+  at (0,-9.15) {\textbf{Solid arrows:} administrator requests or local dispatch and service bindings.\\
+   \textbf{Dashed arrows:} direct peer HTTPS between every pair, routed through each receiving Worker.\\
+   Identity lookup returns keys for pinning; events and reliance exchanges are signed.};
+\node[align=left,anchor=north west,text width=16cm,font=\sffamily\fontsize{9.5}{12}\selectfont]
+  at (0,-10.5) {\textbf{Scope:} separate keys, state and Artifacts namespaces; one account owner and one operator.\\
+   Agents run inside OrgNode. The Worker answers /health without calling OrgNode.};
+\end{tikzpicture}
+\end{document}

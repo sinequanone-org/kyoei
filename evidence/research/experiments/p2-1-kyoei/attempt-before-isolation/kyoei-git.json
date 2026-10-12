@@ -1,0 +1,2215 @@
+{
+  "arm": "kyoei-git",
+  "boundary": [
+    "One operator runs every node and holds every actor key; separate keys are not independent administration.",
+    "Imports are facts only: no challenge code, no pull-request text, official_result false, no platform API.",
+    "A correction stops managed use of the first package; its Apache-2.0 bytes and the platform record are not revoked.",
+    "One Kyoei arm; the comparison with the reference and the other source mode is a separate step. product_result is null."
+  ],
+  "checks": {
+    "affected_set_exact": true,
+    "bytes_not_revoked": true,
+    "collaboration_one_components_unchanged": true,
+    "dissent_carried": true,
+    "draft_heads_distinct": true,
+    "every_event_held_in_every_run": true,
+    "isolation_zero": true,
+    "no_private_rows_at_a_or_c": true,
+    "no_unexpected_refusal": true,
+    "package_v1_members_exact": true,
+    "package_v2_members_exact": true,
+    "probes_refused": true,
+    "processes_exited_cleanly": true,
+    "reopened_with_same_keys": true,
+    "sources_located": true,
+    "v1_signoffs_exclude_dissenter": true
+  },
+  "contract_digest": "47dcca255ff6af7bf969a0dc1f7b55000f6ce8e575f5dc807ff50c3dc92d69b5",
+  "elapsed_seconds": 337.285,
+  "environment": {
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.12"
+  },
+  "events": {
+    "f01": {
+      "action": "propose-agreement",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f02": {
+      "action": "accept-agreement",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f03": {
+      "action": "accept-agreement",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f04": {
+      "action": "reuse-enrollment",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f05": {
+      "action": "reuse-old-grant",
+      "actual": "new-grant-required",
+      "expected": "new-grant-required",
+      "held": true
+    },
+    "f06": {
+      "action": "create-local",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f07": {
+      "action": "import-record",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f08": {
+      "action": "relabel-official",
+      "actual": "not-official",
+      "expected": "not-official",
+      "held": true
+    },
+    "f09": {
+      "action": "delegate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f10": {
+      "action": "contribute-method",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f11": {
+      "action": "agent-originate-challenge",
+      "actual": "human-required",
+      "expected": "human-required",
+      "held": true
+    },
+    "f12": {
+      "action": "delegate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f13": {
+      "action": "agent-originate-challenge",
+      "actual": "human-required",
+      "expected": "human-required",
+      "held": true
+    },
+    "f14": {
+      "action": "challenge",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f15": {
+      "action": "contribute-note",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f16": {
+      "action": "delegate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f17": {
+      "action": "open-draft",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f18": {
+      "action": "agent-append",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f19": {
+      "action": "stale-base",
+      "actual": "stale-base",
+      "expected": "stale-base",
+      "held": true
+    },
+    "f20": {
+      "action": "rebase",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f21": {
+      "action": "sign-off",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f22": {
+      "action": "sign-off",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f23": {
+      "action": "record-dissent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f24": {
+      "action": "publish",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f25": {
+      "action": "preview-export",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f26": {
+      "action": "export",
+      "actual": "consent-required",
+      "expected": "consent-required",
+      "held": true
+    },
+    "f27": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f28": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f29": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f30": {
+      "action": "export",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f31": {
+      "action": "import-record",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f32": {
+      "action": "use-managed",
+      "actual": "correction-blocked",
+      "expected": "correction-blocked",
+      "held": true
+    },
+    "f33": {
+      "action": "read-published-bytes",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f34": {
+      "action": "use-local",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f35": {
+      "action": "replace",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f36": {
+      "action": "replace",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f37": {
+      "action": "publish",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f38": {
+      "action": "export",
+      "actual": "consent-required",
+      "expected": "consent-required",
+      "held": true
+    },
+    "f39": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f40": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f41": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f42": {
+      "action": "export",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f43": {
+      "action": "use-managed",
+      "actual": "correction-blocked",
+      "expected": "correction-blocked",
+      "held": true
+    },
+    "f44": {
+      "action": "use-managed",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f45": {
+      "action": "widen-private",
+      "actual": "isolation",
+      "expected": "isolation",
+      "held": true
+    },
+    "f46": {
+      "action": "widen-private",
+      "actual": "isolation",
+      "expected": "isolation",
+      "held": true
+    },
+    "f47": {
+      "action": "reuse-old-grant",
+      "actual": "new-grant-required",
+      "expected": "new-grant-required",
+      "held": true
+    },
+    "f48": {
+      "action": "git-push",
+      "actual": "git-not-authority",
+      "expected": "git-not-authority",
+      "held": true
+    },
+    "f49": {
+      "action": "rename-file",
+      "actual": "source-not-authority",
+      "expected": "source-not-authority",
+      "held": true
+    },
+    "f50": {
+      "action": "mark-signoff",
+      "actual": "dissent-not-signoff",
+      "expected": "dissent-not-signoff",
+      "held": true
+    }
+  },
+  "kind": "p2-1-kyoei-arm",
+  "measures": {
+    "components_rebuilt": {
+      "count": 0,
+      "paths": []
+    },
+    "components_reused": {
+      "count": 22,
+      "paths": [
+        "scripts/actor_request.py",
+        "scripts/agent_adapter.py",
+        "scripts/context_shards.py",
+        "scripts/contributions.py",
+        "scripts/git_source.py",
+        "scripts/institution_identity.py",
+        "scripts/institution_server.py",
+        "scripts/joint_result.py",
+        "scripts/lifecycle_server.py",
+        "scripts/lifecycle_status.py",
+        "scripts/lifecycle_store.py",
+        "scripts/node_wire.py",
+        "scripts/peer_http.py",
+        "scripts/pq_crypto.py",
+        "scripts/repair_brief.py",
+        "scripts/research_evidence.py",
+        "scripts/review_custody.py",
+        "scripts/review_verdict.py",
+        "scripts/shared_draft.py",
+        "scripts/task_data.py",
+        "scripts/workspace_capture.py",
+        "scripts/workspace_client.py"
+      ]
+    },
+    "configuration_decisions": {
+      "count": 22,
+      "names": [
+        "agreement:p2:v2:terms",
+        "consent:v1",
+        "consent:v2",
+        "delegate:f09",
+        "delegate:f12",
+        "delegate:f16",
+        "draft-delegation:b.analyst",
+        "draft-delegation:c.synthesizer",
+        "draft-open:f17",
+        "draft-participants:a.lead,b.steward,c.specialist",
+        "expiry:900",
+        "import-release-delegates:true",
+        "import:p2.import.checker-244",
+        "import:p2.import.checker-5",
+        "license:Apache-2.0",
+        "purpose:p2-continuation",
+        "release:p2.a.interpretation",
+        "release:p2.a.interpretation.v2",
+        "release:p2.b.note",
+        "release:p2.b.note.v2",
+        "release:p2.c.challenge",
+        "release:p2.joint.output.v2"
+      ]
+    },
+    "failures": {
+      "cases": 14,
+      "held": 42,
+      "not_run": 0,
+      "rows": [
+        {
+          "allow_event": "f04",
+          "deny_event": "f05",
+          "expected": "new-grant-required",
+          "held": 3,
+          "id": "old-grant-reuse",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "new-grant-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "new-grant-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "new-grant-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f30",
+          "deny_event": "f45",
+          "expected": "isolation",
+          "held": 3,
+          "id": "private-to-public",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "isolation",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "isolation",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "isolation",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f07",
+          "deny_event": "f08",
+          "expected": "not-official",
+          "held": 3,
+          "id": "official-relabel",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "not-official",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "not-official",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "not-official",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f14",
+          "deny_event": "f13",
+          "expected": "human-required",
+          "held": 3,
+          "id": "agent-originates-challenge",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "human-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "human-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "human-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f30",
+          "deny_event": "f26",
+          "expected": "consent-required",
+          "held": 3,
+          "id": "agent-exports",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f20",
+          "deny_event": "f19",
+          "expected": "stale-base",
+          "held": 3,
+          "id": "stale-draft-base",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "stale-base",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "stale-base",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "stale-base",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f33",
+          "deny_event": "f32",
+          "expected": "correction-blocked",
+          "held": 3,
+          "id": "published-bytes-not-revoked",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f30",
+          "deny_event": "f38",
+          "expected": "consent-required",
+          "held": 3,
+          "id": "missing-consent",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f10",
+          "deny_event": "f48",
+          "expected": "git-not-authority",
+          "held": 3,
+          "id": "git-event-authorizes",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "git-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "git-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "git-not-authority",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f15",
+          "deny_event": "f49",
+          "expected": "source-not-authority",
+          "held": 3,
+          "id": "rename-not-authority",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "source-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "source-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "source-not-authority",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f44",
+          "deny_event": "f43",
+          "expected": "correction-blocked",
+          "held": 3,
+          "id": "correction-blocks-old",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f34",
+          "deny_event": "f32",
+          "expected": "correction-blocked",
+          "held": 3,
+          "id": "unaffected-continues",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f37",
+          "deny_event": "f50",
+          "expected": "dissent-not-signoff",
+          "held": 3,
+          "id": "dissent-survives",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "dissent-not-signoff",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "dissent-not-signoff",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "dissent-not-signoff",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f18",
+          "deny_event": "f26",
+          "expected": "consent-required",
+          "held": 3,
+          "id": "delegation-excludes-export",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            }
+          ]
+        }
+      ],
+      "trials": 42
+    },
+    "isolation_breaches": {
+      "count": 0,
+      "items": []
+    },
+    "new_application_code": {
+      "files": {},
+      "lines": 0,
+      "role": "kyoei-adopter",
+      "supplier": {
+        "files": {
+          "scripts/continuation_server.py": 20,
+          "scripts/continuation_store.py": 335
+        },
+        "lines": 355
+      }
+    },
+    "repair_steps": {
+      "diagnostic_excluded": 9,
+      "failed_attempts": 3,
+      "labels": [
+        "f31:import:p2.import.checker-244",
+        "f32:use:p2.joint.output",
+        "f33:read-published",
+        "f34:use:p2.c.unrelated",
+        "f35:publish:p2.a.interpretation.v2:open",
+        "f35:read:p2.import.checker-244",
+        "f35:publish:p2.a.interpretation.v2",
+        "f35:originate:p2.a.interpretation.v2:cites",
+        "f35:supersede:p2.a.interpretation",
+        "f35:release:p2.a.interpretation.v2",
+        "f36:publish:p2.b.note.v2:open",
+        "f36:read:p2.a.interpretation.v2",
+        "f36:publish:p2.b.note.v2",
+        "f36:originate:p2.b.note.v2:builds-on",
+        "f36:originate:p2.b.note.v2:reproduces",
+        "f36:supersede:p2.b.note",
+        "f36:release:p2.b.note.v2",
+        "f37:publish:p2.joint.output.v2:open",
+        "f37:read:p2.a.interpretation.v2",
+        "f37:read:p2.b.note.v2",
+        "f37:read:p2.c.challenge",
+        "f37:read:p2.import.checker-244",
+        "f37:publish:p2.joint.output.v2",
+        "f37:supersede:p2.joint.output",
+        "f37:release:p2.joint.output.v2",
+        "f38:export-v2-before-consent",
+        "f39:consent:a.lead",
+        "f40:consent:b.steward",
+        "f40:deposit-consent:b.steward",
+        "f41:consent:c.specialist",
+        "f41:deposit-consent:c.specialist",
+        "f42:export",
+        "f43:use:p2.joint.output",
+        "f44:use:p2.joint.output.v2"
+      ],
+      "restarts": 0,
+      "steps": 34
+    },
+    "setup_commands": {
+      "client": 27,
+      "cold_start": null,
+      "operator": [
+        "restart:a:store=continuation",
+        "restart:b:store=continuation",
+        "restart:c:store=continuation"
+      ],
+      "through": "f15 first cross-institution read"
+    }
+  },
+  "normalization": [
+    "A published shared draft is stored as its own artifact; it travels inside the output it was published into, so package members list the output, not the working copy.",
+    "Kyoei releases name people only; the import is released with delegates allowed so the agents B and C delegate can be granted it, where the reference names the agents.",
+    "A dissent, a consent and an agent grant are signed by the issuing institution's node and deposited at A by its own actor, as leases are; the reference sends them node to node."
+  ],
+  "order": 2,
+  "packages": {
+    "dissent_v1": [
+      "c"
+    ],
+    "dissent_v2": [
+      "c"
+    ],
+    "preview": {
+      "consent_required": [
+        "a",
+        "b",
+        "c"
+      ],
+      "dissent": [
+        "c"
+      ],
+      "members": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.c.challenge",
+        "p2.import.checker-5",
+        "p2.joint.output"
+      ]
+    },
+    "published_read": {
+      "bytes_revoked": false,
+      "managed": "correction-blocked",
+      "notice": "managed-endorsement-stopped"
+    },
+    "v1": [
+      "p2.a.interpretation",
+      "p2.b.note",
+      "p2.c.challenge",
+      "p2.import.checker-5",
+      "p2.joint.output"
+    ],
+    "v2": [
+      "p2.a.interpretation.v2",
+      "p2.b.note.v2",
+      "p2.c.challenge",
+      "p2.import.checker-244",
+      "p2.joint.output.v2"
+    ]
+  },
+  "plain_tools_measured": null,
+  "product_result": null,
+  "reference_report": {
+    "path": "research/experiments/p2-1-reference/report.json",
+    "sha256": "3df90e596e116d62facd71a3d67c8985139c96ed3aaa5256cae0d10c13c0aa7e"
+  },
+  "repetitions": 3,
+  "requests": {
+    "by_actor": {
+      "a.lead": 49,
+      "a.planner": 2,
+      "b.analyst": 4,
+      "b.researcher": 15,
+      "b.steward": 14,
+      "c.specialist": 25,
+      "c.synthesizer": 6
+    },
+    "collaboration_two": 115
+  },
+  "scenario_sha256": "1269db31398c4749a68387a7447e015c99fdf4a1c178543587812a3b1bf8f8ba",
+  "sets": {
+    "actual": {
+      "affected": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output",
+        "p2.public.package"
+      ],
+      "blocked": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output"
+      ],
+      "notice_only": [
+        "p2.public.package"
+      ],
+      "provenance_notices": [
+        "p2.c.challenge"
+      ],
+      "unaffected": [
+        "p2.c.unrelated"
+      ]
+    },
+    "expected": {
+      "affected": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output",
+        "p2.public.package"
+      ],
+      "blocked": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output"
+      ],
+      "notice_only": [
+        "p2.public.package"
+      ],
+      "provenance_notices": [
+        "p2.c.challenge"
+      ],
+      "unaffected": [
+        "p2.c.unrelated"
+      ]
+    },
+    "held": true
+  },
+  "source_mode": "git",
+  "sources": {
+    "scripts/continuation_server.py": {
+      "logical_lines": 20,
+      "sha256": "ea559ac3c20fc445c521d3bb2d353bf30fd1db759fb39fe960c0dfc2b720e364"
+    },
+    "scripts/continuation_store.py": {
+      "logical_lines": 335,
+      "sha256": "8f104f9e62bd45521de5d6997c2a8f4e4e8ce5e6cf15082f2c73ce9b3701b7ac"
+    },
+    "scripts/p2_1_kyoei.py": {
+      "logical_lines": 474,
+      "sha256": "99ce15c12b8348e0142135e9d74191cab30b0af142861b989692f0d9a1f48700"
+    }
+  },
+  "trace": [
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 600,
+      "event": "f01",
+      "expected": null,
+      "label": "f01:accept",
+      "layer": "workspace",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 601,
+      "event": "f02",
+      "expected": null,
+      "label": "f02:accept",
+      "layer": "workspace",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 602,
+      "event": "f03",
+      "expected": null,
+      "label": "f03:accept",
+      "layer": "workspace",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 603,
+      "event": "f04",
+      "expected": null,
+      "label": "f04:credential:a.lead",
+      "layer": "workspace",
+      "operation": "credential",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "new-grant-required",
+      "at": 604,
+      "event": "f05",
+      "expected": "new-grant-required",
+      "label": "f05:reuse:joint.output.v2",
+      "layer": "workspace",
+      "operation": "retrieve",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 605,
+      "event": "f06",
+      "expected": null,
+      "label": "f06:publish:p2.c.unrelated:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 605,
+      "event": "f06",
+      "expected": null,
+      "label": "f06:publish:p2.c.unrelated",
+      "layer": "workspace",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 606,
+      "event": "f07",
+      "expected": null,
+      "label": "f07:import:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "import_record",
+      "primary": true
+    },
+    {
+      "actor": "a.planner",
+      "actual": "not-official",
+      "at": 607,
+      "event": "f08",
+      "expected": "not-official",
+      "label": "f08:relabel-official",
+      "layer": "workspace",
+      "operation": "relabel",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 608,
+      "event": "f09",
+      "expected": null,
+      "label": "f09:delegate",
+      "layer": "workspace",
+      "operation": "delegate",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:publish:p2.a.interpretation:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:read:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:publish:p2.a.interpretation",
+      "layer": "workspace",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:originate:p2.a.interpretation:cites",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:release:p2.a.interpretation",
+      "layer": "workspace",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "human-required",
+      "at": 610,
+      "event": "f11",
+      "expected": "human-required",
+      "label": "f11:agent-originate-challenge",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 611,
+      "event": "f12",
+      "expected": null,
+      "label": "f12:receive:p2.import.checker-5:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 611,
+      "event": "f12",
+      "expected": null,
+      "label": "f12:read:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 611,
+      "event": "f12",
+      "expected": null,
+      "label": "f12:close:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "close",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 611,
+      "event": "f12",
+      "expected": null,
+      "label": "f12:delegate",
+      "layer": "workspace",
+      "operation": "delegate",
+      "primary": true
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "human-required",
+      "at": 612,
+      "event": "f13",
+      "expected": "human-required",
+      "label": "f13:agent-originate-challenge",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:use:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "use",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:publish:p2.c.challenge:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:publish:p2.c.challenge",
+      "layer": "workspace",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:originate:p2.c.challenge:challenges",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:release:p2.c.challenge",
+      "layer": "workspace",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:publish:p2.b.note:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:read:p2.a.interpretation",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:publish:p2.b.note",
+      "layer": "workspace",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:originate:p2.b.note:builds-on",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:release:p2.b.note",
+      "layer": "workspace",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 615,
+      "event": "f16",
+      "expected": null,
+      "label": "f16:receive:p2.import.checker-5:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 615,
+      "event": "f16",
+      "expected": null,
+      "label": "f16:read:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 615,
+      "event": "f16",
+      "expected": null,
+      "label": "f16:close:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "close",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 615,
+      "event": "f16",
+      "expected": null,
+      "label": "f16:delegate",
+      "layer": "workspace",
+      "operation": "delegate",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:gather:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:read:p2.a.interpretation",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:read:p2.b.note",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:read:p2.c.challenge",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:draft-open",
+      "layer": "workspace",
+      "operation": "draft_open",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:revise:a.lead",
+      "layer": "workspace",
+      "operation": "draft_revise",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 617,
+      "event": "f18",
+      "expected": null,
+      "label": "f18:draft-grant:b.analyst",
+      "layer": "workspace",
+      "operation": "draft_grant",
+      "primary": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": null,
+      "at": 617,
+      "event": "f18",
+      "expected": null,
+      "label": "f18:agent-head",
+      "layer": "workspace",
+      "operation": "agent_draft_head",
+      "primary": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": null,
+      "at": 617,
+      "event": "f18",
+      "expected": null,
+      "label": "f18:agent-append",
+      "layer": "workspace",
+      "operation": "agent_draft_revise",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 618,
+      "event": "f19",
+      "expected": null,
+      "label": "f19:draft-grant:c.synthesizer",
+      "layer": "workspace",
+      "operation": "draft_grant",
+      "primary": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "stale-base",
+      "at": 618,
+      "event": "f19",
+      "expected": "stale-base",
+      "label": "f19:stale-base",
+      "layer": "workspace",
+      "operation": "agent_draft_revise",
+      "primary": true
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 619,
+      "event": "f20",
+      "expected": null,
+      "label": "f20:head",
+      "layer": "workspace",
+      "operation": "agent_draft_head",
+      "primary": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 619,
+      "event": "f20",
+      "expected": null,
+      "label": "f20:rebase",
+      "layer": "workspace",
+      "operation": "agent_draft_revise",
+      "primary": true
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "delegation-budget",
+      "at": 619,
+      "event": "f20",
+      "expected": "delegation-budget",
+      "label": "probe:agent-over-budget",
+      "layer": "workspace",
+      "operation": "agent_draft_revise",
+      "primary": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": "delegation-scope",
+      "at": 619,
+      "event": "f20",
+      "expected": "delegation-scope",
+      "label": "probe:agent-uses-another-grant",
+      "layer": "workspace",
+      "operation": "agent_draft_revise",
+      "primary": false
+    },
+    {
+      "actor": "b.analyst",
+      "actual": "human-required",
+      "at": 619,
+      "event": "f20",
+      "expected": "human-required",
+      "label": "probe:foreign-agent-plain-path",
+      "layer": "workspace",
+      "operation": "draft_head",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 620,
+      "event": "f21",
+      "expected": null,
+      "label": "f21:signoff:a.lead",
+      "layer": "workspace",
+      "operation": "draft_signoff",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 621,
+      "event": "f22",
+      "expected": null,
+      "label": "f22:signoff:b.steward",
+      "layer": "workspace",
+      "operation": "draft_signoff",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 622,
+      "event": "f23",
+      "expected": null,
+      "label": "f23:record-dissent",
+      "layer": "workspace",
+      "operation": "dissent",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 622,
+      "event": "f23",
+      "expected": null,
+      "label": "f23:deposit-dissent",
+      "layer": "workspace",
+      "operation": "accept_dissent",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 623,
+      "event": "f24",
+      "expected": null,
+      "label": "f24:publish",
+      "layer": "workspace",
+      "operation": "draft_publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 624,
+      "event": "f25",
+      "expected": null,
+      "label": "f25:preview",
+      "layer": "workspace",
+      "operation": "preview",
+      "primary": true
+    },
+    {
+      "actor": "a.planner",
+      "actual": "consent-required",
+      "at": 625,
+      "event": "f26",
+      "expected": "consent-required",
+      "label": "f26:agent-export",
+      "layer": "workspace",
+      "operation": "public_export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 626,
+      "event": "f27",
+      "expected": null,
+      "label": "f27:consent:a.lead",
+      "layer": "workspace",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 627,
+      "event": "f28",
+      "expected": null,
+      "label": "f28:consent:b.steward",
+      "layer": "workspace",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 627,
+      "event": "f28",
+      "expected": null,
+      "label": "f28:deposit-consent:b.steward",
+      "layer": "workspace",
+      "operation": "accept_consent",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 628,
+      "event": "f29",
+      "expected": null,
+      "label": "f29:consent:c.specialist",
+      "layer": "workspace",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": "invalid-signature",
+      "at": 628,
+      "event": "f29",
+      "expected": "invalid-signature",
+      "label": "probe:altered-consent",
+      "layer": "workspace",
+      "operation": "accept_consent",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": "not-authorized",
+      "at": 628,
+      "event": "f29",
+      "expected": "not-authorized",
+      "label": "probe:consent-deposited-by-another",
+      "layer": "workspace",
+      "operation": "accept_consent",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 628,
+      "event": "f29",
+      "expected": null,
+      "label": "f29:deposit-consent:c.specialist",
+      "layer": "workspace",
+      "operation": "accept_consent",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 629,
+      "event": "f30",
+      "expected": null,
+      "label": "f30:export",
+      "layer": "workspace",
+      "operation": "public_export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:import:p2.import.checker-244",
+      "layer": "workspace",
+      "operation": "import_record",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.import.checker-5",
+      "layer": "workspace",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.a.interpretation",
+      "layer": "workspace",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.joint.output",
+      "layer": "workspace",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.public.package",
+      "layer": "workspace",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.b.note",
+      "layer": "workspace",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.c.challenge",
+      "layer": "workspace",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.c.unrelated",
+      "layer": "workspace",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.joint.draft",
+      "layer": "workspace",
+      "operation": "draft_head",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:notices",
+      "layer": "workspace",
+      "operation": "notices",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "correction-blocked",
+      "at": 631,
+      "event": "f32",
+      "expected": "correction-blocked",
+      "label": "f32:use:p2.joint.output",
+      "layer": "workspace",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 632,
+      "event": "f33",
+      "expected": null,
+      "label": "f33:read-published",
+      "layer": "workspace",
+      "operation": "read_public",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 633,
+      "event": "f34",
+      "expected": null,
+      "label": "f34:use:p2.c.unrelated",
+      "layer": "workspace",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:publish:p2.a.interpretation.v2:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:read:p2.import.checker-244",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:publish:p2.a.interpretation.v2",
+      "layer": "workspace",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:originate:p2.a.interpretation.v2:cites",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:supersede:p2.a.interpretation",
+      "layer": "workspace",
+      "operation": "replace",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:release:p2.a.interpretation.v2",
+      "layer": "workspace",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:publish:p2.b.note.v2:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:read:p2.a.interpretation.v2",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:publish:p2.b.note.v2",
+      "layer": "workspace",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:originate:p2.b.note.v2:builds-on",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:originate:p2.b.note.v2:reproduces",
+      "layer": "workspace",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:supersede:p2.b.note",
+      "layer": "workspace",
+      "operation": "replace",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:release:p2.b.note.v2",
+      "layer": "workspace",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:publish:p2.joint.output.v2:open",
+      "layer": "workspace",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.a.interpretation.v2",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.b.note.v2",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.c.challenge",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.import.checker-244",
+      "layer": "workspace",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:publish:p2.joint.output.v2",
+      "layer": "workspace",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:supersede:p2.joint.output",
+      "layer": "workspace",
+      "operation": "replace",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:release:p2.joint.output.v2",
+      "layer": "workspace",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "consent-required",
+      "at": 637,
+      "event": "f38",
+      "expected": "consent-required",
+      "label": "f38:export-v2-before-consent",
+      "layer": "workspace",
+      "operation": "public_export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 638,
+      "event": "f39",
+      "expected": null,
+      "label": "f39:consent:a.lead",
+      "layer": "workspace",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 639,
+      "event": "f40",
+      "expected": null,
+      "label": "f40:consent:b.steward",
+      "layer": "workspace",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 639,
+      "event": "f40",
+      "expected": null,
+      "label": "f40:deposit-consent:b.steward",
+      "layer": "workspace",
+      "operation": "accept_consent",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 640,
+      "event": "f41",
+      "expected": null,
+      "label": "f41:consent:c.specialist",
+      "layer": "workspace",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 640,
+      "event": "f41",
+      "expected": null,
+      "label": "f41:deposit-consent:c.specialist",
+      "layer": "workspace",
+      "operation": "accept_consent",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 641,
+      "event": "f42",
+      "expected": null,
+      "label": "f42:export",
+      "layer": "workspace",
+      "operation": "public_export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "correction-blocked",
+      "at": 642,
+      "event": "f43",
+      "expected": "correction-blocked",
+      "label": "f43:use:p2.joint.output",
+      "layer": "workspace",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 643,
+      "event": "f44",
+      "expected": null,
+      "label": "f44:use:p2.joint.output.v2",
+      "layer": "workspace",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "isolation",
+      "at": 644,
+      "event": "f45",
+      "expected": "isolation",
+      "label": "f45:widen:b.table.v2",
+      "layer": "workspace",
+      "operation": "admit",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "isolation",
+      "at": 645,
+      "event": "f46",
+      "expected": "isolation",
+      "label": "f46:widen:b.table.v1",
+      "layer": "workspace",
+      "operation": "admit",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "new-grant-required",
+      "at": 646,
+      "event": "f47",
+      "expected": "new-grant-required",
+      "label": "f47:reuse:joint.output.v1",
+      "layer": "workspace",
+      "operation": "request_new_purpose",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "git-not-authority",
+      "at": 647,
+      "event": "f48",
+      "expected": "git-not-authority",
+      "label": "f48:git-push",
+      "layer": "workspace",
+      "operation": "source_event",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "source-not-authority",
+      "at": 648,
+      "event": "f49",
+      "expected": "source-not-authority",
+      "label": "f49:rename-file",
+      "layer": "workspace",
+      "operation": "source_event",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "dissent-not-signoff",
+      "at": 649,
+      "event": "f50",
+      "expected": "dissent-not-signoff",
+      "label": "f50:mark-dissent-as-signoff",
+      "layer": "workspace",
+      "operation": "mark_signoff",
+      "primary": true
+    }
+  ]
+}

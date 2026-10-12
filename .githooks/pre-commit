@@ -1,0 +1,4 @@
+#!/bin/sh
+if command -v captain >/dev/null 2>&1; then
+    captain leakcheck --staged || exit 1
+fi

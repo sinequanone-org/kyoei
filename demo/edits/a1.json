@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/retry.ts",
+   "text": "export interface RetryOptions { retries: number; baseMs: number }\n\n// Full jitter: a random delay between 0 and the exponential bound.\nexport function delayFor(attempt: number, o: RetryOptions): number {\n  return Math.random() * o.baseMs * 2 ** attempt;\n}\n"
+  }
+ ],
+ "rationale": "Add full jitter so many clients do not retry in step.",
+ "delayMs": 4200
+}

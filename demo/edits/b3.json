@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "docs/signing.md",
+   "text": "# Signing requests\n\nThe SDK signs requests with HMAC-SHA256 (see the signer contribution b1).\nSet `secret` in the client options to enable it.\n"
+  }
+ ],
+ "rationale": "Documentation for signing. Cites b1; does not build on it.",
+ "delayMs": 2700
+}

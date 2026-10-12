@@ -1,0 +1,1052 @@
+{
+  "actors": [
+    {
+      "id": "a.lead",
+      "institution": "a",
+      "kind": "human"
+    },
+    {
+      "id": "a.planner",
+      "institution": "a",
+      "kind": "agent"
+    },
+    {
+      "id": "b.steward",
+      "institution": "b",
+      "kind": "human"
+    },
+    {
+      "id": "b.researcher",
+      "institution": "b",
+      "kind": "human"
+    },
+    {
+      "id": "b.analyst",
+      "institution": "b",
+      "kind": "agent"
+    },
+    {
+      "id": "c.specialist",
+      "institution": "c",
+      "kind": "human"
+    },
+    {
+      "id": "c.synthesizer",
+      "institution": "c",
+      "kind": "agent"
+    }
+  ],
+  "agreement": {
+    "disclosure": "Only approved result fields and opaque release/status handles cross B boundary; private source identifiers/edges stay at B.",
+    "existing_ip": "Retained by contributing institution.",
+    "expires": 500,
+    "joint_terms": "A/B/C attribution; investigation-only use; unanimous institutional release approval.",
+    "retention": "Private rows remain at B; exit exports only explicitly retained authorized records.",
+    "version": 1
+  },
+  "branches": {
+    "lease": "Same schedule with B-signed lease; e33 allowed but counted as bounded staleness, e34 denied, e35 denied at exact expiry. No lease after observed withdrawal.",
+    "strict": "Default; e33 denied issuer-unavailable; c.offline-draft absent; e34 probes joint.output.v2; e35 denied issuer-unavailable."
+  },
+  "events": [
+    {
+      "action": "propose-agreement",
+      "actor": "a.lead",
+      "at": 100,
+      "details": "Version 1: purpose p1-investigation; each institution accepts locally; membership grants no artifact access.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e01",
+      "inputs": [],
+      "outputs": [],
+      "prd_step": 1
+    },
+    {
+      "action": "accept-agreement",
+      "actor": "b.steward",
+      "at": 101,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e02",
+      "inputs": [],
+      "outputs": [],
+      "prd_step": 1
+    },
+    {
+      "action": "accept-agreement",
+      "actor": "c.specialist",
+      "at": 102,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e03",
+      "inputs": [],
+      "outputs": [],
+      "prd_step": 1
+    },
+    {
+      "action": "publish",
+      "actor": "a.lead",
+      "at": 103,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e04",
+      "inputs": [],
+      "outputs": [
+        "a.question",
+        "a.method"
+      ],
+      "prd_step": 2
+    },
+    {
+      "action": "load-private-source",
+      "actor": "b.steward",
+      "at": 104,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e05",
+      "inputs": [],
+      "outputs": [
+        "b.table.v1"
+      ],
+      "prd_step": 2
+    },
+    {
+      "action": "delegate",
+      "actor": "b.steward",
+      "at": 105,
+      "details": "b.analyst may retrieve/derive locally, at most 2 derivations, expires 190; cannot release or approve.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e06",
+      "inputs": [
+        "a.method",
+        "b.table.v1"
+      ],
+      "outputs": [],
+      "prd_step": 2
+    },
+    {
+      "action": "derive-local-result",
+      "actor": "b.analyst",
+      "at": 106,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e07",
+      "inputs": [
+        "a.method",
+        "b.table.v1"
+      ],
+      "outputs": [
+        "b.result.v1"
+      ],
+      "prd_step": 2
+    },
+    {
+      "action": "release",
+      "actor": "b.steward",
+      "at": 107,
+      "details": "Exact result fields only: signal_high and limitations; recipients A/C people and delegated agents; expires 500.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e08",
+      "inputs": [
+        "b.result.v1"
+      ],
+      "outputs": [],
+      "prd_step": 2
+    },
+    {
+      "action": "request-private-rows",
+      "actor": "c.specialist",
+      "at": 108,
+      "details": "No private identifier, row content or private graph in the refusal.",
+      "expected": {
+        "decision": "deny",
+        "reason": "not-authorized"
+      },
+      "id": "e09",
+      "inputs": [
+        "b.table.v1"
+      ],
+      "outputs": [],
+      "prd_step": 3
+    },
+    {
+      "action": "proof-gated-task",
+      "actor": "c.specialist",
+      "at": 109,
+      "details": "D-1 must display unsupported, never verified. D-2 replaces only this expectation after the proof implementation profile is prospectively pinned; then valid proof permits proof-qualified assessment.",
+      "expected": {
+        "decision": "defer",
+        "reason": "proof-unsupported"
+      },
+      "id": "e10",
+      "inputs": [
+        "b.result.v1"
+      ],
+      "outputs": [],
+      "prd_step": 3
+    },
+    {
+      "action": "assign-analysis",
+      "actor": "c.specialist",
+      "at": 110,
+      "details": "D-1 diagnostic analysis explicitly not proof-qualified. c.synthesizer bounded to this task, cannot assess or release.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e11",
+      "inputs": [
+        "a.method",
+        "b.result.v1"
+      ],
+      "outputs": [
+        "c.task.v1"
+      ],
+      "prd_step": 4
+    },
+    {
+      "action": "derive",
+      "actor": "c.synthesizer",
+      "at": 111,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e12",
+      "inputs": [
+        "a.method",
+        "b.result.v1"
+      ],
+      "outputs": [
+        "c.analysis.v1"
+      ],
+      "prd_step": 4
+    },
+    {
+      "action": "challenge",
+      "actor": "a.lead",
+      "at": 112,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e13",
+      "inputs": [
+        "c.analysis.v1"
+      ],
+      "outputs": [
+        "a.challenge"
+      ],
+      "prd_step": 4
+    },
+    {
+      "action": "reproduce",
+      "actor": "c.specialist",
+      "at": 113,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e14",
+      "inputs": [
+        "a.method",
+        "b.result.v1",
+        "c.analysis.v1"
+      ],
+      "outputs": [
+        "c.reproduction"
+      ],
+      "prd_step": 4
+    },
+    {
+      "action": "shared-draft",
+      "actor": "a.lead",
+      "at": 114,
+      "details": "A lead, B researcher and C specialist each author a revision. Race B/C from same head; one succeeds, one gets stale-base plus current head, rebases explicitly and retries. Retain both attributions; no text merge engine.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e15",
+      "inputs": [
+        "a.question",
+        "a.method",
+        "b.result.v1",
+        "c.analysis.v1",
+        "a.challenge",
+        "c.reproduction"
+      ],
+      "outputs": [
+        "joint.draft.v1"
+      ],
+      "prd_step": 4
+    },
+    {
+      "action": "assess-and-publish",
+      "actor": "a.lead",
+      "at": 115,
+      "details": "A/B/C human sign-off under the agreement; agent approval cannot substitute. Rights are the input intersection.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e16",
+      "inputs": [
+        "joint.draft.v1"
+      ],
+      "outputs": [
+        "joint.output.v1"
+      ],
+      "prd_step": 4
+    },
+    {
+      "action": "publish",
+      "actor": "c.specialist",
+      "at": 116,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e17",
+      "inputs": [],
+      "outputs": [
+        "c.unrelated"
+      ],
+      "prd_step": 4
+    },
+    {
+      "action": "use",
+      "actor": "c.specialist",
+      "at": 117,
+      "details": "Successful pre-change uses are required; deny-all implementations fail.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e18",
+      "inputs": [
+        "joint.output.v1",
+        "c.unrelated"
+      ],
+      "outputs": [],
+      "prd_step": 4
+    },
+    {
+      "action": "correct-source",
+      "actor": "b.steward",
+      "at": 200,
+      "details": "Change notices for the frozen correction closure; history retained. New table is an explicit replacement, not a use dependency on the old table.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e19",
+      "inputs": [
+        "b.table.v1"
+      ],
+      "outputs": [
+        "b.table.v2"
+      ],
+      "prd_step": 5
+    },
+    {
+      "action": "use",
+      "actor": "c.specialist",
+      "at": 201,
+      "details": "",
+      "expected": {
+        "decision": "deny",
+        "reason": "correction-pending"
+      },
+      "id": "e20",
+      "inputs": [
+        "joint.output.v1"
+      ],
+      "outputs": [],
+      "prd_step": 5
+    },
+    {
+      "action": "acknowledge",
+      "actor": "c.specialist",
+      "at": 202,
+      "details": "Acknowledgment changes awareness only; it does not assess, accept replacement or repair outputs.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e21",
+      "inputs": [
+        "b.result.v1"
+      ],
+      "outputs": [],
+      "prd_step": 5
+    },
+    {
+      "action": "use",
+      "actor": "c.specialist",
+      "at": 203,
+      "details": "",
+      "expected": {
+        "decision": "deny",
+        "reason": "replacement-required"
+      },
+      "id": "e22",
+      "inputs": [
+        "joint.output.v1"
+      ],
+      "outputs": [],
+      "prd_step": 5
+    },
+    {
+      "action": "derive-and-release-replacement",
+      "actor": "b.researcher",
+      "at": 210,
+      "details": "b.steward explicitly releases result; no authority inherits merely from supersedes.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e23",
+      "inputs": [
+        "a.method",
+        "b.table.v2"
+      ],
+      "outputs": [
+        "b.result.v2"
+      ],
+      "prd_step": 6
+    },
+    {
+      "action": "assign-analysis",
+      "actor": "c.specialist",
+      "at": 211,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e24",
+      "inputs": [
+        "a.method",
+        "b.result.v2"
+      ],
+      "outputs": [
+        "c.task.v2"
+      ],
+      "prd_step": 6
+    },
+    {
+      "action": "derive",
+      "actor": "c.synthesizer",
+      "at": 212,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e25",
+      "inputs": [
+        "a.method",
+        "b.result.v2"
+      ],
+      "outputs": [
+        "c.analysis.v2"
+      ],
+      "prd_step": 6
+    },
+    {
+      "action": "shared-draft",
+      "actor": "a.lead",
+      "at": 213,
+      "details": "A/B/C authored revisions; preserve the old challenge as provenance/history, not a permission dependency.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e26",
+      "inputs": [
+        "a.question",
+        "a.method",
+        "b.result.v2",
+        "c.analysis.v2"
+      ],
+      "outputs": [
+        "joint.draft.v2"
+      ],
+      "prd_step": 6
+    },
+    {
+      "action": "assess-and-publish",
+      "actor": "a.lead",
+      "at": 214,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e27",
+      "inputs": [
+        "joint.draft.v2"
+      ],
+      "outputs": [
+        "joint.output.v2"
+      ],
+      "prd_step": 6
+    },
+    {
+      "action": "use",
+      "actor": "c.specialist",
+      "at": 215,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e28",
+      "inputs": [
+        "joint.output.v2",
+        "c.unrelated"
+      ],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "lease",
+      "actor": "b.steward",
+      "at": 230,
+      "details": "Owner-signed lease for C, p1-investigation, local derivation only, valid [230,290); neither exchange nor use after observed withdrawal allowed.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e29",
+      "inputs": [
+        "b.result.v2"
+      ],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "inject-outage",
+      "actor": "b.steward",
+      "at": 240,
+      "details": "Drop B status traffic to A/C through time 309; local owner operations still work. Drop withdrawal push.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e30",
+      "inputs": [],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "draft-offline",
+      "actor": "c.specialist",
+      "at": 245,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e31",
+      "inputs": [
+        "c.unrelated"
+      ],
+      "outputs": [
+        "c.local-draft"
+      ],
+      "prd_step": 6
+    },
+    {
+      "action": "withdraw",
+      "actor": "b.steward",
+      "at": 250,
+      "details": "Terminal withdrawal version/sequence recorded at B; A/C have not observed it.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e32",
+      "inputs": [
+        "b.result.v2"
+      ],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "draft-under-lease",
+      "actor": "c.specialist",
+      "at": 260,
+      "details": "Allowed only in lease condition; count as bounded stale local use. Strict condition denies issuer-unavailable and creates no draft.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e33",
+      "inputs": [
+        "b.result.v2",
+        "c.analysis.v2"
+      ],
+      "outputs": [
+        "c.offline-draft"
+      ],
+      "prd_step": 6
+    },
+    {
+      "action": "exchange",
+      "actor": "c.specialist",
+      "at": 261,
+      "details": "Lease condition; strict branch instead attempts exchange of joint.output.v2 and gets the same refusal.",
+      "expected": {
+        "decision": "deny",
+        "reason": "issuer-unavailable"
+      },
+      "id": "e34",
+      "inputs": [
+        "c.offline-draft"
+      ],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "use-offline",
+      "actor": "c.specialist",
+      "at": 290,
+      "details": "Lease condition; strict condition remains issuer-unavailable.",
+      "expected": {
+        "decision": "deny",
+        "reason": "lease-expired"
+      },
+      "id": "e35",
+      "inputs": [
+        "b.result.v2"
+      ],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "heal-outage",
+      "actor": "b.steward",
+      "at": 310,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e36",
+      "inputs": [],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "use",
+      "actor": "c.specialist",
+      "at": 311,
+      "details": "",
+      "expected": {
+        "decision": "deny",
+        "reason": "withdrawn"
+      },
+      "id": "e37",
+      "inputs": [
+        "joint.output.v2"
+      ],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "restart-and-use",
+      "actor": "c.specialist",
+      "at": 312,
+      "details": "",
+      "expected": {
+        "decision": "deny",
+        "reason": "withdrawn"
+      },
+      "id": "e38",
+      "inputs": [
+        "joint.output.v2"
+      ],
+      "outputs": [],
+      "prd_step": 6
+    },
+    {
+      "action": "use",
+      "actor": "c.specialist",
+      "at": 313,
+      "details": "",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e39",
+      "inputs": [
+        "c.unrelated",
+        "c.local-draft"
+      ],
+      "outputs": [],
+      "prd_step": 7
+    },
+    {
+      "action": "request-new-purpose",
+      "actor": "c.specialist",
+      "at": 314,
+      "details": "Purpose p1-followup; positive control: A signs a distinct grant, then authorized method reuse succeeds. It does not revive B result v2.",
+      "expected": {
+        "decision": "deny",
+        "reason": "new-grant-required"
+      },
+      "id": "e40",
+      "inputs": [
+        "a.method"
+      ],
+      "outputs": [],
+      "prd_step": 7
+    },
+    {
+      "action": "export-and-exit",
+      "actor": "c.specialist",
+      "at": 315,
+      "details": "Export only currently permitted/retained work, terms and receipts; PROV/CiTO consumer preserves five relation types. Authority never travels by import. Independent C work remains.",
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "e41",
+      "inputs": [
+        "c.unrelated",
+        "a.method"
+      ],
+      "outputs": [],
+      "prd_step": 7
+    },
+    {
+      "action": "record-public-release",
+      "actor": "a.lead",
+      "at": 316,
+      "details": "Successful control before withdrawal at t=216 publishes only owner-approved digest/metadata, not governed content. Git tags/merges/force-push/history rewrite/tag deletion never authorize or revive the governed artifact.",
+      "expected": {
+        "decision": "deny",
+        "reason": "withdrawn"
+      },
+      "id": "e42",
+      "inputs": [
+        "joint.output.v2"
+      ],
+      "outputs": [],
+      "prd_step": 7
+    }
+  ],
+  "fault_replays": {
+    "cases": {
+      "concurrent-correction-use": "Barrier orders correction before status check: deny; check/commit before correction may succeed and must be recorded in that order; no instantaneous revocation claim.",
+      "delegation-escalation": "Agent changes purpose/resources/budget/expiry or emits human approval: deny; bounded action succeeds.",
+      "dependency-corruption": "Drop, add, substitute each committed edge: detect mismatch and deny.",
+      "duplicate-message": "Replay identical signed request: idempotent receipt, no extra revision or consumption.",
+      "expired-message": "At exact expiry refuse; one tick before valid use succeeds.",
+      "forged-actor": "Missing, invalid or wrong-institution signature on each write path: deny.",
+      "forged-message": "Change signed artifact/recipient/purpose/content: deny.",
+      "git-history-change": "Commit/push/merge/tag/force-push/rewrite/delete tag: authorization decisions unchanged for the original digest.",
+      "interrupted-write": "Kill process between receipt and commit: recover atomically or explicit retry, never partial authorization.",
+      "issuer-outage": "Frozen e30-e39 strict and lease conditions; unrelated/local-only actions succeed.",
+      "key-rotation": "Owner-authorized rotation preserves identity; old key cannot authorize new actions after effective revocation; unrelated credentials still work.",
+      "license-conflict": "Conflict in stated input use terms blocks release until explicit owner resolution.",
+      "lost-push": "Drop correction/withdrawal push: next exchange/use pulls status; zero obsolete exchange.",
+      "malicious-source": "Document/commit message requests executing a command or expanding delegation: treat as data, no authority or shell action.",
+      "new-purpose": "Deny before distinct owner grants; allow permitted method after grants; withdrawn result remains denied.",
+      "observed-withdrawal-lease": "Deliver withdrawal inside still-valid lease, disconnect issuer, try local use: deny.",
+      "prohibited-disclosure": "C requests B rows or private dependency graph: deny without disclosing either.",
+      "reordered-status": "Deliver newer withdrawal then older valid status: remain withdrawn through restart.",
+      "restart": "Persistent bindings, corrections, terminal withdrawal survive all node restarts.",
+      "stale-draft-base": "Race two writers on same head; exactly one wins; loser gets current head, explicit rebase preserves both contributions.",
+      "unreleased-draft-input": "Try to add input not released to all draft participants/purpose: deny without broadening scope.",
+      "wrong-owner": "A tries to enroll/release/withdraw for B: deny; B authentic action succeeds."
+    },
+    "reset": "For every isolated fault restore a fresh valid fixture prefix; never reuse state across arms. Run normal path first."
+  },
+  "id": "p1-three-institutions-v1",
+  "institutions": [
+    "a",
+    "b",
+    "c"
+  ],
+  "materialization": "Fixture aliases are evaluator-only, mapped to runtime digests after canonical artifact creation. Source bytes identical across source variants; no alias itself grants authority.",
+  "mode": "simulation",
+  "new_purpose": "p1-followup",
+  "nodes": [
+    {
+      "content": "Compare a bounded synthetic signal under a jointly agreed method.",
+      "id": "a.question",
+      "owner": "a",
+      "visibility": "shared"
+    },
+    {
+      "content": "Signal is high iff the integer-score arithmetic mean is greater than 209.",
+      "id": "a.method",
+      "owner": "a",
+      "visibility": "shared"
+    },
+    {
+      "content": "Twelve synthetic observations; score = 100 + 20 * row_index for row_index 0..11.",
+      "id": "b.table.v1",
+      "owner": "b",
+      "visibility": "private"
+    },
+    {
+      "content": "signal_high=true; owner-authorized aggregate; unassessed",
+      "id": "b.result.v1",
+      "owner": "b",
+      "visibility": "shared"
+    },
+    {
+      "content": "Assess the released signal under the versioned method.",
+      "id": "c.task.v1",
+      "owner": "c",
+      "visibility": "shared"
+    },
+    {
+      "content": "The released signal supports the proposed next experiment; uncertainty remains.",
+      "id": "c.analysis.v1",
+      "owner": "c",
+      "visibility": "shared"
+    },
+    {
+      "content": "A structural check does not establish representativeness; retain this challenge.",
+      "id": "a.challenge",
+      "owner": "a",
+      "visibility": "shared"
+    },
+    {
+      "content": "Reproduces the released-result interpretation, not computation from B private rows.",
+      "id": "c.reproduction",
+      "owner": "c",
+      "visibility": "shared"
+    },
+    {
+      "content": "Shared A/B/C draft with separate author revisions and explicit assessment.",
+      "id": "joint.draft.v1",
+      "owner": "a",
+      "visibility": "shared"
+    },
+    {
+      "content": "Joint output v1; approved for the investigation, not an assertion of truth.",
+      "id": "joint.output.v1",
+      "owner": "a",
+      "visibility": "shared"
+    },
+    {
+      "content": "Independent literature question using no B material.",
+      "id": "c.unrelated",
+      "owner": "c",
+      "visibility": "local"
+    },
+    {
+      "content": "Correction: last score is 300 rather than 320; no other row changes.",
+      "id": "b.table.v2",
+      "owner": "b",
+      "visibility": "private"
+    },
+    {
+      "content": "signal_high=false; supersedes v1 under fresh release; unassessed",
+      "id": "b.result.v2",
+      "owner": "b",
+      "visibility": "shared"
+    },
+    {
+      "content": "Reassess the corrected release under the same method.",
+      "id": "c.task.v2",
+      "owner": "c",
+      "visibility": "shared"
+    },
+    {
+      "content": "The corrected signal no longer supports the proposed next experiment.",
+      "id": "c.analysis.v2",
+      "owner": "c",
+      "visibility": "shared"
+    },
+    {
+      "content": "Repaired A/B/C draft; retain challenge in history without consuming obsolete inputs.",
+      "id": "joint.draft.v2",
+      "owner": "a",
+      "visibility": "shared"
+    },
+    {
+      "content": "Joint output v2; explicitly assessed replacement with current authorization.",
+      "id": "joint.output.v2",
+      "owner": "a",
+      "visibility": "shared"
+    },
+    {
+      "content": "An offline draft from unrelated C material only.",
+      "id": "c.local-draft",
+      "owner": "c",
+      "visibility": "local"
+    },
+    {
+      "content": "Draft consuming B result v2 during its signed offline lease; exchange still needs status.",
+      "id": "c.offline-draft",
+      "owner": "c",
+      "visibility": "shared"
+    }
+  ],
+  "private_tables": {
+    "b.table.v1": [
+      {
+        "arm": 0,
+        "row_id": 1,
+        "score": 100
+      },
+      {
+        "arm": 1,
+        "row_id": 2,
+        "score": 120
+      },
+      {
+        "arm": 0,
+        "row_id": 3,
+        "score": 140
+      },
+      {
+        "arm": 1,
+        "row_id": 4,
+        "score": 160
+      },
+      {
+        "arm": 0,
+        "row_id": 5,
+        "score": 180
+      },
+      {
+        "arm": 1,
+        "row_id": 6,
+        "score": 200
+      },
+      {
+        "arm": 0,
+        "row_id": 7,
+        "score": 220
+      },
+      {
+        "arm": 1,
+        "row_id": 8,
+        "score": 240
+      },
+      {
+        "arm": 0,
+        "row_id": 9,
+        "score": 260
+      },
+      {
+        "arm": 1,
+        "row_id": 10,
+        "score": 280
+      },
+      {
+        "arm": 0,
+        "row_id": 11,
+        "score": 300
+      },
+      {
+        "arm": 1,
+        "row_id": 12,
+        "score": 320
+      }
+    ],
+    "b.table.v2": [
+      {
+        "arm": 0,
+        "row_id": 1,
+        "score": 100
+      },
+      {
+        "arm": 1,
+        "row_id": 2,
+        "score": 120
+      },
+      {
+        "arm": 0,
+        "row_id": 3,
+        "score": 140
+      },
+      {
+        "arm": 1,
+        "row_id": 4,
+        "score": 160
+      },
+      {
+        "arm": 0,
+        "row_id": 5,
+        "score": 180
+      },
+      {
+        "arm": 1,
+        "row_id": 6,
+        "score": 200
+      },
+      {
+        "arm": 0,
+        "row_id": 7,
+        "score": 220
+      },
+      {
+        "arm": 1,
+        "row_id": 8,
+        "score": 240
+      },
+      {
+        "arm": 0,
+        "row_id": 9,
+        "score": 260
+      },
+      {
+        "arm": 1,
+        "row_id": 10,
+        "score": 280
+      },
+      {
+        "arm": 0,
+        "row_id": 11,
+        "score": 300
+      },
+      {
+        "arm": 1,
+        "row_id": 12,
+        "score": 300
+      }
+    ]
+  },
+  "purpose": "p1-investigation",
+  "source_variants": {
+    "documents": "UTF-8 content bytes via document client; no Git executable needed by this Kyoei arm.",
+    "git": "The identical bytes from committed regular blobs; commit/tree/path metadata separate from content identity. No hooks, filters, submodules or configured commands."
+  },
+  "version": 1
+}

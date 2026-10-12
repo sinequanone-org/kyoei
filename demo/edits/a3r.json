@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/signed-retry.ts",
+   "text": "import { coveSigner } from \"./sign-cove.ts\";\nimport { delayFor, type RetryOptions } from \"./retry.ts\";\n\n// Sign every retried request again, with Cove's signer.\nexport async function signedRetry(secret: string, o: RetryOptions, send: (sig: string) => Promise<Response>): Promise<Response> {\n  const signer = coveSigner(secret);\n  for (let attempt = 0; ; attempt++) {\n    const res = await send(await signer.sign(\"GET\", \"/\", \"\"));\n    if (res.ok || attempt >= o.retries) return res;\n    await new Promise(r => setTimeout(r, delayFor(attempt, o)));\n  }\n}\n"
+  }
+ ],
+ "rationale": "Move onto Cove's released signer c5 after Birch withdrew b1.",
+ "delayMs": 2800
+}

@@ -1,0 +1,1290 @@
+{
+  "actors": [
+    {
+      "id": "a.lead",
+      "institution": "a",
+      "kind": "human"
+    },
+    {
+      "id": "a.planner",
+      "institution": "a",
+      "kind": "agent"
+    },
+    {
+      "id": "b.steward",
+      "institution": "b",
+      "kind": "human"
+    },
+    {
+      "id": "b.researcher",
+      "institution": "b",
+      "kind": "human"
+    },
+    {
+      "id": "b.analyst",
+      "institution": "b",
+      "kind": "agent"
+    },
+    {
+      "id": "c.specialist",
+      "institution": "c",
+      "kind": "human"
+    },
+    {
+      "id": "c.synthesizer",
+      "institution": "c",
+      "kind": "agent"
+    }
+  ],
+  "agreement": {
+    "expires": 900,
+    "joint_terms": "A/B/C attribution; public continuation; dissent stays visible; each institution consents before publication.",
+    "membership_grants_access": false,
+    "old_grants_authorize": false,
+    "purpose": "p2-continuation",
+    "version": 2
+  },
+  "events": [
+    {
+      "action": "propose-agreement",
+      "actor": "a.lead",
+      "at": 600,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f01",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "accept-agreement",
+      "actor": "b.steward",
+      "at": 601,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f02",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "accept-agreement",
+      "actor": "c.specialist",
+      "at": 602,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f03",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "reuse-enrollment",
+      "actor": "a.lead",
+      "at": 603,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f04",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "reuse-old-grant",
+      "actor": "b.researcher",
+      "at": 604,
+      "expected": {
+        "decision": "deny",
+        "reason": "new-grant-required"
+      },
+      "id": "f05",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": "joint.output.v2",
+      "source": "none"
+    },
+    {
+      "action": "create-local",
+      "actor": "c.specialist",
+      "at": 605,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f06",
+      "inputs": [],
+      "outputs": [
+        "p2.c.unrelated"
+      ],
+      "platform_api": false,
+      "prd_row": "tool-choice",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "import-record",
+      "actor": "a.lead",
+      "at": 606,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f07",
+      "inputs": [],
+      "outputs": [
+        "p2.import.checker-5"
+      ],
+      "platform_api": false,
+      "prd_row": "platform-handoff",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "relabel-official",
+      "actor": "a.planner",
+      "at": 607,
+      "expected": {
+        "decision": "deny",
+        "reason": "not-official"
+      },
+      "id": "f08",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "platform-handoff",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "delegate",
+      "actor": "a.lead",
+      "at": 608,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f09",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "contribute-method",
+      "actor": "a.lead",
+      "at": 609,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f10",
+      "inputs": [
+        "p2.import.checker-5"
+      ],
+      "outputs": [
+        "p2.a.interpretation"
+      ],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "document"
+    },
+    {
+      "action": "agent-originate-challenge",
+      "actor": "c.synthesizer",
+      "at": 610,
+      "expected": {
+        "decision": "deny",
+        "reason": "human-required"
+      },
+      "id": "f11",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "delegate",
+      "actor": "c.specialist",
+      "at": 611,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f12",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "agent-originate-challenge",
+      "actor": "c.synthesizer",
+      "at": 612,
+      "expected": {
+        "decision": "deny",
+        "reason": "human-required"
+      },
+      "id": "f13",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "challenge",
+      "actor": "c.specialist",
+      "at": 613,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f14",
+      "inputs": [],
+      "outputs": [
+        "p2.c.challenge"
+      ],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "document"
+    },
+    {
+      "action": "contribute-note",
+      "actor": "b.researcher",
+      "at": 614,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f15",
+      "inputs": [
+        "p2.a.interpretation"
+      ],
+      "outputs": [
+        "p2.b.note"
+      ],
+      "platform_api": false,
+      "prd_row": "tool-choice",
+      "probe": null,
+      "source": "document"
+    },
+    {
+      "action": "delegate",
+      "actor": "b.steward",
+      "at": 615,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f16",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "open-draft",
+      "actor": "a.lead",
+      "at": 616,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f17",
+      "inputs": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.c.challenge"
+      ],
+      "outputs": [
+        "p2.joint.draft"
+      ],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "agent-append",
+      "actor": "b.analyst",
+      "at": 617,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f18",
+      "inputs": [
+        "p2.joint.draft"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "stale-base",
+      "actor": "c.synthesizer",
+      "at": 618,
+      "expected": {
+        "decision": "deny",
+        "reason": "stale-base"
+      },
+      "id": "f19",
+      "inputs": [
+        "p2.joint.draft"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "rebase",
+      "actor": "c.synthesizer",
+      "at": 619,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f20",
+      "inputs": [
+        "p2.joint.draft"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "sign-off",
+      "actor": "a.lead",
+      "at": 620,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f21",
+      "inputs": [
+        "p2.joint.draft"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "sign-off",
+      "actor": "b.steward",
+      "at": 621,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f22",
+      "inputs": [
+        "p2.joint.draft"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "record-dissent",
+      "actor": "c.specialist",
+      "at": 622,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f23",
+      "inputs": [
+        "p2.c.challenge"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "publish",
+      "actor": "a.lead",
+      "at": 623,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f24",
+      "inputs": [
+        "p2.joint.draft"
+      ],
+      "outputs": [
+        "p2.joint.output"
+      ],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "preview-export",
+      "actor": "a.lead",
+      "at": 624,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f25",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "export",
+      "actor": "a.planner",
+      "at": 625,
+      "expected": {
+        "decision": "deny",
+        "reason": "consent-required"
+      },
+      "id": "f26",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "consent",
+      "actor": "a.lead",
+      "at": 626,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f27",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "consent",
+      "actor": "b.steward",
+      "at": 627,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f28",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "consent",
+      "actor": "c.specialist",
+      "at": 628,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f29",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "export",
+      "actor": "a.lead",
+      "at": 629,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f30",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [
+        "p2.public.package"
+      ],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "import-record",
+      "actor": "a.lead",
+      "at": 630,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f31",
+      "inputs": [],
+      "outputs": [
+        "p2.import.checker-244"
+      ],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "use-managed",
+      "actor": "a.lead",
+      "at": 631,
+      "expected": {
+        "decision": "deny",
+        "reason": "correction-blocked"
+      },
+      "id": "f32",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "read-published-bytes",
+      "actor": "c.specialist",
+      "at": 632,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f33",
+      "inputs": [
+        "p2.public.package"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "use-local",
+      "actor": "c.specialist",
+      "at": 633,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f34",
+      "inputs": [
+        "p2.c.unrelated"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "replace",
+      "actor": "a.lead",
+      "at": 634,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f35",
+      "inputs": [
+        "p2.import.checker-244"
+      ],
+      "outputs": [
+        "p2.a.interpretation.v2"
+      ],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "document"
+    },
+    {
+      "action": "replace",
+      "actor": "b.researcher",
+      "at": 635,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f36",
+      "inputs": [
+        "p2.a.interpretation.v2"
+      ],
+      "outputs": [
+        "p2.b.note.v2"
+      ],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "document"
+    },
+    {
+      "action": "publish",
+      "actor": "a.lead",
+      "at": 636,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f37",
+      "inputs": [
+        "p2.a.interpretation.v2",
+        "p2.b.note.v2",
+        "p2.c.challenge",
+        "p2.import.checker-244"
+      ],
+      "outputs": [
+        "p2.joint.output.v2"
+      ],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "export",
+      "actor": "a.lead",
+      "at": 637,
+      "expected": {
+        "decision": "deny",
+        "reason": "consent-required"
+      },
+      "id": "f38",
+      "inputs": [
+        "p2.joint.output.v2"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "consent",
+      "actor": "a.lead",
+      "at": 638,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f39",
+      "inputs": [
+        "p2.joint.output.v2"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "consent",
+      "actor": "b.steward",
+      "at": 639,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f40",
+      "inputs": [
+        "p2.joint.output.v2"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "consent",
+      "actor": "c.specialist",
+      "at": 640,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f41",
+      "inputs": [
+        "p2.joint.output.v2"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "export",
+      "actor": "a.lead",
+      "at": 641,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f42",
+      "inputs": [
+        "p2.joint.output.v2"
+      ],
+      "outputs": [
+        "p2.public.package.v2"
+      ],
+      "platform_api": false,
+      "prd_row": "chosen-publication",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "use-managed",
+      "actor": "a.lead",
+      "at": 642,
+      "expected": {
+        "decision": "deny",
+        "reason": "correction-blocked"
+      },
+      "id": "f43",
+      "inputs": [
+        "p2.joint.output"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "use-managed",
+      "actor": "a.lead",
+      "at": 643,
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "id": "f44",
+      "inputs": [
+        "p2.joint.output.v2"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "public-correction",
+      "probe": null,
+      "source": "none"
+    },
+    {
+      "action": "widen-private",
+      "actor": "b.researcher",
+      "at": 644,
+      "expected": {
+        "decision": "deny",
+        "reason": "isolation"
+      },
+      "id": "f45",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": "b.table.v2",
+      "source": "none"
+    },
+    {
+      "action": "widen-private",
+      "actor": "b.researcher",
+      "at": 645,
+      "expected": {
+        "decision": "deny",
+        "reason": "isolation"
+      },
+      "id": "f46",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": "b.table.v1",
+      "source": "none"
+    },
+    {
+      "action": "reuse-old-grant",
+      "actor": "a.lead",
+      "at": 646,
+      "expected": {
+        "decision": "deny",
+        "reason": "new-grant-required"
+      },
+      "id": "f47",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "continued-collaboration",
+      "probe": "joint.output.v1",
+      "source": "none"
+    },
+    {
+      "action": "git-push",
+      "actor": "a.lead",
+      "at": 647,
+      "expected": {
+        "decision": "deny",
+        "reason": "git-not-authority"
+      },
+      "id": "f48",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "tool-choice",
+      "probe": null,
+      "source": "git"
+    },
+    {
+      "action": "rename-file",
+      "actor": "b.researcher",
+      "at": 648,
+      "expected": {
+        "decision": "deny",
+        "reason": "source-not-authority"
+      },
+      "id": "f49",
+      "inputs": [],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "tool-choice",
+      "probe": null,
+      "source": "document"
+    },
+    {
+      "action": "mark-signoff",
+      "actor": "a.lead",
+      "at": 649,
+      "expected": {
+        "decision": "deny",
+        "reason": "dissent-not-signoff"
+      },
+      "id": "f50",
+      "inputs": [
+        "p2.c.challenge"
+      ],
+      "outputs": [],
+      "platform_api": false,
+      "prd_row": "human-led-joint-work",
+      "probe": null,
+      "source": "none"
+    }
+  ],
+  "fault_cases": [
+    {
+      "allow_event": "f04",
+      "deny_event": "f05",
+      "deny_reason": "new-grant-required",
+      "id": "old-grant-reuse"
+    },
+    {
+      "allow_event": "f30",
+      "deny_event": "f45",
+      "deny_reason": "isolation",
+      "id": "private-to-public"
+    },
+    {
+      "allow_event": "f07",
+      "deny_event": "f08",
+      "deny_reason": "not-official",
+      "id": "official-relabel"
+    },
+    {
+      "allow_event": "f14",
+      "deny_event": "f13",
+      "deny_reason": "human-required",
+      "id": "agent-originates-challenge"
+    },
+    {
+      "allow_event": "f30",
+      "deny_event": "f26",
+      "deny_reason": "consent-required",
+      "id": "agent-exports"
+    },
+    {
+      "allow_event": "f20",
+      "deny_event": "f19",
+      "deny_reason": "stale-base",
+      "id": "stale-draft-base"
+    },
+    {
+      "allow_event": "f33",
+      "deny_event": "f32",
+      "deny_reason": "correction-blocked",
+      "id": "published-bytes-not-revoked"
+    },
+    {
+      "allow_event": "f30",
+      "deny_event": "f38",
+      "deny_reason": "consent-required",
+      "id": "missing-consent"
+    },
+    {
+      "allow_event": "f10",
+      "deny_event": "f48",
+      "deny_reason": "git-not-authority",
+      "id": "git-event-authorizes"
+    },
+    {
+      "allow_event": "f15",
+      "deny_event": "f49",
+      "deny_reason": "source-not-authority",
+      "id": "rename-not-authority"
+    },
+    {
+      "allow_event": "f44",
+      "deny_event": "f43",
+      "deny_reason": "correction-blocked",
+      "id": "correction-blocks-old"
+    },
+    {
+      "allow_event": "f34",
+      "deny_event": "f32",
+      "deny_reason": "correction-blocked",
+      "id": "unaffected-continues"
+    },
+    {
+      "allow_event": "f37",
+      "deny_event": "f50",
+      "deny_reason": "dissent-not-signoff",
+      "id": "dissent-survives"
+    },
+    {
+      "allow_event": "f18",
+      "deny_event": "f26",
+      "deny_reason": "consent-required",
+      "id": "delegation-excludes-export"
+    }
+  ],
+  "id": "p2-public-continuation-v1",
+  "imports": {
+    "p2.import.checker-244": {
+      "commit": "4623204e4eb6945a7639bc5958fa8ccb84ecc8d1",
+      "ended": "2026-09-05T18:33:42Z",
+      "fingerprint": "f5a1e8d927325169e319a88fbc144c086019fd10167409295ec06fc12afc32c6",
+      "label": "platform-import",
+      "license": "Apache-2.0",
+      "official_result": false,
+      "pull": 244,
+      "repository": "github.com/Layr-Labs/eip8200-challenges",
+      "stores_code": false
+    },
+    "p2.import.checker-5": {
+      "commit": "bf6b54402eb1e4b2bbe46ee532a9c7267d91ebec",
+      "ended": null,
+      "fingerprint": "bf9d04e35aa2a2d730945fa11cc92de56db7147d505b2fd41d0b9684316220fb",
+      "label": "platform-import",
+      "license": "Apache-2.0",
+      "official_result": false,
+      "pull": 5,
+      "repository": "github.com/Layr-Labs/eip8200-challenges",
+      "stores_code": false
+    }
+  },
+  "institutions": [
+    "a",
+    "b",
+    "c"
+  ],
+  "isolation": {
+    "private": [
+      "b.table.v1",
+      "b.table.v2"
+    ],
+    "purpose_bound_probes": [
+      "joint.output.v1",
+      "joint.output.v2"
+    ]
+  },
+  "mode": "simulation",
+  "nodes": [
+    {
+      "author": null,
+      "bytes_revocable": false,
+      "dissent_by": [],
+      "human_origin": false,
+      "id": "p2.import.checker-5",
+      "kind": "platform-import",
+      "license": "Apache-2.0",
+      "members": [],
+      "official_result": false,
+      "owner": "a",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "public-import"
+    },
+    {
+      "author": null,
+      "bytes_revocable": false,
+      "dissent_by": [],
+      "human_origin": false,
+      "id": "p2.import.checker-244",
+      "kind": "platform-import",
+      "license": "Apache-2.0",
+      "members": [],
+      "official_result": false,
+      "owner": "a",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "public-import"
+    },
+    {
+      "author": "a.lead",
+      "bytes_revocable": null,
+      "dissent_by": [],
+      "human_origin": true,
+      "id": "p2.a.interpretation",
+      "kind": "method",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "a",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": "a.lead",
+      "bytes_revocable": null,
+      "dissent_by": [],
+      "human_origin": true,
+      "id": "p2.a.interpretation.v2",
+      "kind": "method",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "a",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": "b.researcher",
+      "bytes_revocable": null,
+      "dissent_by": [],
+      "human_origin": true,
+      "id": "p2.b.note",
+      "kind": "observation",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "b",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": "b.researcher",
+      "bytes_revocable": null,
+      "dissent_by": [],
+      "human_origin": true,
+      "id": "p2.b.note.v2",
+      "kind": "observation",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "b",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": "c.specialist",
+      "bytes_revocable": null,
+      "dissent_by": [
+        "c"
+      ],
+      "human_origin": true,
+      "id": "p2.c.challenge",
+      "kind": "challenge",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "c",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": null,
+      "bytes_revocable": null,
+      "dissent_by": [],
+      "human_origin": false,
+      "id": "p2.joint.draft",
+      "kind": "draft",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "a",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": null,
+      "bytes_revocable": null,
+      "dissent_by": [
+        "c"
+      ],
+      "human_origin": false,
+      "id": "p2.joint.output",
+      "kind": "managed-output",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "a",
+      "signoff_by": [
+        "a",
+        "b"
+      ],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": null,
+      "bytes_revocable": null,
+      "dissent_by": [
+        "c"
+      ],
+      "human_origin": false,
+      "id": "p2.joint.output.v2",
+      "kind": "managed-output",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "a",
+      "signoff_by": [
+        "a",
+        "b"
+      ],
+      "stores_code": false,
+      "visibility": "shared"
+    },
+    {
+      "author": null,
+      "bytes_revocable": false,
+      "dissent_by": [],
+      "human_origin": false,
+      "id": "p2.public.package",
+      "kind": "export",
+      "license": "Apache-2.0",
+      "members": [
+        "p2.import.checker-5",
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.c.challenge",
+        "p2.joint.output"
+      ],
+      "official_result": null,
+      "owner": "a",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "public-export"
+    },
+    {
+      "author": null,
+      "bytes_revocable": false,
+      "dissent_by": [],
+      "human_origin": false,
+      "id": "p2.public.package.v2",
+      "kind": "export",
+      "license": "Apache-2.0",
+      "members": [
+        "p2.import.checker-244",
+        "p2.a.interpretation.v2",
+        "p2.b.note.v2",
+        "p2.c.challenge",
+        "p2.joint.output.v2"
+      ],
+      "official_result": null,
+      "owner": "a",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "public-export"
+    },
+    {
+      "author": "c.specialist",
+      "bytes_revocable": null,
+      "dissent_by": [],
+      "human_origin": true,
+      "id": "p2.c.unrelated",
+      "kind": "note",
+      "license": null,
+      "members": [],
+      "official_result": null,
+      "owner": "c",
+      "signoff_by": [],
+      "stores_code": false,
+      "visibility": "local"
+    }
+  ],
+  "purpose": "p2-continuation",
+  "version": 1
+}

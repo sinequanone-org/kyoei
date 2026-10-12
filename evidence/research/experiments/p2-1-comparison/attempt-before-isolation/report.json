@@ -1,0 +1,147 @@
+{
+  "contract_digest": "47dcca255ff6af7bf969a0dc1f7b55000f6ce8e575f5dc807ff50c3dc92d69b5",
+  "enforcement": {
+    "differing_events": {
+      "kyoei-documents": [],
+      "kyoei-git": []
+    },
+    "tie": true
+  },
+  "falsifier": {
+    "kyoei-documents": {
+      "adopter": {
+        "code_measure": "adopter_lines",
+        "fires": false,
+        "terms": {
+          "configuration": true,
+          "failures": true,
+          "new_code": false,
+          "repair": true,
+          "setup": true
+        }
+      },
+      "with_supplier": {
+        "code_measure": "total_new_lines",
+        "fires": false,
+        "terms": {
+          "configuration": true,
+          "failures": true,
+          "new_code": false,
+          "repair": true,
+          "setup": true
+        }
+      }
+    },
+    "kyoei-git": {
+      "adopter": {
+        "code_measure": "adopter_lines",
+        "fires": false,
+        "terms": {
+          "configuration": true,
+          "failures": true,
+          "new_code": false,
+          "repair": true,
+          "setup": true
+        }
+      },
+      "with_supplier": {
+        "code_measure": "total_new_lines",
+        "fires": false,
+        "terms": {
+          "configuration": true,
+          "failures": true,
+          "new_code": false,
+          "repair": true,
+          "setup": true
+        }
+      }
+    }
+  },
+  "inputs": {
+    "kyoei-documents": {
+      "path": "research/experiments/p2-1-kyoei/kyoei-documents.json",
+      "sha256": "80dbc0003cfd0f00427661be07d70ad24b43edd1f46b49853294cc95190ef73a"
+    },
+    "kyoei-git": {
+      "path": "research/experiments/p2-1-kyoei/kyoei-git.json",
+      "sha256": "ea5c9f1fc6493e062074af48bd600a943b933d9ff173f3728b3358e9598101fc"
+    },
+    "reference": {
+      "path": "research/experiments/p2-1-reference/report.json",
+      "sha256": "3df90e596e116d62facd71a3d67c8985139c96ed3aaa5256cae0d10c13c0aa7e"
+    }
+  },
+  "kind": "p2-1-comparison",
+  "limits": [
+    "One operator runs every node and holds every actor key; simulated institutions.",
+    "Kyoei's collaboration-2 rules were written during this test, so its supplier lines are this collaboration's cost, not yet amortized over other consortia.",
+    "Counts, not people: no human time, quality, cost saving or adoption is measured."
+  ],
+  "lower_cost": {
+    "adopter_lines": "kyoei",
+    "configuration_decisions": "reference",
+    "repair_steps": "reference",
+    "setup_commands": "reference",
+    "total_new_lines": "kyoei"
+  },
+  "measures": {
+    "kyoei-documents": {
+      "adopter_lines": 0,
+      "components_rebuilt": 0,
+      "components_reused": 22,
+      "configuration_decisions": 22,
+      "failures_held": 42,
+      "failures_trials": 42,
+      "isolation_breaches": 0,
+      "repair_failed_attempts": 3,
+      "repair_steps": 34,
+      "setup_client": 27,
+      "setup_commands": 30,
+      "setup_operator": 3,
+      "supplier_lines": 355,
+      "total_new_lines": 355
+    },
+    "kyoei-git": {
+      "adopter_lines": 0,
+      "components_rebuilt": 0,
+      "components_reused": 22,
+      "configuration_decisions": 22,
+      "failures_held": 42,
+      "failures_trials": 42,
+      "isolation_breaches": 0,
+      "repair_failed_attempts": 3,
+      "repair_steps": 34,
+      "setup_client": 27,
+      "setup_commands": 30,
+      "setup_operator": 3,
+      "supplier_lines": 355,
+      "total_new_lines": 355
+    },
+    "reference": {
+      "adopter_lines": 360,
+      "components_rebuilt": 0,
+      "components_reused": 28,
+      "configuration_decisions": 21,
+      "failures_held": 42,
+      "failures_trials": 42,
+      "isolation_breaches": 0,
+      "repair_failed_attempts": 3,
+      "repair_steps": 32,
+      "setup_client": 25,
+      "setup_commands": 28,
+      "setup_operator": 3,
+      "supplier_lines": 0,
+      "total_new_lines": 360
+    }
+  },
+  "product_result": null,
+  "reading": "The falsifier fires for the reference only if it needs no more new code, configuration or setup than Kyoei and matches on repair and failures; it is evaluated with and without the supplier lines written for this collaboration. product_result stays null: the contract fixes the falsifier, not a rule for naming a winner across measures that split.",
+  "source_equivalence": {
+    "differences": {
+      "decisions": [],
+      "packages": false,
+      "sets": false
+    },
+    "held": true
+  }
+}

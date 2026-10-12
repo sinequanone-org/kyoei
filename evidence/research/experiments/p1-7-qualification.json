@@ -1,0 +1,44 @@
+{
+ "consumer": {
+  "expected": [
+   "builds-on",
+   "challenges",
+   "cites",
+   "reproduces",
+   "supersedes"
+  ],
+  "held": true,
+  "missing": [],
+  "recovered": [
+   "builds-on",
+   "challenges",
+   "cites",
+   "reproduces",
+   "supersedes"
+  ],
+  "relations_preserved": true
+ },
+ "held": true,
+ "kind": "p1-7-reference-qualification-checks",
+ "onward_release_wired": true,
+ "prov_cito_held": true,
+ "return_to_owner_institution": "allowed",
+ "sources": {
+  "scripts/p1_7_qualify.py": {
+   "sha256": "340afea017c7e26545466e546900a3487b6e02fbc2f5de6d00f69a69fa75ee16"
+  },
+  "scripts/reference_lifecycle.py": {
+   "sha256": "9e40540ab5e44b62b102cc8b866500f3172f070aa2925c67ab6e258d57f9d4dd"
+  },
+  "scripts/reference_repair.py": {
+   "sha256": "c62b2c0d20b93c6ca0bdd06bccea22caf2290d278aeb36182ae5ec9e30da05f0"
+  },
+  "scripts/relation_export.py": {
+   "sha256": "8318261b0e72bf1d61db4a792f866a116eab729fb0e2a9132da4ae44a8f3fcfe"
+  },
+  "scripts/release_scope.py": {
+   "sha256": "ca16150fa4b339bf8f748ff12667c02bed4baafa999ae3bd2463a3c41e89f9a4"
+  }
+ },
+ "widening_to_c": "onward-release-required"
+}

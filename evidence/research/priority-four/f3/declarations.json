@@ -1,0 +1,1365 @@
+{
+ "simulated_label": "simulated challenge; no claim that the cited result is false",
+ "units": {
+  "m-001855c72db2": {
+   "cited_result": "r-8b00f09b6e5a",
+   "claim_id": "claim.m-001855c72db2",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-001855c72db2"
+  },
+  "m-002f526457f1": {
+   "cited_result": "r-9c872cc9238d",
+   "claim_id": "claim.m-002f526457f1",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-002f526457f1"
+  },
+  "m-003739d58c81": {
+   "cited_result": "r-5fb1df05ab06",
+   "claim_id": "claim.m-003739d58c81",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-003739d58c81"
+  },
+  "m-0037abe91152": {
+   "cited_result": "r-8febe1d3db90",
+   "claim_id": "claim.m-0037abe91152",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0037abe91152"
+  },
+  "m-0038ac539065": {
+   "cited_result": "r-66b7f31c4fc6",
+   "claim_id": "claim.m-0038ac539065",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-0038ac539065"
+  },
+  "m-0040bdc5e5e3": {
+   "cited_result": "r-d0280218ec13",
+   "claim_id": "claim.m-0040bdc5e5e3",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0040bdc5e5e3"
+  },
+  "m-005712cca770": {
+   "cited_result": "r-5c3d633ef6b1",
+   "claim_id": "claim.m-005712cca770",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-005712cca770"
+  },
+  "m-005edb920ce5": {
+   "cited_result": "r-e7a8e8d4ff49",
+   "claim_id": "claim.m-005edb920ce5",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-005edb920ce5"
+  },
+  "m-00873edce405": {
+   "cited_result": "r-7f032ab5f7b5",
+   "claim_id": "claim.m-00873edce405",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-00873edce405"
+  },
+  "m-00b3dfcd59d0": {
+   "cited_result": "r-83331017d5be",
+   "claim_id": "claim.m-00b3dfcd59d0",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-00b3dfcd59d0"
+  },
+  "m-00b8d2e8ea9c": {
+   "cited_result": "r-b63befd995e5",
+   "claim_id": "claim.m-00b8d2e8ea9c",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-00b8d2e8ea9c"
+  },
+  "m-00c514c88f30": {
+   "cited_result": "r-b38f7d1229e9",
+   "claim_id": "claim.m-00c514c88f30",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-00c514c88f30"
+  },
+  "m-00d9e175ec8c": {
+   "cited_result": "r-192e43491d54",
+   "claim_id": "claim.m-00d9e175ec8c",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-00d9e175ec8c"
+  },
+  "m-00f2e4860d2b": {
+   "cited_result": "r-6d788527c8f1",
+   "claim_id": "claim.m-00f2e4860d2b",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-00f2e4860d2b"
+  },
+  "m-011965fa1e3e": {
+   "cited_result": "r-3ad1438d9070",
+   "claim_id": "claim.m-011965fa1e3e",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-011965fa1e3e"
+  },
+  "m-01397b31008b": {
+   "cited_result": "r-aada2369c506",
+   "claim_id": "claim.m-01397b31008b",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-01397b31008b"
+  },
+  "m-013dd33e2651": {
+   "cited_result": "r-e4a650b625c1",
+   "claim_id": "claim.m-013dd33e2651",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-013dd33e2651"
+  },
+  "m-014883e39771": {
+   "cited_result": "r-359fd2b58329",
+   "claim_id": "claim.m-014883e39771",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-014883e39771"
+  },
+  "m-015b3e22f926": {
+   "cited_result": "r-5899d77e7eda",
+   "claim_id": "claim.m-015b3e22f926",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-015b3e22f926"
+  },
+  "m-0182057f9e2f": {
+   "cited_result": "r-219919193e51",
+   "claim_id": "claim.m-0182057f9e2f",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0182057f9e2f"
+  },
+  "m-018f87e214f3": {
+   "cited_result": "r-0dd70f803d13",
+   "claim_id": "claim.m-018f87e214f3",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-018f87e214f3"
+  },
+  "m-01f4c12b3321": {
+   "cited_result": "r-65988f743652",
+   "claim_id": "claim.m-01f4c12b3321",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-01f4c12b3321"
+  },
+  "m-021b90fcb111": {
+   "cited_result": "r-8a62279d0129",
+   "claim_id": "claim.m-021b90fcb111",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "supersedes",
+   "unit_id": "m-021b90fcb111"
+  },
+  "m-021e6fcf569b": {
+   "cited_result": "r-901851628acf",
+   "claim_id": "claim.m-021e6fcf569b",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-021e6fcf569b"
+  },
+  "m-021fbe136ea7": {
+   "cited_result": "r-b8ba91f74dbd",
+   "claim_id": "claim.m-021fbe136ea7",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-021fbe136ea7"
+  },
+  "m-023b391e49df": {
+   "cited_result": "r-15d57872bc00",
+   "claim_id": "claim.m-023b391e49df",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-023b391e49df"
+  },
+  "m-0240fb85f68b": {
+   "cited_result": "r-cbf359598d9e",
+   "claim_id": "claim.m-0240fb85f68b",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0240fb85f68b"
+  },
+  "m-027b478f0714": {
+   "cited_result": "r-ea5ff7f29277",
+   "claim_id": "claim.m-027b478f0714",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-027b478f0714"
+  },
+  "m-029f720aeb74": {
+   "cited_result": "r-03f4f2ac901d",
+   "claim_id": "claim.m-029f720aeb74",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-029f720aeb74"
+  },
+  "m-02a098934835": {
+   "cited_result": "r-56f03a1a61b2",
+   "claim_id": "claim.m-02a098934835",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-02a098934835"
+  },
+  "m-02ac10ea9ce7": {
+   "cited_result": "r-f7e5227e6679",
+   "claim_id": "claim.m-02ac10ea9ce7",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-02ac10ea9ce7"
+  },
+  "m-02d408325dec": {
+   "cited_result": "r-412a40390c35",
+   "claim_id": "claim.m-02d408325dec",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-02d408325dec"
+  },
+  "m-031c1e15ef36": {
+   "cited_result": "r-feb9bd52bdeb",
+   "claim_id": "claim.m-031c1e15ef36",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-031c1e15ef36"
+  },
+  "m-0348bfa2345d": {
+   "cited_result": "r-c9c084b37dd1",
+   "claim_id": "claim.m-0348bfa2345d",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0348bfa2345d"
+  },
+  "m-035cb061b197": {
+   "cited_result": "r-26ed2481e12f",
+   "claim_id": "claim.m-035cb061b197",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-035cb061b197"
+  },
+  "m-0373d1f4c9a7": {
+   "cited_result": "r-d59d8b37a147",
+   "claim_id": "claim.m-0373d1f4c9a7",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0373d1f4c9a7"
+  },
+  "m-03c18268fc67": {
+   "cited_result": "r-8acaea01383b",
+   "claim_id": "claim.m-03c18268fc67",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-03c18268fc67"
+  },
+  "m-03c3bd80672f": {
+   "cited_result": "r-576192da515f",
+   "claim_id": "claim.m-03c3bd80672f",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-03c3bd80672f"
+  },
+  "m-03f0962fe31b": {
+   "cited_result": "r-f126bf2eac27",
+   "claim_id": "claim.m-03f0962fe31b",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-03f0962fe31b"
+  },
+  "m-03fc5bbcd4fc": {
+   "cited_result": "r-50c90d821161",
+   "claim_id": "claim.m-03fc5bbcd4fc",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-03fc5bbcd4fc"
+  },
+  "m-0428423baee4": {
+   "cited_result": "r-9bbf1fb2e4a8",
+   "claim_id": "claim.m-0428423baee4",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0428423baee4"
+  },
+  "m-0458593bcd72": {
+   "cited_result": "r-94991b619e14",
+   "claim_id": "claim.m-0458593bcd72",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0458593bcd72"
+  },
+  "m-0487d775be62": {
+   "cited_result": "r-865e7b6d6970",
+   "claim_id": "claim.m-0487d775be62",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0487d775be62"
+  },
+  "m-04927e84d9c0": {
+   "cited_result": "r-12df6f5b3d94",
+   "claim_id": "claim.m-04927e84d9c0",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-04927e84d9c0"
+  },
+  "m-04bd19b6e95c": {
+   "cited_result": "r-7fe1556635ce",
+   "claim_id": "claim.m-04bd19b6e95c",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-04bd19b6e95c"
+  },
+  "m-04db54825890": {
+   "cited_result": "r-311b62b5a2c9",
+   "claim_id": "claim.m-04db54825890",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-04db54825890"
+  },
+  "m-04ea56dba045": {
+   "cited_result": "r-0bdf0e912046",
+   "claim_id": "claim.m-04ea56dba045",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-04ea56dba045"
+  },
+  "m-04f13e509645": {
+   "cited_result": "r-0747e8d48120",
+   "claim_id": "claim.m-04f13e509645",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-04f13e509645"
+  },
+  "m-05a19240f50e": {
+   "cited_result": "r-f7320122ba2d",
+   "claim_id": "claim.m-05a19240f50e",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-05a19240f50e"
+  },
+  "m-05ab1932fe5d": {
+   "cited_result": "r-22cb8b295571",
+   "claim_id": "claim.m-05ab1932fe5d",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-05ab1932fe5d"
+  },
+  "m-05d2a00298f8": {
+   "cited_result": "r-8000a938ebd2",
+   "claim_id": "claim.m-05d2a00298f8",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-05d2a00298f8"
+  },
+  "m-06234e4af9d7": {
+   "cited_result": "r-58394ac8a4ae",
+   "claim_id": "claim.m-06234e4af9d7",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-06234e4af9d7"
+  },
+  "m-06585998ab1e": {
+   "cited_result": "r-de5128bddae9",
+   "claim_id": "claim.m-06585998ab1e",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-06585998ab1e"
+  },
+  "m-0666ac2511b6": {
+   "cited_result": "r-9eccb9c12fe9",
+   "claim_id": "claim.m-0666ac2511b6",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-0666ac2511b6"
+  },
+  "m-066805d60ae4": {
+   "cited_result": "r-813b20ff6543",
+   "claim_id": "claim.m-066805d60ae4",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-066805d60ae4"
+  },
+  "m-077067a4d721": {
+   "cited_result": "r-7b6976551888",
+   "claim_id": "claim.m-077067a4d721",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-077067a4d721"
+  },
+  "m-07ef2226a6d6": {
+   "cited_result": "r-75f9611e100b",
+   "claim_id": "claim.m-07ef2226a6d6",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-07ef2226a6d6"
+  },
+  "m-07f5c9dd985a": {
+   "cited_result": "r-13a373dc1f7e",
+   "claim_id": "claim.m-07f5c9dd985a",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-07f5c9dd985a"
+  },
+  "m-080ddff58ed8": {
+   "cited_result": "r-1b808985e44f",
+   "claim_id": "claim.m-080ddff58ed8",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-080ddff58ed8"
+  },
+  "m-081aa3cda956": {
+   "cited_result": "r-37f0f71f532b",
+   "claim_id": "claim.m-081aa3cda956",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-081aa3cda956"
+  },
+  "m-08217335898b": {
+   "cited_result": "r-d829000958b8",
+   "claim_id": "claim.m-08217335898b",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-08217335898b"
+  },
+  "m-091a304e6b39": {
+   "cited_result": "r-efb76ed7c1fc",
+   "claim_id": "claim.m-091a304e6b39",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-091a304e6b39"
+  },
+  "m-0941e7646490": {
+   "cited_result": "r-d3dc3b1397f7",
+   "claim_id": "claim.m-0941e7646490",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-0941e7646490"
+  },
+  "m-094ef54fe6ba": {
+   "cited_result": "r-9cfaf023d3ae",
+   "claim_id": "claim.m-094ef54fe6ba",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-094ef54fe6ba"
+  },
+  "m-098dd5b2c6a0": {
+   "cited_result": "r-3b85f4490add",
+   "claim_id": "claim.m-098dd5b2c6a0",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-098dd5b2c6a0"
+  },
+  "m-09980e7c5323": {
+   "cited_result": "r-9dab7853557a",
+   "claim_id": "claim.m-09980e7c5323",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-09980e7c5323"
+  },
+  "m-09a5dda8ebe4": {
+   "cited_result": "r-a0777dbe1285",
+   "claim_id": "claim.m-09a5dda8ebe4",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-09a5dda8ebe4"
+  },
+  "m-0a39f6e3857b": {
+   "cited_result": "r-208dac76973e",
+   "claim_id": "claim.m-0a39f6e3857b",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-0a39f6e3857b"
+  },
+  "m-0aa197b13a6c": {
+   "cited_result": "r-aa15b1e7844e",
+   "claim_id": "claim.m-0aa197b13a6c",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0aa197b13a6c"
+  },
+  "m-0b65940ad8cd": {
+   "cited_result": "r-ab14f94c7559",
+   "claim_id": "claim.m-0b65940ad8cd",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-0b65940ad8cd"
+  },
+  "m-0bc14e0c015c": {
+   "cited_result": "r-1576d987671e",
+   "claim_id": "claim.m-0bc14e0c015c",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0bc14e0c015c"
+  },
+  "m-0c0b61622670": {
+   "cited_result": "r-a69471ffc631",
+   "claim_id": "claim.m-0c0b61622670",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0c0b61622670"
+  },
+  "m-0c2821698b6e": {
+   "cited_result": "r-ddbee5cdff3e",
+   "claim_id": "claim.m-0c2821698b6e",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0c2821698b6e"
+  },
+  "m-0c3a01e5fdd2": {
+   "cited_result": "r-3591a214dc60",
+   "claim_id": "claim.m-0c3a01e5fdd2",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0c3a01e5fdd2"
+  },
+  "m-0cea0b2817bd": {
+   "cited_result": "r-cf6eca4f14ca",
+   "claim_id": "claim.m-0cea0b2817bd",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0cea0b2817bd"
+  },
+  "m-0d03fc830d9f": {
+   "cited_result": "r-e69ca3697849",
+   "claim_id": "claim.m-0d03fc830d9f",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-0d03fc830d9f"
+  },
+  "m-0d0612edd0bd": {
+   "cited_result": "r-76a298fa604e",
+   "claim_id": "claim.m-0d0612edd0bd",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0d0612edd0bd"
+  },
+  "m-0d796535edf2": {
+   "cited_result": "r-a2c61f3abcff",
+   "claim_id": "claim.m-0d796535edf2",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0d796535edf2"
+  },
+  "m-0dcddca3551f": {
+   "cited_result": "r-25c2ca428345",
+   "claim_id": "claim.m-0dcddca3551f",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0dcddca3551f"
+  },
+  "m-0e78be74337b": {
+   "cited_result": "r-5ce491d928f9",
+   "claim_id": "claim.m-0e78be74337b",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "reproduces",
+   "unit_id": "m-0e78be74337b"
+  },
+  "m-0ed573bf18e0": {
+   "cited_result": "r-f083562aa5dc",
+   "claim_id": "claim.m-0ed573bf18e0",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0ed573bf18e0"
+  },
+  "m-0ee25c996394": {
+   "cited_result": "r-19a4a8291f80",
+   "claim_id": "claim.m-0ee25c996394",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0ee25c996394"
+  },
+  "m-0f129f408471": {
+   "cited_result": "r-519ae25dabb3",
+   "claim_id": "claim.m-0f129f408471",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-0f129f408471"
+  },
+  "m-0f85b257f565": {
+   "cited_result": "r-d5b3549fb60c",
+   "claim_id": "claim.m-0f85b257f565",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-0f85b257f565"
+  },
+  "m-1091d835e2ad": {
+   "cited_result": "r-00aeb4904040",
+   "claim_id": "claim.m-1091d835e2ad",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-1091d835e2ad"
+  },
+  "m-10ff0e29a2ed": {
+   "cited_result": "r-1c6fe218d1af",
+   "claim_id": "claim.m-10ff0e29a2ed",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-10ff0e29a2ed"
+  },
+  "m-11b5ca698233": {
+   "cited_result": "r-bda4fa5cf8f6",
+   "claim_id": "claim.m-11b5ca698233",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-11b5ca698233"
+  },
+  "m-11d73bcabc8b": {
+   "cited_result": "r-67ff97904a6d",
+   "claim_id": "claim.m-11d73bcabc8b",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-11d73bcabc8b"
+  },
+  "m-1208c2f3fdd1": {
+   "cited_result": "r-d2bbf87909cc",
+   "claim_id": "claim.m-1208c2f3fdd1",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-1208c2f3fdd1"
+  },
+  "m-122d7b29a470": {
+   "cited_result": "r-ab680ec7909f",
+   "claim_id": "claim.m-122d7b29a470",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-122d7b29a470"
+  },
+  "m-1264380b0a05": {
+   "cited_result": "r-5f2939048148",
+   "claim_id": "claim.m-1264380b0a05",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-1264380b0a05"
+  },
+  "m-12b366566506": {
+   "cited_result": "r-5d52363191a6",
+   "claim_id": "claim.m-12b366566506",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-12b366566506"
+  },
+  "m-16ce39157ed5": {
+   "cited_result": "r-e573fe6cc0fb",
+   "claim_id": "claim.m-16ce39157ed5",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-16ce39157ed5"
+  },
+  "m-170a835fa3e9": {
+   "cited_result": "r-64abe8bbecbc",
+   "claim_id": "claim.m-170a835fa3e9",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-170a835fa3e9"
+  },
+  "m-17f6ed73f313": {
+   "cited_result": "r-18ccc2e04364",
+   "claim_id": "claim.m-17f6ed73f313",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-17f6ed73f313"
+  },
+  "m-18370f9a46fb": {
+   "cited_result": "r-98abcf345e9b",
+   "claim_id": "claim.m-18370f9a46fb",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-18370f9a46fb"
+  },
+  "m-1aed494716ae": {
+   "cited_result": "r-f6a1af9f58b1",
+   "claim_id": "claim.m-1aed494716ae",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-1aed494716ae"
+  },
+  "m-1be80e884a75": {
+   "cited_result": "r-1c7678ff76a1",
+   "claim_id": "claim.m-1be80e884a75",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-1be80e884a75"
+  },
+  "m-1c8b096e3918": {
+   "cited_result": "r-46f595282dc8",
+   "claim_id": "claim.m-1c8b096e3918",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-1c8b096e3918"
+  },
+  "m-1d90da4fcb91": {
+   "cited_result": "r-7ace658b0c53",
+   "claim_id": "claim.m-1d90da4fcb91",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-1d90da4fcb91"
+  },
+  "m-1e6ecad5eae5": {
+   "cited_result": "r-0e4dcc762cea",
+   "claim_id": "claim.m-1e6ecad5eae5",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-1e6ecad5eae5"
+  },
+  "m-22eaa75a5f43": {
+   "cited_result": "r-2eb341c6eb17",
+   "claim_id": "claim.m-22eaa75a5f43",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-22eaa75a5f43"
+  },
+  "m-2578346a353d": {
+   "cited_result": "r-9e2b2515566a",
+   "claim_id": "claim.m-2578346a353d",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-2578346a353d"
+  },
+  "m-25b7bef48724": {
+   "cited_result": "r-297e10d8b289",
+   "claim_id": "claim.m-25b7bef48724",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-25b7bef48724"
+  },
+  "m-262ddc580b53": {
+   "cited_result": "r-458497ecc4f4",
+   "claim_id": "claim.m-262ddc580b53",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-262ddc580b53"
+  },
+  "m-289b91335c47": {
+   "cited_result": "r-3f60aa51ad9d",
+   "claim_id": "claim.m-289b91335c47",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-289b91335c47"
+  },
+  "m-2b510f4e6e1e": {
+   "cited_result": "r-c7476dd05ec8",
+   "claim_id": "claim.m-2b510f4e6e1e",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-2b510f4e6e1e"
+  },
+  "m-2b6337afa922": {
+   "cited_result": "r-c018670b34cd",
+   "claim_id": "claim.m-2b6337afa922",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-2b6337afa922"
+  },
+  "m-2bd6ea89d40f": {
+   "cited_result": "r-4168cf93cc24",
+   "claim_id": "claim.m-2bd6ea89d40f",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-2bd6ea89d40f"
+  },
+  "m-2eb1af102adb": {
+   "cited_result": "r-4a55ccfa92ca",
+   "claim_id": "claim.m-2eb1af102adb",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-2eb1af102adb"
+  },
+  "m-2f023aaa082b": {
+   "cited_result": "r-e455f208efea",
+   "claim_id": "claim.m-2f023aaa082b",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-2f023aaa082b"
+  },
+  "m-33c92f491996": {
+   "cited_result": "r-400a4854abc6",
+   "claim_id": "claim.m-33c92f491996",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-33c92f491996"
+  },
+  "m-367192725879": {
+   "cited_result": "r-aeb191d71c80",
+   "claim_id": "claim.m-367192725879",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-367192725879"
+  },
+  "m-3fea0c71eef2": {
+   "cited_result": "r-7bbc2adfcd82",
+   "claim_id": "claim.m-3fea0c71eef2",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-3fea0c71eef2"
+  },
+  "m-44696a9c5eaa": {
+   "cited_result": "r-de3bced18777",
+   "claim_id": "claim.m-44696a9c5eaa",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-44696a9c5eaa"
+  },
+  "m-50006099ce2c": {
+   "cited_result": "r-04d64e4d4564",
+   "claim_id": "claim.m-50006099ce2c",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-50006099ce2c"
+  },
+  "m-51cf3e820250": {
+   "cited_result": "r-7ee680149947",
+   "claim_id": "claim.m-51cf3e820250",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "reproduces",
+   "unit_id": "m-51cf3e820250"
+  },
+  "m-560d9b380250": {
+   "cited_result": "r-bd307f72db7a",
+   "claim_id": "claim.m-560d9b380250",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-560d9b380250"
+  },
+  "m-59c685440e40": {
+   "cited_result": "r-07bd749fdbdc",
+   "claim_id": "claim.m-59c685440e40",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-59c685440e40"
+  },
+  "m-5b7d1dd30b11": {
+   "cited_result": "r-bc9ed9770e13",
+   "claim_id": "claim.m-5b7d1dd30b11",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-5b7d1dd30b11"
+  },
+  "m-61e14294b532": {
+   "cited_result": "r-53ee3defad21",
+   "claim_id": "claim.m-61e14294b532",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "supersedes",
+   "unit_id": "m-61e14294b532"
+  },
+  "m-666cc1985fbb": {
+   "cited_result": "r-2be70ac04e8b",
+   "claim_id": "claim.m-666cc1985fbb",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-666cc1985fbb"
+  },
+  "m-784e997a65dc": {
+   "cited_result": "r-f3d74f99bba6",
+   "claim_id": "claim.m-784e997a65dc",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-784e997a65dc"
+  },
+  "m-7b7cd8905190": {
+   "cited_result": "r-3c92c28ae4a6",
+   "claim_id": "claim.m-7b7cd8905190",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-7b7cd8905190"
+  },
+  "m-7fba20905b3d": {
+   "cited_result": "r-17d2108850bb",
+   "claim_id": "claim.m-7fba20905b3d",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-7fba20905b3d"
+  },
+  "m-80f180c815dd": {
+   "cited_result": "r-c755f1166aa5",
+   "claim_id": "claim.m-80f180c815dd",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-80f180c815dd"
+  },
+  "m-8982d5673c24": {
+   "cited_result": "r-402c3e0b6bdf",
+   "claim_id": "claim.m-8982d5673c24",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-8982d5673c24"
+  },
+  "m-955fcfc32165": {
+   "cited_result": "r-13028e297d82",
+   "claim_id": "claim.m-955fcfc32165",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-955fcfc32165"
+  },
+  "m-9725804c4029": {
+   "cited_result": "r-f9bb25ad51dc",
+   "claim_id": "claim.m-9725804c4029",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-9725804c4029"
+  },
+  "m-9bdd9be8fb69": {
+   "cited_result": "r-c17b1407fade",
+   "claim_id": "claim.m-9bdd9be8fb69",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-9bdd9be8fb69"
+  },
+  "m-b06fec927ec4": {
+   "cited_result": "r-aabc60648079",
+   "claim_id": "claim.m-b06fec927ec4",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "b",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-b06fec927ec4"
+  },
+  "m-b532e16a57a5": {
+   "cited_result": "r-3c13dfe8c38c",
+   "claim_id": "claim.m-b532e16a57a5",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-b532e16a57a5"
+  },
+  "m-db18109c0798": {
+   "cited_result": "r-b453cbe4b454",
+   "claim_id": "claim.m-db18109c0798",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "c",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-db18109c0798"
+  },
+  "m-e79bc08ac7af": {
+   "cited_result": "r-ed4a095d8bc5",
+   "claim_id": "claim.m-e79bc08ac7af",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-e79bc08ac7af"
+  },
+  "m-f894e8434ce8": {
+   "cited_result": "r-a805fe1146a4",
+   "claim_id": "claim.m-f894e8434ce8",
+   "declared_edge": "cites",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "does-not-depend",
+   "m4_relation": "cites",
+   "unit_id": "m-f894e8434ce8"
+  },
+  "m-fdeb82f9fd03": {
+   "cited_result": "r-43576dbc068f",
+   "claim_id": "claim.m-fdeb82f9fd03",
+   "declared_edge": "builds-on",
+   "human_confirmed": true,
+   "institution": "a",
+   "m4_label": "depends",
+   "m4_relation": "builds-on",
+   "unit_id": "m-fdeb82f9fd03"
+  }
+ }
+}

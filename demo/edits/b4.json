@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/sign.ts",
+   "text": "// Request signing. Owned by Birch.\nexport interface Signer {\n  sign(method: string, path: string, body: string): Promise<string>;\n}\n\n// Written from the specification: method, path, key id and body digest.\nasync function stringToSign(method: string, path: string, keyId: string, body: string): Promise<string> {\n  const digest = await crypto.subtle.digest(\"SHA-256\", new TextEncoder().encode(body));\n  const hex = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, \"0\")).join(\"\");\n  return `${method.toUpperCase()} ${path}\\nkey=${keyId}\\nbody=${hex}`;\n}\n\nexport function hmacSigner(secret: string, keyId: string): Signer {\n  const key = crypto.subtle.importKey(\"raw\", new TextEncoder().encode(secret), { name: \"HMAC\", hash: \"SHA-256\" }, false, [\"sign\"]);\n  return {\n    async sign(method, path, body) {\n      const mac = await crypto.subtle.sign(\"HMAC\", await key, new TextEncoder().encode(await stringToSign(method, path, keyId, body)));\n      return `${keyId}:${btoa(String.fromCharCode(...new Uint8Array(mac)))}`;\n    },\n  };\n}\n"
+  }
+ ],
+ "rationale": "Clean replacement for b1, written from the specification. New signature hmacSigner(secret, keyId).",
+ "delayMs": 3000
+}

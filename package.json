@@ -1,0 +1,30 @@
+{
+  "name": "kyoei",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A contribution layer on Git for agents and people from different organizations",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "kyoei": "./bin/kyoei.mjs"
+  },
+  "scripts": {
+    "typecheck": "node -e \"require('node:fs').mkdirSync('.release-work', { recursive: true })\" && wrangler types .release-work/worker-runtime.d.ts --include-env=false && tsc --noEmit -p tsconfig.json",
+    "test": "node --test --test-concurrency=1 test/*.test.ts",
+    "demo": "node scripts/demo.ts",
+    "summary": "node scripts/summary.ts",
+    "map": "node scripts/map.ts"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0",
+    "isomorphic-git": "1.43.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "7.0.2",
+    "wrangler": "4.149.0"
+  }
+}

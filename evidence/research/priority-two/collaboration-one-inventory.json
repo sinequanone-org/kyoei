@@ -1,0 +1,358 @@
+{
+  "files": [
+    {
+      "arm": "kyoei",
+      "logical_lines": 7,
+      "path": "scripts/actor_request.py",
+      "role": "kyoei-supplier",
+      "sha256": "7c86a7a02f5aa2d27efc817cc7924590bebac20ab24378418acdb13f9bc98542"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 196,
+      "path": "scripts/agent_adapter.py",
+      "role": "kyoei-supplier",
+      "sha256": "5736e05c2043d964a4525d8aab185d66f1e52b1690d1e8b3d2a84722ba25dd67"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 193,
+      "path": "scripts/context_shards.py",
+      "role": "kyoei-supplier",
+      "sha256": "6a68b2d42985ebb4bfdfa1b183690700e22286e29f4de180c13e1ca29c74136b"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 219,
+      "path": "scripts/contributions.py",
+      "role": "kyoei-supplier",
+      "sha256": "47f1d7a9a523aeb22a10923fca9ac5ecc2ec197dc75b4e52d30c673af9bc24d3"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 359,
+      "path": "scripts/git_source.py",
+      "role": "kyoei-supplier",
+      "sha256": "6bdfaa4393a172aa0af9c7cfec1c3fda639ad65183348f8f232d4028e4e4df1e"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 455,
+      "path": "scripts/institution_identity.py",
+      "role": "kyoei-supplier",
+      "sha256": "de8a82ad26a23ef217bfd3f26e94ccc092d14c6b02d41638dc87283a4781354f"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 174,
+      "path": "scripts/institution_server.py",
+      "role": "kyoei-supplier",
+      "sha256": "359f62126c277716152a17295b16d9d2ff80cb65da6248098b29ec8919d2054e"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 217,
+      "path": "scripts/joint_result.py",
+      "role": "shared-presentation",
+      "sha256": "1016c094a5f1baf3f94351daf3b942ee5fce819db89bf0e02ed1fa141b9a871e"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 82,
+      "path": "scripts/lifecycle_server.py",
+      "role": "kyoei-supplier",
+      "sha256": "ef39e892c76729982382f22b528ae090abe3a1a2d867cea57f3c63e6fa58d387"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 168,
+      "path": "scripts/lifecycle_status.py",
+      "role": "kyoei-supplier",
+      "sha256": "c92feefa055b3ac978e9afb08f3967017b4f02cf1a882cfc302a037399cc6490"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 327,
+      "path": "scripts/lifecycle_store.py",
+      "role": "kyoei-supplier",
+      "sha256": "c0c3dda71dd4f4611b56982979dbd79e270ab203494a312663c706e2baf10bf2"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 40,
+      "path": "scripts/node_wire.py",
+      "role": "kyoei-supplier",
+      "sha256": "0a319bbe03f3ea8e75926857220dfaba1f034ebd6aeb5f55da77cad571021ca6"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 32,
+      "path": "scripts/peer_http.py",
+      "role": "kyoei-supplier",
+      "sha256": "53e9b027a21622f7266fb11ad8c35b6c81a5f3b1318466a6db59c667fb3f4f4b"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 90,
+      "path": "scripts/pq_crypto.py",
+      "role": "shared-primitive",
+      "sha256": "78dd5b89fff8a62ba69343329198f8336290ec1ac35175b99a28363f5790bf99"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 67,
+      "path": "scripts/repair_brief.py",
+      "role": "shared-presentation",
+      "sha256": "88aa88d1363972fdedf1a1714a634235f3513019de19cac0fad568fc3255c35d"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 140,
+      "path": "scripts/research_evidence.py",
+      "role": "kyoei-supplier",
+      "sha256": "7ca78e06994ccfacc947b5c4211b95021d791f03d1ed8c91a40e0b70e88ae355"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 58,
+      "path": "scripts/review_custody.py",
+      "role": "kyoei-supplier",
+      "sha256": "22ecc78e149d7a71483572315f154dc9be6b82e8bebd00e8b94cdc3511e4f29c"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 327,
+      "path": "scripts/review_verdict.py",
+      "role": "kyoei-supplier",
+      "sha256": "2f4253cf79a953774f47484c002b83d2bf992b34c092f9bbcb4cf3bf0f4e3d97"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 261,
+      "path": "scripts/shared_draft.py",
+      "role": "kyoei-supplier",
+      "sha256": "f3816a52f4ff925cf7f4fc3a6dc63f4d70992ff0b0d66461bd6de7e73b9461b6"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 213,
+      "path": "scripts/task_data.py",
+      "role": "kyoei-supplier",
+      "sha256": "8fdc5309dcf07c4fc3aab7cfe7f19896c681b61b2593aa990e529d51fb46d7cf"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 309,
+      "path": "scripts/workspace_capture.py",
+      "role": "kyoei-supplier",
+      "sha256": "fcb9720ff9fc37a20d5accf59239d231ea2b0e4b101b96e8b745884a19941845"
+    },
+    {
+      "arm": "kyoei",
+      "logical_lines": 124,
+      "path": "scripts/workspace_client.py",
+      "role": "kyoei-supplier",
+      "sha256": "d04dd66cca9a000e620f217844ab5b37d870fab6db7cff6bcfdeec45cc3ef946"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 7,
+      "path": "scripts/actor_request.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "7c86a7a02f5aa2d27efc817cc7924590bebac20ab24378418acdb13f9bc98542"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 193,
+      "path": "scripts/context_shards.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "6a68b2d42985ebb4bfdfa1b183690700e22286e29f4de180c13e1ca29c74136b"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 219,
+      "path": "scripts/contributions.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "47f1d7a9a523aeb22a10923fca9ac5ecc2ec197dc75b4e52d30c673af9bc24d3"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 359,
+      "path": "scripts/git_source.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "6bdfaa4393a172aa0af9c7cfec1c3fda639ad65183348f8f232d4028e4e4df1e"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 217,
+      "path": "scripts/joint_result.py",
+      "role": "shared-presentation",
+      "sha256": "1016c094a5f1baf3f94351daf3b942ee5fce819db89bf0e02ed1fa141b9a871e"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 40,
+      "path": "scripts/node_wire.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "0a319bbe03f3ea8e75926857220dfaba1f034ebd6aeb5f55da77cad571021ca6"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 32,
+      "path": "scripts/peer_http.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "53e9b027a21622f7266fb11ad8c35b6c81a5f3b1318466a6db59c667fb3f4f4b"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 90,
+      "path": "scripts/pq_crypto.py",
+      "role": "shared-primitive",
+      "sha256": "78dd5b89fff8a62ba69343329198f8336290ec1ac35175b99a28363f5790bf99"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 336,
+      "path": "scripts/provenance.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "4311a39e7db9797a9fc15e58a2664f780bd042f6603f97ccfb8cc56a2117cf01"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 167,
+      "path": "scripts/reference_capture.py",
+      "role": "reference-authored",
+      "sha256": "7f9677c5bad9a6cabfae3ef48c10415088f77de3cdf32730d7026973214530e3"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 322,
+      "path": "scripts/reference_deployment.py",
+      "role": "reference-authored",
+      "sha256": "c1befe126d215a6c2b7a9e40832e037c6f07530ac3c10fb4944a39e54eb32be1"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 81,
+      "path": "scripts/reference_draft_lifecycle.py",
+      "role": "reference-authored",
+      "sha256": "0563c9b6a2aedeb937e3d4bee054c241f49a9c0e23c22aab12d3ddab90ee8975"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 250,
+      "path": "scripts/reference_enrollment.py",
+      "role": "reference-authored",
+      "sha256": "45b4a507d242c0327e7bca3d50beca02e489f069ac7dcb4b58e9c87059cc2906"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 20,
+      "path": "scripts/reference_joint_result.py",
+      "role": "reference-authored",
+      "sha256": "82841ebef0d2af0228dd250af1e46e756341af065c26420e00ef5d68f535a35c"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 208,
+      "path": "scripts/reference_lifecycle.py",
+      "role": "reference-authored",
+      "sha256": "9e40540ab5e44b62b102cc8b866500f3172f070aa2925c67ab6e258d57f9d4dd"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 406,
+      "path": "scripts/reference_local_first.py",
+      "role": "reference-authored",
+      "sha256": "6f748f6d2c3f8ab05944b783308500f1ef9dd7bc38f1188c112d9a270efd869b"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 378,
+      "path": "scripts/reference_repair.py",
+      "role": "reference-authored",
+      "sha256": "c62b2c0d20b93c6ca0bdd06bccea22caf2290d278aeb36182ae5ec9e30da05f0"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 179,
+      "path": "scripts/reference_session.py",
+      "role": "reference-authored",
+      "sha256": "5800fbe0c48287157e1899d355a33d005b1c3bf89210deaf8a19eccd1b739f18"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 366,
+      "path": "scripts/reference_shared_draft.py",
+      "role": "reference-authored",
+      "sha256": "b4227030f9563443f3381ced9336138b0b7b3376ee5a8991116645efd3c31c32"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 93,
+      "path": "scripts/reference_source.py",
+      "role": "reference-authored",
+      "sha256": "e64a06f6f9128582ab2549e9d6b082464a5a821c545e2489f4aa9fae6a574414"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 30,
+      "path": "scripts/relation_export.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "8318261b0e72bf1d61db4a792f866a116eab729fb0e2a9132da4ae44a8f3fcfe"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 13,
+      "path": "scripts/release_scope.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "ca16150fa4b339bf8f748ff12667c02bed4baafa999ae3bd2463a3c41e89f9a4"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 67,
+      "path": "scripts/repair_brief.py",
+      "role": "shared-presentation",
+      "sha256": "88aa88d1363972fdedf1a1714a634235f3513019de19cac0fad568fc3255c35d"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 140,
+      "path": "scripts/research_evidence.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "7ca78e06994ccfacc947b5c4211b95021d791f03d1ed8c91a40e0b70e88ae355"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 58,
+      "path": "scripts/review_custody.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "22ecc78e149d7a71483572315f154dc9be6b82e8bebd00e8b94cdc3511e4f29c"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 327,
+      "path": "scripts/review_verdict.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "2f4253cf79a953774f47484c002b83d2bf992b34c092f9bbcb4cf3bf0f4e3d97"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 213,
+      "path": "scripts/task_data.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "8fdc5309dcf07c4fc3aab7cfe7f19896c681b61b2593aa990e529d51fb46d7cf"
+    },
+    {
+      "arm": "reference",
+      "logical_lines": 124,
+      "path": "scripts/workspace_client.py",
+      "role": "kyoei-module-reused-by-reference",
+      "sha256": "d04dd66cca9a000e620f217844ab5b37d870fab6db7cff6bcfdeec45cc3ef946"
+    }
+  ],
+  "source_report": "research/experiments/p1-7-measures/status.json",
+  "source_sha256": "66060a1b3fedc902e6637c4bb8c66cf08af41cb5afd3b30c3dbafd05599dff13",
+  "unit": "python-logical-lines-v1",
+  "version": 1
+}

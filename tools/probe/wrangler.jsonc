@@ -1,0 +1,11 @@
+// Feasibility probe. Deploy, run once, then delete: npx wrangler delete -c tools/probe/wrangler.jsonc
+{
+ "$schema": "../../node_modules/wrangler/config-schema.json",
+ "name": "kyoei-probe",
+ "main": "probe.ts",
+ "compatibility_date": "2026-10-10",
+ "compatibility_flags": ["nodejs_compat", "webcrypto_modern_algorithms", "global_fetch_strictly_public"],
+ "limits": { "cpu_ms": 300000 },
+ "artifacts": [{ "binding": "ARTIFACTS", "namespace": "kyoei-probe" }],
+ "ai": { "binding": "AI" }
+}

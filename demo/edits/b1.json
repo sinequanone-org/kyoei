@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/sign.ts",
+   "text": "// Request signing. Owned by Birch.\nexport interface Signer {\n  sign(method: string, path: string, body: string): Promise<string>;\n}\n\n// The canonical-string helper below was adapted from an outside snippet.\n// Its origin and license are not verified.\nfunction canonicalString(method: string, path: string, body: string): string {\n  return [method.toUpperCase(), path, body].join(\"\\n\");\n}\n\nexport function hmacSigner(secret: string): Signer {\n  const key = crypto.subtle.importKey(\"raw\", new TextEncoder().encode(secret), { name: \"HMAC\", hash: \"SHA-256\" }, false, [\"sign\"]);\n  return {\n    async sign(method, path, body) {\n      const mac = await crypto.subtle.sign(\"HMAC\", await key, new TextEncoder().encode(canonicalString(method, path, body)));\n      return btoa(String.fromCharCode(...new Uint8Array(mac)));\n    },\n  };\n}\n"
+  }
+ ],
+ "rationale": "HMAC-SHA256 request signer. One helper came from an outside snippet with an unverified license; recorded here.",
+ "delayMs": 3800
+}

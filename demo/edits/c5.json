@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/sign-cove.ts",
+   "text": "// Cove's request signer. Same Signer interface as src/sign.ts.\nimport type { Signer } from \"./sign.ts\";\n\nexport function coveSigner(secret: string): Signer {\n  const key = crypto.subtle.importKey(\"raw\", new TextEncoder().encode(secret), { name: \"HMAC\", hash: \"SHA-256\" }, false, [\"sign\"]);\n  return {\n    async sign(method, path, body) {\n      const data = new TextEncoder().encode(`${method.toUpperCase()}\\n${path}\\n${body}`);\n      const mac = await crypto.subtle.sign(\"HMAC\", await key, data);\n      return btoa(String.fromCharCode(...new Uint8Array(mac)));\n    },\n  };\n}\n"
+  }
+ ],
+ "rationale": "Cove's own HMAC signer for its gateway; same Signer interface.",
+ "delayMs": 4600
+}

@@ -1,0 +1,73 @@
+{
+ "artifacts": {
+  "contract.sha256": "",
+  "declarations.json": "9cd7adb6d3a8e43664baa4685677484fca432172077a4316e31808c1b62accbc",
+  "oracle.json": "0c90d8537597fb629a419ef0e277d11e97660a29415657c5d66abc24eb5cc85a",
+  "scenario.json": "45fd41cf321af91a323d0a91777ec39a6b64ee9a757684c9828690a8c2027f4d"
+ },
+ "decided": "2026-10-05",
+ "falsifiers": [
+  "experience-not-delivered",
+  "no-kyoei-advantage",
+  "labels-are-the-bottleneck"
+ ],
+ "id": "kyoei-f3-research-repair-v1",
+ "measures": {
+  "code": "Adopter lines (R) and supplier lines (K, cumulative)",
+  "continuity": "Uses of unrelated claims and sections refused during the run. Must be 0",
+  "declaration_work": "Adopter actions to record the declarations: proposals, confirmations and edits",
+  "false_alarms": "Notices on claims the oracle marks unaffected, split into label-limited and structural",
+  "leaks": "Any identifier, field or content a recipient may not read. Must be 0",
+  "missed_alerts": "Oracle-affected claims with no notice at the responsible institution, split into label-limited and delivery misses",
+  "notice_completeness": "Notices with all six fields equal to the oracle, divided by notices delivered",
+  "repair_work": "Adopter actions from the notice to a resolved state per claim",
+  "setup_and_configuration": "Commands and decisions to the first exchange, under frozen P1.7 rules"
+ },
+ "predictions": [
+  {
+   "claim": "Delivery misses are 0 in both arms.",
+   "id": "F3-1",
+   "value": 0
+  },
+  {
+   "claim": "Label-limited misses are equal in both arms: the 16 agreed dependencies M4 does not declare, and everything that depends on them.",
+   "id": "F3-2",
+   "value": 16
+  },
+  {
+   "claim": "False alarms are 0 in both arms, label-limited and structural. M1 raises 58 on agreed first-hop claims.",
+   "id": "F3-3",
+   "value": 0
+  },
+  {
+   "claim": "Every delivered notice is complete in both arms. Every source-version field reads \"version not recorded\".",
+   "id": "F3-4",
+   "value": 1.0
+  },
+  {
+   "claim": "Leaks are 0 and continuity breaks are 0 in both arms.",
+   "id": "F3-5",
+   "value": 0
+  },
+  {
+   "claim": "No winner is predicted on declaration work or repair work.",
+   "id": "F3-6",
+   "value": null
+  },
+  {
+   "claim": "R's adopter code for the new features is 250 to 600 lines. K's supplier code is 250 to 600 lines; K's adopter code is 0.",
+   "id": "F3-7",
+   "value": {
+    "kyoei_adopter": 0,
+    "reference_adopter_max": 600,
+    "reference_adopter_min": 250
+   }
+  }
+ ],
+ "sources": {
+  "stage_b_labels_sha256": "398b8d7c5b2c43fd6c10bdce77178a461106ae05f9eee4005f81fb8e70974110",
+  "stage_b_units_sha256": "b1eac1e88df2633b1069a3567266539dba00a4fa60eebc5f50883883b0132a64"
+ },
+ "specification": "docs/F3-RESEARCH-REPAIR.md",
+ "version": 1
+}

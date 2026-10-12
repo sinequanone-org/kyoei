@@ -1,0 +1,4 @@
+evidence/research/experiments/cloudflare/deployed-1/git-log.txt whitespace=-blank-at-eof
+evidence/research/experiments/cloudflare/deployed-2-ai/git-log.txt whitespace=-blank-at-eof
+runs/deployed-1/git-log.txt whitespace=-blank-at-eof
+runs/deployed-2-ai/git-log.txt whitespace=-blank-at-eof

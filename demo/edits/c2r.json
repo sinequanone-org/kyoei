@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/client.ts",
+   "text": "import { hmacSigner } from \"./sign.ts\";\n\nexport interface ClientOptions { baseUrl: string; timeoutMs?: number; secret?: string; keyId?: string }\n\nexport async function request(o: ClientOptions, path: string, body = \"\"): Promise<Response> {\n  const headers: Record<string, string> = {};\n  if (o.secret) headers[\"x-signature\"] = await hmacSigner(o.secret, o.keyId ?? \"default\").sign(\"GET\", path, body);\n  return fetch(new URL(path, o.baseUrl), { headers, signal: AbortSignal.timeout(o.timeoutMs ?? 10_000) });\n}\n"
+  }
+ ],
+ "rationale": "Rebase on b1 v2: pass the key id to the new signer.",
+ "delayMs": 2400
+}

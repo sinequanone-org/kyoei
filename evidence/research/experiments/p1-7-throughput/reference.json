@@ -1,0 +1,8364 @@
+{
+ "arm": "reference",
+ "cells": [
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 5.3778,
+   "cell_seconds": 32.814,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.808,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 184078666,
+    "p95": 268904167
+   },
+   "latency_successful_ns": {
+    "p50": 184078666,
+    "p95": 268904167
+   },
+   "load_average_at_end": [
+    7.81,
+    92.11,
+    82.69
+   ],
+   "load_average_at_start": [
+    7.88,
+    93.54,
+    83.14
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.04,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 117872
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 184078666,
+     "p95_ns": 268904167,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 20,
+   "successful_per_second": 5.3778,
+   "timeouts": 0,
+   "wall_ns": 3718987708,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.667659,
+   "worker_maxrss": {
+    "max": 35258368,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 8.465,
+   "cell_seconds": 37.273,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.623,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 342095916,
+    "p95": 497106167
+   },
+   "latency_successful_ns": {
+    "p50": 342095916,
+    "p95": 497106167
+   },
+   "load_average_at_end": [
+    5.97,
+    81.06,
+    79.07
+   ],
+   "load_average_at_start": [
+    6.33,
+    83.69,
+    79.96
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 9.75,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 119408
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 342095916,
+     "p95_ns": 497106167,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 60,
+   "successful_per_second": 8.465,
+   "timeouts": 0,
+   "wall_ns": 7088029958,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.725667,
+   "worker_maxrss": {
+    "max": 36962304,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 9.0277,
+   "cell_seconds": 56.486,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.913,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 981954458,
+    "p95": 1309328917
+   },
+   "latency_successful_ns": {
+    "p50": 981954458,
+    "p95": 1309328917
+   },
+   "load_average_at_end": [
+    5.19,
+    68.17,
+    74.4
+   ],
+   "load_average_at_start": [
+    4.78,
+    72.47,
+    76.02
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 30.15,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 140992
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 981954458,
+     "p95_ns": 1309328917,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 180,
+   "successful_per_second": 9.0277,
+   "timeouts": 0,
+   "wall_ns": 19938715125,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.502581,
+   "worker_maxrss": {
+    "max": 38862848,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.5608,
+   "cell_seconds": 118.47,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.549,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 3130593459,
+    "p95": 3622089625
+   },
+   "latency_successful_ns": {
+    "p50": 3130593459,
+    "p95": 3622089625
+   },
+   "load_average_at_end": [
+    6.58,
+    48.04,
+    65.59
+   ],
+   "load_average_at_start": [
+    7.27,
+    57.38,
+    69.94
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 95.78,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 241312
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3130593459,
+     "p95_ns": 3622089625,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 540,
+   "successful_per_second": 8.5608,
+   "timeouts": 0,
+   "wall_ns": 63078081042,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.917418,
+   "worker_maxrss": {
+    "max": 40353792,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 1.4111,
+   "cell_seconds": 45.244,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 25.705,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 703522208,
+    "p95": 794536916
+   },
+   "latency_successful_ns": {
+    "p50": 703522208,
+    "p95": 794536916
+   },
+   "load_average_at_end": [
+    5.59,
+    41.4,
+    62.13
+   ],
+   "load_average_at_start": [
+    6.33,
+    43.38,
+    63.18
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.23,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 115600
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 703522208,
+     "p95_ns": 794536916,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 20,
+   "successful_per_second": 1.4111,
+   "timeouts": 0,
+   "wall_ns": 14173080125,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.837397,
+   "worker_maxrss": {
+    "max": 35323904,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 4.0198,
+   "cell_seconds": 47.728,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.515,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 721879250,
+    "p95": 841313917
+   },
+   "latency_successful_ns": {
+    "p50": 721879250,
+    "p95": 841313917
+   },
+   "load_average_at_end": [
+    7.02,
+    36.71,
+    59.33
+   ],
+   "load_average_at_start": [
+    5.63,
+    37.99,
+    60.17
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 9.48,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 116992
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 721879250,
+     "p95_ns": 841313917,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 60,
+   "successful_per_second": 4.0198,
+   "timeouts": 0,
+   "wall_ns": 14925943959,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.663333,
+   "worker_maxrss": {
+    "max": 36257792,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 8.3334,
+   "cell_seconds": 56.382,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.938,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1038882417,
+    "p95": 1349085833
+   },
+   "latency_successful_ns": {
+    "p50": 1038882417,
+    "p95": 1349085833
+   },
+   "load_average_at_end": [
+    5.58,
+    30.88,
+    55.6
+   ],
+   "load_average_at_start": [
+    5.92,
+    33.14,
+    57.11
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 30.64,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 141568
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 1038882417,
+     "p95_ns": 1349085833,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 180,
+   "successful_per_second": 8.3334,
+   "timeouts": 0,
+   "wall_ns": 21599865542,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.318441,
+   "worker_maxrss": {
+    "max": 38453248,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.2943,
+   "cell_seconds": 119.464,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.167,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 3256861334,
+    "p95": 3688690583
+   },
+   "latency_successful_ns": {
+    "p50": 3256861334,
+    "p95": 3688690583
+   },
+   "load_average_at_end": [
+    5.96,
+    22.51,
+    49.01
+   ],
+   "load_average_at_start": [
+    5.42,
+    26.56,
+    52.45
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 96.24,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 237008
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3256861334,
+     "p95_ns": 3688690583,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 540,
+   "successful_per_second": 8.2943,
+   "timeouts": 0,
+   "wall_ns": 65104664958,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 20.355763,
+   "worker_maxrss": {
+    "max": 40075264,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 5.0526,
+   "cell_seconds": 33.38,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.369,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 185721833,
+    "p95": 360524625
+   },
+   "latency_successful_ns": {
+    "p50": 185721833,
+    "p95": 360524625
+   },
+   "load_average_at_end": [
+    4.96,
+    20.44,
+    47.19
+   ],
+   "load_average_at_start": [
+    5.21,
+    20.75,
+    47.46
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.06,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 113232
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 91859500,
+     "p95_ns": 129976583,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 185721833,
+     "p95_ns": 288667416,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 302659791,
+     "p95_ns": 361864833,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 20,
+   "successful_per_second": 5.0526,
+   "timeouts": 0,
+   "wall_ns": 3958348791,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.371798,
+   "worker_maxrss": {
+    "max": 36831232,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 10.854,
+   "cell_seconds": 35.085,
+   "conflicts": 10,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.895,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 268486917,
+    "p95": 446680750
+   },
+   "latency_successful_ns": {
+    "p50": 242030417,
+    "p95": 449089083
+   },
+   "load_average_at_end": [
+    5.29,
+    18.79,
+    45.51
+   ],
+   "load_average_at_start": [
+    5.23,
+    19.0,
+    45.74
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 6.2,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 119120
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 5,
+     "stale-base": 10
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 165571417,
+     "p95_ns": 449089083,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 247740250,
+     "p95_ns": 484051125,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 345601333,
+     "p95_ns": 430156292,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 1
+    },
+    "c.load02": {
+     "stale-base": 5
+    },
+    "c.load03": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 1,
+   "successful": 50,
+   "successful_per_second": 9.045,
+   "timeouts": 0,
+   "wall_ns": 5527893625,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 14,
+    "stale-base": 1
+   },
+   "worker_cpu_seconds": 4.169305,
+   "worker_maxrss": {
+    "max": 37044224,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 12.5654,
+   "cell_seconds": 48.476,
+   "conflicts": 23,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.969,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 627081250,
+    "p95": 1144933250
+   },
+   "latency_successful_ns": {
+    "p50": 643839625,
+    "p95": 1221459125
+   },
+   "load_average_at_end": [
+    6.89,
+    17.21,
+    43.4
+   ],
+   "load_average_at_start": [
+    6.6,
+    17.51,
+    43.81
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 21.25,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 140048
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 22,
+     "stale-base": 23
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 703398125,
+     "p95_ns": 1493693875,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 644736208,
+     "p95_ns": 936429834,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 539661750,
+     "p95_ns": 757610875,
+     "successful": 22
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 1
+    },
+    "c.load03": {
+     "stale-base": 1
+    },
+    "c.load04": {
+     "stale-base": 4
+    },
+    "c.load05": {
+     "stale-base": 2
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load07": {
+     "stale-base": 4
+    },
+    "c.load08": {
+     "stale-base": 2
+    },
+    "c.load09": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 1,
+   "successful": 157,
+   "successful_per_second": 10.9598,
+   "timeouts": 0,
+   "wall_ns": 14325063625,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 41,
+    "stale-base": 4
+   },
+   "worker_cpu_seconds": 15.176764,
+   "worker_maxrss": {
+    "max": 39059456,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 9.8143,
+   "cell_seconds": 246.601,
+   "conflicts": 65,
+   "errors": 0,
+   "fixture_attempts": 3,
+   "fixture_failures": [
+    {
+     "error": "TimeoutError: timed out",
+     "load_average": [
+      211.44,
+      75.26,
+      62.46
+     ]
+    },
+    {
+     "error": "RuntimeError: reference node a did not answer",
+     "load_average": [
+      377.23,
+      202.31,
+      116.73
+     ]
+    }
+   ],
+   "fixture_seconds": 170.479,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 1473617375,
+    "p95": 9169484458
+   },
+   "latency_successful_ns": {
+    "p50": 1461453959,
+    "p95": 3779145500
+   },
+   "load_average_at_end": [
+    75.63,
+    201.62,
+    144.91
+   ],
+   "load_average_at_start": [
+    180.51,
+    241.19,
+    154.18
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 77.63,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 226544
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 71,
+     "timeout": 64
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 70,
+     "stale-base": 65
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 3048930291,
+     "p95_ns": 4722479625,
+     "successful": 71
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 1463772458,
+     "p95_ns": 2400669625,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 1099173875,
+     "p95_ns": 1660264834,
+     "successful": 70
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 4
+    },
+    "c.load03": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 2
+    },
+    "c.load06": {
+     "stale-base": 2
+    },
+    "c.load07": {
+     "stale-base": 1
+    },
+    "c.load09": {
+     "concurrent-change": 1,
+     "stale-base": 4
+    },
+    "c.load10": {
+     "stale-base": 4
+    },
+    "c.load11": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load12": {
+     "stale-base": 2
+    },
+    "c.load13": {
+     "stale-base": 4
+    },
+    "c.load14": {
+     "stale-base": 3
+    },
+    "c.load15": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load16": {
+     "stale-base": 1
+    },
+    "c.load17": {
+     "stale-base": 4
+    },
+    "c.load18": {
+     "stale-base": 4
+    },
+    "c.load19": {
+     "stale-base": 3
+    },
+    "c.load20": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load21": {
+     "stale-base": 3
+    },
+    "c.load22": {
+     "stale-base": 1
+    },
+    "c.load23": {
+     "stale-base": 2
+    },
+    "c.load24": {
+     "stale-base": 2
+    },
+    "c.load25": {
+     "concurrent-change": 1,
+     "stale-base": 4
+    },
+    "c.load26": {
+     "stale-base": 2
+    },
+    "c.load27": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 1,
+   "successful": 411,
+   "successful_per_second": 7.4698,
+   "timeouts": 64,
+   "wall_ns": 55021580417,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 123,
+    "stale-base": 12
+   },
+   "worker_cpu_seconds": 44.387363,
+   "worker_maxrss": {
+    "max": 40304640,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 2.2004,
+   "cell_seconds": 39.376,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.793,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 297498833,
+    "p95": 758959750
+   },
+   "latency_successful_ns": {
+    "p50": 297498833,
+    "p95": 758959750
+   },
+   "load_average_at_end": [
+    40.61,
+    176.83,
+    138.43
+   ],
+   "load_average_at_start": [
+    47.35,
+    182.73,
+    140.02
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.06,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114416
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 90041791,
+     "p95_ns": 247673459,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 703837083,
+     "p95_ns": 786940875,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 273497791,
+     "p95_ns": 297498833,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 1,
+   "successful": 20,
+   "successful_per_second": 2.2004,
+   "timeouts": 0,
+   "wall_ns": 9089270042,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.399517,
+   "worker_maxrss": {
+    "max": 35569664,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 5.596,
+   "cell_seconds": 42.131,
+   "conflicts": 3,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.379,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 567385792,
+    "p95": 814614709
+   },
+   "latency_successful_ns": {
+    "p50": 665679333,
+    "p95": 815419250
+   },
+   "load_average_at_end": [
+    21.14,
+    152.61,
+    131.48
+   ],
+   "load_average_at_start": [
+    24.16,
+    157.65,
+    132.98
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 6.44,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 120656
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 12,
+     "stale-base": 3
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 128872666,
+     "p95_ns": 237522791,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 720180959,
+     "p95_ns": 835024834,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 429137125,
+     "p95_ns": 567385792,
+     "successful": 12
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 1
+    }
+   },
+   "repetition": 1,
+   "successful": 57,
+   "successful_per_second": 5.3162,
+   "timeouts": 0,
+   "wall_ns": 10721883041,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 14,
+    "stale-base": 1
+   },
+   "worker_cpu_seconds": 6.185615,
+   "worker_maxrss": {
+    "max": 36716544,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 11.7616,
+   "cell_seconds": 48.34,
+   "conflicts": 29,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.885,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 806828333,
+    "p95": 1184610917
+   },
+   "latency_successful_ns": {
+    "p50": 873371250,
+    "p95": 1204154500
+   },
+   "load_average_at_end": [
+    11.96,
+    129.79,
+    124.24
+   ],
+   "load_average_at_start": [
+    13.33,
+    136.11,
+    126.32
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 20.88,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 142496
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 16,
+     "stale-base": 29
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 473255375,
+     "p95_ns": 1020658709,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 984019958,
+     "p95_ns": 1216561084,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 489476792,
+     "p95_ns": 640911959,
+     "successful": 16
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 4
+    },
+    "c.load03": {
+     "stale-base": 4
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 1
+    },
+    "c.load06": {
+     "stale-base": 4
+    },
+    "c.load07": {
+     "stale-base": 5
+    },
+    "c.load08": {
+     "stale-base": 4
+    },
+    "c.load09": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 1,
+   "successful": 151,
+   "successful_per_second": 9.8667,
+   "timeouts": 0,
+   "wall_ns": 15304045417,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 39,
+    "stale-base": 6
+   },
+   "worker_cpu_seconds": 14.092758,
+   "worker_maxrss": {
+    "max": 38895616,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 9.9114,
+   "cell_seconds": 104.969,
+   "conflicts": 59,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.293,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1857026042,
+    "p95": 7599067042
+   },
+   "latency_successful_ns": {
+    "p50": 1885829000,
+    "p95": 3446842625
+   },
+   "load_average_at_end": [
+    8.55,
+    93.62,
+    110.71
+   ],
+   "load_average_at_start": [
+    10.54,
+    111.08,
+    117.62
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 75.94,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 232528
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 86,
+     "timeout": 49
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 76,
+     "stale-base": 59
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 2922070458,
+     "p95_ns": 4697528500,
+     "successful": 86
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 2060091167,
+     "p95_ns": 2952880167,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 1011762417,
+     "p95_ns": 1378137583,
+     "successful": 76
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 2
+    },
+    "c.load03": {
+     "stale-base": 1
+    },
+    "c.load04": {
+     "stale-base": 4
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load07": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load08": {
+     "stale-base": 1
+    },
+    "c.load09": {
+     "stale-base": 2
+    },
+    "c.load10": {
+     "stale-base": 2
+    },
+    "c.load11": {
+     "stale-base": 5
+    },
+    "c.load12": {
+     "concurrent-change": 1
+    },
+    "c.load13": {
+     "stale-base": 3
+    },
+    "c.load14": {
+     "stale-base": 3
+    },
+    "c.load15": {
+     "stale-base": 2
+    },
+    "c.load16": {
+     "stale-base": 4
+    },
+    "c.load17": {
+     "stale-base": 4
+    },
+    "c.load19": {
+     "stale-base": 1
+    },
+    "c.load20": {
+     "stale-base": 2
+    },
+    "c.load21": {
+     "stale-base": 4
+    },
+    "c.load22": {
+     "concurrent-change": 1,
+     "stale-base": 1
+    },
+    "c.load23": {
+     "stale-base": 4
+    },
+    "c.load24": {
+     "stale-base": 4
+    },
+    "c.load27": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 1,
+   "successful": 432,
+   "successful_per_second": 7.9292,
+   "timeouts": 49,
+   "wall_ns": 54482471500,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 120,
+    "concurrent-change": 1,
+    "stale-base": 14
+   },
+   "worker_cpu_seconds": 44.351133,
+   "worker_maxrss": {
+    "max": 40189952,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 5.2943,
+   "cell_seconds": 32.964,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.566,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 162681250,
+    "p95": 314953166
+   },
+   "latency_successful_ns": {
+    "p50": 162681250,
+    "p95": 314953166
+   },
+   "load_average_at_end": [
+    6.51,
+    83.71,
+    106.4
+   ],
+   "load_average_at_start": [
+    6.56,
+    85.02,
+    107.0
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.95,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 113984
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 162681250,
+     "p95_ns": 314953166,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 20,
+   "successful_per_second": 5.2943,
+   "timeouts": 0,
+   "wall_ns": 3777631709,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.818793,
+   "worker_maxrss": {
+    "max": 35930112,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 8.443,
+   "cell_seconds": 37.754,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.064,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 351496917,
+    "p95": 477651167
+   },
+   "latency_successful_ns": {
+    "p50": 351496917,
+    "p95": 477651167
+   },
+   "load_average_at_end": [
+    5.6,
+    73.79,
+    101.73
+   ],
+   "load_average_at_start": [
+    5.61,
+    76.12,
+    102.87
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 10.0,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118960
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 351496917,
+     "p95_ns": 477651167,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 60,
+   "successful_per_second": 8.443,
+   "timeouts": 0,
+   "wall_ns": 7106458833,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.395393,
+   "worker_maxrss": {
+    "max": 37339136,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 8.6744,
+   "cell_seconds": 54.955,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.058,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 1041526583,
+    "p95": 1341821458
+   },
+   "latency_successful_ns": {
+    "p50": 1041526583,
+    "p95": 1341821458
+   },
+   "load_average_at_end": [
+    4.39,
+    61.98,
+    95.58
+   ],
+   "load_average_at_start": [
+    4.75,
+    66.03,
+    97.77
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 31.25,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 138192
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 1041526583,
+     "p95_ns": 1341821458,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 180,
+   "successful_per_second": 8.6744,
+   "timeouts": 0,
+   "wall_ns": 20750826834,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 6.880802,
+   "worker_maxrss": {
+    "max": 38715392,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.3951,
+   "cell_seconds": 118.201,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.126,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 3182234208,
+    "p95": 3688316250
+   },
+   "latency_successful_ns": {
+    "p50": 3182234208,
+    "p95": 3688316250
+   },
+   "load_average_at_end": [
+    5.73,
+    43.45,
+    83.79
+   ],
+   "load_average_at_start": [
+    5.71,
+    52.62,
+    89.99
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 95.14,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 235408
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3182234208,
+     "p95_ns": 3688316250,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 540,
+   "successful_per_second": 8.3951,
+   "timeouts": 0,
+   "wall_ns": 64323401250,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.400714,
+   "worker_maxrss": {
+    "max": 40189952,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 1.3936,
+   "cell_seconds": 46.475,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.322,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 709740541,
+    "p95": 784280167
+   },
+   "latency_successful_ns": {
+    "p50": 709740541,
+    "p95": 784280167
+   },
+   "load_average_at_end": [
+    3.99,
+    37.15,
+    79.15
+   ],
+   "load_average_at_start": [
+    4.26,
+    38.91,
+    80.51
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.29,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114624
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 709740541,
+     "p95_ns": 784280167,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 20,
+   "successful_per_second": 1.3936,
+   "timeouts": 0,
+   "wall_ns": 14350936958,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.772803,
+   "worker_maxrss": {
+    "max": 35799040,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 3.9397,
+   "cell_seconds": 47.886,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.818,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 744874625,
+    "p95": 919490833
+   },
+   "latency_successful_ns": {
+    "p50": 744874625,
+    "p95": 919490833
+   },
+   "load_average_at_end": [
+    6.5,
+    33.21,
+    75.54
+   ],
+   "load_average_at_start": [
+    6.73,
+    34.63,
+    76.78
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 9.9,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118496
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 744874625,
+     "p95_ns": 919490833,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 60,
+   "successful_per_second": 3.9397,
+   "timeouts": 0,
+   "wall_ns": 15229436458,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.152342,
+   "worker_maxrss": {
+    "max": 36601856,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 8.6215,
+   "cell_seconds": 56.313,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.792,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1000139542,
+    "p95": 1233252416
+   },
+   "latency_successful_ns": {
+    "p50": 1000139542,
+    "p95": 1233252416
+   },
+   "load_average_at_end": [
+    4.72,
+    27.81,
+    70.63
+   ],
+   "load_average_at_start": [
+    4.9,
+    29.44,
+    72.21
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 29.42,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 141264
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 1000139542,
+     "p95_ns": 1233252416,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 180,
+   "successful_per_second": 8.6215,
+   "timeouts": 0,
+   "wall_ns": 20877976875,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.149234,
+   "worker_maxrss": {
+    "max": 38977536,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.585,
+   "cell_seconds": 117.765,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.064,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 3099125125,
+    "p95": 3696045625
+   },
+   "latency_successful_ns": {
+    "p50": 3099125125,
+    "p95": 3696045625
+   },
+   "load_average_at_end": [
+    7.07,
+    21.37,
+    62.46
+   ],
+   "load_average_at_start": [
+    8.06,
+    24.91,
+    66.87
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 94.0,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 239776
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3099125125,
+     "p95_ns": 3696045625,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 540,
+   "successful_per_second": 8.585,
+   "timeouts": 0,
+   "wall_ns": 62900317083,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.854582,
+   "worker_maxrss": {
+    "max": 40009728,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 5.0815,
+   "cell_seconds": 33.31,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.3,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 174180375,
+    "p95": 302735250
+   },
+   "latency_successful_ns": {
+    "p50": 174180375,
+    "p95": 302735250
+   },
+   "load_average_at_end": [
+    5.54,
+    19.4,
+    60.08
+   ],
+   "load_average_at_start": [
+    5.67,
+    19.66,
+    60.41
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 1.94,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 115248
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 85154542,
+     "p95_ns": 97723583,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 174180375,
+     "p95_ns": 285204542,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 277614125,
+     "p95_ns": 472220833,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 20,
+   "successful_per_second": 5.0815,
+   "timeouts": 0,
+   "wall_ns": 3935835917,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.475659,
+   "worker_maxrss": {
+    "max": 36667392,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 11.0203,
+   "cell_seconds": 35.646,
+   "conflicts": 7,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.358,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 253236333,
+    "p95": 425082417
+   },
+   "latency_successful_ns": {
+    "p50": 224395542,
+    "p95": 425082417
+   },
+   "load_average_at_end": [
+    6.0,
+    17.99,
+    57.93
+   ],
+   "load_average_at_start": [
+    5.83,
+    18.16,
+    58.22
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 6.2,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 120544
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 8,
+     "stale-base": 7
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 196654875,
+     "p95_ns": 329065208,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 209050541,
+     "p95_ns": 388326834,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 384692041,
+     "p95_ns": 425593791,
+     "successful": 8
+    }
+   },
+   "refusals_by_actor": {
+    "c.load02": {
+     "stale-base": 5
+    },
+    "c.load03": {
+     "stale-base": 2
+    }
+   },
+   "repetition": 2,
+   "successful": 53,
+   "successful_per_second": 9.7346,
+   "timeouts": 0,
+   "wall_ns": 5444505416,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 13,
+    "stale-base": 2
+   },
+   "worker_cpu_seconds": 5.121525,
+   "worker_maxrss": {
+    "max": 36569088,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 12.4605,
+   "cell_seconds": 47.766,
+   "conflicts": 24,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.665,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 638895666,
+    "p95": 1059295250
+   },
+   "latency_successful_ns": {
+    "p50": 651431959,
+    "p95": 1090581958
+   },
+   "load_average_at_end": [
+    5.5,
+    16.04,
+    54.93
+   ],
+   "load_average_at_start": [
+    6.22,
+    16.72,
+    55.85
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 22.02,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 139856
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 21,
+     "stale-base": 24
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 675412417,
+     "p95_ns": 1777558125,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 654345792,
+     "p95_ns": 1010460666,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 592612000,
+     "p95_ns": 766842792,
+     "successful": 21
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 1
+    },
+    "c.load02": {
+     "stale-base": 2
+    },
+    "c.load03": {
+     "stale-base": 2
+    },
+    "c.load04": {
+     "stale-base": 3
+    },
+    "c.load05": {
+     "stale-base": 5
+    },
+    "c.load06": {
+     "stale-base": 1
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "stale-base": 4
+    },
+    "c.load09": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 2,
+   "successful": 156,
+   "successful_per_second": 10.7991,
+   "timeouts": 0,
+   "wall_ns": 14445618667,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 40,
+    "stale-base": 5
+   },
+   "worker_cpu_seconds": 13.791493,
+   "worker_maxrss": {
+    "max": 38862848,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 10.0625,
+   "cell_seconds": 103.089,
+   "conflicts": 61,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.798,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 1534154667,
+    "p95": 7929914458
+   },
+   "latency_successful_ns": {
+    "p50": 1477863042,
+    "p95": 3892518500
+   },
+   "load_average_at_end": [
+    6.88,
+    13.37,
+    49.36
+   ],
+   "load_average_at_start": [
+    6.37,
+    14.52,
+    51.92
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 75.36,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 220864
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 78,
+     "timeout": 57
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 74,
+     "stale-base": 61
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 2597548125,
+     "p95_ns": 4584686292,
+     "successful": 78
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 1428105458,
+     "p95_ns": 2131515167,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 1320330542,
+     "p95_ns": 1906706583,
+     "successful": 74
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 2
+    },
+    "c.load03": {
+     "stale-base": 2
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 4
+    },
+    "c.load06": {
+     "stale-base": 1
+    },
+    "c.load07": {
+     "stale-base": 2
+    },
+    "c.load08": {
+     "stale-base": 2
+    },
+    "c.load09": {
+     "stale-base": 1
+    },
+    "c.load10": {
+     "stale-base": 3
+    },
+    "c.load11": {
+     "stale-base": 3
+    },
+    "c.load12": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load13": {
+     "stale-base": 3
+    },
+    "c.load14": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load15": {
+     "stale-base": 4
+    },
+    "c.load16": {
+     "concurrent-change": 1,
+     "stale-base": 4
+    },
+    "c.load17": {
+     "stale-base": 2
+    },
+    "c.load18": {
+     "stale-base": 2
+    },
+    "c.load19": {
+     "stale-base": 3
+    },
+    "c.load20": {
+     "stale-base": 2
+    },
+    "c.load21": {
+     "stale-base": 2
+    },
+    "c.load22": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load23": {
+     "stale-base": 3
+    },
+    "c.load24": {
+     "stale-base": 2
+    },
+    "c.load26": {
+     "stale-base": 2
+    },
+    "c.load27": {
+     "concurrent-change": 2,
+     "stale-base": 2
+    }
+   },
+   "repetition": 2,
+   "successful": 422,
+   "successful_per_second": 7.8636,
+   "timeouts": 57,
+   "wall_ns": 53664689167,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 121,
+    "stale-base": 14
+   },
+   "worker_cpu_seconds": 45.149553,
+   "worker_maxrss": {
+    "max": 40402944,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 2.1436,
+   "cell_seconds": 40.129,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.966,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 341127542,
+    "p95": 773223667
+   },
+   "latency_successful_ns": {
+    "p50": 341127542,
+    "p95": 773223667
+   },
+   "load_average_at_end": [
+    5.34,
+    12.13,
+    47.05
+   ],
+   "load_average_at_start": [
+    6.02,
+    12.49,
+    47.59
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.21,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 113456
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 130157166,
+     "p95_ns": 204567834,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 690676167,
+     "p95_ns": 779769166,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 271843125,
+     "p95_ns": 341127542,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 2,
+   "successful": 20,
+   "successful_per_second": 2.1436,
+   "timeouts": 0,
+   "wall_ns": 9330174708,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.453716,
+   "worker_maxrss": {
+    "max": 35438592,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 6.0827,
+   "cell_seconds": 40.739,
+   "conflicts": 7,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.7,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 385005500,
+    "p95": 809746667
+   },
+   "latency_successful_ns": {
+    "p50": 664746750,
+    "p95": 820337000
+   },
+   "load_average_at_end": [
+    5.45,
+    11.31,
+    45.15
+   ],
+   "load_average_at_start": [
+    5.29,
+    11.47,
+    45.6
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 6.17,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118928
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 8,
+     "stale-base": 7
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 145015917,
+     "p95_ns": 241687291,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 718851917,
+     "p95_ns": 837747417,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 294980375,
+     "p95_ns": 385005500,
+     "successful": 8
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 3
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 1
+    }
+   },
+   "repetition": 2,
+   "successful": 53,
+   "successful_per_second": 5.3731,
+   "timeouts": 0,
+   "wall_ns": 9864037625,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 13,
+    "stale-base": 2
+   },
+   "worker_cpu_seconds": 4.22409,
+   "worker_maxrss": {
+    "max": 36388864,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 11.9194,
+   "cell_seconds": 49.638,
+   "conflicts": 28,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.165,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 762762667,
+    "p95": 1108422500
+   },
+   "latency_successful_ns": {
+    "p50": 851089000,
+    "p95": 1116840084
+   },
+   "load_average_at_end": [
+    6.44,
+    10.6,
+    42.76
+   ],
+   "load_average_at_start": [
+    6.83,
+    10.95,
+    43.65
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 19.86,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 142496
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 17,
+     "stale-base": 28
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 353540167,
+     "p95_ns": 836049500,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 943593125,
+     "p95_ns": 1158304667,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 515333625,
+     "p95_ns": 649514792,
+     "successful": 17
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 3
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 2
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "stale-base": 5
+    },
+    "c.load09": {
+     "stale-base": 5
+    }
+   },
+   "repetition": 2,
+   "successful": 152,
+   "successful_per_second": 10.0653,
+   "timeouts": 0,
+   "wall_ns": 15101450250,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 40,
+    "stale-base": 5
+   },
+   "worker_cpu_seconds": 15.996703,
+   "worker_maxrss": {
+    "max": 39092224,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 9.6976,
+   "cell_seconds": 106.393,
+   "conflicts": 63,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.084,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1947134458,
+    "p95": 7605253917
+   },
+   "latency_successful_ns": {
+    "p50": 1984790042,
+    "p95": 3983581500
+   },
+   "load_average_at_end": [
+    7.75,
+    9.7,
+    38.67
+   ],
+   "load_average_at_start": [
+    6.54,
+    9.97,
+    40.69
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 77.31,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 230192
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 80,
+     "timeout": 55
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 72,
+     "stale-base": 63
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 2769846083,
+     "p95_ns": 4736522167,
+     "successful": 80
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 2170915625,
+     "p95_ns": 3099860375,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 977526625,
+     "p95_ns": 1430042709,
+     "successful": 72
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 3
+    },
+    "c.load04": {
+     "stale-base": 1
+    },
+    "c.load05": {
+     "stale-base": 3
+    },
+    "c.load06": {
+     "stale-base": 1
+    },
+    "c.load07": {
+     "stale-base": 4
+    },
+    "c.load08": {
+     "stale-base": 1
+    },
+    "c.load09": {
+     "stale-base": 2
+    },
+    "c.load10": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load11": {
+     "stale-base": 3
+    },
+    "c.load12": {
+     "stale-base": 2
+    },
+    "c.load13": {
+     "stale-base": 2
+    },
+    "c.load14": {
+     "stale-base": 1
+    },
+    "c.load15": {
+     "stale-base": 4
+    },
+    "c.load16": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load17": {
+     "stale-base": 2
+    },
+    "c.load18": {
+     "stale-base": 4
+    },
+    "c.load19": {
+     "stale-base": 3
+    },
+    "c.load20": {
+     "concurrent-change": 2,
+     "stale-base": 2
+    },
+    "c.load21": {
+     "stale-base": 4
+    },
+    "c.load22": {
+     "stale-base": 1
+    },
+    "c.load23": {
+     "stale-base": 1
+    },
+    "c.load24": {
+     "stale-base": 1
+    },
+    "c.load25": {
+     "stale-base": 3
+    },
+    "c.load26": {
+     "stale-base": 1
+    },
+    "c.load27": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 2,
+   "successful": 422,
+   "successful_per_second": 7.5785,
+   "timeouts": 55,
+   "wall_ns": 55684126708,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 121,
+    "stale-base": 14
+   },
+   "worker_cpu_seconds": 44.874214,
+   "worker_maxrss": {
+    "max": 40665088,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 5.3196,
+   "cell_seconds": 32.896,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.775,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 166611542,
+    "p95": 267768125
+   },
+   "latency_successful_ns": {
+    "p50": 166611542,
+    "p95": 267768125
+   },
+   "load_average_at_end": [
+    7.05,
+    9.33,
+    37.36
+   ],
+   "load_average_at_start": [
+    7.58,
+    9.47,
+    37.58
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.06,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114704
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 166611542,
+     "p95_ns": 267768125,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 20,
+   "successful_per_second": 5.3196,
+   "timeouts": 0,
+   "wall_ns": 3759673125,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.681395,
+   "worker_maxrss": {
+    "max": 34766848,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 9.5281,
+   "cell_seconds": 35.971,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.318,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 300679125,
+    "p95": 429903000
+   },
+   "latency_successful_ns": {
+    "p50": 300679125,
+    "p95": 429903000
+   },
+   "load_average_at_end": [
+    6.33,
+    8.86,
+    36.06
+   ],
+   "load_average_at_start": [
+    6.01,
+    8.84,
+    36.21
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 8.97,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 120704
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 300679125,
+     "p95_ns": 429903000,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 60,
+   "successful_per_second": 9.5281,
+   "timeouts": 0,
+   "wall_ns": 6297134333,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.192635,
+   "worker_maxrss": {
+    "max": 36683776,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 9.0844,
+   "cell_seconds": 55.109,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.696,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 955191875,
+    "p95": 1307590292
+   },
+   "latency_successful_ns": {
+    "p50": 955191875,
+    "p95": 1307590292
+   },
+   "load_average_at_end": [
+    6.58,
+    8.46,
+    34.06
+   ],
+   "load_average_at_start": [
+    6.43,
+    8.56,
+    34.7
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 29.87,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 139744
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 955191875,
+     "p95_ns": 1307590292,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 180,
+   "successful_per_second": 9.0844,
+   "timeouts": 0,
+   "wall_ns": 19814260125,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.174227,
+   "worker_maxrss": {
+    "max": 38862848,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.4691,
+   "cell_seconds": 119.031,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.261,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 3140284167,
+    "p95": 3603967625
+   },
+   "latency_successful_ns": {
+    "p50": 3140284167,
+    "p95": 3603967625
+   },
+   "load_average_at_end": [
+    6.05,
+    7.6,
+    30.34
+   ],
+   "load_average_at_start": [
+    6.53,
+    8.09,
+    32.31
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 94.65,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 234400
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3140284167,
+     "p95_ns": 3603967625,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 540,
+   "successful_per_second": 8.4691,
+   "timeouts": 0,
+   "wall_ns": 63761082458,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 22.360377,
+   "worker_maxrss": {
+    "max": 40435712,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 1.3486,
+   "cell_seconds": 46.628,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.759,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 729828375,
+    "p95": 834657542
+   },
+   "latency_successful_ns": {
+    "p50": 729828375,
+    "p95": 834657542
+   },
+   "load_average_at_end": [
+    5.94,
+    7.34,
+    28.95
+   ],
+   "load_average_at_start": [
+    6.15,
+    7.46,
+    29.37
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.61,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114240
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 729828375,
+     "p95_ns": 834657542,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 20,
+   "successful_per_second": 1.3486,
+   "timeouts": 0,
+   "wall_ns": 14830329250,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.999838,
+   "worker_maxrss": {
+    "max": 35225600,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 3.937,
+   "cell_seconds": 48.527,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.51,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 739366500,
+    "p95": 857623459
+   },
+   "latency_successful_ns": {
+    "p50": 739366500,
+    "p95": 857623459
+   },
+   "load_average_at_end": [
+    7.26,
+    7.4,
+    27.73
+   ],
+   "load_average_at_start": [
+    5.75,
+    7.15,
+    28.0
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 10.16,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118624
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 739366500,
+     "p95_ns": 857623459,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 60,
+   "successful_per_second": 3.937,
+   "timeouts": 0,
+   "wall_ns": 15240064500,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.45395,
+   "worker_maxrss": {
+    "max": 36880384,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 8.5196,
+   "cell_seconds": 56.332,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.695,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1012593333,
+    "p95": 1259656458
+   },
+   "latency_successful_ns": {
+    "p50": 1012593333,
+    "p95": 1259656458
+   },
+   "load_average_at_end": [
+    6.45,
+    7.15,
+    26.36
+   ],
+   "load_average_at_start": [
+    7.14,
+    7.33,
+    26.88
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 29.5,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 140048
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 1012593333,
+     "p95_ns": 1259656458,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 180,
+   "successful_per_second": 8.5196,
+   "timeouts": 0,
+   "wall_ns": 21127851208,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.049334,
+   "worker_maxrss": {
+    "max": 39010304,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.4393,
+   "cell_seconds": 117.457,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.387,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 3177541125,
+    "p95": 3618547000
+   },
+   "latency_successful_ns": {
+    "p50": 3177541125,
+    "p95": 3618547000
+   },
+   "load_average_at_end": [
+    6.62,
+    7.02,
+    23.78
+   ],
+   "load_average_at_start": [
+    6.78,
+    7.11,
+    25.14
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 94.47,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 236144
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3177541125,
+     "p95_ns": 3618547000,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 540,
+   "successful_per_second": 8.4393,
+   "timeouts": 0,
+   "wall_ns": 63986713417,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.431806,
+   "worker_maxrss": {
+    "max": 40206336,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 4.6311,
+   "cell_seconds": 32.48,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.015,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 187055209,
+    "p95": 392988709
+   },
+   "latency_successful_ns": {
+    "p50": 187055209,
+    "p95": 392988709
+   },
+   "load_average_at_end": [
+    5.2,
+    6.63,
+    22.96
+   ],
+   "load_average_at_start": [
+    5.47,
+    6.71,
+    23.09
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 1.88,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 113728
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 162784416,
+     "p95_ns": 207241166,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 163442250,
+     "p95_ns": 209945500,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 372331875,
+     "p95_ns": 399282625,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 20,
+   "successful_per_second": 4.6311,
+   "timeouts": 0,
+   "wall_ns": 4318608375,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.872785,
+   "worker_maxrss": {
+    "max": 35930112,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 10.6018,
+   "cell_seconds": 36.611,
+   "conflicts": 7,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.33,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 258093041,
+    "p95": 425965709
+   },
+   "latency_successful_ns": {
+    "p50": 237090000,
+    "p95": 433485042
+   },
+   "load_average_at_end": [
+    5.48,
+    6.5,
+    22.16
+   ],
+   "load_average_at_start": [
+    5.21,
+    6.48,
+    22.34
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 6.33,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 119296
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 8,
+     "stale-base": 7
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 219463917,
+     "p95_ns": 323298084,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 234996625,
+     "p95_ns": 433485042,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 358269417,
+     "p95_ns": 443344042,
+     "successful": 8
+    }
+   },
+   "refusals_by_actor": {
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 3,
+   "successful": 53,
+   "successful_per_second": 9.3649,
+   "timeouts": 0,
+   "wall_ns": 5659422959,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 14,
+    "stale-base": 1
+   },
+   "worker_cpu_seconds": 5.084785,
+   "worker_maxrss": {
+    "max": 36945920,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 13.0267,
+   "cell_seconds": 47.942,
+   "conflicts": 25,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.222,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 596711542,
+    "p95": 1061785083
+   },
+   "latency_successful_ns": {
+    "p50": 635152667,
+    "p95": 1098540958
+   },
+   "load_average_at_end": [
+    7.0,
+    6.82,
+    21.48
+   ],
+   "load_average_at_start": [
+    6.45,
+    6.72,
+    21.61
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 20.54,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 142512
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 20,
+     "stale-base": 25
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 689875000,
+     "p95_ns": 1446694833,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 666049542,
+     "p95_ns": 848159916,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 532634375,
+     "p95_ns": 815079250,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 4
+    },
+    "c.load02": {
+     "stale-base": 5
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 1
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load07": {
+     "stale-base": 2
+    },
+    "c.load08": {
+     "stale-base": 5
+    },
+    "c.load09": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 3,
+   "successful": 155,
+   "successful_per_second": 11.2175,
+   "timeouts": 0,
+   "wall_ns": 13817746417,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 40,
+    "stale-base": 5
+   },
+   "worker_cpu_seconds": 12.944158,
+   "worker_maxrss": {
+    "max": 39337984,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 10.1578,
+   "cell_seconds": 103.989,
+   "conflicts": 64,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.954,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 1530578041,
+    "p95": 7949341375
+   },
+   "latency_successful_ns": {
+    "p50": 1518119416,
+    "p95": 3807256500
+   },
+   "load_average_at_end": [
+    7.94,
+    7.02,
+    19.84
+   ],
+   "load_average_at_start": [
+    7.03,
+    6.8,
+    20.55
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 75.27,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 227744
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 77,
+     "timeout": 58
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 71,
+     "stale-base": 64
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 2946812541,
+     "p95_ns": 4407906666,
+     "successful": 77
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 1559259417,
+     "p95_ns": 2265364542,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 1146418666,
+     "p95_ns": 1620402834,
+     "successful": 71
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 3
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 1
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 4
+    },
+    "c.load06": {
+     "concurrent-change": 1,
+     "stale-base": 5
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "stale-base": 1
+    },
+    "c.load09": {
+     "stale-base": 4
+    },
+    "c.load10": {
+     "stale-base": 3
+    },
+    "c.load11": {
+     "stale-base": 1
+    },
+    "c.load12": {
+     "concurrent-change": 1
+    },
+    "c.load13": {
+     "concurrent-change": 1,
+     "stale-base": 4
+    },
+    "c.load14": {
+     "stale-base": 3
+    },
+    "c.load15": {
+     "stale-base": 2
+    },
+    "c.load16": {
+     "concurrent-change": 1
+    },
+    "c.load17": {
+     "stale-base": 1
+    },
+    "c.load18": {
+     "stale-base": 1
+    },
+    "c.load19": {
+     "concurrent-change": 1,
+     "stale-base": 1
+    },
+    "c.load20": {
+     "stale-base": 1
+    },
+    "c.load21": {
+     "stale-base": 3
+    },
+    "c.load22": {
+     "stale-base": 4
+    },
+    "c.load23": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load24": {
+     "stale-base": 4
+    },
+    "c.load25": {
+     "stale-base": 3
+    },
+    "c.load26": {
+     "stale-base": 2
+    },
+    "c.load27": {
+     "stale-base": 2
+    }
+   },
+   "repetition": 3,
+   "successful": 418,
+   "successful_per_second": 7.8629,
+   "timeouts": 58,
+   "wall_ns": 53161247250,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 124,
+    "stale-base": 11
+   },
+   "worker_cpu_seconds": 43.399719,
+   "worker_maxrss": {
+    "max": 40304640,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 2.2152,
+   "cell_seconds": 39.425,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.704,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 287177500,
+    "p95": 818091791
+   },
+   "latency_successful_ns": {
+    "p50": 287177500,
+    "p95": 818091791
+   },
+   "load_average_at_end": [
+    6.15,
+    6.7,
+    19.06
+   ],
+   "load_average_at_start": [
+    6.7,
+    6.82,
+    19.25
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.12,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 113760
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 73919250,
+     "p95_ns": 106776375,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 711036792,
+     "p95_ns": 823461625,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 284006083,
+     "p95_ns": 287177500,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 3,
+   "successful": 20,
+   "successful_per_second": 2.2152,
+   "timeouts": 0,
+   "wall_ns": 9028691542,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.243916,
+   "worker_maxrss": {
+    "max": 35520512,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 5.9545,
+   "cell_seconds": 41.362,
+   "conflicts": 6,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.091,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 519434583,
+    "p95": 815221750
+   },
+   "latency_successful_ns": {
+    "p50": 661740333,
+    "p95": 834260959
+   },
+   "load_average_at_end": [
+    5.77,
+    6.53,
+    18.43
+   ],
+   "load_average_at_start": [
+    6.01,
+    6.6,
+    18.59
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 5.96,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118352
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 9,
+     "stale-base": 6
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 123277625,
+     "p95_ns": 239153625,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 715656625,
+     "p95_ns": 852605125,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 329636292,
+     "p95_ns": 519434583,
+     "successful": 9
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 4
+    },
+    "c.load02": {
+     "stale-base": 1
+    },
+    "c.load03": {
+     "stale-base": 1
+    }
+   },
+   "repetition": 3,
+   "successful": 54,
+   "successful_per_second": 5.3591,
+   "timeouts": 0,
+   "wall_ns": 10076346709,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 14,
+    "stale-base": 1
+   },
+   "worker_cpu_seconds": 4.645796,
+   "worker_maxrss": {
+    "max": 37650432,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 12.6409,
+   "cell_seconds": 48.668,
+   "conflicts": 27,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.974,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 761572708,
+    "p95": 1091213083
+   },
+   "latency_successful_ns": {
+    "p50": 824774958,
+    "p95": 1131391250
+   },
+   "load_average_at_end": [
+    5.43,
+    6.33,
+    17.67
+   ],
+   "load_average_at_start": [
+    5.31,
+    6.35,
+    17.88
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 19.59,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 140944
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 18,
+     "stale-base": 27
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 365286333,
+     "p95_ns": 1175366708,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 910096917,
+     "p95_ns": 1131391250,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 467475667,
+     "p95_ns": 663505959,
+     "successful": 18
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 1
+    },
+    "c.load02": {
+     "stale-base": 5
+    },
+    "c.load03": {
+     "stale-base": 3
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 4
+    },
+    "c.load06": {
+     "stale-base": 5
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load09": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 3,
+   "successful": 153,
+   "successful_per_second": 10.7447,
+   "timeouts": 0,
+   "wall_ns": 14239545375,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 39,
+    "stale-base": 6
+   },
+   "worker_cpu_seconds": 14.208227,
+   "worker_maxrss": {
+    "max": 38813696,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 9.8487,
+   "cell_seconds": 104.763,
+   "conflicts": 59,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.357,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1890171458,
+    "p95": 7064466208
+   },
+   "latency_successful_ns": {
+    "p50": 1935636583,
+    "p95": 4329539458
+   },
+   "load_average_at_end": [
+    5.13,
+    5.87,
+    16.17
+   ],
+   "load_average_at_start": [
+    4.68,
+    5.97,
+    16.89
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 76.29,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 234912
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 87,
+     "timeout": 48
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 76,
+     "stale-base": 59
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 3108904292,
+     "p95_ns": 4903699167,
+     "successful": 87
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 2160178500,
+     "p95_ns": 3121474958,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 905202208,
+     "p95_ns": 1452260584,
+     "successful": 76
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 2
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 1
+    },
+    "c.load06": {
+     "stale-base": 2
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "concurrent-change": 1,
+     "stale-base": 4
+    },
+    "c.load09": {
+     "stale-base": 3
+    },
+    "c.load10": {
+     "stale-base": 2
+    },
+    "c.load11": {
+     "stale-base": 2
+    },
+    "c.load12": {
+     "stale-base": 3
+    },
+    "c.load13": {
+     "stale-base": 2
+    },
+    "c.load14": {
+     "stale-base": 1
+    },
+    "c.load15": {
+     "stale-base": 3
+    },
+    "c.load16": {
+     "stale-base": 3
+    },
+    "c.load17": {
+     "stale-base": 2
+    },
+    "c.load18": {
+     "stale-base": 2
+    },
+    "c.load19": {
+     "stale-base": 3
+    },
+    "c.load20": {
+     "stale-base": 2
+    },
+    "c.load21": {
+     "stale-base": 2
+    },
+    "c.load23": {
+     "stale-base": 1
+    },
+    "c.load24": {
+     "stale-base": 1
+    },
+    "c.load25": {
+     "stale-base": 1
+    },
+    "c.load26": {
+     "stale-base": 3
+    },
+    "c.load27": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 3,
+   "successful": 433,
+   "successful_per_second": 7.8972,
+   "timeouts": 48,
+   "wall_ns": 54829780041,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 122,
+    "stale-base": 13
+   },
+   "worker_cpu_seconds": 42.906667,
+   "worker_maxrss": {
+    "max": 40239104,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 5.235,
+   "cell_seconds": 33.594,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.59,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 191986125,
+    "p95": 260211042
+   },
+   "latency_successful_ns": {
+    "p50": 191986125,
+    "p95": 260211042
+   },
+   "load_average_at_end": [
+    5.7,
+    5.88,
+    15.75
+   ],
+   "load_average_at_start": [
+    5.7,
+    5.88,
+    15.75
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.15,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 113376
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 191986125,
+     "p95_ns": 260211042,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 20,
+   "successful_per_second": 5.235,
+   "timeouts": 0,
+   "wall_ns": 3820456667,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.66656,
+   "worker_maxrss": {
+    "max": 34553856,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 9.4454,
+   "cell_seconds": 37.311,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.533,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 284084875,
+    "p95": 465204417
+   },
+   "latency_successful_ns": {
+    "p50": 284084875,
+    "p95": 465204417
+   },
+   "load_average_at_end": [
+    5.14,
+    5.72,
+    15.24
+   ],
+   "load_average_at_start": [
+    5.33,
+    5.77,
+    15.31
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 8.88,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118080
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 284084875,
+     "p95_ns": 465204417,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 60,
+   "successful_per_second": 9.4454,
+   "timeouts": 0,
+   "wall_ns": 6352307416,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.289469,
+   "worker_maxrss": {
+    "max": 36536320,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 8.968,
+   "cell_seconds": 55.06,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.96,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 967442916,
+    "p95": 1353924625
+   },
+   "latency_successful_ns": {
+    "p50": 967442916,
+    "p95": 1353924625
+   },
+   "load_average_at_end": [
+    6.45,
+    5.98,
+    14.69
+   ],
+   "load_average_at_start": [
+    6.71,
+    6.01,
+    14.9
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 30.0,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 139536
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 967442916,
+     "p95_ns": 1353924625,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 180,
+   "successful_per_second": 8.968,
+   "timeouts": 0,
+   "wall_ns": 20071360666,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.454776,
+   "worker_maxrss": {
+    "max": 38830080,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.431,
+   "cell_seconds": 118.877,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.864,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 3170670792,
+    "p95": 3817891625
+   },
+   "latency_successful_ns": {
+    "p50": 3170670792,
+    "p95": 3817891625
+   },
+   "load_average_at_end": [
+    5.65,
+    5.98,
+    13.55
+   ],
+   "load_average_at_start": [
+    7.43,
+    6.32,
+    14.27
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 94.84,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 229840
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3170670792,
+     "p95_ns": 3817891625,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 540,
+   "successful_per_second": 8.431,
+   "timeouts": 0,
+   "wall_ns": 64049155125,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.702187,
+   "worker_maxrss": {
+    "max": 40042496,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 1.3505,
+   "cell_seconds": 46.958,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.316,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 732123250,
+    "p95": 854517708
+   },
+   "latency_successful_ns": {
+    "p50": 732123250,
+    "p95": 854517708
+   },
+   "load_average_at_end": [
+    4.65,
+    5.67,
+    13.04
+   ],
+   "load_average_at_start": [
+    4.93,
+    5.77,
+    13.21
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.76,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114560
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 732123250,
+     "p95_ns": 854517708,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 20,
+   "successful_per_second": 1.3505,
+   "timeouts": 0,
+   "wall_ns": 14809206375,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.809885,
+   "worker_maxrss": {
+    "max": 35094528,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 4.0377,
+   "cell_seconds": 47.895,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.457,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 725521708,
+    "p95": 831382792
+   },
+   "latency_successful_ns": {
+    "p50": 725521708,
+    "p95": 831382792
+   },
+   "load_average_at_end": [
+    5.51,
+    5.71,
+    12.63
+   ],
+   "load_average_at_start": [
+    5.06,
+    5.63,
+    12.73
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 9.31,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 119488
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 725521708,
+     "p95_ns": 831382792,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 60,
+   "successful_per_second": 4.0377,
+   "timeouts": 0,
+   "wall_ns": 14859816250,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.146766,
+   "worker_maxrss": {
+    "max": 35766272,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 8.8208,
+   "cell_seconds": 56.178,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.914,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 996359958,
+    "p95": 1264986625
+   },
+   "latency_successful_ns": {
+    "p50": 996359958,
+    "p95": 1264986625
+   },
+   "load_average_at_end": [
+    5.46,
+    5.68,
+    12.15
+   ],
+   "load_average_at_start": [
+    5.83,
+    5.76,
+    12.33
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 29.22,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 141920
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 996359958,
+     "p95_ns": 1264986625,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 180,
+   "successful_per_second": 8.8208,
+   "timeouts": 0,
+   "wall_ns": 20406226708,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.473495,
+   "worker_maxrss": {
+    "max": 38617088,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.2969,
+   "cell_seconds": 120.324,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.738,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 3180937958,
+    "p95": 3729343250
+   },
+   "latency_successful_ns": {
+    "p50": 3180937958,
+    "p95": 3729343250
+   },
+   "load_average_at_end": [
+    4.53,
+    5.31,
+    11.15
+   ],
+   "load_average_at_start": [
+    5.23,
+    5.59,
+    11.71
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 95.74,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 243440
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3180937958,
+     "p95_ns": 3729343250,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 540,
+   "successful_per_second": 8.2969,
+   "timeouts": 0,
+   "wall_ns": 65084644916,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.056627,
+   "worker_maxrss": {
+    "max": 40075264,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 4.7431,
+   "cell_seconds": 33.331,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.143,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 184193209,
+    "p95": 371336042
+   },
+   "latency_successful_ns": {
+    "p50": 184193209,
+    "p95": 371336042
+   },
+   "load_average_at_end": [
+    5.16,
+    5.43,
+    10.97
+   ],
+   "load_average_at_start": [
+    5.35,
+    5.47,
+    11.01
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.13,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114656
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 131479459,
+     "p95_ns": 154883458,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 184193209,
+     "p95_ns": 376491209,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 304771833,
+     "p95_ns": 371336042,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 20,
+   "successful_per_second": 4.7431,
+   "timeouts": 0,
+   "wall_ns": 4216631958,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.565609,
+   "worker_maxrss": {
+    "max": 34816000,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 11.048,
+   "cell_seconds": 36.617,
+   "conflicts": 5,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.269,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 262482917,
+    "p95": 384794042
+   },
+   "latency_successful_ns": {
+    "p50": 247320334,
+    "p95": 384794042
+   },
+   "load_average_at_end": [
+    5.6,
+    5.5,
+    10.74
+   ],
+   "load_average_at_start": [
+    5.66,
+    5.51,
+    10.77
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 5.97,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118464
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 10,
+     "stale-base": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 151349500,
+     "p95_ns": 276933625,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 251357792,
+     "p95_ns": 366387958,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 334298000,
+     "p95_ns": 449188916,
+     "successful": 10
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 1
+    },
+    "c.load02": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 4,
+   "successful": 55,
+   "successful_per_second": 10.1273,
+   "timeouts": 0,
+   "wall_ns": 5430854958,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 13,
+    "stale-base": 2
+   },
+   "worker_cpu_seconds": 4.662757,
+   "worker_maxrss": {
+    "max": 36896768,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 12.9188,
+   "cell_seconds": 47.866,
+   "conflicts": 29,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.579,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 620875000,
+    "p95": 1196816083
+   },
+   "latency_successful_ns": {
+    "p50": 673371458,
+    "p95": 1229627084
+   },
+   "load_average_at_end": [
+    5.69,
+    5.47,
+    10.42
+   ],
+   "load_average_at_start": [
+    4.94,
+    5.34,
+    10.46
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 21.07,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 140048
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 16,
+     "stale-base": 29
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 817534458,
+     "p95_ns": 1391260292,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 666030875,
+     "p95_ns": 940694750,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 616981417,
+     "p95_ns": 823820292,
+     "successful": 16
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 3
+    },
+    "c.load02": {
+     "stale-base": 5
+    },
+    "c.load03": {
+     "stale-base": 2
+    },
+    "c.load04": {
+     "stale-base": 3
+    },
+    "c.load05": {
+     "stale-base": 3
+    },
+    "c.load06": {
+     "stale-base": 4
+    },
+    "c.load07": {
+     "stale-base": 5
+    },
+    "c.load08": {
+     "stale-base": 3
+    },
+    "c.load09": {
+     "stale-base": 1
+    }
+   },
+   "repetition": 4,
+   "successful": 151,
+   "successful_per_second": 10.8375,
+   "timeouts": 0,
+   "wall_ns": 13933153500,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 39,
+    "stale-base": 6
+   },
+   "worker_cpu_seconds": 16.641578,
+   "worker_maxrss": {
+    "max": 38813696,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 9.8415,
+   "cell_seconds": 104.926,
+   "conflicts": 59,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 31.116,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 1522935667,
+    "p95": 9383200833
+   },
+   "latency_successful_ns": {
+    "p50": 1510896334,
+    "p95": 3833089208
+   },
+   "load_average_at_end": [
+    7.03,
+    6.01,
+    10.05
+   ],
+   "load_average_at_start": [
+    7.25,
+    5.86,
+    10.28
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 76.05,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 224672
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 79,
+     "timeout": 56
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 76,
+     "stale-base": 59
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 2649087667,
+     "p95_ns": 4299637709,
+     "successful": 79
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 1514730084,
+     "p95_ns": 2516706500,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 1226929292,
+     "p95_ns": 1667554000,
+     "successful": 76
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "concurrent-change": 1,
+     "stale-base": 1
+    },
+    "c.load02": {
+     "stale-base": 2
+    },
+    "c.load03": {
+     "stale-base": 2
+    },
+    "c.load04": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 3
+    },
+    "c.load06": {
+     "stale-base": 2
+    },
+    "c.load07": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load08": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load09": {
+     "stale-base": 3
+    },
+    "c.load10": {
+     "stale-base": 4
+    },
+    "c.load11": {
+     "concurrent-change": 2
+    },
+    "c.load12": {
+     "stale-base": 3
+    },
+    "c.load13": {
+     "stale-base": 2
+    },
+    "c.load14": {
+     "stale-base": 1
+    },
+    "c.load15": {
+     "stale-base": 3
+    },
+    "c.load16": {
+     "stale-base": 2
+    },
+    "c.load17": {
+     "stale-base": 2
+    },
+    "c.load18": {
+     "stale-base": 2
+    },
+    "c.load19": {
+     "stale-base": 3
+    },
+    "c.load20": {
+     "stale-base": 2
+    },
+    "c.load21": {
+     "stale-base": 1
+    },
+    "c.load22": {
+     "stale-base": 2
+    },
+    "c.load23": {
+     "stale-base": 2
+    },
+    "c.load24": {
+     "stale-base": 3
+    },
+    "c.load25": {
+     "stale-base": 1
+    },
+    "c.load26": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load27": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 4,
+   "successful": 425,
+   "successful_per_second": 7.7456,
+   "timeouts": 56,
+   "wall_ns": 54869726875,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 122,
+    "stale-base": 13
+   },
+   "worker_cpu_seconds": 42.119449,
+   "worker_maxrss": {
+    "max": 40321024,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 2.1254,
+   "cell_seconds": 40.74,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.428,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 332176250,
+    "p95": 765850584
+   },
+   "latency_successful_ns": {
+    "p50": 332176250,
+    "p95": 765850584
+   },
+   "load_average_at_end": [
+    5.56,
+    5.77,
+    9.78
+   ],
+   "load_average_at_start": [
+    5.78,
+    5.82,
+    9.82
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.2,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114896
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 121530708,
+     "p95_ns": 154699333,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 702327459,
+     "p95_ns": 894965750,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 313609333,
+     "p95_ns": 332176250,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 4,
+   "successful": 20,
+   "successful_per_second": 2.1254,
+   "timeouts": 0,
+   "wall_ns": 9409990083,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.571829,
+   "worker_maxrss": {
+    "max": 35717120,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 6.0675,
+   "cell_seconds": 42.403,
+   "conflicts": 8,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.098,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 429585125,
+    "p95": 800730208
+   },
+   "latency_successful_ns": {
+    "p50": 673156250,
+    "p95": 817706917
+   },
+   "load_average_at_end": [
+    4.53,
+    5.43,
+    9.44
+   ],
+   "load_average_at_start": [
+    4.35,
+    5.43,
+    9.49
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 5.95,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118256
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 7,
+     "stale-base": 8
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 157600959,
+     "p95_ns": 267896625,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 720052000,
+     "p95_ns": 857291458,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 307859667,
+     "p95_ns": 387407208,
+     "successful": 7
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 4
+    },
+    "c.load03": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 4,
+   "successful": 52,
+   "successful_per_second": 5.2585,
+   "timeouts": 0,
+   "wall_ns": 9888781708,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 14,
+    "stale-base": 1
+   },
+   "worker_cpu_seconds": 4.703658,
+   "worker_maxrss": {
+    "max": 36651008,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 12.5655,
+   "cell_seconds": 48.903,
+   "conflicts": 26,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.195,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 747241084,
+    "p95": 1102231708
+   },
+   "latency_successful_ns": {
+    "p50": 813763958,
+    "p95": 1109174542
+   },
+   "load_average_at_end": [
+    6.36,
+    5.79,
+    9.35
+   ],
+   "load_average_at_start": [
+    6.1,
+    5.73,
+    9.39
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 19.81,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 139984
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 19,
+     "stale-base": 26
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 383830125,
+     "p95_ns": 790110750,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 909454500,
+     "p95_ns": 1122075708,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 486612583,
+     "p95_ns": 617626958,
+     "successful": 19
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 5
+    },
+    "c.load03": {
+     "stale-base": 3
+    },
+    "c.load04": {
+     "stale-base": 4
+    },
+    "c.load05": {
+     "stale-base": 1
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "stale-base": 4
+    },
+    "c.load09": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 4,
+   "successful": 154,
+   "successful_per_second": 10.7505,
+   "timeouts": 0,
+   "wall_ns": 14324969583,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 40,
+    "stale-base": 5
+   },
+   "worker_cpu_seconds": 14.710668,
+   "worker_maxrss": {
+    "max": 38862848,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 10.0694,
+   "cell_seconds": 104.411,
+   "conflicts": 65,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.972,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1871311166,
+    "p95": 7730537209
+   },
+   "latency_successful_ns": {
+    "p50": 1912546292,
+    "p95": 3975133708
+   },
+   "load_average_at_end": [
+    7.99,
+    6.27,
+    9.1
+   ],
+   "load_average_at_start": [
+    6.06,
+    5.71,
+    9.09
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 75.36,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 234576
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 87,
+     "timeout": 48
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 70,
+     "stale-base": 65
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 2337843125,
+     "p95_ns": 4831193334,
+     "successful": 87
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 2125043917,
+     "p95_ns": 2693297500,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 969784125,
+     "p95_ns": 1462946208,
+     "successful": 70
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 1
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 2
+    },
+    "c.load04": {
+     "stale-base": 1
+    },
+    "c.load05": {
+     "stale-base": 2
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load09": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load10": {
+     "stale-base": 3
+    },
+    "c.load11": {
+     "stale-base": 2
+    },
+    "c.load12": {
+     "stale-base": 4
+    },
+    "c.load13": {
+     "stale-base": 4
+    },
+    "c.load14": {
+     "stale-base": 2
+    },
+    "c.load15": {
+     "stale-base": 2
+    },
+    "c.load16": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load17": {
+     "stale-base": 2
+    },
+    "c.load18": {
+     "stale-base": 1
+    },
+    "c.load19": {
+     "stale-base": 3
+    },
+    "c.load20": {
+     "stale-base": 2
+    },
+    "c.load21": {
+     "stale-base": 4
+    },
+    "c.load22": {
+     "stale-base": 2
+    },
+    "c.load23": {
+     "stale-base": 4
+    },
+    "c.load24": {
+     "stale-base": 2
+    },
+    "c.load25": {
+     "concurrent-change": 1,
+     "stale-base": 1
+    },
+    "c.load26": {
+     "stale-base": 3
+    },
+    "c.load27": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    }
+   },
+   "repetition": 4,
+   "successful": 427,
+   "successful_per_second": 7.9622,
+   "timeouts": 48,
+   "wall_ns": 53628084000,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 123,
+    "stale-base": 12
+   },
+   "worker_cpu_seconds": 42.220474,
+   "worker_maxrss": {
+    "max": 40304640,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 4.9564,
+   "cell_seconds": 32.446,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.031,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 187501416,
+    "p95": 296484625
+   },
+   "latency_successful_ns": {
+    "p50": 187501416,
+    "p95": 296484625
+   },
+   "load_average_at_end": [
+    6.83,
+    6.17,
+    8.95
+   ],
+   "load_average_at_start": [
+    7.16,
+    6.23,
+    8.98
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.32,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 115104
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 187501416,
+     "p95_ns": 296484625,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 20,
+   "successful_per_second": 4.9564,
+   "timeouts": 0,
+   "wall_ns": 4035217208,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.691782,
+   "worker_maxrss": {
+    "max": 35520512,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 8.3429,
+   "cell_seconds": 38.066,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.318,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 347000750,
+    "p95": 499131584
+   },
+   "latency_successful_ns": {
+    "p50": 347000750,
+    "p95": 499131584
+   },
+   "load_average_at_end": [
+    6.87,
+    6.26,
+    8.85
+   ],
+   "load_average_at_start": [
+    6.77,
+    6.23,
+    8.86
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 10.18,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118912
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 347000750,
+     "p95_ns": 499131584,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 60,
+   "successful_per_second": 8.3429,
+   "timeouts": 0,
+   "wall_ns": 7191764125,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.316266,
+   "worker_maxrss": {
+    "max": 36257792,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 9.1932,
+   "cell_seconds": 54.296,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.3,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 954276333,
+    "p95": 1278227583
+   },
+   "latency_successful_ns": {
+    "p50": 954276333,
+    "p95": 1278227583
+   },
+   "load_average_at_end": [
+    7.01,
+    6.37,
+    8.73
+   ],
+   "load_average_at_start": [
+    6.92,
+    6.31,
+    8.76
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 29.85,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 139840
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 954276333,
+     "p95_ns": 1278227583,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 180,
+   "successful_per_second": 9.1932,
+   "timeouts": 0,
+   "wall_ns": 19579651833,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.253378,
+   "worker_maxrss": {
+    "max": 38862848,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.5879,
+   "cell_seconds": 118.684,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.942,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 3118846708,
+    "p95": 3874585833
+   },
+   "latency_successful_ns": {
+    "p50": 3118846708,
+    "p95": 3874585833
+   },
+   "load_average_at_end": [
+    6.53,
+    6.38,
+    8.41
+   ],
+   "load_average_at_start": [
+    6.91,
+    6.41,
+    8.57
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 96.06,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 239792
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3118846708,
+     "p95_ns": 3874585833,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 540,
+   "successful_per_second": 8.5879,
+   "timeouts": 0,
+   "wall_ns": 62879351625,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.280051,
+   "worker_maxrss": {
+    "max": 39632896,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 1.389,
+   "cell_seconds": 46.32,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.946,
+   "issuer": {
+    "connections": 40,
+    "request_bytes": 280920,
+    "response_bytes": 280840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 717244667,
+    "p95": 781728042
+   },
+   "latency_successful_ns": {
+    "p50": 717244667,
+    "p95": 781728042
+   },
+   "load_average_at_end": [
+    5.53,
+    6.15,
+    8.21
+   ],
+   "load_average_at_start": [
+    6.05,
+    6.27,
+    8.29
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 3.27,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 115168
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 20
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 20,
+     "p50_ns": 717244667,
+     "p95_ns": 781728042,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 20,
+   "successful_per_second": 1.389,
+   "timeouts": 0,
+   "wall_ns": 14399007792,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 0.911414,
+   "worker_maxrss": {
+    "max": 35962880,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 4.063,
+   "cell_seconds": 46.659,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 26.551,
+   "issuer": {
+    "connections": 120,
+    "request_bytes": 842760,
+    "response_bytes": 843840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 710518709,
+    "p95": 845354792
+   },
+   "latency_successful_ns": {
+    "p50": 710518709,
+    "p95": 845354792
+   },
+   "load_average_at_end": [
+    4.97,
+    5.91,
+    8.02
+   ],
+   "load_average_at_start": [
+    5.16,
+    5.97,
+    8.06
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 9.16,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 119264
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 60
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 60,
+     "p50_ns": 710518709,
+     "p95_ns": 845354792,
+     "successful": 60
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 60,
+   "successful_per_second": 4.063,
+   "timeouts": 0,
+   "wall_ns": 14767391458,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 15
+   },
+   "worker_cpu_seconds": 2.301301,
+   "worker_maxrss": {
+    "max": 36536320,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 8.6437,
+   "cell_seconds": 56.595,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.285,
+   "issuer": {
+    "connections": 360,
+    "request_bytes": 2528280,
+    "response_bytes": 2543400
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1007703792,
+    "p95": 1213779583
+   },
+   "latency_successful_ns": {
+    "p50": 1007703792,
+    "p95": 1213779583
+   },
+   "load_average_at_end": [
+    7.8,
+    6.58,
+    8.12
+   ],
+   "load_average_at_start": [
+    6.85,
+    6.3,
+    8.06
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 29.81,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 141184
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 180
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 180,
+     "p50_ns": 1007703792,
+     "p95_ns": 1213779583,
+     "successful": 180
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 180,
+   "successful_per_second": 8.6437,
+   "timeouts": 0,
+   "wall_ns": 20824368958,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 45
+   },
+   "worker_cpu_seconds": 7.132906,
+   "worker_maxrss": {
+    "max": 38436864,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 8.5775,
+   "cell_seconds": 117.593,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.053,
+   "issuer": {
+    "connections": 1080,
+    "request_bytes": 7584840,
+    "response_bytes": 7659680
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 3087556750,
+    "p95": 3640155375
+   },
+   "latency_successful_ns": {
+    "p50": 3087556750,
+    "p95": 3640155375
+   },
+   "load_average_at_end": [
+    9.2,
+    7.34,
+    8.2
+   ],
+   "load_average_at_start": [
+    7.67,
+    6.65,
+    8.04
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 93.58,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 238944
+   },
+   "outcomes": {
+    "retrieve": {
+     "allowed": 540
+    }
+   },
+   "per_kind": {
+    "retrieve": {
+     "attempted": 540,
+     "p50_ns": 3087556750,
+     "p95_ns": 3640155375,
+     "successful": 540
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 540,
+   "successful_per_second": 8.5775,
+   "timeouts": 0,
+   "wall_ns": 62955594834,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 135
+   },
+   "worker_cpu_seconds": 21.541989,
+   "worker_maxrss": {
+    "max": 40304640,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 4.7075,
+   "cell_seconds": 33.434,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.146,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 191708417,
+    "p95": 321050792
+   },
+   "latency_successful_ns": {
+    "p50": 191708417,
+    "p95": 321050792
+   },
+   "load_average_at_end": [
+    8.77,
+    7.47,
+    8.21
+   ],
+   "load_average_at_start": [
+    9.36,
+    7.56,
+    8.25
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.12,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 114176
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 123163084,
+     "p95_ns": 145048667,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 191708417,
+     "p95_ns": 274082417,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 319549208,
+     "p95_ns": 454569042,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 20,
+   "successful_per_second": 4.7075,
+   "timeouts": 0,
+   "wall_ns": 4248535167,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.596096,
+   "worker_maxrss": {
+    "max": 35880960,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 10.5367,
+   "cell_seconds": 35.315,
+   "conflicts": 3,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.24,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 260029250,
+    "p95": 452379792
+   },
+   "latency_successful_ns": {
+    "p50": 257057375,
+    "p95": 446318083
+   },
+   "load_average_at_end": [
+    7.99,
+    7.44,
+    8.17
+   ],
+   "load_average_at_start": [
+    8.33,
+    7.5,
+    8.2
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 6.31,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 118544
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 12,
+     "stale-base": 3
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 164181667,
+     "p95_ns": 262548792,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 257057375,
+     "p95_ns": 422103583,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 385858125,
+     "p95_ns": 460669667,
+     "successful": 12
+    }
+   },
+   "refusals_by_actor": {
+    "c.load02": {
+     "stale-base": 1
+    },
+    "c.load03": {
+     "stale-base": 2
+    }
+   },
+   "repetition": 5,
+   "successful": 57,
+   "successful_per_second": 10.0099,
+   "timeouts": 0,
+   "wall_ns": 5694366958,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 13,
+    "stale-base": 2
+   },
+   "worker_cpu_seconds": 5.34593,
+   "worker_maxrss": {
+    "max": 37568512,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 13.4731,
+   "cell_seconds": 47.4,
+   "conflicts": 25,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.225,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 585342750,
+    "p95": 1090936167
+   },
+   "latency_successful_ns": {
+    "p50": 612708125,
+    "p95": 1161415792
+   },
+   "load_average_at_end": [
+    10.12,
+    8.06,
+    8.36
+   ],
+   "load_average_at_start": [
+    8.64,
+    7.68,
+    8.23
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 20.21,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 140656
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 20,
+     "stale-base": 25
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 787560875,
+     "p95_ns": 1368513583,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 606424250,
+     "p95_ns": 834261209,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 559502667,
+     "p95_ns": 704764292,
+     "successful": 20
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 3
+    },
+    "c.load02": {
+     "stale-base": 5
+    },
+    "c.load03": {
+     "stale-base": 2
+    },
+    "c.load04": {
+     "stale-base": 3
+    },
+    "c.load05": {
+     "stale-base": 1
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "stale-base": 2
+    },
+    "c.load09": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 5,
+   "successful": 155,
+   "successful_per_second": 11.6019,
+   "timeouts": 0,
+   "wall_ns": 13359917167,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 39,
+    "stale-base": 6
+   },
+   "worker_cpu_seconds": 13.120946,
+   "worker_maxrss": {
+    "max": 39075840,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 10.1092,
+   "cell_seconds": 103.843,
+   "conflicts": 66,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 30.049,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 0,
+   "latency_all_ns": {
+    "p50": 1519172542,
+    "p95": 8180022583
+   },
+   "latency_successful_ns": {
+    "p50": 1525322209,
+    "p95": 3832549209
+   },
+   "load_average_at_end": [
+    8.27,
+    8.08,
+    8.33
+   ],
+   "load_average_at_start": [
+    9.92,
+    8.28,
+    8.42
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 75.65,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 226720
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 78,
+     "timeout": 57
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 69,
+     "stale-base": 66
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 3342743083,
+     "p95_ns": 4698869917,
+     "successful": 78
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 1603782291,
+     "p95_ns": 2802402041,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 1177302625,
+     "p95_ns": 1594187542,
+     "successful": 69
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 4
+    },
+    "c.load02": {
+     "stale-base": 2
+    },
+    "c.load03": {
+     "stale-base": 4
+    },
+    "c.load04": {
+     "stale-base": 2
+    },
+    "c.load05": {
+     "stale-base": 3
+    },
+    "c.load06": {
+     "stale-base": 1
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "stale-base": 1
+    },
+    "c.load09": {
+     "concurrent-change": 1,
+     "stale-base": 1
+    },
+    "c.load10": {
+     "stale-base": 2
+    },
+    "c.load11": {
+     "stale-base": 3
+    },
+    "c.load12": {
+     "stale-base": 3
+    },
+    "c.load13": {
+     "stale-base": 2
+    },
+    "c.load14": {
+     "stale-base": 4
+    },
+    "c.load15": {
+     "stale-base": 3
+    },
+    "c.load16": {
+     "stale-base": 2
+    },
+    "c.load17": {
+     "stale-base": 2
+    },
+    "c.load18": {
+     "stale-base": 5
+    },
+    "c.load19": {
+     "concurrent-change": 1,
+     "stale-base": 2
+    },
+    "c.load20": {
+     "stale-base": 2
+    },
+    "c.load21": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load22": {
+     "stale-base": 3
+    },
+    "c.load23": {
+     "stale-base": 2
+    },
+    "c.load24": {
+     "stale-base": 2
+    },
+    "c.load25": {
+     "concurrent-change": 1,
+     "stale-base": 3
+    },
+    "c.load26": {
+     "stale-base": 1
+    },
+    "c.load27": {
+     "stale-base": 1
+    }
+   },
+   "repetition": 5,
+   "successful": 417,
+   "successful_per_second": 7.8066,
+   "timeouts": 57,
+   "wall_ns": 53416630000,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 123,
+    "stale-base": 12
+   },
+   "worker_cpu_seconds": 44.811454,
+   "worker_maxrss": {
+    "max": 40665088,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "arm": "reference",
+   "attempted": 20,
+   "attempted_per_second": 2.0898,
+   "cell_seconds": 41.923,
+   "conflicts": 0,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 28.135,
+   "issuer": {
+    "connections": 20,
+    "request_bytes": 140460,
+    "response_bytes": 140420
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 464451750,
+    "p95": 743921500
+   },
+   "latency_successful_ns": {
+    "p50": 464451750,
+    "p95": 743921500
+   },
+   "load_average_at_end": [
+    5.91,
+    7.49,
+    8.1
+   ],
+   "load_average_at_start": [
+    6.43,
+    7.64,
+    8.16
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 2.16,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 115520
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 5
+    },
+    "retrieve": {
+     "allowed": 10
+    },
+    "shared-draft-CAS": {
+     "allowed": 5
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 5,
+     "p50_ns": 148574458,
+     "p95_ns": 174657625,
+     "successful": 5
+    },
+    "retrieve": {
+     "attempted": 10,
+     "p50_ns": 694793542,
+     "p95_ns": 820438625,
+     "successful": 10
+    },
+    "shared-draft-CAS": {
+     "attempted": 5,
+     "p50_ns": 354094416,
+     "p95_ns": 464451750,
+     "successful": 5
+    }
+   },
+   "refusals_by_actor": {},
+   "repetition": 5,
+   "successful": 20,
+   "successful_per_second": 2.0898,
+   "timeouts": 0,
+   "wall_ns": 9570236458,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 5
+   },
+   "worker_cpu_seconds": 1.740738,
+   "worker_maxrss": {
+    "max": 36225024,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "arm": "reference",
+   "attempted": 60,
+   "attempted_per_second": 5.9508,
+   "cell_seconds": 41.388,
+   "conflicts": 6,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.35,
+   "issuer": {
+    "connections": 60,
+    "request_bytes": 421380,
+    "response_bytes": 421920
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 378696417,
+    "p95": 830970792
+   },
+   "latency_successful_ns": {
+    "p50": 668800625,
+    "p95": 834384792
+   },
+   "load_average_at_end": [
+    4.81,
+    7.03,
+    7.91
+   ],
+   "load_average_at_start": [
+    5.32,
+    7.2,
+    7.98
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 6.34,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 119008
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 15
+    },
+    "retrieve": {
+     "allowed": 30
+    },
+    "shared-draft-CAS": {
+     "allowed": 9,
+     "stale-base": 6
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 15,
+     "p50_ns": 161778167,
+     "p95_ns": 364273208,
+     "successful": 15
+    },
+    "retrieve": {
+     "attempted": 30,
+     "p50_ns": 723872125,
+     "p95_ns": 847599750,
+     "successful": 30
+    },
+    "shared-draft-CAS": {
+     "attempted": 15,
+     "p50_ns": 320690084,
+     "p95_ns": 373523500,
+     "successful": 9
+    }
+   },
+   "refusals_by_actor": {
+    "c.load02": {
+     "stale-base": 1
+    },
+    "c.load03": {
+     "stale-base": 5
+    }
+   },
+   "repetition": 5,
+   "successful": 54,
+   "successful_per_second": 5.3557,
+   "timeouts": 0,
+   "wall_ns": 10082672083,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 13,
+    "stale-base": 2
+   },
+   "worker_cpu_seconds": 4.07552,
+   "worker_maxrss": {
+    "max": 36913152,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "arm": "reference",
+   "attempted": 180,
+   "attempted_per_second": 12.5985,
+   "cell_seconds": 48.135,
+   "conflicts": 31,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 27.584,
+   "issuer": {
+    "connections": 180,
+    "request_bytes": 1264140,
+    "response_bytes": 1271700
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 774084708,
+    "p95": 1138972708
+   },
+   "latency_successful_ns": {
+    "p50": 839152167,
+    "p95": 1178133625
+   },
+   "load_average_at_end": [
+    4.5,
+    6.56,
+    7.68
+   ],
+   "load_average_at_start": [
+    4.09,
+    6.59,
+    7.71
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 19.56,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 141136
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 45
+    },
+    "retrieve": {
+     "allowed": 90
+    },
+    "shared-draft-CAS": {
+     "allowed": 14,
+     "stale-base": 31
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 45,
+     "p50_ns": 385004833,
+     "p95_ns": 869245625,
+     "successful": 45
+    },
+    "retrieve": {
+     "attempted": 90,
+     "p50_ns": 920092584,
+     "p95_ns": 1200502042,
+     "successful": 90
+    },
+    "shared-draft-CAS": {
+     "attempted": 45,
+     "p50_ns": 412048875,
+     "p95_ns": 552218209,
+     "successful": 14
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 1
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 3
+    },
+    "c.load04": {
+     "stale-base": 4
+    },
+    "c.load05": {
+     "stale-base": 5
+    },
+    "c.load06": {
+     "stale-base": 4
+    },
+    "c.load07": {
+     "stale-base": 3
+    },
+    "c.load08": {
+     "stale-base": 4
+    },
+    "c.load09": {
+     "stale-base": 4
+    }
+   },
+   "repetition": 5,
+   "successful": 149,
+   "successful_per_second": 10.4288,
+   "timeouts": 0,
+   "wall_ns": 14287366417,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 40,
+    "stale-base": 5
+   },
+   "worker_cpu_seconds": 14.07759,
+   "worker_maxrss": {
+    "max": 39174144,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "arm": "reference",
+   "attempted": 540,
+   "attempted_per_second": 9.6226,
+   "cell_seconds": 105.211,
+   "conflicts": 63,
+   "errors": 0,
+   "fixture_attempts": 1,
+   "fixture_failures": [],
+   "fixture_seconds": 29.261,
+   "issuer": {
+    "connections": 540,
+    "request_bytes": 3792420,
+    "response_bytes": 3829840
+   },
+   "issuer_delay_ms": 250,
+   "latency_all_ns": {
+    "p50": 1832348750,
+    "p95": 8326980208
+   },
+   "latency_successful_ns": {
+    "p50": 1857389792,
+    "p95": 3405994000
+   },
+   "load_average_at_end": [
+    6.89,
+    6.52,
+    7.5
+   ],
+   "load_average_at_start": [
+    4.94,
+    6.32,
+    7.52
+   ],
+   "measured": 20,
+   "node_cpu_seconds": 76.96,
+   "node_rss_kib": {
+    "method": "ps rss at end of window, not a peak",
+    "sum": 232288
+   },
+   "outcomes": {
+    "local-draft": {
+     "allowed": 81,
+     "timeout": 54
+    },
+    "retrieve": {
+     "allowed": 270
+    },
+    "shared-draft-CAS": {
+     "allowed": 72,
+     "stale-base": 63
+    }
+   },
+   "per_kind": {
+    "local-draft": {
+     "attempted": 135,
+     "p50_ns": 3042370583,
+     "p95_ns": 4760038709,
+     "successful": 81
+    },
+    "retrieve": {
+     "attempted": 270,
+     "p50_ns": 2019402375,
+     "p95_ns": 2954585208,
+     "successful": 270
+    },
+    "shared-draft-CAS": {
+     "attempted": 135,
+     "p50_ns": 1057821500,
+     "p95_ns": 1514776334,
+     "successful": 72
+    }
+   },
+   "refusals_by_actor": {
+    "c.load01": {
+     "stale-base": 2
+    },
+    "c.load02": {
+     "stale-base": 3
+    },
+    "c.load03": {
+     "stale-base": 4
+    },
+    "c.load05": {
+     "stale-base": 3
+    },
+    "c.load06": {
+     "stale-base": 3
+    },
+    "c.load07": {
+     "concurrent-change": 1,
+     "stale-base": 1
+    },
+    "c.load08": {
+     "stale-base": 3
+    },
+    "c.load09": {
+     "stale-base": 2
+    },
+    "c.load10": {
+     "stale-base": 3
+    },
+    "c.load11": {
+     "stale-base": 4
+    },
+    "c.load12": {
+     "stale-base": 1
+    },
+    "c.load13": {
+     "stale-base": 2
+    },
+    "c.load14": {
+     "stale-base": 3
+    },
+    "c.load15": {
+     "stale-base": 3
+    },
+    "c.load16": {
+     "stale-base": 4
+    },
+    "c.load17": {
+     "stale-base": 2
+    },
+    "c.load18": {
+     "stale-base": 1
+    },
+    "c.load19": {
+     "stale-base": 1
+    },
+    "c.load20": {
+     "stale-base": 4
+    },
+    "c.load21": {
+     "stale-base": 1
+    },
+    "c.load22": {
+     "stale-base": 1
+    },
+    "c.load23": {
+     "stale-base": 2
+    },
+    "c.load24": {
+     "stale-base": 2
+    },
+    "c.load25": {
+     "stale-base": 2
+    },
+    "c.load26": {
+     "stale-base": 3
+    },
+    "c.load27": {
+     "stale-base": 3
+    }
+   },
+   "repetition": 5,
+   "successful": 423,
+   "successful_per_second": 7.5377,
+   "timeouts": 54,
+   "wall_ns": 56117638625,
+   "warmup": 5,
+   "warmup_outcomes": {
+    "allowed": 120,
+    "stale-base": 15
+   },
+   "worker_cpu_seconds": 41.449773,
+   "worker_maxrss": {
+    "max": 40681472,
+    "method": "getrusage ru_maxrss",
+    "unit": "bytes"
+   },
+   "workload": "mixed"
+  }
+ ],
+ "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+ "diagnostic": false,
+ "enters_a_measure": true,
+ "environment": {
+  "cpus": 16,
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12"
+ },
+ "finished": "2026-10-03T02:12:54+0200",
+ "kind": "p1-7-throughput-run",
+ "measured": true,
+ "reference_report": null,
+ "repetitions": 5,
+ "sources": {
+  "scripts/git_source.py": "6bdfaa4393a172aa0af9c7cfec1c3fda639ad65183348f8f232d4028e4e4df1e",
+  "scripts/institution_identity.py": "de8a82ad26a23ef217bfd3f26e94ccc092d14c6b02d41638dc87283a4781354f",
+  "scripts/institution_server.py": "359f62126c277716152a17295b16d9d2ff80cb65da6248098b29ec8919d2054e",
+  "scripts/lifecycle_server.py": "ef39e892c76729982382f22b528ae090abe3a1a2d867cea57f3c63e6fa58d387",
+  "scripts/lifecycle_store.py": "c0c3dda71dd4f4611b56982979dbd79e270ab203494a312663c706e2baf10bf2",
+  "scripts/p1_7_throughput.py": "0a683cef6b4a7707bb5fae0ecd014435a320a5164a9ed4853c6444f922bf541d",
+  "scripts/pq_crypto.py": "78dd5b89fff8a62ba69343329198f8336290ec1ac35175b99a28363f5790bf99",
+  "scripts/reference_capture.py": "7f9677c5bad9a6cabfae3ef48c10415088f77de3cdf32730d7026973214530e3",
+  "scripts/reference_deployment.py": "c1befe126d215a6c2b7a9e40832e037c6f07530ac3c10fb4944a39e54eb32be1",
+  "scripts/reference_deployment_diagnostic.py": "467a09ff010c9dcbba3d9f6297e4f5e1063c7d3a4b155a45cfa625a738ca1292",
+  "scripts/reference_repair.py": "c62b2c0d20b93c6ca0bdd06bccea22caf2290d278aeb36182ae5ec9e30da05f0",
+  "scripts/reference_shared_draft.py": "b4227030f9563443f3381ced9336138b0b7b3376ee5a8991116645efd3c31c32",
+  "scripts/reference_source.py": "e64a06f6f9128582ab2549e9d6b082464a5a821c545e2489f4aa9fae6a574414",
+  "scripts/shared_draft.py": "f3816a52f4ff925cf7f4fc3a6dc63f4d70992ff0b0d66461bd6de7e73b9461b6",
+  "scripts/workspace_capture.py": "fcb9720ff9fc37a20d5accf59239d231ea2b0e4b101b96e8b745884a19941845",
+  "scripts/workspace_client.py": "d04dd66cca9a000e620f217844ab5b37d870fab6db7cff6bcfdeec45cc3ef946",
+  "scripts/workspace_diagnostic.py": "0317b66aaff5759ab21e00ebe63de8dfec854aee723b5749f6909c6dd2871530",
+  "scripts/workspace_driver.py": "a00d7a8004ab55a15beb7f728f055137e35eb0d48222a536c14c29efc8766615"
+ },
+ "spec": "research/experiments/p1-7-throughput/spec.json",
+ "spec_digest": "9fe2b572d19dd218746942498605aab40cdc51716e92685388feecdb2dfedb52",
+ "started": "2026-10-03T00:43:30+0200",
+ "summary": [
+  {
+   "actors": 1,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 360524625,
+   "median_successful_per_second": 4.7431,
+   "repetitions": 5,
+   "successful_per_second": [
+    5.0526,
+    5.0815,
+    4.6311,
+    4.7431,
+    4.7075
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 765850584,
+   "median_successful_per_second": 2.1436,
+   "repetitions": 5,
+   "successful_per_second": [
+    2.2004,
+    2.1436,
+    2.2152,
+    2.1254,
+    2.0898
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "conflicts": [
+    10,
+    7,
+    7,
+    5,
+    3
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 433485042,
+   "median_successful_per_second": 9.7346,
+   "repetitions": 5,
+   "successful_per_second": [
+    9.045,
+    9.7346,
+    9.3649,
+    10.1273,
+    10.0099
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 3,
+   "conflicts": [
+    3,
+    7,
+    6,
+    8,
+    6
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 820337000,
+   "median_successful_per_second": 5.3557,
+   "repetitions": 5,
+   "successful_per_second": [
+    5.3162,
+    5.3731,
+    5.3591,
+    5.2585,
+    5.3557
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "conflicts": [
+    23,
+    24,
+    25,
+    29,
+    25
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 1161415792,
+   "median_successful_per_second": 10.9598,
+   "repetitions": 5,
+   "successful_per_second": [
+    10.9598,
+    10.7991,
+    11.2175,
+    10.8375,
+    11.6019
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 9,
+   "conflicts": [
+    29,
+    28,
+    27,
+    26,
+    31
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 1131391250,
+   "median_successful_per_second": 10.4288,
+   "repetitions": 5,
+   "successful_per_second": [
+    9.8667,
+    10.0653,
+    10.7447,
+    10.7505,
+    10.4288
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "conflicts": [
+    65,
+    61,
+    64,
+    59,
+    66
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 3832549209,
+   "median_successful_per_second": 7.8066,
+   "repetitions": 5,
+   "successful_per_second": [
+    7.4698,
+    7.8636,
+    7.8629,
+    7.7456,
+    7.8066
+   ],
+   "timeouts": [
+    64,
+    57,
+    58,
+    56,
+    57
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 27,
+   "conflicts": [
+    59,
+    63,
+    59,
+    65,
+    63
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 3975133708,
+   "median_successful_per_second": 7.8972,
+   "repetitions": 5,
+   "successful_per_second": [
+    7.9292,
+    7.5785,
+    7.8972,
+    7.9622,
+    7.5377
+   ],
+   "timeouts": [
+    49,
+    55,
+    48,
+    48,
+    54
+   ],
+   "workload": "mixed"
+  },
+  {
+   "actors": 1,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 268904167,
+   "median_successful_per_second": 5.2943,
+   "repetitions": 5,
+   "successful_per_second": [
+    5.3778,
+    5.2943,
+    5.3196,
+    5.235,
+    4.9564
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 1,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 794536916,
+   "median_successful_per_second": 1.389,
+   "repetitions": 5,
+   "successful_per_second": [
+    1.4111,
+    1.3936,
+    1.3486,
+    1.3505,
+    1.389
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 477651167,
+   "median_successful_per_second": 8.465,
+   "repetitions": 5,
+   "successful_per_second": [
+    8.465,
+    8.443,
+    9.5281,
+    9.4454,
+    8.3429
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 3,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 845354792,
+   "median_successful_per_second": 4.0198,
+   "repetitions": 5,
+   "successful_per_second": [
+    4.0198,
+    3.9397,
+    3.937,
+    4.0377,
+    4.063
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 1309328917,
+   "median_successful_per_second": 9.0277,
+   "repetitions": 5,
+   "successful_per_second": [
+    9.0277,
+    8.6744,
+    9.0844,
+    8.968,
+    9.1932
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 9,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 1259656458,
+   "median_successful_per_second": 8.6215,
+   "repetitions": 5,
+   "successful_per_second": [
+    8.3334,
+    8.6215,
+    8.5196,
+    8.8208,
+    8.6437
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 0,
+   "median_successful_p95_ns": 3688316250,
+   "median_successful_per_second": 8.4691,
+   "repetitions": 5,
+   "successful_per_second": [
+    8.5608,
+    8.3951,
+    8.4691,
+    8.431,
+    8.5879
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  },
+  {
+   "actors": 27,
+   "conflicts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "errors": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "issuer_delay_ms": 250,
+   "median_successful_p95_ns": 3688690583,
+   "median_successful_per_second": 8.4393,
+   "repetitions": 5,
+   "successful_per_second": [
+    8.2943,
+    8.585,
+    8.4393,
+    8.2969,
+    8.5775
+   ],
+   "timeouts": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "workload": "retrieval-only"
+  }
+ ]
+}

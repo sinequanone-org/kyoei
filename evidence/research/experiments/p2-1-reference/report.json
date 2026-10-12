@@ -1,0 +1,2034 @@
+{
+  "arm": "reference",
+  "boundary": [
+    "One operator runs every node and holds every actor key; separate keys are not independent administration.",
+    "Imports are facts only: no challenge code, no pull-request text, official_result false, no platform API.",
+    "A correction stops managed use of the first package; its Apache-2.0 bytes and the platform record are not revoked.",
+    "Reference arm only. Neither Kyoei arm and no plain-tools ablation has run; product_result is null."
+  ],
+  "checks": {
+    "affected_set_exact": true,
+    "bytes_not_revoked": true,
+    "collaboration_one_components_unchanged": true,
+    "dissent_carried": true,
+    "draft_heads_distinct": true,
+    "every_event_held_in_every_run": true,
+    "isolation_zero": true,
+    "no_private_marker_at_a_or_c": true,
+    "no_unexpected_refusal": true,
+    "package_v1_members_exact": true,
+    "package_v2_members_exact": true,
+    "processes_exited_cleanly": true,
+    "reopened_with_same_keys": true,
+    "v1_signoffs_exclude_dissenter": true
+  },
+  "contract_digest": "47dcca255ff6af7bf969a0dc1f7b55000f6ce8e575f5dc807ff50c3dc92d69b5",
+  "elapsed_seconds": 251.801,
+  "environment": {
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.12"
+  },
+  "events": {
+    "f01": {
+      "action": "propose-agreement",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f02": {
+      "action": "accept-agreement",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f03": {
+      "action": "accept-agreement",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f04": {
+      "action": "reuse-enrollment",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f05": {
+      "action": "reuse-old-grant",
+      "actual": "new-grant-required",
+      "expected": "new-grant-required",
+      "held": true
+    },
+    "f06": {
+      "action": "create-local",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f07": {
+      "action": "import-record",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f08": {
+      "action": "relabel-official",
+      "actual": "not-official",
+      "expected": "not-official",
+      "held": true
+    },
+    "f09": {
+      "action": "delegate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f10": {
+      "action": "contribute-method",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f11": {
+      "action": "agent-originate-challenge",
+      "actual": "human-required",
+      "expected": "human-required",
+      "held": true
+    },
+    "f12": {
+      "action": "delegate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f13": {
+      "action": "agent-originate-challenge",
+      "actual": "human-required",
+      "expected": "human-required",
+      "held": true
+    },
+    "f14": {
+      "action": "challenge",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f15": {
+      "action": "contribute-note",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f16": {
+      "action": "delegate",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f17": {
+      "action": "open-draft",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f18": {
+      "action": "agent-append",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f19": {
+      "action": "stale-base",
+      "actual": "stale-base",
+      "expected": "stale-base",
+      "held": true
+    },
+    "f20": {
+      "action": "rebase",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f21": {
+      "action": "sign-off",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f22": {
+      "action": "sign-off",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f23": {
+      "action": "record-dissent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f24": {
+      "action": "publish",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f25": {
+      "action": "preview-export",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f26": {
+      "action": "export",
+      "actual": "consent-required",
+      "expected": "consent-required",
+      "held": true
+    },
+    "f27": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f28": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f29": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f30": {
+      "action": "export",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f31": {
+      "action": "import-record",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f32": {
+      "action": "use-managed",
+      "actual": "correction-blocked",
+      "expected": "correction-blocked",
+      "held": true
+    },
+    "f33": {
+      "action": "read-published-bytes",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f34": {
+      "action": "use-local",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f35": {
+      "action": "replace",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f36": {
+      "action": "replace",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f37": {
+      "action": "publish",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f38": {
+      "action": "export",
+      "actual": "consent-required",
+      "expected": "consent-required",
+      "held": true
+    },
+    "f39": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f40": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f41": {
+      "action": "consent",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f42": {
+      "action": "export",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f43": {
+      "action": "use-managed",
+      "actual": "correction-blocked",
+      "expected": "correction-blocked",
+      "held": true
+    },
+    "f44": {
+      "action": "use-managed",
+      "actual": null,
+      "expected": null,
+      "held": true
+    },
+    "f45": {
+      "action": "widen-private",
+      "actual": "isolation",
+      "expected": "isolation",
+      "held": true
+    },
+    "f46": {
+      "action": "widen-private",
+      "actual": "isolation",
+      "expected": "isolation",
+      "held": true
+    },
+    "f47": {
+      "action": "reuse-old-grant",
+      "actual": "new-grant-required",
+      "expected": "new-grant-required",
+      "held": true
+    },
+    "f48": {
+      "action": "git-push",
+      "actual": "git-not-authority",
+      "expected": "git-not-authority",
+      "held": true
+    },
+    "f49": {
+      "action": "rename-file",
+      "actual": "source-not-authority",
+      "expected": "source-not-authority",
+      "held": true
+    },
+    "f50": {
+      "action": "mark-signoff",
+      "actual": "dissent-not-signoff",
+      "expected": "dissent-not-signoff",
+      "held": true
+    }
+  },
+  "kind": "p2-1-reference-arm",
+  "kyoei_arms_measured": [],
+  "measures": {
+    "components_rebuilt": {
+      "count": 0,
+      "paths": []
+    },
+    "components_reused": {
+      "count": 28,
+      "paths": [
+        "scripts/actor_request.py",
+        "scripts/context_shards.py",
+        "scripts/contributions.py",
+        "scripts/git_source.py",
+        "scripts/joint_result.py",
+        "scripts/node_wire.py",
+        "scripts/peer_http.py",
+        "scripts/pq_crypto.py",
+        "scripts/provenance.py",
+        "scripts/reference_capture.py",
+        "scripts/reference_deployment.py",
+        "scripts/reference_draft_lifecycle.py",
+        "scripts/reference_enrollment.py",
+        "scripts/reference_joint_result.py",
+        "scripts/reference_lifecycle.py",
+        "scripts/reference_local_first.py",
+        "scripts/reference_repair.py",
+        "scripts/reference_session.py",
+        "scripts/reference_shared_draft.py",
+        "scripts/reference_source.py",
+        "scripts/relation_export.py",
+        "scripts/release_scope.py",
+        "scripts/repair_brief.py",
+        "scripts/research_evidence.py",
+        "scripts/review_custody.py",
+        "scripts/review_verdict.py",
+        "scripts/task_data.py",
+        "scripts/workspace_client.py"
+      ]
+    },
+    "configuration_decisions": {
+      "count": 21,
+      "names": [
+        "agreement:p2:v2:terms",
+        "consent:v1",
+        "consent:v2",
+        "delegate:f09",
+        "delegate:f12",
+        "delegate:f16",
+        "draft-delegation:b.analyst",
+        "draft-delegation:c.synthesizer",
+        "draft-open:f17",
+        "draft-participants:a.lead,b.steward,c.specialist",
+        "expiry:900",
+        "import:p2.import.checker-244",
+        "import:p2.import.checker-5",
+        "license:Apache-2.0",
+        "purpose:p2-continuation",
+        "release:p2.a.interpretation",
+        "release:p2.a.interpretation.v2",
+        "release:p2.b.note",
+        "release:p2.b.note.v2",
+        "release:p2.c.challenge",
+        "release:p2.joint.output.v2"
+      ]
+    },
+    "failures": {
+      "cases": 14,
+      "held": 42,
+      "not_run": 0,
+      "rows": [
+        {
+          "allow_event": "f04",
+          "deny_event": "f05",
+          "expected": "new-grant-required",
+          "held": 3,
+          "id": "old-grant-reuse",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "new-grant-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "new-grant-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "new-grant-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f30",
+          "deny_event": "f45",
+          "expected": "isolation",
+          "held": 3,
+          "id": "private-to-public",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "isolation",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "isolation",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "isolation",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f07",
+          "deny_event": "f08",
+          "expected": "not-official",
+          "held": 3,
+          "id": "official-relabel",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "not-official",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "not-official",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "not-official",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f14",
+          "deny_event": "f13",
+          "expected": "human-required",
+          "held": 3,
+          "id": "agent-originates-challenge",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "human-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "human-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "human-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f30",
+          "deny_event": "f26",
+          "expected": "consent-required",
+          "held": 3,
+          "id": "agent-exports",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f20",
+          "deny_event": "f19",
+          "expected": "stale-base",
+          "held": 3,
+          "id": "stale-draft-base",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "stale-base",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "stale-base",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "stale-base",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f33",
+          "deny_event": "f32",
+          "expected": "correction-blocked",
+          "held": 3,
+          "id": "published-bytes-not-revoked",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f30",
+          "deny_event": "f38",
+          "expected": "consent-required",
+          "held": 3,
+          "id": "missing-consent",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f10",
+          "deny_event": "f48",
+          "expected": "git-not-authority",
+          "held": 3,
+          "id": "git-event-authorizes",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "git-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "git-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "git-not-authority",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f15",
+          "deny_event": "f49",
+          "expected": "source-not-authority",
+          "held": 3,
+          "id": "rename-not-authority",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "source-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "source-not-authority",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "source-not-authority",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f44",
+          "deny_event": "f43",
+          "expected": "correction-blocked",
+          "held": 3,
+          "id": "correction-blocks-old",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f34",
+          "deny_event": "f32",
+          "expected": "correction-blocked",
+          "held": 3,
+          "id": "unaffected-continues",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "correction-blocked",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f37",
+          "deny_event": "f50",
+          "expected": "dissent-not-signoff",
+          "held": 3,
+          "id": "dissent-survives",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "dissent-not-signoff",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "dissent-not-signoff",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "dissent-not-signoff",
+              "held": true
+            }
+          ]
+        },
+        {
+          "allow_event": "f18",
+          "deny_event": "f26",
+          "expected": "consent-required",
+          "held": 3,
+          "id": "delegation-excludes-export",
+          "trials": [
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            },
+            {
+              "allow": null,
+              "deny": "consent-required",
+              "held": true
+            }
+          ]
+        }
+      ],
+      "trials": 42
+    },
+    "isolation_breaches": {
+      "count": 0,
+      "items": []
+    },
+    "new_application_code": {
+      "files": {
+        "scripts/reference_continuation.py": 360
+      },
+      "lines": 360,
+      "role": "reference-authored"
+    },
+    "repair_steps": {
+      "diagnostic_excluded": 9,
+      "failed_attempts": 3,
+      "labels": [
+        "f31:import:p2.import.checker-244",
+        "f32:use:p2.joint.output",
+        "f33:read-published",
+        "f34:use:p2.c.unrelated",
+        "f35:publish:p2.a.interpretation.v2:open",
+        "f35:read:p2.import.checker-244",
+        "f35:publish:p2.a.interpretation.v2",
+        "f35:originate:p2.a.interpretation.v2:cites",
+        "f35:supersede:p2.a.interpretation",
+        "f35:release:p2.a.interpretation.v2",
+        "f36:publish:p2.b.note.v2:open",
+        "f36:read:p2.a.interpretation.v2",
+        "f36:publish:p2.b.note.v2",
+        "f36:originate:p2.b.note.v2:builds-on",
+        "f36:originate:p2.b.note.v2:reproduces",
+        "f36:supersede:p2.b.note",
+        "f36:release:p2.b.note.v2",
+        "f37:publish:p2.joint.output.v2:open",
+        "f37:read:p2.a.interpretation.v2",
+        "f37:read:p2.b.note.v2",
+        "f37:read:p2.c.challenge",
+        "f37:read:p2.import.checker-244",
+        "f37:publish:p2.joint.output.v2",
+        "f37:supersede:p2.joint.output",
+        "f37:release:p2.joint.output.v2",
+        "f38:export-v2-before-consent",
+        "f39:consent:a.lead",
+        "f40:consent:b.steward",
+        "f41:consent:c.specialist",
+        "f42:export",
+        "f43:use:p2.joint.output",
+        "f44:use:p2.joint.output.v2"
+      ],
+      "restarts": 0,
+      "steps": 32
+    },
+    "setup_commands": {
+      "client": 25,
+      "cold_start": null,
+      "operator": [
+        "restart:a:purpose=p2-continuation:expires=900",
+        "restart:b:purpose=p2-continuation:expires=900",
+        "restart:c:purpose=p2-continuation:expires=900"
+      ],
+      "through": "f15 first cross-institution read"
+    }
+  },
+  "order": 0,
+  "packages": {
+    "dissent_v1": [
+      "c"
+    ],
+    "dissent_v2": [
+      "c"
+    ],
+    "preview": {
+      "consent_required": [
+        "a",
+        "b",
+        "c"
+      ],
+      "dissent": [
+        "c"
+      ],
+      "members": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.c.challenge",
+        "p2.import.checker-5",
+        "p2.joint.output"
+      ]
+    },
+    "published_read": {
+      "bytes_revoked": false,
+      "managed": "correction-blocked",
+      "notice": "managed-endorsement-stopped"
+    },
+    "v1": [
+      "p2.a.interpretation",
+      "p2.b.note",
+      "p2.c.challenge",
+      "p2.import.checker-5",
+      "p2.joint.output"
+    ],
+    "v2": [
+      "p2.a.interpretation.v2",
+      "p2.b.note.v2",
+      "p2.c.challenge",
+      "p2.import.checker-244",
+      "p2.joint.output.v2"
+    ]
+  },
+  "plain_tools_measured": null,
+  "product_result": null,
+  "repetitions": 3,
+  "requests": {
+    "by_actor": {
+      "a.lead": 51,
+      "a.planner": 2,
+      "b.analyst": 1,
+      "b.researcher": 15,
+      "b.steward": 8,
+      "c.specialist": 18,
+      "c.synthesizer": 5
+    },
+    "collaboration_two": 100
+  },
+  "scenario_sha256": "1269db31398c4749a68387a7447e015c99fdf4a1c178543587812a3b1bf8f8ba",
+  "sets": {
+    "actual": {
+      "affected": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output",
+        "p2.public.package"
+      ],
+      "blocked": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output"
+      ],
+      "notice_only": [
+        "p2.public.package"
+      ],
+      "provenance_notices": [
+        "p2.c.challenge"
+      ],
+      "unaffected": [
+        "p2.c.unrelated"
+      ]
+    },
+    "expected": {
+      "affected": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output",
+        "p2.public.package"
+      ],
+      "blocked": [
+        "p2.a.interpretation",
+        "p2.b.note",
+        "p2.import.checker-5",
+        "p2.joint.draft",
+        "p2.joint.output"
+      ],
+      "notice_only": [
+        "p2.public.package"
+      ],
+      "provenance_notices": [
+        "p2.c.challenge"
+      ],
+      "unaffected": [
+        "p2.c.unrelated"
+      ]
+    },
+    "held": true
+  },
+  "source_mode": "documents",
+  "sources": {
+    "scripts/p2_1_reference.py": {
+      "logical_lines": 375,
+      "sha256": "00c8a6652683e1c57f4b382f91759db0a178735d6d6a96320cd0687420957dc5"
+    },
+    "scripts/reference_continuation.py": {
+      "logical_lines": 360,
+      "sha256": "b1c24b3bb0a844e9071f061c7a68cb95738650647cf3b9425ee992ecaf3f1558"
+    }
+  },
+  "trace": [
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 600,
+      "event": "f01",
+      "expected": null,
+      "label": "f01:accept",
+      "layer": "enrollment",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 601,
+      "event": "f02",
+      "expected": null,
+      "label": "f02:accept",
+      "layer": "enrollment",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 602,
+      "event": "f03",
+      "expected": null,
+      "label": "f03:accept",
+      "layer": "enrollment",
+      "operation": "accept",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 603,
+      "event": "f04",
+      "expected": null,
+      "label": "f04:credential:a.lead",
+      "layer": "continuation",
+      "operation": "credential",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "new-grant-required",
+      "at": 604,
+      "event": "f05",
+      "expected": "new-grant-required",
+      "label": "f05:reuse:joint.output.v2",
+      "layer": "continuation",
+      "operation": "reuse",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 605,
+      "event": "f06",
+      "expected": null,
+      "label": "f06:publish:p2.c.unrelated:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 605,
+      "event": "f06",
+      "expected": null,
+      "label": "f06:publish:p2.c.unrelated",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 606,
+      "event": "f07",
+      "expected": null,
+      "label": "f07:import:p2.import.checker-5",
+      "layer": "continuation",
+      "operation": "import_record",
+      "primary": true
+    },
+    {
+      "actor": "a.planner",
+      "actual": "not-official",
+      "at": 607,
+      "event": "f08",
+      "expected": "not-official",
+      "label": "f08:relabel-official",
+      "layer": "continuation",
+      "operation": "relabel",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 608,
+      "event": "f09",
+      "expected": null,
+      "label": "f09:delegate",
+      "layer": "enrollment",
+      "operation": "delegate",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:publish:p2.a.interpretation:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:read:p2.import.checker-5",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:publish:p2.a.interpretation",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:originate:p2.a.interpretation:cites",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 609,
+      "event": "f10",
+      "expected": null,
+      "label": "f10:release:p2.a.interpretation",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "human-required",
+      "at": 610,
+      "event": "f11",
+      "expected": "human-required",
+      "label": "f11:agent-originate-challenge",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 611,
+      "event": "f12",
+      "expected": null,
+      "label": "f12:credential:c.specialist",
+      "layer": "continuation",
+      "operation": "credential",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 611,
+      "event": "f12",
+      "expected": null,
+      "label": "f12:delegate",
+      "layer": "enrollment",
+      "operation": "delegate",
+      "primary": true
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "human-required",
+      "at": 612,
+      "event": "f13",
+      "expected": "human-required",
+      "label": "f13:agent-originate-challenge",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:read:p2.import.checker-5",
+      "layer": "continuation",
+      "operation": "use",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:publish:p2.c.challenge:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:publish:p2.c.challenge",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:originate:p2.c.challenge:challenges",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 613,
+      "event": "f14",
+      "expected": null,
+      "label": "f14:release:p2.c.challenge",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:publish:p2.b.note:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:read:p2.a.interpretation",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:publish:p2.b.note",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:originate:p2.b.note:builds-on",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 614,
+      "event": "f15",
+      "expected": null,
+      "label": "f15:release:p2.b.note",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 615,
+      "event": "f16",
+      "expected": null,
+      "label": "f16:credential:b.steward",
+      "layer": "continuation",
+      "operation": "credential",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 615,
+      "event": "f16",
+      "expected": null,
+      "label": "f16:delegate",
+      "layer": "enrollment",
+      "operation": "delegate",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:gather:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:read:p2.b.note",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:read:p2.c.challenge",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:draft-open",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:draft-receive:p2.a.interpretation",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:draft-receive:p2.b.note",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:draft-receive:p2.c.challenge",
+      "layer": "deployment",
+      "operation": "draft_receive",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 616,
+      "event": "f17",
+      "expected": null,
+      "label": "f17:revise:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "b.analyst",
+      "actual": null,
+      "at": 617,
+      "event": "f18",
+      "expected": null,
+      "label": "f18:agent-append",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": "stale-base",
+      "at": 618,
+      "event": "f19",
+      "expected": "stale-base",
+      "label": "f19:stale-base",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 619,
+      "event": "f20",
+      "expected": null,
+      "label": "f20:head",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": false
+    },
+    {
+      "actor": "c.synthesizer",
+      "actual": null,
+      "at": 619,
+      "event": "f20",
+      "expected": null,
+      "label": "f20:rebase",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 620,
+      "event": "f21",
+      "expected": null,
+      "label": "f21:signoff:a.lead",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 621,
+      "event": "f22",
+      "expected": null,
+      "label": "f22:signoff:b.steward",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 622,
+      "event": "f23",
+      "expected": null,
+      "label": "f23:record-dissent",
+      "layer": "continuation",
+      "operation": "dissent",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 623,
+      "event": "f24",
+      "expected": null,
+      "label": "f24:publish",
+      "layer": "deployment",
+      "operation": "draft",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 624,
+      "event": "f25",
+      "expected": null,
+      "label": "f25:preview",
+      "layer": "continuation",
+      "operation": "preview",
+      "primary": true
+    },
+    {
+      "actor": "a.planner",
+      "actual": "consent-required",
+      "at": 625,
+      "event": "f26",
+      "expected": "consent-required",
+      "label": "f26:agent-export",
+      "layer": "continuation",
+      "operation": "export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 626,
+      "event": "f27",
+      "expected": null,
+      "label": "f27:consent:a.lead",
+      "layer": "continuation",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 627,
+      "event": "f28",
+      "expected": null,
+      "label": "f28:consent:b.steward",
+      "layer": "continuation",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 628,
+      "event": "f29",
+      "expected": null,
+      "label": "f29:consent:c.specialist",
+      "layer": "continuation",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 629,
+      "event": "f30",
+      "expected": null,
+      "label": "f30:export",
+      "layer": "continuation",
+      "operation": "export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:import:p2.import.checker-244",
+      "layer": "continuation",
+      "operation": "import_record",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.import.checker-5",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.a.interpretation",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.joint.output",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.public.package",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.b.note",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.c.challenge",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.c.unrelated",
+      "layer": "deployment",
+      "operation": "repair",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:report:p2.joint.draft",
+      "layer": "deployment",
+      "operation": "draft_report",
+      "primary": false
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 630,
+      "event": "f31",
+      "expected": null,
+      "label": "f31:notices",
+      "layer": "continuation",
+      "operation": "notices",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "correction-blocked",
+      "at": 631,
+      "event": "f32",
+      "expected": "correction-blocked",
+      "label": "f32:use:p2.joint.output",
+      "layer": "continuation",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 632,
+      "event": "f33",
+      "expected": null,
+      "label": "f33:read-published",
+      "layer": "continuation",
+      "operation": "read_public",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 633,
+      "event": "f34",
+      "expected": null,
+      "label": "f34:use:p2.c.unrelated",
+      "layer": "continuation",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:publish:p2.a.interpretation.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:read:p2.import.checker-244",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:publish:p2.a.interpretation.v2",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:originate:p2.a.interpretation.v2:cites",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:supersede:p2.a.interpretation",
+      "layer": "continuation",
+      "operation": "supersede",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 634,
+      "event": "f35",
+      "expected": null,
+      "label": "f35:release:p2.a.interpretation.v2",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:publish:p2.b.note.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:read:p2.a.interpretation.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:publish:p2.b.note.v2",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:originate:p2.b.note.v2:builds-on",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:originate:p2.b.note.v2:reproduces",
+      "layer": "continuation",
+      "operation": "originate",
+      "primary": false
+    },
+    {
+      "actor": "b.researcher",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:supersede:p2.b.note",
+      "layer": "continuation",
+      "operation": "supersede",
+      "primary": false
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 635,
+      "event": "f36",
+      "expected": null,
+      "label": "f36:release:p2.b.note.v2",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:publish:p2.joint.output.v2:open",
+      "layer": "capture",
+      "operation": "open",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.a.interpretation.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.b.note.v2",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.c.challenge",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:read:p2.import.checker-244",
+      "layer": "capture",
+      "operation": "read",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:publish:p2.joint.output.v2",
+      "layer": "deployment",
+      "operation": "publish",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:supersede:p2.joint.output",
+      "layer": "continuation",
+      "operation": "supersede",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 636,
+      "event": "f37",
+      "expected": null,
+      "label": "f37:release:p2.joint.output.v2",
+      "layer": "deployment",
+      "operation": "release",
+      "primary": false
+    },
+    {
+      "actor": "a.lead",
+      "actual": "consent-required",
+      "at": 637,
+      "event": "f38",
+      "expected": "consent-required",
+      "label": "f38:export-v2-before-consent",
+      "layer": "continuation",
+      "operation": "export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 638,
+      "event": "f39",
+      "expected": null,
+      "label": "f39:consent:a.lead",
+      "layer": "continuation",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "b.steward",
+      "actual": null,
+      "at": 639,
+      "event": "f40",
+      "expected": null,
+      "label": "f40:consent:b.steward",
+      "layer": "continuation",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "c.specialist",
+      "actual": null,
+      "at": 640,
+      "event": "f41",
+      "expected": null,
+      "label": "f41:consent:c.specialist",
+      "layer": "continuation",
+      "operation": "consent",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 641,
+      "event": "f42",
+      "expected": null,
+      "label": "f42:export",
+      "layer": "continuation",
+      "operation": "export",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "correction-blocked",
+      "at": 642,
+      "event": "f43",
+      "expected": "correction-blocked",
+      "label": "f43:use:p2.joint.output",
+      "layer": "continuation",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": null,
+      "at": 643,
+      "event": "f44",
+      "expected": null,
+      "label": "f44:use:p2.joint.output.v2",
+      "layer": "continuation",
+      "operation": "use",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "isolation",
+      "at": 644,
+      "event": "f45",
+      "expected": "isolation",
+      "label": "f45:widen:b.table.v2",
+      "layer": "continuation",
+      "operation": "admit",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "isolation",
+      "at": 645,
+      "event": "f46",
+      "expected": "isolation",
+      "label": "f46:widen:b.table.v1",
+      "layer": "continuation",
+      "operation": "admit",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "new-grant-required",
+      "at": 646,
+      "event": "f47",
+      "expected": "new-grant-required",
+      "label": "f47:reuse:joint.output.v1",
+      "layer": "continuation",
+      "operation": "reuse",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "git-not-authority",
+      "at": 647,
+      "event": "f48",
+      "expected": "git-not-authority",
+      "label": "f48:git-push",
+      "layer": "continuation",
+      "operation": "source_event",
+      "primary": true
+    },
+    {
+      "actor": "b.researcher",
+      "actual": "source-not-authority",
+      "at": 648,
+      "event": "f49",
+      "expected": "source-not-authority",
+      "label": "f49:rename-file",
+      "layer": "continuation",
+      "operation": "source_event",
+      "primary": true
+    },
+    {
+      "actor": "a.lead",
+      "actual": "dissent-not-signoff",
+      "at": 649,
+      "event": "f50",
+      "expected": "dissent-not-signoff",
+      "label": "f50:mark-dissent-as-signoff",
+      "layer": "continuation",
+      "operation": "mark_signoff",
+      "primary": true
+    }
+  ]
+}

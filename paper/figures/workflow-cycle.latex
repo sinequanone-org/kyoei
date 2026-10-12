@@ -1,0 +1,74 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage{fontspec}
+\setsansfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf]
+\usetikzlibrary{arrows.meta}
+\definecolor{ink}{HTML}{183C42}
+\definecolor{pale}{HTML}{EDF4F3}
+\definecolor{repair}{HTML}{EAF0F9}
+\definecolor{warn}{HTML}{FFF3E1}
+\begin{document}
+\begin{tikzpicture}[
+  font=\sffamily\fontsize{10}{12}\selectfont,text=ink,draw=ink,
+  box/.style={draw,rounded corners=3pt,fill=pale,align=left,
+    text width=4.3cm,minimum height=2.4cm,inner sep=8pt},
+  rule/.style={draw,rounded corners=3pt,fill=white,align=left,
+    text width=4.3cm,minimum height=1.85cm,inner sep=8pt},
+  flow/.style={-{Stealth[length=2.3mm]},line width=0.9pt},
+  label/.style={fill=white,inner sep=3pt,font=\sffamily\fontsize{9}{11}\selectfont}
+]
+\node[align=center] at (7.9,1.85)
+  {\textbf{SPECIFIED CYCLE}\quad Scoped releases and declared dependencies};
+\node[box] (work) at (2.45,0)
+  {\textbf{1. Work and context}\\[4pt]
+   People or agents edit.\\
+   Node signs the version,\\
+   context and input records.};
+\node[box] (release) at (7.9,0)
+  {\textbf{2. Release}\\[4pt]
+   Person selects recipients.\\
+   Node sends terms, record\\
+   and a read token.};
+\node[box] (rely) at (13.35,0)
+  {\textbf{3. Rely and build}\\[4pt]
+   Recipient checks content\\
+   and declares reliance.\\
+   Owner records subscriber.};
+\node[box] (gate) at (13.35,-3.05)
+  {\textbf{4. Ship gate}\\[4pt]
+   Person approves version.\\
+   Integrator runs the gate,\\
+   then merges if allowed.};
+\node[box,fill=warn] (change) at (7.9,-3.05)
+  {\textbf{5. Change and notices}\\[4pt]
+   Nodes send signed events.\\
+   Node finds affected work\\
+   from declared inputs.};
+\node[box,fill=repair] (fix) at (2.45,-3.05)
+  {\textbf{6. Repair}\\[4pt]
+   Person chooses new input.\\
+   Agent or person edits.\\
+   Node keeps old record.};
+\draw[flow] (work) -- (release);
+\draw[flow] (release) -- (rely);
+\draw[flow] (rely) -- (gate);
+\draw[flow] (gate) -- (change);
+\draw[flow] (change) -- (fix);
+\draw[flow] (fix) -- node[label,right=3pt] {new version} (work);
+\node[align=center,font=\sffamily\fontsize{9.5}{12}\selectfont] at (7.9,-4.7)
+  {A released input may change at any stage. After observing it:};
+\node[rule,fill=warn] at (2.45,-5.9)
+  {\textbf{Block managed use}\\[3pt]
+   Withdrawal or correction:\\
+   refuse dependent work.};
+\node[rule] at (7.9,-5.9)
+  {\textbf{Notify}\\[3pt]
+   Challenge or cites:\\
+   notice, no automatic block.};
+\node[rule] at (13.35,-5.9)
+  {\textbf{Keep usable}\\[3pt]
+   Unrelated work:\\
+   its gate still applies.};
+\node[align=center,font=\sffamily\fontsize{9.5}{12}\selectfont] at (7.9,-7.35)
+  {A repair needs fresh release and approval checks; it does not restore the old version.};
+\end{tikzpicture}
+\end{document}

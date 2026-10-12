@@ -1,0 +1,325 @@
+{
+ "commands": {
+  "first_exchange": "e01-e03 agreement acceptance is three commands in each arm, after these.",
+  "kyoei": {
+   "by_kind": {
+    "enroll": 4,
+    "init": 7,
+    "node-start": 3,
+    "trust": 6
+   },
+   "driver_setup_wall_ms": 1830.541,
+   "failures": 0,
+   "total": 20
+  },
+  "reference": {
+   "by_kind": {
+    "enroll": 4,
+    "node-start": 3,
+    "trust": 6
+   },
+   "failures": 0,
+   "total": 13,
+   "uncounted": "Seven actor signing keys are generated inside the harness; the reference has no key-provisioning client, so an adopter builds one (application code)."
+  },
+  "rule": "Top-level setup invocations from empty state to the first exchange, failures and retries included."
+ },
+ "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+ "decisions": {
+  "kyoei": {
+   "decisions_by_category": {
+    "credential": 6,
+    "endpoint": 5,
+    "store": 2,
+    "trust pin": 4
+   },
+   "decisions_per_institution": 17,
+   "derived": 4,
+   "fixed": 4,
+   "keys": [
+    {
+     "category": "credential",
+     "key": "enroll.--actor",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "enroll.--expires",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "enroll.--kind",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "enroll.--public",
+     "kind": "derived"
+    },
+    {
+     "category": "credential",
+     "key": "init.--actor",
+     "kind": "decision"
+    },
+    {
+     "category": "terms",
+     "key": "init.--deployment",
+     "kind": "shared"
+    },
+    {
+     "category": "endpoint",
+     "key": "init.--node",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "node.administrator",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "node.administrator_public",
+     "kind": "derived"
+    },
+    {
+     "category": "endpoint",
+     "key": "node.control_socket",
+     "kind": "decision"
+    },
+    {
+     "category": "store",
+     "key": "node.create_custody",
+     "kind": "fixed"
+    },
+    {
+     "category": "store",
+     "key": "node.custody",
+     "kind": "decision"
+    },
+    {
+     "category": "store",
+     "key": "node.database",
+     "kind": "decision"
+    },
+    {
+     "category": "terms",
+     "key": "node.deployment",
+     "kind": "shared"
+    },
+    {
+     "category": "endpoint",
+     "key": "node.host",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "node.key_expires",
+     "kind": "decision"
+    },
+    {
+     "category": "trust pin",
+     "key": "node.max_age",
+     "kind": "decision"
+    },
+    {
+     "category": "terms",
+     "key": "node.now",
+     "kind": "fixed"
+    },
+    {
+     "category": "credential",
+     "key": "node.peer",
+     "kind": "derived"
+    },
+    {
+     "category": "endpoint",
+     "key": "node.peers",
+     "kind": "decision"
+    },
+    {
+     "category": "endpoint",
+     "key": "node.public_socket",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "node.scope",
+     "kind": "fixed"
+    },
+    {
+     "category": "credential",
+     "key": "node.simulation",
+     "kind": "fixed"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.--expires",
+     "kind": "decision"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.--institution",
+     "kind": "derived"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.--public",
+     "kind": "decision"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.--version",
+     "kind": "decision"
+    }
+   ],
+   "shared_decisions": 2
+  },
+  "note": "Both source modes share one setup; Git adds no setup decision in either arm.",
+  "reference": {
+   "decisions_by_category": {
+    "credential": 7,
+    "endpoint": 3,
+    "store": 1,
+    "terms": 2,
+    "trust pin": 3
+   },
+   "decisions_per_institution": 16,
+   "derived": 4,
+   "fixed": 1,
+   "keys": [
+    {
+     "category": "credential",
+     "key": "client.actor",
+     "kind": "decision"
+    },
+    {
+     "category": "terms",
+     "key": "client.clock",
+     "kind": "fixed"
+    },
+    {
+     "category": "terms",
+     "key": "client.deployment",
+     "kind": "shared"
+    },
+    {
+     "category": "credential",
+     "key": "client.key",
+     "kind": "decision"
+    },
+    {
+     "category": "endpoint",
+     "key": "client.path",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "enroll.actor",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "enroll.expires",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "enroll.kind",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "enroll.public",
+     "kind": "derived"
+    },
+    {
+     "category": "credential",
+     "key": "node.administrator",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "node.administrator_public",
+     "kind": "derived"
+    },
+    {
+     "category": "terms",
+     "key": "node.deployment",
+     "kind": "shared"
+    },
+    {
+     "category": "credential",
+     "key": "node.enrolled_until",
+     "kind": "decision"
+    },
+    {
+     "category": "terms",
+     "key": "node.expires",
+     "kind": "decision"
+    },
+    {
+     "category": "terms",
+     "key": "node.purpose",
+     "kind": "decision"
+    },
+    {
+     "category": "endpoint",
+     "key": "node.sockets.client",
+     "kind": "decision"
+    },
+    {
+     "category": "endpoint",
+     "key": "node.sockets.peer",
+     "kind": "decision"
+    },
+    {
+     "category": "credential",
+     "key": "process.institution",
+     "kind": "derived"
+    },
+    {
+     "category": "store",
+     "key": "process.root",
+     "kind": "decision"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.expires",
+     "kind": "decision"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.institution",
+     "kind": "derived"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.public",
+     "kind": "decision"
+    },
+    {
+     "category": "trust pin",
+     "key": "trust.version",
+     "kind": "decision"
+    }
+   ],
+   "shared_decisions": 2
+  }
+ },
+ "diagnostic": true,
+ "evidence": {
+  "research/experiments/p1-4/documents.events.json": "bcc941fb2a2b93b1964e1bf43823099b6eb46887edd69582921c1be7972ef309",
+  "research/experiments/p1-7-deployment/report.json": "dedf17b506ab836b97ee5cefd8a47ff87e91670237bf988b660d96b702d2842a",
+  "scripts/p1_7_configuration.py": "bef734b9ab24bdb4e692f84652c2199ce98060001ec6bcdd1bcf9047fab47419",
+  "scripts/reference_deployment_diagnostic.py": "467a09ff010c9dcbba3d9f6297e4f5e1063c7d3a4b155a45cfa625a738ca1292",
+  "scripts/workspace_diagnostic.py": "0317b66aaff5759ab21e00ebe63de8dfec854aee723b5749f6909c6dd2871530",
+  "scripts/workspace_driver.py": "a00d7a8004ab55a15beb7f728f055137e35eb0d48222a536c14c29efc8766615"
+ },
+ "human_setup_seconds": null,
+ "kind": "p1-7-configuration-burden",
+ "machine_setup_ns": {
+  "reason": "Neither driver stamps the first setup process start and the first successful exchange on one clock; client setup time is context.",
+  "value": null
+ }
+}

@@ -1,0 +1,13 @@
+// Deployed and deleted by `node scripts/deploy.ts reset`.
+{
+ "$schema": "../../node_modules/wrangler/config-schema.json",
+ "name": "kyoei-cleanup",
+ "main": "cleanup.ts",
+ "compatibility_date": "2026-10-10",
+ "compatibility_flags": ["nodejs_compat"],
+ "artifacts": [
+  { "binding": "NS_A", "namespace": "kyoei-a" },
+  { "binding": "NS_B", "namespace": "kyoei-b" },
+  { "binding": "NS_C", "namespace": "kyoei-c" }
+ ]
+}

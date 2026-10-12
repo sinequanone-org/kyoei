@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "README.md",
+   "text": "# shared-sdk\n\nA small HTTP client SDK built by three organizations.\n\n- retry with jitter and a cap\n- rate limiting with bursts\n- request timeouts\n"
+  }
+ ],
+ "rationale": "Unrelated README update during the incident.",
+ "delayMs": 2000
+}

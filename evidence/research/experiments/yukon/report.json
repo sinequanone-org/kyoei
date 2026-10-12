@@ -1,0 +1,533 @@
+{
+ "credits": {
+  "ecdsafail-challenge": {
+   "coauthor_trailers": 400,
+   "coauthors_beyond_submitter": 14,
+   "declared_families": {
+    "claude": 121,
+    "deepseek": 4,
+    "gemini": 2,
+    "glm": 4,
+    "gpt": 181,
+    "grok": 12,
+    "kimi": 39,
+    "unrecognized": 40
+   },
+   "declared_harness": 224,
+   "declared_model": 394,
+   "distinct_declared_models": 45,
+   "heuristic": {
+    "credit_headings": {
+     "acknowledgment": 1,
+     "attribution": 125,
+     "based-on": 19,
+     "credit": 33,
+     "lineage": 15,
+     "prior-work": 40,
+     "provenance": 11
+    },
+    "notes_mentioning_another_account": 2,
+    "notes_naming_another_family": 81,
+    "notes_with_credit_heading": 209
+   },
+   "identical_code_heuristic": {
+    "by_another_account": 0,
+    "promoted": 0,
+    "repeats": 0
+   },
+   "identical_surface": {
+    "by_another_account": 0,
+    "promoted": 0,
+    "repeats": 0
+   },
+   "most_coauthors_beyond_submitter": 2,
+   "notes_crediting_another_account": 202,
+   "notes_crediting_own_earlier_work": 155,
+   "other_trailers": 0,
+   "promoted": 100,
+   "promoted_lineage": {
+    "median_declared_models": 12.0,
+    "most_accounts": 19,
+    "most_declared_models": 21,
+    "several_accounts": 98,
+    "several_declared_models": 98,
+    "several_model_families": 98
+   },
+   "resubmitted_base_surface": 5,
+   "same_code_and_checker_with_differing_scores": 0,
+   "submissions": 400,
+   "trailer_model_not_declared": 0,
+   "trailers_naming_a_model": 0,
+   "unresolved_identifiers": 187,
+   "widest_relative_score_spread": 0
+  },
+  "eip8200-challenges": {
+   "coauthor_trailers": 2600,
+   "coauthors_beyond_submitter": 437,
+   "declared_families": {
+    "claude": 1402,
+    "deepseek": 1,
+    "gemini": 43,
+    "glm": 19,
+    "gpt": 1039,
+    "grok": 72,
+    "kimi": 2,
+    "qwen": 3,
+    "unrecognized": 27
+   },
+   "declared_harness": 2511,
+   "declared_model": 2598,
+   "distinct_declared_models": 55,
+   "heuristic": {
+    "credit_headings": {
+     "attribution": 970,
+     "based-on": 104,
+     "credit": 107,
+     "lineage": 87,
+     "prior-work": 58,
+     "provenance": 210
+    },
+    "notes_mentioning_another_account": 199,
+    "notes_naming_another_family": 105,
+    "notes_with_credit_heading": 1319
+   },
+   "identical_code_heuristic": {
+    "by_another_account": 100,
+    "promoted": 60,
+    "repeats": 303
+   },
+   "identical_surface": {
+    "by_another_account": 57,
+    "promoted": 54,
+    "repeats": 184
+   },
+   "most_coauthors_beyond_submitter": 8,
+   "notes_crediting_another_account": 1917,
+   "notes_crediting_own_earlier_work": 806,
+   "other_trailers": 0,
+   "promoted": 723,
+   "promoted_lineage": {
+    "median_declared_models": 21,
+    "most_accounts": 37,
+    "most_declared_models": 33,
+    "several_accounts": 702,
+    "several_declared_models": 702,
+    "several_model_families": 702
+   },
+   "resubmitted_base_surface": 0,
+   "same_code_and_checker_with_differing_scores": 66,
+   "submissions": 2600,
+   "trailer_model_not_declared": 0,
+   "trailers_naming_a_model": 0,
+   "unresolved_identifiers": 1152,
+   "widest_relative_score_spread": 0.010422
+  }
+ },
+ "fix": {
+  "changed": [
+   ".github",
+   "Challenge/Modexp/Scorer.lean",
+   "Challenge/Ripemd160/Scorer.lean",
+   "foundry",
+   "scripts"
+  ],
+  "commit": "4623204e4eb6945a7639bc5958fa8ccb84ecc8d1",
+  "end": "2026-09-05T18:33:42Z",
+  "introduced": "bf6b54402eb1e4b2bbe46ee532a9c7267d91ebec",
+  "introduced_by": [
+   5
+  ],
+  "methods": {
+   "everything_after_first_affected": {
+    "extra": 3778,
+    "missed": 0,
+    "size": 4147
+   },
+   "git_ancestry": {
+    "extra": 0,
+    "missed": 0,
+    "size": 369
+   },
+   "run_and_own_decision": {
+    "extra": 0,
+    "missed": 0,
+    "size": 369
+   },
+   "scored_while_current": {
+    "extra": 0,
+    "missed": 0,
+    "size": 369
+   }
+  },
+  "new": "f5a1e8d927325169e319a88fbc144c086019fd10167409295ec06fc12afc32c6",
+  "old": "bf9d04e35aa2a2d730945fa11cc92de56db7147d505b2fd41d0b9684316220fb",
+  "pull": 244,
+  "pulls": [
+   244
+  ],
+  "runs_under_old": 217,
+  "stale": {
+   "baseline_only_decisions": 0,
+   "old_runs_promoted_after_fix": 0,
+   "old_runs_scored_after_fix": 0,
+   "other_checker_runs_while_current": 0
+  },
+  "start": "2026-09-03T13:22:29Z",
+  "typed": {
+   "decision": 152,
+   "run": 217
+  }
+ },
+ "inputs": {
+  "ecdsafail-challenge": "bb764e734a0f4c02531826477ba6a80d37be7c5090b000b0a6557dd1112a53dd",
+  "eip8200-challenges": "4a6dd0f881567b0429cfcdd1c71abd55300adcaaf0bfda555a3327e4bf949cc0"
+ },
+ "kind": "yukon-records-report",
+ "label": "Side experiment, enabling: measured from public records, separate from the frozen P1.0 contract. Credits are unverified claims; an account is not an author.",
+ "replay": {
+  "candidates_flagged": 0,
+  "checker_notices": {
+   "new": 0,
+   "old": 1
+  },
+  "declared_model_lineage": {
+   "candidates": 217,
+   "lineage_with_several_models": 215,
+   "most_models_in_lineage": 12,
+   "with_declared_model": 217
+  },
+  "equal": true,
+  "expected": 369,
+  "extra": 0,
+  "flagged": 369,
+  "flagged_by_kind": {
+   "decision": 152,
+   "run": 217
+  },
+  "latency_ms": {
+   "corrections": {
+    "count": 588,
+    "median": 16.56,
+    "p95": 17.96
+   },
+   "open": {
+    "count": 588,
+    "median": 15.56,
+    "p95": 16.42
+   },
+   "publish": {
+    "count": 588,
+    "median": 16.8,
+    "p95": 22.97
+   },
+   "read": {
+    "count": 1327,
+    "median": 16.11,
+    "p95": 17.3
+   },
+   "supersede": {
+    "count": 1,
+    "median": 15.76,
+    "p95": 15.76
+   }
+  },
+  "lineage": {
+   "base_not_a_submission": 2,
+   "baseline_unresolved": 2
+  },
+  "missed": 0,
+  "notices_by_kind": {
+   "decision": 152,
+   "run": 217
+  },
+  "records": {
+   "candidate": 217,
+   "checker": 2,
+   "decision": 152,
+   "run": 217,
+   "total": 588
+  },
+  "replacement_visible": 369,
+  "requests": 3092,
+  "seconds": 176.1,
+  "store": {
+   "captured_inputs": 1327,
+   "declared_inputs": 434,
+   "nodes": 588,
+   "relations": {
+    "builds-on": 215,
+    "cites": 376,
+    "supersedes": 1
+   }
+  },
+  "window": {
+   "baseline_context": 0,
+   "margin_hours": 0,
+   "submissions": 217,
+   "typed_closure_replayed": true
+  }
+ },
+ "sources": {
+  "ecdsafail-challenge": {
+   "accepted_before_first_pull": 428,
+   "baselines": {
+    "latest_promoted_is_not_stated_best": 12,
+    "latest_promoted_is_stated_best": 339,
+    "resolved": 341,
+    "unresolved": 10
+   },
+   "calls": 47,
+   "checker_versions_since_first_submission": 2,
+   "checker_versions_with_runs": 2,
+   "coverage": {
+    "accepted_without_pull": 428,
+    "bot_comments": 803,
+    "checker_differs_from_parent": 0,
+    "comments_truncated": 0,
+    "declared_dropped": 0,
+    "first_coauthor_not_submitter": 0,
+    "landing_duplicates": 0,
+    "lists_capped": 0,
+    "merged_not_on_main": 0,
+    "parent_outside_history": 0,
+    "pushes_truncated": 0,
+    "reruns": 0,
+    "run_unmatched": 0,
+    "submitter_from_trailer": 150,
+    "surface_absent": 0,
+    "title_mismatch": 0,
+    "track_unknown": 0,
+    "unrecognized": 0
+   },
+   "declared_model": 394,
+   "fetched": "2026-09-26T18:30:32Z",
+   "first_parent_commits": 1415,
+   "first_submission": "2026-08-03T23:18:58Z",
+   "head": "5a08ebdacf922f1e3df54156bd23b778eac5995b",
+   "landed_via": {
+    "merge": 100
+   },
+   "license": "none",
+   "main_commits": 1426,
+   "outcomes": {
+    "cancelled": 3,
+    "failed": 30,
+    "scored": 351,
+    "setup-failed": 15,
+    "undispatched": 1
+   },
+   "promoted": 100,
+   "pulls": 411,
+   "redecided": {
+    "did-not-improve": 1
+   },
+   "repository": "github.com/Layr-Labs/ecdsafail-challenge",
+   "run_matched": 399,
+   "stores_code": false,
+   "submissions": 400,
+   "verdicts": {
+    "does-not-improve": 250,
+    "improves": 101
+   }
+  },
+  "eip8200-challenges": {
+   "accepted_before_first_pull": 0,
+   "baselines": {
+    "latest_promoted_is_not_stated_best": 691,
+    "latest_promoted_is_stated_best": 1079,
+    "resolved": 1629,
+    "unresolved": 141
+   },
+   "calls": 121,
+   "checker_versions_since_first_submission": 3,
+   "checker_versions_with_runs": 3,
+   "coverage": {
+    "accepted_without_pull": 0,
+    "bot_comments": 5686,
+    "checker_differs_from_parent": 0,
+    "comments_truncated": 0,
+    "declared_dropped": 0,
+    "first_coauthor_not_submitter": 0,
+    "landing_duplicates": 0,
+    "lists_capped": 6,
+    "merged_not_on_main": 0,
+    "parent_outside_history": 0,
+    "pushes_truncated": 0,
+    "reruns": 1,
+    "run_unmatched": 0,
+    "submitter_from_trailer": 0,
+    "surface_absent": 0,
+    "title_mismatch": 0,
+    "track_unknown": 0,
+    "unrecognized": 0
+   },
+   "declared_model": 2598,
+   "fetched": "2026-09-26T18:25:48Z",
+   "first_parent_commits": 728,
+   "first_submission": "2026-09-02T16:44:37Z",
+   "head": "fe04a864081b2291ef5eb6fecb37d4e24673a657",
+   "landed_via": {
+    "merge": 407,
+    "submission-commit": 316
+   },
+   "license": "Apache-2.0",
+   "main_commits": 736,
+   "outcomes": {
+    "cancelled": 214,
+    "failed": 608,
+    "none": 3,
+    "scored": 1770,
+    "setup-failed": 3,
+    "undispatched": 2
+   },
+   "promoted": 723,
+   "pulls": 2611,
+   "redecided": {
+    "below-required-improvement": 84,
+    "did-not-improve": 207
+   },
+   "repository": "github.com/Layr-Labs/eip8200-challenges",
+   "run_matched": 2579,
+   "stores_code": false,
+   "submissions": 2600,
+   "verdicts": {
+    "does-not-improve": 759,
+    "improves": 1011
+   }
+  }
+ },
+ "transitions": {
+  "ecdsafail-challenge": [
+   {
+    "at": "2026-08-10T22:06:08Z",
+    "changed": [
+     "src/bin",
+     "src/lib.rs"
+    ],
+    "commit": "5b95ac2a4cbe34720134f541f82ca8a0bb7940a8",
+    "methods": {
+     "everything_after_first_affected": {
+      "extra": 714,
+      "missed": 0,
+      "size": 747
+     },
+     "git_ancestry": {
+      "extra": 0,
+      "missed": 1,
+      "size": 32
+     },
+     "run_and_own_decision": {
+      "extra": 0,
+      "missed": 1,
+      "size": 32
+     },
+     "scored_while_current": {
+      "extra": 0,
+      "missed": 1,
+      "size": 32
+     }
+    },
+    "pulls": [
+     37
+    ],
+    "runs_under_old": 16,
+    "stale": {
+     "baseline_only_decisions": 1,
+     "old_runs_promoted_after_fix": 0,
+     "old_runs_scored_after_fix": 0,
+     "other_checker_runs_while_current": 0
+    },
+    "typed": 33
+   }
+  ],
+  "eip8200-challenges": [
+   {
+    "at": "2026-09-03T13:22:29Z",
+    "changed": [
+     "Challenge/Modexp/Scorer.lean",
+     "foundry",
+     "scripts"
+    ],
+    "commit": "bf6b54402eb1e4b2bbe46ee532a9c7267d91ebec",
+    "methods": {
+     "everything_after_first_affected": {
+      "extra": 4147,
+      "missed": 0,
+      "size": 4151
+     },
+     "git_ancestry": {
+      "extra": 0,
+      "missed": 0,
+      "size": 4
+     },
+     "run_and_own_decision": {
+      "extra": 0,
+      "missed": 0,
+      "size": 4
+     },
+     "scored_while_current": {
+      "extra": 0,
+      "missed": 0,
+      "size": 4
+     }
+    },
+    "pulls": [
+     5
+    ],
+    "runs_under_old": 2,
+    "stale": {
+     "baseline_only_decisions": 0,
+     "old_runs_promoted_after_fix": 0,
+     "old_runs_scored_after_fix": 0,
+     "other_checker_runs_while_current": 0
+    },
+    "typed": 4
+   },
+   {
+    "at": "2026-09-05T18:33:42Z",
+    "changed": [
+     ".github",
+     "Challenge/Modexp/Scorer.lean",
+     "Challenge/Ripemd160/Scorer.lean",
+     "foundry",
+     "scripts"
+    ],
+    "commit": "4623204e4eb6945a7639bc5958fa8ccb84ecc8d1",
+    "methods": {
+     "everything_after_first_affected": {
+      "extra": 3778,
+      "missed": 0,
+      "size": 4147
+     },
+     "git_ancestry": {
+      "extra": 0,
+      "missed": 0,
+      "size": 369
+     },
+     "run_and_own_decision": {
+      "extra": 0,
+      "missed": 0,
+      "size": 369
+     },
+     "scored_while_current": {
+      "extra": 0,
+      "missed": 0,
+      "size": 369
+     }
+    },
+    "pulls": [
+     244
+    ],
+    "runs_under_old": 217,
+    "stale": {
+     "baseline_only_decisions": 0,
+     "old_runs_promoted_after_fix": 0,
+     "old_runs_scored_after_fix": 0,
+     "other_checker_runs_while_current": 0
+    },
+    "typed": 369
+   }
+  ]
+ },
+ "version": 1
+}

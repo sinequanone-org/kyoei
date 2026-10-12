@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "scope": "current-source-review",
+  "reviewed": "2026-10-12",
+  "historical_build_verified": false,
+  "historical_limit": "No bundle digest or signed envelopes were retained for deployed-1 or deployed-2-ai. These hashes identify source reviewed later, not the executed bundle.",
+  "files": {
+    "port": {
+      "docs/acceptance.md": "2dc60dd20a1e2c65c789e8d4e5a86f9136367a08c9d27c7c833d2e05a56f56c7",
+      "package-lock.json": "732c1f72b56491ee73f212ea7b18d5687256329fb65f274b08b48a02429cc3de",
+      "package.json": "48640894e1f7146bcffefa37441ca45f9998618739330f90524b35cf13a58964",
+      "scripts/demo.ts": "3cd95bbe222d334d3a1092f173f132e21d25a6870324e6cd40ae3a84396bf4fa",
+      "scripts/deploy.ts": "5bb472efef8ce45dc6f1fa9617d67afb8def67236d99a02f76bf7fa6576b0783",
+      "scripts/summary.ts": "9cdc0a2d46defeec3ff7cf60f57d82f63beee18de4e1855006ff32e7e6a2f952",
+      "src/agents/run.ts": "5c481173099db3b0c7c906029881321c0f66298ec86ac75753dc297f9614ebd4",
+      "src/agents/scripted.ts": "22e33ad320348b7a91ccb96a6e65a225094f99cb93c5414a74ed1c3c4f1322ce",
+      "src/agents/text.ts": "c810df17e724ab80c9552c9101fe90dc278752d202dcb65770839a37a9f054fb",
+      "src/cli/client.ts": "19230ecf9e289ffff53cb5f782f0bac91e540c203e9538b7dcc3a1961aa56664",
+      "src/cli/main.ts": "7c1274bc2a51da5e880fed022afd826aba46e6cf9f93f219d1543ca082bd5d33",
+      "src/core/canonical.ts": "29f54f0e64d762020448e8d278b4a2738fd82e9844437b89059e835ee6d5f24f",
+      "src/core/content.ts": "1a6630ec6dfb8ba9dcc88a841e8ed25cc9c60c97a59c4cc8417ae8a72d92e444",
+      "src/core/envelope.ts": "8cb8fd840f852f93b99d127ee195887b226d9dbdac2541b933ad38675255add2",
+      "src/core/record.ts": "3c529d08b4a3e7364a3e98debbb663612d542583658e2b4e7c4a2bced450732e",
+      "src/core/types.ts": "1ac75130fea6cd80ede5d309995e38515f8a179130601ea0d470c6ef4ac92ba6",
+      "src/crypto/signer.ts": "58bd9c748d33994697bcdac0304500e5265159a7f6022ee1c3697c2aea90403b",
+      "src/git/host.ts": "46153eec0890143192225c0b168e04b3be3503c9141cbd22d0af4050aa799692",
+      "src/local/file-store.ts": "b3b553f5a99f35209b7ce379ad5f9b82d84dbf5023c12a13ff8ab279aa1ea41f",
+      "src/local/git-service.ts": "304387338c3e1e57173e208a4cc774d5c2321824a6399a45f3996c2675a57357",
+      "src/local/node-server.ts": "38d5bdc4bc86029c7ea9311dbedda77a20771e148f3aafaa6f95d414bd76009d",
+      "src/local/repo-server.ts": "c5d926663c16d72cfa63437946a1a5df1c8d2e388028b1049f51ee723574eb35",
+      "src/node/api.ts": "66084e62cbf6288eefb23017d6aa5d5fdda6f0685a92999bfe28acf7f695d4b9",
+      "src/node/node.ts": "ed5b32b6eacfb8d6c5665b95e7d2088de555fbb6de3e3edc746dd2609f534625",
+      "src/node/store.ts": "53d2cdae865e40d198396adc6fbace464f3927158212b3bb6081af9c44dce6b6",
+      "src/node/transport.ts": "93aa2550fd78bdb876815fa48f8d4613b0ec7af952d24604d0446e6f1557dded",
+      "src/worker/artifacts-host.ts": "d22bf59e569422bad94d65d720990bef97efe38de4c2c87bcccd71f0abab14b1",
+      "src/worker/index.ts": "49de341d2aa26e17cfcd8bef90de395b2cb834114d5d2c821a66a207691f532c",
+      "src/worker/memfs.ts": "942b202334268b296fa3d093749529ce0c4c9d9a133df43e65fd0a1c186ecf0a",
+      "src/worker/workers-ai.ts": "581c194d69d5ad44ad553309b9002e420c929946aa79df8afdacc248ee0d690b",
+      "test/acceptance.test.ts": "4cd9a84c7c761ef01575ed3a5a01d2c5fb53fbd5b6228e14e71cc749a278e016",
+      "test/flow.test.ts": "a6524e64e8c96911e2733244fc9cdd0016f6799c6a8985ef7e187ef5d5b6790b",
+      "test/summary.test.ts": "4548617de126ccff7ee30de610b405f4045e436e66f5f7dfb544d4eaf800e29a",
+      "test/world.ts": "a64cb3cc52de59b72f86a4b22197da944792cbcfe5ad6493a6599af8000577e9",
+      "wrangler.jsonc": "330b0f8b2740ade319b9ad61a33b4fbae6eee8c56f48c116bd6dedc822c14f0e",
+      "test/security-regressions.test.ts": "9f577d0d01e54161dabb40ad1b01c34c1938e237460225a4bd8d91e607d6b1b4",
+      "test/boundaries.test.ts": "f80e13850bba10465c3c639f0455b6e94a65b4bbd627feacc850aea06cc3a307",
+      "tsconfig.json": "d1659b88c9ded935674ba9044d778e656f7d1e379e349e8e179aefd322f374b2"
+    },
+    "evidence": {
+      "research/experiments/cloudflare/deployed-1/a.jsonl": "f89b7306a213fdb04254083dd08d34aeafee764ce848bc4df60e23276ea676b5",
+      "research/experiments/cloudflare/deployed-1/b.jsonl": "1cfa7d412b0f3312c5e570f873f1f6537d27f44c4e949f3471cf6427f0893a6c",
+      "research/experiments/cloudflare/deployed-1/c.jsonl": "9db983c0a7da7f7664ee1a633c4cdd7f4f2919ea15cdad62c7c420190ac29f7f",
+      "research/experiments/cloudflare/deployed-1/demo.jsonl": "a130a95f8be47788d61b9a92b0a28d5ef1d2636efbd3a59233462556f385f2d2",
+      "research/experiments/cloudflare/deployed-1/git-log.txt": "df681bf23895c03531f178b1f308ad857280a1b195e1483b05646ee5fffb821e",
+      "research/experiments/cloudflare/deployed-1/summary.json": "34b5fa7ac2536c262a7f332edfcebbef4ee2a225fa041a4e38f5e3d7e5cd04e2",
+      "research/experiments/cloudflare/deployed-2-ai/a.jsonl": "11f569b56b0ff85342e90aaa16db8e1a38d823d18f05973c989a9333a46b32c7",
+      "research/experiments/cloudflare/deployed-2-ai/b.jsonl": "a723227e350f80d8ec132ee2066d29ed8d55e39fdf7ca06ebdcfb00c6a9aea5f",
+      "research/experiments/cloudflare/deployed-2-ai/c.jsonl": "6d2b1e836a325f6cee24affafbd9d53c3fbae46e401be9844a238a9fe9499ee0",
+      "research/experiments/cloudflare/deployed-2-ai/demo.jsonl": "99a55700b28b4686d42976cf735a926e56ffb0192d5c8b27674ec502ce688c0c",
+      "research/experiments/cloudflare/deployed-2-ai/git-log.txt": "cf38e360ebda951f8d3eb662cedddd722350fdcd0a3b8f345400273e18f2c4b6",
+      "research/experiments/cloudflare/deployed-2-ai/identities.json": "f59a6b5fb11c080d44d9712d779f941f7636f59d3d54b4d8bfe2d34ef844c175",
+      "research/experiments/cloudflare/deployed-2-ai/summary.json": "69b0d46045cc7caf7f563b6e277bef3ee3bcc29d3d49de1532acf59bacd9cdd3"
+    },
+    "paper": {
+      "figures/experiment-architecture.latex": "2978b7d3d3a8447baf327aac9b21625e2df6d8128650c0feb22cb38864f0f77b",
+      "figures/workflow-cycle.latex": "f8b42dd2bceab7b75b5110e0ba31da5ba42dda4beb00f376416feebcbe7d3e2c"
+    }
+  },
+  "paper_fragments": [
+    "Figure 1 summarizes the specified workflow cycle, not a conformance result.",
+    "We cannot bind that snapshot to the historical deployment.",
+    "Dispatches application requests to one OrgNode; `/health` responds at the Worker",
+    "The script then simulated a licence problem",
+    "No model or licence checker detected this problem.",
+    "The 50 deliveries count queued events only.",
+    "Both runs also record 13 synchronous reliance request/reply exchanges, outside that count.",
+    "Agents generated edits; they did not discover dependencies or choose the repairs.",
+    "Peak overlap counts preparation, model calls, and Git work, not simultaneous model inference.",
+    "The evidence also lacks a deployed build digest",
+    "The ship gate checks grants for the declared builds-on closure",
+    "These source fixes do not change the historical run logs"
+  ],
+  "reviewed_claims": [
+    {
+      "id": "architecture",
+      "section": "5.9",
+      "sources": [
+        "wrangler.jsonc",
+        "src/worker/index.ts"
+      ],
+      "scope": "Three application deployments; health handled outside OrgNode; one account is a run condition, not a source-isolation guarantee."
+    },
+    {
+      "id": "agents",
+      "section": "5.8, 5.9",
+      "sources": [
+        "src/agents/run.ts",
+        "src/worker/workers-ai.ts",
+        "scripts/demo.ts"
+      ],
+      "scope": "Edits generated from supplied tasks and relations; primary model label retained on fallback; reliance registered after commit."
+    },
+    {
+      "id": "authority",
+      "section": "3.1, 4.1, 5.9",
+      "sources": [
+        "src/node/api.ts",
+        "src/crypto/signer.ts",
+        "src/core/envelope.ts"
+      ],
+      "scope": "Administrator bearer token acts for people; organization signatures for envelopes; no independent human review."
+    },
+    {
+      "id": "content",
+      "section": "4.3, 5.9",
+      "sources": [
+        "src/core/content.ts",
+        "src/core/record.ts",
+        "src/node/node.ts"
+      ],
+      "scope": "BLAKE3 checks the released snapshot; neither Git history nor generated-code correctness is validated."
+    },
+    {
+      "id": "delivery",
+      "section": "4.1, 5.8",
+      "sources": [
+        "src/node/node.ts",
+        "src/node/transport.ts",
+        "src/worker/index.ts"
+      ],
+      "scope": "State and unsigned delivery work commit together; local crash tests cover restart before signing and token revocation; Worker alarm crash behavior is not deployed evidence."
+    },
+    {
+      "id": "ship",
+      "section": "4.5, 5.8",
+      "sources": [
+        "src/node/node.ts",
+        "src/worker/artifacts-host.ts"
+      ],
+      "scope": "Candidate and transitive input grants, pending reliance and approval checked; Artifacts writes notes before main; a later main change can leave reconciliation unresolved."
+    },
+    {
+      "id": "trial",
+      "section": "5.9",
+      "sources": [
+        "scripts/demo.ts"
+      ],
+      "scope": "Licence incident, dependencies, interface labels and people are scripted; 50 queued deliveries exclude synchronous reliance exchanges."
+    },
+    {
+      "id": "validation",
+      "section": "5.8",
+      "sources": [
+        "test/acceptance.test.ts",
+        "docs/acceptance.md"
+      ],
+      "scope": "46 local tests pass, including release regressions; historical runs retain no signed envelopes or deployed build digest."
+    }
+  ]
+}

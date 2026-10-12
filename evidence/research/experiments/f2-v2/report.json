@@ -1,0 +1,224 @@
+{
+ "authorizes_evaluation": false,
+ "calibration": {
+  "definite_only_units": 143,
+  "eligible": 143,
+  "kappa_definite_only": 0.9126,
+  "kappa_primary": 0.9126,
+  "kappa_primary_interval": {
+   "defined_resamples": 2000,
+   "high": 0.9815,
+   "low": 0.8253,
+   "resamples": 2000,
+   "seed": 20261004,
+   "unit": "citing work"
+  },
+  "kappa_primary_rule": "Cohen kappa over eligible units; labeller unknown and missing count as categories.",
+  "labeller_disagreements": [
+   "m-066805d60ae4",
+   "m-0dcddca3551f",
+   "m-0ee25c996394",
+   "m-1584492f1314",
+   "m-33c92f491996"
+  ],
+  "labeller_missing": [],
+  "labeller_unknown": [],
+  "locator_diagnostic": {
+   "locator": {
+    "depends": 20,
+    "does-not-depend": 28
+   },
+   "plain": {
+    "depends": 20,
+    "does-not-depend": 75
+   }
+  },
+  "minimum": 100,
+  "planned": 160,
+  "reference_counts": {
+   "depends": 40,
+   "does-not-depend": 103
+  },
+  "reference_disagreements": [
+   "m-013dd33e2651",
+   "m-06234e4af9d7",
+   "m-05ab1932fe5d",
+   "m-0122231ad312",
+   "m-04db54825890",
+   "m-784e997a65dc",
+   "m-04f13e509645",
+   "m-098dd5b2c6a0",
+   "m-027b478f0714",
+   "m-10ff0e29a2ed",
+   "m-04bd19b6e95c",
+   "m-00bb4161dd6f",
+   "m-22eaa75a5f43",
+   "m-01397b31008b",
+   "m-077d3980f9b5",
+   "m-2eb1af102adb",
+   "m-0666ac2511b6"
+  ],
+  "reference_unknown": [],
+  "reviewer_kappa_all_labels": 0.7485,
+  "reviewer_missing": {
+   "reviewer-a": [],
+   "reviewer-b": []
+  },
+  "reviewer_units": 160,
+  "stop": {
+   "minimum_units": 100,
+   "status": "threshold-met",
+   "threshold": 0.6
+  }
+ },
+ "carried_predictions": [
+  {
+   "held": true,
+   "high": 0.2,
+   "id": "f0-pilot-agreement",
+   "low": 0.05,
+   "measure": "pilot_disagreement",
+   "observed": 0.1375,
+   "source": "F0 prediction, unchanged"
+  },
+  {
+   "held": false,
+   "high": 0.85,
+   "id": "f2-labeller-kappa",
+   "low": 0.6,
+   "measure": "labeller_kappa",
+   "observed": 0.9126,
+   "source": "F0 prediction, unchanged; F0 measured it against locator truth, v2 against reviewed labels"
+  }
+ ],
+ "contract": "kyoei-fallen-claims-v2",
+ "contract_sha256": "e52146e0e4ce3fb972eea8d0711f727bfdb0416592777dea5775a87022708c06",
+ "failed_batches": [],
+ "kind": "f2-v2-reference-and-calibration",
+ "limits": [
+  "Simulated reviewers from three AI vendors, one operator. Agreement is a simulated reference, not expert truth.",
+  "Batch calls: twenty units share one request, so labels within a batch are not fully independent.",
+  "Known-case model memory: the SIDH break is public and likely in model training data.",
+  "Mathematics texts have exact byte pins but unproven version labels.",
+  "SIDH contexts carry no text version; 82 post-break records without context are excluded.",
+  "Freeze and receipts are local files. No public timestamp exists until the user publishes them."
+ ],
+ "models_reported": [
+  "labeller=google/gemini-3.8-flash",
+  "reviewer-a=anthropic/claude-sonnet-5.5",
+  "reviewer-b=openai/gpt-6-sol"
+ ],
+ "product_result": null,
+ "routes": {
+  "labeller": {
+   "model": "google/gemini-3.8-flash",
+   "vendor": "google"
+  },
+  "reviewer-a": {
+   "model": "anthropic/claude-sonnet-5.5",
+   "vendor": "anthropic"
+  },
+  "reviewer-b": {
+   "model": "openai/gpt-6-sol",
+   "vendor": "openai"
+  }
+ },
+ "sidh_pilot": {
+  "affected_counts": {
+   "reviewer-a": {
+    "no": 73,
+    "unknown": 4,
+    "yes": 3
+   },
+   "reviewer-b": {
+    "no": 69,
+    "unknown": 7,
+    "yes": 4
+   }
+  },
+  "disagreeing_units": [
+   "s-0843dd232041",
+   "s-1d49f499c677",
+   "s-2e79f2c20fac",
+   "s-33781d15070a",
+   "s-36b071007d4b",
+   "s-3a6798718ac7",
+   "s-3a9261a07705",
+   "s-3f9fb67a6986",
+   "s-4a0b5c35edea",
+   "s-53ccd6e4ba36",
+   "s-5a1279831ea2"
+  ],
+  "disagreement_affected": 0.05,
+  "disagreement_depends_only": 0.1125,
+  "disagreement_interval": {
+   "defined_resamples": 2000,
+   "high": 0.2125,
+   "low": 0.0625,
+   "resamples": 2000,
+   "seed": 20261004,
+   "unit": "citing work"
+  },
+  "disagreement_relation_or_depends": 0.1375,
+  "effective_sample_size": 80,
+  "missing": {
+   "reviewer-a": [],
+   "reviewer-b": []
+  },
+  "planned": 80,
+  "relation_counts": {
+   "reviewer-a": {
+    "builds-on": 5,
+    "challenges": 1,
+    "cites": 67,
+    "relies-on-assumption": 3,
+    "reproduces": 0,
+    "supersedes": 0,
+    "unknown": 4
+   },
+   "reviewer-b": {
+    "builds-on": 9,
+    "challenges": 0,
+    "cites": 61,
+    "relies-on-assumption": 3,
+    "reproduces": 0,
+    "supersedes": 0,
+    "unknown": 7
+   }
+  },
+  "reviewable": 80,
+  "stop": {
+   "minimum_units": 60,
+   "status": "not-tripped",
+   "threshold": 0.2
+  },
+  "unknown": {
+   "reviewer-a": 4,
+   "reviewer-b": 7
+  }
+ },
+ "status": "complete",
+ "usage": {
+  "labeller": {
+   "call_seconds": 376.656,
+   "calls": 9,
+   "completion_tokens": 63297,
+   "cost_usd": 0.278922,
+   "prompt_tokens": 55411
+  },
+  "reviewer-a": {
+   "call_seconds": 121.304,
+   "calls": 12,
+   "completion_tokens": 16192,
+   "cost_usd": 0.379076,
+   "prompt_tokens": 108578
+  },
+  "reviewer-b": {
+   "call_seconds": 129.924,
+   "calls": 12,
+   "completion_tokens": 16335,
+   "cost_usd": 0.338309,
+   "prompt_tokens": 69991
+  }
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "run": "deployed-1",
+ "source": "node logs a.jsonl, b.jsonl, c.jsonl; computed by scripts/summary.ts",
+ "runs": {
+  "total": 16,
+  "failed": 0,
+  "mode": "scripted",
+  "max_concurrent": 6
+ },
+ "overlap": {
+  "flagged": 1,
+  "flagged_early": 1
+ },
+ "events": {
+  "sent": 50,
+  "refused": 0,
+  "retries": 0
+ },
+ "releases": {
+  "received": 14,
+  "content_verified": 14
+ },
+ "tokens": {
+  "issued": 14,
+  "revoked": 2
+ },
+ "withdraw": {
+  "delivery_max_seconds": 0.098,
+  "ack_max_ms_owner_clock": 118,
+  "ack_attempts_max": 1,
+  "acks_applied": 2,
+  "peers_reached": 2,
+  "blocked_work": 3,
+  "blocked_work_by_org": {
+   "a": 1,
+   "b": 1,
+   "c": 1
+  },
+  "blocked_shipped": 2,
+  "notice_only": 1,
+  "unrelated_shipped": 1,
+  "notice_only_shipped": 1,
+  "gate_refusals": 1
+ },
+ "repair": {
+  "runs": 4,
+  "corrections": 1,
+  "seconds_after_correction": 17.125,
+  "paths": [
+   {
+    "org": "a",
+    "line": "a3",
+    "onto": "c/c5@1",
+    "kind": "alternative",
+    "merged_seconds_after_withdrawal": 23.474
+   },
+   {
+    "org": "c",
+    "line": "c2",
+    "onto": "b/b1@2",
+    "kind": "replacement",
+    "merged_seconds_after_withdrawal": 46.823
+   },
+   {
+    "org": "b",
+    "line": "b2",
+    "onto": "b/b1@2",
+    "kind": "replacement",
+    "merged_seconds_after_withdrawal": 48.576
+   }
+  ]
+ },
+ "merge": {
+  "shipped": 13,
+  "stale_base": 1
+ },
+ "approvals": {
+  "total": 27,
+  "signoffs": 15,
+  "releases": 11,
+  "withdrawals": 1
+ },
+ "notices": {
+  "opened": 12,
+  "closed": 10,
+  "open_at_end": [
+   {
+    "org": "b",
+    "line": "b3",
+    "kind": "withdraw",
+    "blocking": false
+   },
+   {
+    "org": "b",
+    "line": "b3",
+    "kind": "correct",
+    "blocking": false
+   }
+  ]
+ },
+ "elapsed_seconds": 99.984
+}

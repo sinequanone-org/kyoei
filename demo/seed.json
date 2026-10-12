@@ -1,0 +1,24 @@
+{
+ "files": [
+  {
+   "path": "README.md",
+   "text": "# shared-sdk\n\nA small HTTP client SDK built by three organizations.\n"
+  },
+  {
+   "path": "src/retry.ts",
+   "text": "export interface RetryOptions { retries: number; baseMs: number }\n\nexport function delayFor(attempt: number, o: RetryOptions): number {\n  return o.baseMs * 2 ** attempt;\n}\n"
+  },
+  {
+   "path": "src/ratelimit.ts",
+   "text": "export class RateLimiter {\n  constructor(readonly perSecond: number) {}\n}\n"
+  },
+  {
+   "path": "src/sign.ts",
+   "text": "// Request signing. Owned by Birch.\nexport interface Signer {\n  sign(method: string, path: string, body: string): Promise<string>;\n}\n"
+  },
+  {
+   "path": "src/client.ts",
+   "text": "export interface ClientOptions { baseUrl: string }\n\nexport async function request(o: ClientOptions, path: string): Promise<Response> {\n  return fetch(new URL(path, o.baseUrl));\n}\n"
+  }
+ ]
+}

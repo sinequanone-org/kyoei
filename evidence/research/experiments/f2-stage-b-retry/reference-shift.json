@@ -1,0 +1,35 @@
+{
+ "kind": "post-hoc-reference-shift",
+ "scope": "118 units agreed and definite in stage B; simulated labels only",
+ "inputs": {
+  "research/experiments/f2-v2/labels.json": "bc760be99f4cef3d46193a473c7244f53c5425abff11bdafe73fcc58a003c982",
+  "research/experiments/f2-stage-b-retry/labels.json": "398b8d7c5b2c43fd6c10bdce77178a461106ae05f9eee4005f81fb8e70974110"
+ },
+ "counts": [
+  {
+   "stage_a": "depends",
+   "stage_b": "depends",
+   "units": 27
+  },
+  {
+   "stage_a": "depends",
+   "stage_b": "does-not-depend",
+   "units": 1
+  },
+  {
+   "stage_a": "disputed",
+   "stage_b": "depends",
+   "units": 12
+  },
+  {
+   "stage_a": "does-not-depend",
+   "stage_b": "depends",
+   "units": 21
+  },
+  {
+   "stage_a": "does-not-depend",
+   "stage_b": "does-not-depend",
+   "units": 57
+  }
+ ]
+}

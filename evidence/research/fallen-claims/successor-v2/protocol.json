@@ -1,0 +1,69 @@
+{
+  "id": "kyoei-fallen-claims-v2",
+  "status": "draft-not-authorized-for-scoring",
+  "predecessor_sha256": "fe766a24562025a7fd9421bd2d812fb1302f82f1c9b9178d42dac184d0f55b95",
+  "reason": "Replace locator proxy truth with context-reviewed reference labels. Repair invalid F2 evidence without rewriting the original contract.",
+  "exposure": "The prior SIDH population and keyword results have been inspected. Reuse is a retrospective development study, not a fresh confirmatory test.",
+  "freeze_requires": [
+    "Exact source-checked unit manifests, versions, claim inventories and exclusions",
+    "Calibration and evaluation partitions grouped by work, with no repeated passages used to reach the minimum",
+    "Pinned model IDs, vendors, request settings, prompts, parser and scorer hashes for every role",
+    "Separate permitted-input manifests for reviewer A, reviewer B, labeller, M3 and the M4 declarant",
+    "Timestamped publication of the complete run bundle before any model evaluation call",
+    "Immutable request and response receipts with failures retained; no fallback and no overwritten attempts",
+    "Frozen per-work sampling, abstention, effort counting and bootstrap rules"
+  ],
+  "bounded_run": {
+    "math_calibration_planned_units": 120,
+    "math_calibration_minimum_eligible": 100,
+    "sidh_pilot_planned_units": 80,
+    "sidh_pilot_minimum_reviewable": 60,
+    "label_states": [
+      "depends",
+      "does-not-depend",
+      "unknown"
+    ],
+    "source_requirement": "Exact passage, source bytes hash, text version, claim IDs and location. Verify the passage against local source bytes before a run. Store text outside the repository.",
+    "missing_rule": "Retain every planned unit and its missing reason. Do not refill or change the sample after seeing labels. An unmet minimum stops the run.",
+    "reference": "Two separate model invocations on different vendors. Neither sees the other response or method predictions. Their agreement is a simulated reference, not proof or expert ground truth.",
+    "calibration": "Evaluate a third labeller against context-reviewed reference labels. Locator extraction is a separate diagnostic. Kappa must be defined and at least 0.60 on at least 100 eligible units.",
+    "pilot": "Report disagreement, unknown coverage and effective sample size. More than 0.20 disagreement on at least 60 reviewable units stops evaluation. Do not tune for agreement.",
+    "untrusted_text": "Paper text is data, never instructions. Reviewer and declarant calls have no tools, network, filesystem access or credentials. Parse only the pinned response schema; retain failure instead of running supplied commands."
+  },
+  "comparison": {
+    "population": "Freeze the claim-level universe before inspecting method predictions. M1 and M2 need actual pinned citation edges. A missing two-step graph yields no M2 score.",
+    "order": "Collect and seal M1/M2/M3 first. Collect M4 next. Run reference reviewers separately. Score only after every receipt passes validation.",
+    "m3": "Uses pinned text, citation context, locator and S2 intent inputs. No access to reviewer labels or M4 declarations.",
+    "m4": "A separate declarant receives only the writing-time view. It sees no fall dossier, future repair, reviewer labels or M3 output. The propagation stage receives the same fall scope as M3 only after declarations are sealed. Known-case model memory remains a limitation.",
+    "report": "Separate confusion counts, false alarms, missed dependencies, coverage and per-reviewer sensitivity. Use common support and report excluded and disputed IDs. Undefined ratios are null. Never pool OpenAlex and S2 denominators.",
+    "uncertainty": "Paired bootstrap by citing work, 2000 resamples, 95 percent percentile interval, seed 20261004. Report per-case values. No superiority claim from agreement alone.",
+    "effort": "Record declaration and correction calls, configuration and setup actions, supplier and adopter code, model tokens and cost. Record human effort as unmeasured. Keep API waiting outside offline accuracy scores; report acquisition wall time separately.",
+    "decision": "An F1 difference M4 minus M3 at or below 0.05 under the agreed subset or either reviewer supports the no-added-accuracy result. Missing effort or uncertainty prevents an adoption claim."
+  },
+  "replay": {
+    "order": "Freeze a replay oracle from reviewed dependencies. Run the equipped reference before Kyoei with identical evidence, authority and automation.",
+    "story": "A contributes a method claim, B contributes a dependent analysis, C helps publish a joint output. A scoped challenge opens a reassessment task. A supported correction reaches all affected owners. A reviewer records dissent or confirms the repair. A replacement restores permitted use while unrelated work continues.",
+    "view": [
+      "affected claim",
+      "versioned evidence locator",
+      "dependency rationale",
+      "unknown or disputed state",
+      "responsible simulated institution",
+      "next permitted repair action"
+    ],
+    "measure": [
+      "missed affected claims",
+      "false alerts",
+      "repair delivery",
+      "unauthorized disclosure",
+      "unrelated work interruptions",
+      "setup and recovery calls",
+      "cumulative code and configuration cost",
+      "declaration effort"
+    ],
+    "limits": "A challenge does not prove an entire paper invalid. A managed-use refusal does not revoke public bytes or public licenses. No real researcher is assigned a simulated opinion."
+  },
+  "branch_map": "Use needs-reassessment, contested, repaired, no-identified-dependency or unknown, with dated evidence. No detected dependency is not proof of soundness.",
+  "data": "Use the existing S2 shared rate gate and complete offline snapshots. Preserve the existing no-full-text-release and source access rules. No new dependencies.",
+  "product_result": null
+}

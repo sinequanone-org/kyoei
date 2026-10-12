@@ -1,0 +1,499 @@
+{
+  "arm": "kyoei-documents",
+  "capture": {
+    "bypasses": 0,
+    "declared": [
+      {
+        "artifact": "b.table.v1",
+        "coverage": "outside-capture",
+        "label": "b-table-v1.json",
+        "mode": "import"
+      },
+      {
+        "artifact": "probe.a.note",
+        "coverage": "outside-capture",
+        "label": "meeting-note.txt",
+        "mode": "manual"
+      }
+    ],
+    "declared_shown_to_person": [
+      {
+        "coverage": "outside-capture",
+        "label": "b-table-v1.json",
+        "mode": "import",
+        "step": "probe:capture:b.table.v1"
+      },
+      {
+        "coverage": "outside-capture",
+        "label": "meeting-note.txt",
+        "mode": "manual",
+        "step": "probe:capture:probe.a.note"
+      }
+    ],
+    "exposures": [],
+    "pass": true,
+    "probe_edges": [
+      [
+        "probe.a.note",
+        "a.question",
+        "use"
+      ],
+      [
+        "probe.c.task.r2",
+        "a.method",
+        "use"
+      ],
+      [
+        "probe.c.task.r2",
+        "b.result.v1",
+        "use"
+      ]
+    ],
+    "relations": {
+      "expected": [
+        [
+          "a.challenge",
+          "challenges",
+          "c.analysis.v1"
+        ],
+        [
+          "c.analysis.v1",
+          "builds-on",
+          "b.result.v1"
+        ],
+        [
+          "c.analysis.v1",
+          "cites",
+          "a.method"
+        ],
+        [
+          "c.reproduction",
+          "reproduces",
+          "c.analysis.v1"
+        ]
+      ],
+      "observed": [
+        [
+          "a.challenge",
+          "challenges",
+          "c.analysis.v1"
+        ],
+        [
+          "c.analysis.v1",
+          "builds-on",
+          "b.result.v1"
+        ],
+        [
+          "c.analysis.v1",
+          "cites",
+          "a.method"
+        ],
+        [
+          "c.reproduction",
+          "reproduces",
+          "c.analysis.v1"
+        ]
+      ],
+      "probes": [
+        [
+          "probe.c.task.r2",
+          "supersedes",
+          "c.task.v1"
+        ]
+      ],
+      "producers": {
+        "builds-on": [
+          "agent-adapter"
+        ],
+        "challenges": [
+          "workspace"
+        ],
+        "cites": [
+          "agent-adapter"
+        ],
+        "reproduces": [
+          "workspace"
+        ],
+        "supersedes": [
+          "workspace"
+        ]
+      }
+    },
+    "release_binding": {
+      "expected": 1,
+      "extra": [],
+      "missing": [],
+      "observed": 1,
+      "ratio": 1.0,
+      "true_positive": 1,
+      "unauthorized": 0
+    },
+    "replayed_nodes": [
+      "a.question",
+      "a.method",
+      "b.table.v1",
+      "b.result.v1",
+      "c.task.v1",
+      "c.analysis.v1",
+      "a.challenge",
+      "c.reproduction",
+      "c.unrelated"
+    ],
+    "rule": "directed (child, parent, kind) over the nine replayed fixture nodes; use and release-binding counted separately; a reference counts as its origin artifact; the expected graph stays with the evaluator",
+    "source_path": "automatic: reads inside a workspace context, by a person or a delegated agent",
+    "stored_kinds": {
+      "expert-contribution": 12,
+      "foreign-reference": 4
+    },
+    "unauthorized": [],
+    "unmanaged": [
+      {
+        "child": "probe.c.copy",
+        "counted_as_capture": false,
+        "coverage": "outside-capture",
+        "finding": "text repeated without a read, relation, revision or declared input",
+        "parent": "b.result.v1"
+      }
+    ],
+    "use": {
+      "expected": 10,
+      "extra": [],
+      "missing": [],
+      "observed": 10,
+      "ratio": 1.0,
+      "true_positive": 10,
+      "unauthorized": 0
+    }
+  },
+  "checks": {
+    "agents_acted_only_through_the_adapter": true,
+    "aliases_agree_with_stored_content": true,
+    "call_before_initialize_refused": true,
+    "captured_inputs_are_store_dependencies": true,
+    "declared_inputs_show_coverage_limit": true,
+    "delegation_record_matches_principal": true,
+    "delegation_record_shown_before_dispatch": true,
+    "driver_completed": true,
+    "driver_imports_only_process_and_text_modules": true,
+    "every_action_through_a_client": true,
+    "every_outcome_matched_expectation": true,
+    "every_replayed_event_ran": true,
+    "fault_probes_labelled": true,
+    "five_relations_have_native_producers": true,
+    "guard_silent": true,
+    "nodes_stopped_cleanly": true,
+    "private_table_stays_at_b": true,
+    "releases_and_references_within_grants": true,
+    "required_edges_captured_exactly": true,
+    "undeclared_copy_reported_unmanaged": true,
+    "zero_bypasses_on_fixture_nodes": true,
+    "zero_unauthorized_edges": true
+  },
+  "continuation": null,
+  "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+  "counts": {
+    "actions": 72,
+    "by_client": {
+      "agent-adapter": 18,
+      "workspace": 54
+    },
+    "by_fault": {
+      "delegation-escalation": 6,
+      "prohibited-disclosure": 3
+    },
+    "by_outcome": {
+      "allow": 60,
+      "defer": 1,
+      "deny": 11
+    },
+    "clock": [
+      90,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      116,
+      120,
+      191
+    ],
+    "nodes_stopped": {
+      "a": 0,
+      "b": 0,
+      "c": 0
+    },
+    "snapshots": {
+      "a": {
+        "captured_inputs": 3,
+        "contexts_closed": 0,
+        "contexts_open": 0,
+        "contexts_published": 4,
+        "declared_inputs": 1,
+        "delegations": 0,
+        "nodes": 5,
+        "receipts": 13,
+        "references": 1,
+        "relations": 1,
+        "releases": 3
+      },
+      "b": {
+        "captured_inputs": 2,
+        "contexts_closed": 0,
+        "contexts_open": 1,
+        "contexts_published": 1,
+        "declared_inputs": 1,
+        "delegations": 1,
+        "nodes": 3,
+        "receipts": 11,
+        "references": 1,
+        "relations": 0,
+        "releases": 2
+      },
+      "c": {
+        "captured_inputs": 9,
+        "contexts_closed": 0,
+        "contexts_open": 1,
+        "contexts_published": 6,
+        "declared_inputs": 0,
+        "delegations": 1,
+        "nodes": 8,
+        "receipts": 20,
+        "references": 2,
+        "relations": 4,
+        "releases": 1
+      }
+    }
+  },
+  "deviations": [
+    "Only events e01-e14 and e17 are replayed; e15-e16 (shared draft, assess and publish) and e18 onward belong to P1.3-P1.7.",
+    "e01 propose-agreement is recorded as A accepting the agreement digest locally, as in P1.1.",
+    "C releases c.analysis.v1 to a.lead after e12 so that A can challenge it at e13; the fixture has no event for that release.",
+    "Release is of a whole contribution; the fixture's field-level release (\"exact result fields only\") is not implemented.",
+    "Each fault probe ran once on one fixture prefix; the frozen reset rule (fresh prefix, replay per condition) is not applied in this enabling run.",
+    "Coverage is computed over the nine replayed nodes, not the full fixture; the six contract measures stay null until P1.7.",
+    "The agents' reasoning is scripted in the driver; no model runs behind the adapter.",
+    "The driver acts for every participant, so C's e09 request names B's table digest, which B's client printed at e05; a C outside the driver would not know it.",
+    "The delegation-escalation probes cover resources, budget, expiry, an unoffered tool, a call before initialization and an agent using a person's client; a purpose change is not probed. No client command asks a peer for its dependency graph, so that part of prohibited-disclosure is not probed.",
+    "Agent keys are created with the workspace client at setup; agents act only through the adapter after.",
+    "Probe publications (probe.*) are outside the fixture and are reported separately."
+  ],
+  "drafts": null,
+  "environment": {
+    "implementation": "CPython",
+    "machine": "arm64",
+    "processes": {
+      "agent_adapters": 3,
+      "driver": 1,
+      "nodes": 3,
+      "workspace_clients": 54
+    },
+    "python": "3.13.12",
+    "signature": "ML-DSA-65",
+    "system": "Darwin",
+    "transport": "local Unix sockets; length-prefixed canonical JSON"
+  },
+  "fault_classes": {
+    "exercised": {
+      "delegation-escalation": [
+        "e07:call-before-initialize",
+        "e07:call-release-tool",
+        "e12:publish-beyond-budget",
+        "e12:read:c.task.v1",
+        "probe:agent-release-through-cli",
+        "probe:read-after-expiry"
+      ],
+      "prohibited-disclosure": [
+        "e09:read:absent-artifact",
+        "probe:release-peer-reference",
+        "probe:release-private-source"
+      ]
+    },
+    "not_exercised": [
+      "concurrent-correction-use",
+      "dependency-corruption",
+      "duplicate-message",
+      "expired-message",
+      "forged-actor",
+      "forged-message",
+      "git-history-change",
+      "interrupted-write",
+      "issuer-outage",
+      "key-rotation",
+      "license-conflict",
+      "lost-push",
+      "malicious-source",
+      "new-purpose",
+      "observed-withdrawal-lease",
+      "reordered-status",
+      "restart",
+      "stale-draft-base",
+      "unreleased-draft-input",
+      "wrong-owner"
+    ],
+    "scope": "each listed probe ran once and covers part of its class; the frozen fault replays are P1.7"
+  },
+  "freshness_mode": "owner-signed view at each person's read; later local uses bounded by the release expiry; no status pull (P1.4/P1.6)",
+  "independent_administration": false,
+  "kind": "workspace-capture-diagnostic",
+  "limits": [
+    "One operator starts, pins and administers all three nodes and creates the administrators' homes; this is not separate administration.",
+    "The adapter is MCP-shaped and has not been run under a real MCP host (docs/AGENT-ADAPTER-REVIEW.md).",
+    "The guard is an audit-hook tripwire for a driver written in this repository, not a sandbox; the driver's imports are also checked statically.",
+    "A released view shows its release recipients, authors and revision to each reader.",
+    "A local reference carries the recipients of the latest owner view; nothing is pulled after a person's read, so a later withdrawal is not seen here (P1.4/P1.6).",
+    "Copied plaintext and declared inputs are outside capture; the unmanaged scan is an exact-substring heuristic of at least 24 characters over published bodies, not a detector.",
+    "A context opened by a refused read stays open until the next publication from it; published contexts are kept.",
+    "Nodes answer one connection at a time; a stalled client delays others by up to the 10 s socket timeout.",
+    "All nodes share one simulated clock; clock skew is not modelled.",
+    "Nodes talk over local Unix sockets, not a network or TLS; the sockets carry signed requests.",
+    "Revocation is not erasure; signatures authenticate keys and requests, not expertise or authority."
+  ],
+  "measures": {
+    "application_code": null,
+    "concurrent_throughput": null,
+    "configuration_burden": null,
+    "dependency_coverage": null,
+    "operational_failures": null,
+    "recovery_steps": null
+  },
+  "milestone": "P1.2",
+  "missing_fields": [
+    "application_code",
+    "concurrent_throughput",
+    "configuration_burden",
+    "dependency_coverage",
+    "operational_failures",
+    "recovery_steps"
+  ],
+  "privacy": {
+    "at_owner": [
+      "row_field",
+      "table_alias",
+      "table_digest",
+      "table_label",
+      "table_sha256",
+      "table_text"
+    ],
+    "elsewhere": {
+      "a": [],
+      "c": []
+    },
+    "in_driver_record": []
+  },
+  "product_result": null,
+  "raw_event_path": "research/experiments/p1-2/events.json",
+  "scenario": {
+    "events_not_replayed": [
+      "e15",
+      "e16",
+      "e18",
+      "e19",
+      "e20",
+      "e21",
+      "e22",
+      "e23",
+      "e24",
+      "e25",
+      "e26",
+      "e27",
+      "e28",
+      "e29",
+      "e30",
+      "e31",
+      "e32",
+      "e33",
+      "e34",
+      "e35",
+      "e36",
+      "e37",
+      "e38",
+      "e39",
+      "e40",
+      "e41",
+      "e42"
+    ],
+    "events_replayed": [
+      "e01",
+      "e02",
+      "e03",
+      "e04",
+      "e05",
+      "e06",
+      "e07",
+      "e08",
+      "e09",
+      "e10",
+      "e11",
+      "e12",
+      "e13",
+      "e14",
+      "e17"
+    ],
+    "id": "p1-three-institutions-v1",
+    "version": 1
+  },
+  "source": {
+    "commits_made": {
+      "a": 0,
+      "b": 0,
+      "c": 0
+    },
+    "commits_removed_by_rewrite": {
+      "a": 0,
+      "b": 0,
+      "c": 0
+    },
+    "leaks": [],
+    "located": true,
+    "locators": {
+      "a": 0,
+      "b": 0,
+      "c": 0
+    },
+    "locators_naming_removed_commits": 0,
+    "mode": "documents"
+  },
+  "source_digests": {
+    "research/priority-one/contract.json": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+    "research/priority-one/expected-graph.json": "7b3e8ae14ddf2eee26624f0c0a034743304c84900d9afb599436033a982eb70d",
+    "research/priority-one/scenario.json": "8118f3e0d5340ce7c0daab04784ade8dd4e69c3618960066a49912262e396b58",
+    "scripts/actor_request.py": "7c86a7a02f5aa2d27efc817cc7924590bebac20ab24378418acdb13f9bc98542",
+    "scripts/agent_adapter.py": "5736e05c2043d964a4525d8aab185d66f1e52b1690d1e8b3d2a84722ba25dd67",
+    "scripts/contributions.py": "47f1d7a9a523aeb22a10923fca9ac5ecc2ec197dc75b4e52d30c673af9bc24d3",
+    "scripts/git_fixture.py": "8a5c66329db9fe06400e015eff3ebf1e6e56e10ddd17c58ea7a328ed95210392",
+    "scripts/git_source.py": "6bdfaa4393a172aa0af9c7cfec1c3fda639ad65183348f8f232d4028e4e4df1e",
+    "scripts/institution_identity.py": "1be08a8bb5e40acaa0f8cecd837b99cf36fd3a9b9b2fe16950d0562e2b004a91",
+    "scripts/institution_server.py": "3c58433806fc8b17d5892cf214e5c241863d1a78556561a2388308d6b7dd2733",
+    "scripts/node_wire.py": "0a319bbe03f3ea8e75926857220dfaba1f034ebd6aeb5f55da77cad571021ca6",
+    "scripts/pq_crypto.py": "78dd5b89fff8a62ba69343329198f8336290ec1ac35175b99a28363f5790bf99",
+    "scripts/review_custody.py": "22ecc78e149d7a71483572315f154dc9be6b82e8bebd00e8b94cdc3511e4f29c",
+    "scripts/review_verdict.py": "3f1eddb689749cb4136d8cd953ea8ff3c6720d6ee5272c32ea504115da8eb8aa",
+    "scripts/shared_draft.py": "f3816a52f4ff925cf7f4fc3a6dc63f4d70992ff0b0d66461bd6de7e73b9461b6",
+    "scripts/workspace.py": "0f62d750eb065831923031afc62fbdc4ada0b1ac7f63861e344ba070cbc63626",
+    "scripts/workspace_capture.py": "4b81420682739dd2ca5b41fd965a3a13b35a819c7b266275870c353f409f16d6",
+    "scripts/workspace_client.py": "d04dd66cca9a000e620f217844ab5b37d870fab6db7cff6bcfdeec45cc3ef946",
+    "scripts/workspace_diagnostic.py": "0317b66aaff5759ab21e00ebe63de8dfec854aee723b5749f6909c6dd2871530",
+    "scripts/workspace_driver.py": "a00d7a8004ab55a15beb7f728f055137e35eb0d48222a536c14c29efc8766615",
+    "scripts/workspace_guard.py": "a6fa121717592966d952ca6faa77cd3206407e5f9ed590d7537dfe3dec3b1544"
+  },
+  "source_mode": "documents",
+  "status": "enabling",
+  "timing": {
+    "max": 430.478,
+    "p50": 145.636,
+    "p95": 300.726,
+    "scope": "driver wall time per client action, including process start; one local run",
+    "total_s": 11.523,
+    "unit": "ms"
+  },
+  "timing_path": "research/experiments/p1-2/timings.json"
+}

@@ -1,0 +1,91 @@
+{
+ "M3": "Sealed stage A labeller outputs, re-parsed from retained provider responses. Passage, locator, bibliography; no S2 intents exist for these mathematics units.",
+ "M4": "Same Google model as M3, complete citing source, simulated declaration. No fall dossier or prior labels. No real author declaration is claimed.",
+ "decision": "Retrospective method diagnostic only. Report paired F1 difference with work-cluster interval. Do not apply the SIDH/F3 falsifier on mathematics or infer an adoption advantage.",
+ "effort": "Count every call, retry, token and provider cost. Report M3 original cost for all 160 units separately from reused selected labels. Human effort is unmeasured.",
+ "files": {
+  "research/fallen-claims/successor-v2/contract.json": "e52146e0e4ce3fb972eea8d0711f727bfdb0416592777dea5775a87022708c06",
+  "research/fallen-claims/successor-v2/prompts/case-notes.json": "a6095a954b0ae96f77532bca2136cd30528677dbfb7407267c23ef43549cf645",
+  "research/fallen-claims/successor-v2/stage-b/declarant.md": "093e87bbbb3d9e7ae5e73e3d552f0209721f767b71ebbd84317f867ed3c3b04b",
+  "research/fallen-claims/successor-v2/stage-b/m3-receipts.json": "c18b7000ac1d6102ac047a8926791255a0474205131c9d65b72d2cdc5bc4f580",
+  "research/fallen-claims/successor-v2/stage-b/m3.json": "773575577548cfa920158e297b1da95a90492554a5bc03a3596a86e0b0207786",
+  "research/fallen-claims/successor-v2/stage-b/reviewer.md": "d4adcef2a0cb8507b4079ca19e9c126bb98b7562019179d3e0832651c6700f02",
+  "research/fallen-claims/successor-v2/stage-b/units.json": "b1eac1e88df2633b1069a3567266539dba00a4fa60eebc5f50883883b0132a64",
+  "scripts/f2_labels.py": "f2dc47b464bcf653e4937515ef1339825a7c247a5716e2eacf3c00b386df8759",
+  "scripts/f2_stage_b.py": "925ce0c172b87f013e52cd48ffa1e3d171c0342be26e6a1b4d6eafa39627f5cc",
+  "scripts/f2_v2.py": "0530e5c11a985e10e49af11668193db0d437a68ecec484b57df2be6aa4ad9d3a"
+ },
+ "frozen_at": "2026-10-04T12:42:41+00:00",
+ "id": "f2-v2-stage-b-math-full-context",
+ "limits": [
+  "Same inspected calibration population; no held-out generalization.",
+  "Mathematics dependence is not dependence on a documented failed theorem.",
+  "Dataset bytes are pinned; arXiv version labels remain unproven.",
+  "Simulated model agreement is not expert truth or proof of correctness.",
+  "M4 tests added context, not institutional software or actual author effort.",
+  "Only the citing source is provided; the cited theorem is not proved by this experiment.",
+  "Long-source exclusions limit coverage. No SIDH or M1/M2 score is produced."
+ ],
+ "minimum_agreed_reference": 100,
+ "order": "M3 sealed before this freeze. M4 and full-context reviewers may run concurrently; scoring starts only after collection.",
+ "population": {
+  "excluded": 24,
+  "planned": 136,
+  "rule": "All stage A mathematics units with complete source <=160000 bytes; no label-based selection.",
+  "works": 92
+ },
+ "predecessor_sha256": "e52146e0e4ce3fb972eea8d0711f727bfdb0416592777dea5775a87022708c06",
+ "product_result": null,
+ "reference": "Separate Anthropic and OpenAI calls on the complete source; no prior labels or M3/M4 output in inputs.",
+ "routes": {
+  "M4": {
+   "max_tokens": 8000,
+   "model": "google/gemini-3.8-flash",
+   "provider": {
+    "data_collection": "deny",
+    "require_parameters": true
+   },
+   "timeout_seconds": 900,
+   "transport": "openrouter-chat-completions",
+   "vendor": "google"
+  },
+  "reviewer-a": {
+   "max_tokens": 8000,
+   "model": "anthropic/claude-sonnet-5.5",
+   "provider": {
+    "data_collection": "deny",
+    "require_parameters": true
+   },
+   "timeout_seconds": 900,
+   "transport": "openrouter-chat-completions",
+   "vendor": "anthropic"
+  },
+  "reviewer-b": {
+   "max_tokens": 8000,
+   "model": "openai/gpt-6-sol",
+   "provider": {
+    "data_collection": "deny",
+    "require_parameters": true
+   },
+   "timeout_seconds": 900,
+   "transport": "openrouter-chat-completions",
+   "vendor": "openai"
+  }
+ },
+ "run": {
+  "batching": "One complete work per request; targets sorted by unit_id.",
+  "max_attempts": 2,
+  "max_cost_usd": 20,
+  "missing": "No fallback. Exhausted retries block primary comparison. Unknown stays unknown.",
+  "request_reserve_usd": 1,
+  "workers": 6
+ },
+ "scoring": {
+  "high_quantile": 0.975,
+  "interval_rule": "Percentile bootstrap over citing works, sorted values, index floor(q * (n - 1)).",
+  "low_quantile": 0.025,
+  "resamples": 2000,
+  "seed": 20261004
+ },
+ "status": "frozen-before-stage-b-calls"
+}

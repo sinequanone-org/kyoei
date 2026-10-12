@@ -1,0 +1,340 @@
+{
+  "changes": [
+    {
+      "active_nodes": [
+        "a.question",
+        "a.method",
+        "b.table.v1",
+        "b.result.v1",
+        "c.task.v1",
+        "c.analysis.v1",
+        "a.challenge",
+        "c.reproduction",
+        "joint.draft.v1",
+        "joint.output.v1",
+        "c.unrelated"
+      ],
+      "affected": [
+        "b.table.v1",
+        "b.result.v1",
+        "c.task.v1",
+        "c.analysis.v1",
+        "a.challenge",
+        "c.reproduction",
+        "joint.draft.v1",
+        "joint.output.v1"
+      ],
+      "event": "e19",
+      "id": "correction-v1",
+      "recipient_visible_root": "b.result.v1",
+      "repair": "Request owner-approved replacement result; recompute affected analysis/draft; explicit A/B/C assessment. Acknowledgment alone is insufficient.",
+      "source": "b.table.v1"
+    },
+    {
+      "active_nodes": [
+        "a.question",
+        "a.method",
+        "b.table.v1",
+        "b.result.v1",
+        "c.task.v1",
+        "c.analysis.v1",
+        "a.challenge",
+        "c.reproduction",
+        "joint.draft.v1",
+        "joint.output.v1",
+        "c.unrelated",
+        "b.table.v2",
+        "b.result.v2",
+        "c.task.v2",
+        "c.analysis.v2",
+        "joint.draft.v2",
+        "joint.output.v2",
+        "c.local-draft"
+      ],
+      "affected": [
+        "b.result.v2",
+        "c.task.v2",
+        "c.analysis.v2",
+        "joint.draft.v2",
+        "joint.output.v2"
+      ],
+      "event": "e32",
+      "id": "withdrawal-v2",
+      "recipient_visible_root": "b.result.v2",
+      "repair": "Request a separately authorized replacement or remove the withdrawn input and re-derive. Never revive this grant.",
+      "source": "b.result.v2"
+    },
+    {
+      "active_nodes": [
+        "a.question",
+        "a.method",
+        "b.table.v1",
+        "b.result.v1",
+        "c.task.v1",
+        "c.analysis.v1",
+        "a.challenge",
+        "c.reproduction",
+        "joint.draft.v1",
+        "joint.output.v1",
+        "c.unrelated",
+        "b.table.v2",
+        "b.result.v2",
+        "c.task.v2",
+        "c.analysis.v2",
+        "joint.draft.v2",
+        "joint.output.v2",
+        "c.local-draft",
+        "c.offline-draft"
+      ],
+      "affected": [
+        "b.result.v2",
+        "c.task.v2",
+        "c.analysis.v2",
+        "joint.draft.v2",
+        "joint.output.v2",
+        "c.offline-draft"
+      ],
+      "event": "e37",
+      "id": "withdrawal-after-offline-draft",
+      "recipient_visible_root": "b.result.v2",
+      "repair": "Discard or replace affected draft inputs before exchange; retain permitted history only.",
+      "source": "b.result.v2"
+    }
+  ],
+  "edges": [
+    {
+      "child": "a.method",
+      "kind": "use",
+      "parent": "a.question"
+    },
+    {
+      "child": "b.result.v1",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "c.task.v1",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "c.task.v1",
+      "kind": "use",
+      "parent": "b.result.v1"
+    },
+    {
+      "child": "c.analysis.v1",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "c.analysis.v1",
+      "kind": "use",
+      "parent": "b.result.v1"
+    },
+    {
+      "child": "a.challenge",
+      "kind": "use",
+      "parent": "c.analysis.v1"
+    },
+    {
+      "child": "c.reproduction",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "c.reproduction",
+      "kind": "use",
+      "parent": "b.result.v1"
+    },
+    {
+      "child": "c.reproduction",
+      "kind": "use",
+      "parent": "c.analysis.v1"
+    },
+    {
+      "child": "joint.draft.v1",
+      "kind": "use",
+      "parent": "a.question"
+    },
+    {
+      "child": "joint.draft.v1",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "joint.draft.v1",
+      "kind": "use",
+      "parent": "b.result.v1"
+    },
+    {
+      "child": "joint.draft.v1",
+      "kind": "use",
+      "parent": "c.analysis.v1"
+    },
+    {
+      "child": "joint.draft.v1",
+      "kind": "use",
+      "parent": "a.challenge"
+    },
+    {
+      "child": "joint.draft.v1",
+      "kind": "use",
+      "parent": "c.reproduction"
+    },
+    {
+      "child": "joint.output.v1",
+      "kind": "use",
+      "parent": "joint.draft.v1"
+    },
+    {
+      "child": "b.result.v2",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "c.task.v2",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "c.task.v2",
+      "kind": "use",
+      "parent": "b.result.v2"
+    },
+    {
+      "child": "c.analysis.v2",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "c.analysis.v2",
+      "kind": "use",
+      "parent": "b.result.v2"
+    },
+    {
+      "child": "joint.draft.v2",
+      "kind": "use",
+      "parent": "a.question"
+    },
+    {
+      "child": "joint.draft.v2",
+      "kind": "use",
+      "parent": "a.method"
+    },
+    {
+      "child": "joint.draft.v2",
+      "kind": "use",
+      "parent": "b.result.v2"
+    },
+    {
+      "child": "joint.draft.v2",
+      "kind": "use",
+      "parent": "c.analysis.v2"
+    },
+    {
+      "child": "joint.output.v2",
+      "kind": "use",
+      "parent": "joint.draft.v2"
+    },
+    {
+      "child": "c.local-draft",
+      "kind": "use",
+      "parent": "c.unrelated"
+    },
+    {
+      "child": "c.offline-draft",
+      "kind": "use",
+      "parent": "b.result.v2"
+    },
+    {
+      "child": "c.offline-draft",
+      "kind": "use",
+      "parent": "c.analysis.v2"
+    },
+    {
+      "child": "b.result.v1",
+      "kind": "release-binding",
+      "parent": "b.table.v1"
+    },
+    {
+      "child": "b.result.v2",
+      "kind": "release-binding",
+      "parent": "b.table.v2"
+    }
+  ],
+  "fixture": "p1-three-institutions-v1",
+  "nodes": [
+    "a.question",
+    "a.method",
+    "b.table.v1",
+    "b.result.v1",
+    "c.task.v1",
+    "c.analysis.v1",
+    "a.challenge",
+    "c.reproduction",
+    "joint.draft.v1",
+    "joint.output.v1",
+    "c.unrelated",
+    "b.table.v2",
+    "b.result.v2",
+    "c.task.v2",
+    "c.analysis.v2",
+    "joint.draft.v2",
+    "joint.output.v2",
+    "c.local-draft",
+    "c.offline-draft"
+  ],
+  "orientation": "child depends on parent; release-binding propagates source changes through owner-controlled release without granting recipients access to private parent.",
+  "origin": "Hand-authored from the scenario and PRD before capture/runtime implementation. Not exported by any store or capture code. Same project author, not an independent institution.",
+  "privacy": "Full expected graph is evaluator-local. A/C see permitted release handles and their own affected outputs, never B private table aliases, content, count or internal edges.",
+  "relation_policy": "Relations are provenance, not automatically permission edges. Replacement/history links do not revive or inherit authorization.",
+  "relations": [
+    {
+      "child": "c.analysis.v1",
+      "parent": "b.result.v1",
+      "relation": "builds-on"
+    },
+    {
+      "child": "c.analysis.v1",
+      "parent": "a.method",
+      "relation": "cites"
+    },
+    {
+      "child": "a.challenge",
+      "parent": "c.analysis.v1",
+      "relation": "challenges"
+    },
+    {
+      "child": "c.reproduction",
+      "parent": "c.analysis.v1",
+      "relation": "reproduces"
+    },
+    {
+      "child": "b.table.v2",
+      "parent": "b.table.v1",
+      "relation": "supersedes"
+    },
+    {
+      "child": "b.result.v2",
+      "parent": "b.result.v1",
+      "relation": "supersedes"
+    },
+    {
+      "child": "c.analysis.v2",
+      "parent": "c.analysis.v1",
+      "relation": "supersedes"
+    },
+    {
+      "child": "joint.output.v2",
+      "parent": "joint.output.v1",
+      "relation": "supersedes"
+    },
+    {
+      "child": "joint.draft.v2",
+      "parent": "a.challenge",
+      "relation": "cites"
+    }
+  ],
+  "version": 1
+}

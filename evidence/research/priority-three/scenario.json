@@ -1,0 +1,283 @@
+{
+  "id": "p3-revisit-v1",
+  "version": 1,
+  "mode": "simulation",
+  "purpose": "p3-revisit",
+  "agreement": {
+    "terms": "p3-revisit collaboration agreement v1"
+  },
+  "institutions": [
+    "a",
+    "b",
+    "c"
+  ],
+  "nodes": [
+    {
+      "id": "p3.import.checker-244",
+      "kind": "platform-import",
+      "author": null,
+      "bytes_revocable": false,
+      "dissent_by": [],
+      "human_origin": false,
+      "license": "Apache-2.0",
+      "official_result": false,
+      "stores_code": false,
+      "supersedes": null
+    }
+  ],
+  "imports": {
+    "p3.import.checker-244": {
+      "id": "eip8200-checker-244",
+      "kind": "imported-record",
+      "title": "EIP-8200 checker #244",
+      "source": "yukon.org",
+      "source_id": "eip8200-challenges/pull/244",
+      "year": 2025
+    }
+  },
+  "actors": [
+    {
+      "id": "a.lead",
+      "institution": "a",
+      "kind": "human"
+    },
+    {
+      "id": "b.researcher",
+      "institution": "b",
+      "kind": "human"
+    },
+    {
+      "id": "c.specialist",
+      "institution": "c",
+      "kind": "human"
+    }
+  ],
+  "isolation": {
+    "private": [
+      "b.private-rows from collaboration 2"
+    ],
+    "purpose_bound_probes": [
+      {
+        "actor": "b.researcher",
+        "action": "use p3.joint.output for purpose p2-continuation",
+        "expected": "new-grant-required"
+      },
+      {
+        "actor": "c.specialist",
+        "action": "use p3.joint.output for purpose p2-continuation",
+        "expected": "new-grant-required"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "g01",
+      "action": "propose-agreement",
+      "actor": "a.lead",
+      "inputs": [],
+      "outputs": [],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g02",
+      "action": "initiate-transport",
+      "actor": "a.lead",
+      "inputs": [],
+      "outputs": [],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g03",
+      "action": "enroll-institution",
+      "actor": "a.lead",
+      "inputs": [],
+      "outputs": [],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g04",
+      "action": "enroll-institution",
+      "actor": "a.lead",
+      "inputs": [],
+      "outputs": [],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g05",
+      "action": "import-record",
+      "actor": "a.lead",
+      "inputs": [
+        "p3.import.checker-244"
+      ],
+      "outputs": [
+        "p3.import.checker-244"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g06",
+      "action": "originate",
+      "actor": "b.researcher",
+      "inputs": [],
+      "outputs": [
+        "p3.b.method"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "relation": "builds-on",
+      "target": "p3.import.checker-244"
+    },
+    {
+      "id": "g07",
+      "action": "originate",
+      "actor": "c.specialist",
+      "inputs": [],
+      "outputs": [
+        "p3.c.observation"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "relation": "builds-on",
+      "target": "p3.import.checker-244"
+    },
+    {
+      "id": "g08",
+      "action": "draft",
+      "actor": "a.lead",
+      "inputs": [
+        "p3.b.method",
+        "p3.c.observation"
+      ],
+      "outputs": [
+        "p3.draft"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g09",
+      "action": "mark-signoff",
+      "actor": "b.researcher",
+      "inputs": [
+        "p3.draft"
+      ],
+      "outputs": [],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g10",
+      "action": "mark-signoff",
+      "actor": "c.specialist",
+      "inputs": [
+        "p3.draft"
+      ],
+      "outputs": [],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g11",
+      "action": "publish-release",
+      "actor": "a.lead",
+      "inputs": [
+        "p3.draft"
+      ],
+      "outputs": [
+        "p3.joint.output"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "g12",
+      "action": "correction",
+      "actor": "b.researcher",
+      "inputs": [
+        "p3.b.method"
+      ],
+      "outputs": [
+        "p3.b.method.v2"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g13",
+      "action": "draft",
+      "actor": "a.lead",
+      "inputs": [
+        "p3.b.method.v2",
+        "p3.c.observation"
+      ],
+      "outputs": [
+        "p3.draft.v2"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      }
+    },
+    {
+      "id": "g14",
+      "action": "publish-release",
+      "actor": "a.lead",
+      "inputs": [
+        "p3.draft.v2"
+      ],
+      "outputs": [
+        "p3.joint.output.v2"
+      ],
+      "expected": {
+        "decision": "allow",
+        "reason": null
+      },
+      "license": "CC-BY-4.0",
+      "supersedes": "p3.joint.output"
+    }
+  ],
+  "fault_cases": [
+    {
+      "id": "stale-draft-base",
+      "deny_event": "g12",
+      "deny_reason": "stale-base",
+      "allow_event": "g06"
+    },
+    {
+      "id": "wrong-purpose",
+      "deny_event": "g08",
+      "deny_reason": "wrong-purpose",
+      "allow_event": "g08"
+    }
+  ]
+}

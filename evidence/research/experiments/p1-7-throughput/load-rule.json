@@ -1,0 +1,31 @@
+{
+ "amended": {
+  "at": "2026-10-03T01:03:39+0200",
+  "before": "any measured Kyoei cell",
+  "reason": "the sampler criterion needs cell wall-clock windows the harness does not record; the harness is not edited while the reference arm runs because its report binds the harness digest",
+  "replaces_sha256": "3e74103fb8335ca99c331994b4bd7906b1f78c99f021e890047609eba6f944ca"
+ },
+ "comparison": [
+  "A cell key is (workload, actors, issuer_delay_ms, repetition).",
+  "A key contaminated in any arm is excluded from the paired throughput comparison for all arms.",
+  "Report per arm: cells measured, cells contaminated, and medians over all cells and over clean keys.",
+  "If a (workload, actors, delay) group keeps fewer than 3 clean repetitions in any arm, its throughput comparison is null with that reason, never estimated.",
+  "No cell is rerun and the frozen cell set is unchanged."
+ ],
+ "contaminated_if": [
+  "load_average_at_start[0] > threshold",
+  "load_average_at_end[0] > threshold",
+  "any recorded fixture_failures entry has load_average[0] > threshold"
+ ],
+ "context": "load-<arm>.tsv (30 s samples) is reported beside each arm as context; cells carry no wall-clock window, so it does not classify cells.",
+ "frozen_at": "2026-10-03T01:03:21+0200",
+ "frozen_before": "any measured Kyoei cell; the qualified reference grid was at cell 23 of 80 when this was written",
+ "kind": "p1-7-throughput-load-rule",
+ "spec_digest": "9fe2b572d19dd218746942498605aab40cdc51716e92685388feecdb2dfedb52",
+ "threshold": {
+  "basis": "load1 above the core count means queued runnable work beyond the host; the measured processes themselves add at most actors+3",
+  "cpus": 16,
+  "load1_above": 16
+ },
+ "why": "The host is shared; another session drove load1 to 402 during the reference grid (01:00). The contract requires identical host budgets and recording machine load; it does not allow population inference from one-host timing."
+}

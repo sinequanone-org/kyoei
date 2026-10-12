@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/ratelimit.ts",
+   "text": "export class RateLimiter {\n  private tokens: number;\n  constructor(readonly perSecond: number, readonly burst = perSecond) {\n    this.tokens = burst;\n  }\n  take(): boolean {\n    if (this.tokens < 1) return false;\n    this.tokens -= 1;\n    return true;\n  }\n}\n"
+  }
+ ],
+ "rationale": "Add a burst option to the rate limiter.",
+ "delayMs": 3300
+}

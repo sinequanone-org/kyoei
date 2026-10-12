@@ -1,0 +1,81 @@
+{
+  "kind": "p1-7-throughput-spec",
+  "frozen": "2026-10-02",
+  "status": "frozen-before-measured-runs",
+  "contract_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+  "predictions_digest": "07b7ff19938a97ae90a4d4b0602561bc4319d35bcbea2622326366d1e0ed6fa1",
+  "purpose": "Operational definitions the contract's concurrent_throughput text leaves open, fixed for every arm before any measured cell runs. Amends nothing in P1.0.",
+  "arms": [
+    "reference",
+    "kyoei-documents",
+    "kyoei-git"
+  ],
+  "order": "Measured cells run the reference first; a measured Kyoei run names a measured reference report with this spec's digest, or it refuses to start. Smoke runs are labeled diagnostic and enter no measure.",
+  "cells": {
+    "actors": [
+      1,
+      3,
+      9,
+      27
+    ],
+    "issuer_delay_ms": [
+      0,
+      250
+    ],
+    "workloads": [
+      "retrieval-only",
+      "mixed"
+    ],
+    "repetitions": 5,
+    "warmup_operations_per_actor": 5,
+    "measured_operations_per_actor": 20,
+    "timeout_ms": 5000
+  },
+  "fixture": {
+    "prefix": "Each arm's own driver runs the frozen scenario e01-e18 (shared draft and joint.output.v1 included) and stops with every node running: the reference through reference_deployment_diagnostic's operator, Kyoei through the P1.5 driver, which also runs its P1.2 probes after e18.",
+    "actors": "One distinct human actor per concurrent client, c.load01-c.loadNN, enrolled by C's administrator: in the reference before its layers compose (membership is fixed afterwards), in Kyoei after the prefix. Both arms cap open contexts at 64 per actor, so one shared actor cannot carry 27 clients.",
+    "release": "B's steward publishes b.load.result, a document with no inputs, and releases it to the load actors for the investigation purpose, at most 16 recipients per release. Not b.result.v1: Kyoei binds B's release of A-derived work to the recipients of the A release B received, so new recipients would need e04-e08 rerun. The read still depends on B's status alone.",
+    "drafts": "A's lead opens one harness draft per group of at most 14 load actors (participants: a.lead plus the group; both arms cap participants at 16) and writes its first revision with no inputs.",
+    "fresh": "Every cell builds its own fixture in a new directory with new keys; no state is reused across cells, arms or repetitions.",
+    "nodes": "19 fixture artifacts, b.load.result and the load actors' outputs stay below the 1024-node cap."
+  },
+  "operations": {
+    "retrieve": "One read of b.load.result by the load actor into a context opened before the barrier, one context per read, so no request body repeats and no receipt cache answers. Reference: capture read with owner b. Kyoei: Workspace.owner_read, i.e. a signed retrieve at B and a signed read at C.",
+    "local-draft": "One publication of a new document with no inputs from a context opened before the barrier, readers limited to the actor. Documents: the text is in the request. Git: the text was committed in C's repository before the barrier; Kyoei's client reads the committed blob with git_source.read_file, the reference node reads it through its source layer.",
+    "shared-draft-CAS": "Read the head of the actor's draft at A, then revise that head with a unique text and no inputs. A stale-base refusal is a conflict: reported, never retried or dropped.",
+    "retrieval-only": "retrieve, measured_operations_per_actor times.",
+    "mixed": "[retrieve, local-draft, retrieve, shared-draft-CAS] repeated five times.",
+    "warmup": "The first warmup_operations_per_actor operations of the same sequence, run before the barrier and excluded."
+  },
+  "clients": "One operating-system process per actor, spawned before the barrier, using its arm's participant client library (reference_deployment.Client; workspace_client.Workspace) and signing each request itself. Both clients take the simulated clock from the harness rather than asking a node, so no time request enters either arm.",
+  "issuer_delay": "Every connection from another institution's node or participant to B passes through one byte-level proxy that waits the cell's delay before forwarding B's first response byte. That covers status, view, credential and draft-release queries alike. B's own participants and nodes do not pass the proxy. The delay is set before warm-up and kept for the cell.",
+  "timing": {
+    "start": "The parent releases the barrier once every worker has finished warm-up; the cell timer starts there.",
+    "end": "The last measured operation's completion, as reported by its worker on the same monotonic clock.",
+    "latency": "From the client call to its answer, including signing, queueing, IPC, status fetches and locking; a CAS includes its head read.",
+    "timeout": "An operation slower than timeout_ms is classified timeout and not successful, even if it later returned; the clients' own socket timeouts are not shortened.",
+    "percentiles": "Nearest rank ceil(p*n) over sorted observations, null when n is 0, for all attempts and for successful operations separately.",
+    "throughput": "Successful operations / wall seconds; attempted throughput, errors, conflicts and timeouts are reported beside it.",
+    "summary": "Each cell's five repetition values and their median."
+  },
+  "resources": {
+    "cpu": "Worker user+system CPU over the measured window (getrusage); node CPU as the change in ps cputime over the measured window.",
+    "memory": "Worker peak RSS from getrusage ru_maxrss (bytes on Darwin, KiB on Linux, recorded with the platform); node RSS sampled by ps at the end of the window, not a peak.",
+    "issuer": "Connections and bytes through B's proxy over the measured window; each connection is one request B answered for another institution."
+  },
+  "limits": [
+    "One host and one operator; worker processes share the host's cores with the nodes.",
+    "Load actors are fixture additions; they are not part of the 42 frozen events.",
+    "A measurement, not a service level; no population inference from one-host timing."
+  ],
+  "arm_sources": {
+    "reference": "git: its frozen equipment is per-institution Git repositories",
+    "kyoei-documents": "documents",
+    "kyoei-git": "git"
+  },
+  "findings_before_freeze": [
+    "The reference deployment's sockets used socketserver's default 5-slot listen queue; 27 clients were refused. Its deployment glue now uses 64, as Kyoei's nodes do.",
+    "Kyoei's step-3 fetch loop allowed 8 rounds with one credential per round, so a release to more than 8 unseen foreign recipients failed issuer-unavailable. Rounds that fetch something new and rounds that only refetch are now bounded separately (64 and 8).",
+    "The reference releases A-derived work (b.result.v1) to recipients A never authorized: reference_repair.release checks the author's right to the inputs, not each recipient's. An enforcement gap for the fault harness to itemize; it does not touch these cells."
+  ]
+}

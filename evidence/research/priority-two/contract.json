@@ -1,0 +1,167 @@
+{
+  "arms": [
+    {
+      "equipment": "Reuse the collaboration-1 reference deployment, enrollment and adapters. Add public export, dissent apart from sign-off and platform-import labelling equivalently. Do not start cold.",
+      "id": "reference",
+      "order": 0
+    },
+    {
+      "equipment": "Reuse the collaboration-1 Kyoei nodes, enrollment and document client. Same new rules. Git not required.",
+      "id": "kyoei-documents",
+      "order": 1
+    },
+    {
+      "equipment": "Same Kyoei clients. A commit locator may accompany bytes and never authorizes use.",
+      "id": "kyoei-git",
+      "order": 2
+    }
+  ],
+  "artifacts": {
+    "collaboration-one-inventory.json": "4adf630b226f321028c902e20f24ddd114ae576a3bf0d2bb42bba342edf1fbdb",
+    "expected-graph.json": "fe93b4d6015dda0594ba145354b580a34b433ec98e73a0f0e468e74f1a6bf531",
+    "scenario.json": "1269db31398c4749a68387a7447e015c99fdf4a1c178543587812a3b1bf8f8ba"
+  },
+  "authority": [
+    "docs/PRODUCT-VISION.md",
+    "docs/MRD.md",
+    "docs/PRD.md",
+    "docs/ROADMAP.md"
+  ],
+  "comparison": {
+    "failure": "Never hide an unimplemented reference path. Report it and withhold superiority on that measure until equipment matches.",
+    "falsifier": "If the reference needs no more new code, configuration decisions or setup commands than Kyoei, and matches on repair and failures, the reuse claim fails.",
+    "human_fields": [
+      "human_effort_seconds",
+      "independent_quality",
+      "human_setup_seconds",
+      "cost_savings",
+      "adoption"
+    ],
+    "human_value": null,
+    "reference_first": "Implement and record the reference arm, with source hashes, before either Kyoei arm. Same institutions, actors, grants, faults and budgets. A plain-tools ablation runs after both equipped arms and cannot supply a Kyoei advantage by itself."
+  },
+  "decided": "2026-10-03",
+  "equivalence": {
+    "fields": [
+      "decision",
+      "reason",
+      "affected_outputs",
+      "repair_routes",
+      "attribution",
+      "content_digest",
+      "purpose",
+      "recipients",
+      "assessment"
+    ],
+    "forbidden_authority": [
+      "commit",
+      "push",
+      "merge",
+      "tag",
+      "force-push",
+      "history-rewrite",
+      "tag-delete",
+      "git-push",
+      "rename-file"
+    ],
+    "ignored": [
+      "source_locator",
+      "transport_request_id",
+      "signature_bytes",
+      "wall_timing"
+    ],
+    "normalization": "Only listed locators, request bytes, signatures and timings may differ. A Git event or a renamed file never grants, extends or revives permission."
+  },
+  "falsifier": "The reference second collaboration needs no more new code, configuration decisions or setup commands than Kyoei, and matches on repair and failures. Then apply the MRD gate, revise the offer, and add no mechanism to open a gap.",
+  "id": "kyoei-priority-two-v1",
+  "inventory_source_sha256": "66060a1b3fedc902e6637c4bb8c66cf08af41cb5afd3b30c3dbafd05599dff13",
+  "license_inferred_from_platform": false,
+  "lifecycle": {
+    "amendment": "Never edit v1 in place. Create a versioned successor with a rationale and a new digest before collecting affected measurements. Keep v1.",
+    "reports": "Every collaboration-2 report names this contract_digest. Missing is null, never zero. product_result stays null until both equipped arms are recorded."
+  },
+  "limits": [
+    "One operator and simulated institutions. Separate keys are not independent administration.",
+    "The import stores no challenge code and no pull-request text. It is not an official score and not a partnership.",
+    "A managed withdrawal does not revoke Apache-2.0 bytes or the platform record.",
+    "This freeze is not L-01 completion, not D-2, and not a measured reuse advantage."
+  ],
+  "measures": {
+    "components_rebuilt": {
+      "rule": "A collaboration-1 path whose sha256 differs. Count current logical lines in full, not a diff. List the path. A supplier rebuild is not an adopter win."
+    },
+    "components_reused": {
+      "rule": "A collaboration-1 path whose sha256 matches the frozen inventory. Count zero new lines. Rebuilding enrollment or adapters fails reuse-required for that arm."
+    },
+    "configuration_decisions": {
+      "rule": "New named semantic choices for collaboration 2. A reused trust pin, endpoint or institution key is not a new decision. A new purpose, grant, license choice or publication consent is. Shared choices count once per arm, not once per institution. Cold-start decisions are reported separately and are not the reuse measure."
+    },
+    "failures": {
+      "rule": "Each frozen fault case has its deny and allow events, repeated 3 times per arm and source mode. not-run is not a pass. Report expected and actual. Missing is null."
+    },
+    "isolation_breaches": {
+      "rule": "Accepted uses or export members that name a collaboration-1 private node, or that consume a collaboration-1 purpose-bound node without a new collaboration-2 grant. Required zero. A breach fails that arm and is not a comparative win."
+    },
+    "new_application_code": {
+      "rule": "Logical lines, python-logical-lines-v1, in files whose path is absent from that arm inventory. Unchanged files count zero. Rebuilt files are reported under components_rebuilt, not added here. Kyoei adopter lines are separate from supplier lines. Reference-authored lines are the reference new code. Reused Kyoei modules inside the reference are not reference new code. Moving work into a library is a supplier rebuild, not an adopter reduction."
+    },
+    "repair_steps": {
+      "rule": "Client actions from the correction event through the first permitted use of the replacement, including failed attempts. Acknowledgment alone is not repair. Infrastructure restarts count separately. Unrepaired is null with the attempted count, never zero. The affected set must match the frozen closure; the step count is not predicted."
+    },
+    "setup_commands": {
+      "rule": "Top-level client invocations from an already-enrolled collaboration-1 deployment through collaboration 2 first exchange, including failures and retries. Cold-start commands are reported separately. An arm that cannot open collaboration 2 except from empty state fails reuse-required."
+    }
+  },
+  "predictions": [
+    {
+      "claim": "Both equipped arms report zero isolation breaches. A breach fails that arm; it is not a comparative win.",
+      "id": "isolation-zero",
+      "value": 0
+    },
+    {
+      "claim": "Once both arms implement import labelling, dissent apart from sign-off and public export, frozen-event decisions tie. A missing reference path is itemized, not a Kyoei advantage.",
+      "id": "enforcement-tie",
+      "value": "tie-or-itemized-reference-gap"
+    },
+    {
+      "claim": "The correction affected set matches the hand-listed closure in both arms. Step count is not predicted.",
+      "id": "affected-set-tie",
+      "value": "exact-set"
+    },
+    {
+      "claim": "No predicted winner on new application code. Supplier lines are reported beside adopter lines.",
+      "id": "new-code-not-predicted",
+      "value": null
+    },
+    {
+      "claim": "Both arms need a new purpose, new grants, a stated license and publication consent. No predicted winner.",
+      "id": "configuration-not-predicted",
+      "value": null
+    },
+    {
+      "claim": "Each arm reuses its collaboration-1 enrollment and adapters. Starting cold fails the reuse measurement for that arm.",
+      "id": "reuse-not-cold-start",
+      "value": "reuse-required"
+    },
+    {
+      "claim": "Correction withdraws managed endorsement of the first public package and does not represent its bytes or the platform record as revoked.",
+      "id": "bytes-not-revoked",
+      "value": true
+    },
+    {
+      "claim": "No event sets official_result true or calls a platform API.",
+      "id": "official-score-unchanged",
+      "value": true
+    },
+    {
+      "claim": "Git plus a shared document is not measured here. Its result stays null until a later labelled ablation.",
+      "id": "plain-tools-not-measured",
+      "value": null
+    }
+  ],
+  "priority_one_digest": "79f264cb96a87b21d062ab7e72207a2ed3a9e91fd600ed615f6cd2a19bc28d6c",
+  "repetitions": 3,
+  "separate_from": "research/priority-one",
+  "version": 1,
+  "yukon_report_sha256": "0f8d3ba716d2a96e1882be18b4596ed8aaa526f41b2dfca7b30a22f13d9f6375"
+}

@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "src/client.ts",
+   "text": "export interface ClientOptions { baseUrl: string; timeoutMs?: number }\n\nexport async function request(o: ClientOptions, path: string): Promise<Response> {\n  return fetch(new URL(path, o.baseUrl), { signal: AbortSignal.timeout(o.timeoutMs ?? 10_000) });\n}\n"
+  }
+ ],
+ "rationale": "Add a request timeout (default 10 s).",
+ "delayMs": 2900
+}

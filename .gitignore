@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.env
+runs/*/state/
+tmp/
+
+__pycache__/
+*.pyc
+.release-work/
+runs/current
+runs/rehearsal-*/

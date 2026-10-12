@@ -1,0 +1,10 @@
+{
+ "files": [
+  {
+   "path": "test/sign.vectors.ts",
+   "text": "import { hmacSigner } from \"../src/sign.ts\";\n\n// Test vectors for the request signer.\nexport const vectors = [\n  { method: \"GET\", path: \"/v1/items\", body: \"\" },\n  { method: \"POST\", path: \"/v1/items\", body: \"{\\\"a\\\":1}\" },\n];\n\nexport async function run(secret: string) {\n  const s = hmacSigner(secret);\n  return Promise.all(vectors.map(v => s.sign(v.method, v.path, v.body)));\n}\n"
+  }
+ ],
+ "rationale": "Test vectors for the signer.",
+ "delayMs": 3200
+}
