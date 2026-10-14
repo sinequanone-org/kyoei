@@ -52,6 +52,7 @@ establish protocol conformance or recovery on Workers.
 | R37 | Dissent and its delivery work survive a restart before signing | `dissent`, `eventTransaction` | tested |
 | R38 | Approval stores pending reliance before any owner request; an interrupted request cannot reuse the previous current state | `approve` | tested |
 | R39 | A failed token revocation is retained and retried after restart | `retryRevocations` | tested |
+| R40 | Held contributions export as PROV-JSON and PROV-O JSON-LD. A local import recovers the five relation types. Recipients, purposes, expiry, tokens, tasks and withdrawal reasons are absent. Invalidation is recorded only for a withdrawn contribution. Imported authority creates no grant | `core/prov.ts`, `OrgNode.provenance` | tested |
 | D01 | Release of a fork whose history contains unreleased inputs needs a separate export repository | — | design |
 | D02 | Withheld challenge evidence is marked as withheld in the forwarded notice | `affected` payload and notice source | tested by R33; evidence stays withheld |
 | D03 | Delivery between Workers over authenticated HTTPS; token secrets only inside TLS | `src/worker/` | peer validation tested by R31; HTTPS demonstrated in the saved runs |

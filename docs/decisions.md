@@ -29,8 +29,7 @@
 
 The copyright notice is `Copyright 2026 Slyseed, Inc. and Lemma Ventures AG`.
 The project owner confirmed permission from both companies to publish and
-submit the work. The release repository is `sinequanone-org/kyoei`. It remains private while
-the initial release is reviewed.
+submit the work. The release repository is `sinequanone-org/kyoei`.
 
 Apache 2.0 remains the license. Like MIT, it permits commercial use and
 proprietary derivatives. It also states a contributor patent grant for claims

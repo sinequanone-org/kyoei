@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "scope": "current-source-review",
-  "reviewed": "2026-10-12",
+  "reviewed": "2026-10-13",
   "historical_build_verified": false,
   "historical_limit": "No bundle digest or signed envelopes were retained for deployed-1 or deployed-2-ai. These hashes identify source reviewed later, not the executed bundle.",
   "files": {
     "port": {
-      "docs/acceptance.md": "2dc60dd20a1e2c65c789e8d4e5a86f9136367a08c9d27c7c833d2e05a56f56c7",
+      "docs/acceptance.md": "cc622f7f671baf1893343ea26a1ee1f0f92bcac75aea004d6b75032355e078cf",
       "package-lock.json": "732c1f72b56491ee73f212ea7b18d5687256329fb65f274b08b48a02429cc3de",
       "package.json": "48640894e1f7146bcffefa37441ca45f9998618739330f90524b35cf13a58964",
       "scripts/demo.ts": "3cd95bbe222d334d3a1092f173f132e21d25a6870324e6cd40ae3a84396bf4fa",
@@ -16,11 +16,12 @@
       "src/agents/scripted.ts": "22e33ad320348b7a91ccb96a6e65a225094f99cb93c5414a74ed1c3c4f1322ce",
       "src/agents/text.ts": "c810df17e724ab80c9552c9101fe90dc278752d202dcb65770839a37a9f054fb",
       "src/cli/client.ts": "19230ecf9e289ffff53cb5f782f0bac91e540c203e9538b7dcc3a1961aa56664",
-      "src/cli/main.ts": "7c1274bc2a51da5e880fed022afd826aba46e6cf9f93f219d1543ca082bd5d33",
+      "src/cli/main.ts": "012a415ef37eae313feddf9ec357b0585e0af3e42c6654a32cd6d3d94ba36a3b",
       "src/core/canonical.ts": "29f54f0e64d762020448e8d278b4a2738fd82e9844437b89059e835ee6d5f24f",
       "src/core/content.ts": "1a6630ec6dfb8ba9dcc88a841e8ed25cc9c60c97a59c4cc8417ae8a72d92e444",
       "src/core/envelope.ts": "8cb8fd840f852f93b99d127ee195887b226d9dbdac2541b933ad38675255add2",
       "src/core/record.ts": "3c529d08b4a3e7364a3e98debbb663612d542583658e2b4e7c4a2bced450732e",
+      "src/core/prov.ts": "ae0faaf57a3ec4ede60965ef20f3664a10fc080c4b659ded5cf45faff148fd67",
       "src/core/types.ts": "1ac75130fea6cd80ede5d309995e38515f8a179130601ea0d470c6ef4ac92ba6",
       "src/crypto/signer.ts": "58bd9c748d33994697bcdac0304500e5265159a7f6022ee1c3697c2aea90403b",
       "src/git/host.ts": "46153eec0890143192225c0b168e04b3be3503c9141cbd22d0af4050aa799692",
@@ -28,8 +29,8 @@
       "src/local/git-service.ts": "304387338c3e1e57173e208a4cc774d5c2321824a6399a45f3996c2675a57357",
       "src/local/node-server.ts": "38d5bdc4bc86029c7ea9311dbedda77a20771e148f3aafaa6f95d414bd76009d",
       "src/local/repo-server.ts": "c5d926663c16d72cfa63437946a1a5df1c8d2e388028b1049f51ee723574eb35",
-      "src/node/api.ts": "66084e62cbf6288eefb23017d6aa5d5fdda6f0685a92999bfe28acf7f695d4b9",
-      "src/node/node.ts": "ed5b32b6eacfb8d6c5665b95e7d2088de555fbb6de3e3edc746dd2609f534625",
+      "src/node/api.ts": "7194f4d7fee1dcc63edfe8bf599b9e10c8844c5377075db5c99b15b63d2addc8",
+      "src/node/node.ts": "ba676f042c89efb3f023ca1048a2643fa9c89b5b1f0fcbdcbd4dedca13004f07",
       "src/node/store.ts": "53d2cdae865e40d198396adc6fbace464f3927158212b3bb6081af9c44dce6b6",
       "src/node/transport.ts": "93aa2550fd78bdb876815fa48f8d4613b0ec7af952d24604d0446e6f1557dded",
       "src/worker/artifacts-host.ts": "d22bf59e569422bad94d65d720990bef97efe38de4c2c87bcccd71f0abab14b1",
@@ -43,6 +44,7 @@
       "wrangler.jsonc": "330b0f8b2740ade319b9ad61a33b4fbae6eee8c56f48c116bd6dedc822c14f0e",
       "test/security-regressions.test.ts": "9f577d0d01e54161dabb40ad1b01c34c1938e237460225a4bd8d91e607d6b1b4",
       "test/boundaries.test.ts": "f80e13850bba10465c3c639f0455b6e94a65b4bbd627feacc850aea06cc3a307",
+      "test/prov.test.ts": "3616c5b3ac8d46eebd25bf800c78cb8afd257798b3ae98e4be816482f4c572c9",
       "tsconfig.json": "d1659b88c9ded935674ba9044d778e656f7d1e379e349e8e179aefd322f374b2"
     },
     "evidence": {
@@ -153,7 +155,17 @@
         "test/acceptance.test.ts",
         "docs/acceptance.md"
       ],
-      "scope": "46 local tests pass, including release regressions; historical runs retain no signed envelopes or deployed build digest."
+      "scope": "48 local tests pass, including release regressions; historical runs retain no signed envelopes or deployed build digest."
+    },
+    {
+      "id": "provenance",
+      "section": "2, 5.8",
+      "sources": [
+        "src/core/prov.ts",
+        "src/node/node.ts",
+        "test/prov.test.ts"
+      ],
+      "scope": "The port exports held contributions as PROV-JSON and PROV-O JSON-LD. A local import recovers five relation types. Permissions and withdrawal reasons are omitted. This is not a third-party parser round trip."
     }
   ]
 }

@@ -10,3 +10,4 @@ __pycache__/
 .release-work/
 runs/current
 runs/rehearsal-*/
+.DS_Store

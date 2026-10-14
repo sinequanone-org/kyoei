@@ -11,6 +11,7 @@
 //   kyoei alternatives a3 --org a
 //   kyoei rebase   a3 --org a --onto c/c5 --agent a3r [--edit a3r]
 //   kyoei log      a3 --org a              the record and its git note fields
+//   kyoei prov     --org a                 PROV-JSON for held contributions (--format jsonld)
 //
 // --as names the person; the default is "<org>.lead".
 
@@ -159,6 +160,12 @@ async function main(): Promise<void> {
       const onto = flags.onto ? await client.resolve(org, flags.onto) : null;
       const r = await client.call<{ started: string; plan: { version: number } }>(org, "POST", "/api/repair", { actor, id: c.id, onto: onto?.id ?? null, agent: flags.agent, edit: flags.edit ?? flags.agent, key: flags.key });
       process.stdout.write(`repair agent ${flags.agent} started: ${org}/${c.line} v${r.plan.version}${onto ? ` onto ${label(onto)}` : " on main"}\n`);
+      return;
+    }
+    case "prov": {
+      const doc = await client.call<{ prov: unknown; jsonld: unknown }>(org, "GET", "/api/prov");
+      const body = flags.format === "jsonld" ? doc.jsonld : doc.prov;
+      process.stdout.write(JSON.stringify(body, null, 1) + "\n");
       return;
     }
     case "log": {

@@ -248,9 +248,18 @@ example "uses method in" or "disputes".^20^ SPDX identifies licences.^21^ The
 supply-chain frameworks SLSA^22^ and in-toto^23^ record how an artifact was
 built and by whom. These records describe origin. None of them carries a grant
 for a stated purpose that a recipient checks at each use, and none starts a
-repair in another organization when a source changes. One store of Kyoei's
-research prototype maps its relations to PROV and the Citation Typing Ontology;
-the port has no such export.
+repair in another organization when a source changes. The research prototype
+and the port both export these five relation types as W3C PROV, and they name
+each type with the Citation Typing Ontology. `builds-on` is a PROV derivation
+with citation type `extends`. `supersedes` is a PROV revision with citation
+type `corrects`. `cites`, `challenges` and `reproduces` are PROV influences
+with citation types `cites`, `disputes` and `confirms`. A withdrawal is an
+invalidation of that contribution. The export leaves out recipients, purposes,
+expiry and the withdrawal reason: those are permissions or notices, not origin.
+Local tests read the port's PROV-JSON and its PROV-O JSON-LD and recover the
+five types. Those tests use the port's importer. They do not repeat the
+research prototype's check with parsers this project did not write. The export
+does not check a permission, and it does not start a repair.
 
 ## Usage control and authorization
 
@@ -1109,7 +1118,12 @@ the opt-in `webcrypto_modern_algorithms` compatibility flag, and the interface
 may still change.^35^ Each organization has a command-line client and a terminal
 view (`watch`). Together they show what changed, what is affected, why, and what
 can be done next; the client's commands include `release`, `approve`, `gate`,
-`ship`, `withdraw`, `challenge`, `alternatives` and `rebase`.
+`ship`, `withdraw`, `challenge`, `alternatives`, `rebase` and `prov`. The
+command `prov` writes PROV-JSON for the contributions that the node holds.
+`GET /api/prov` also returns PROV-O JSON-LD. An actor in the exporting node's
+directory is a person or a software agent. Any other actor is only an agent.
+Invalidation is recorded only when this node has seen that contribution
+withdrawn, not when the contribution builds on withdrawn work.
 
 The port records a claim through its task, rationale and committed files; it
 has no separate claim or evidence-validation field. The scenario supplies the
@@ -1117,7 +1131,7 @@ dependency relations and interface labels. An agent reads released inputs,
 generates and commits its edit, then registers reliance with their owners.
 Registration does not prove that the generated edit implements those relations.
 
-The current port passes 46 local tests, including the original acceptance
+The current port passes 48 local tests, including the original acceptance
 suite and the release regression tests. The tests run three nodes with separate
 stores and keys, an in-memory transport, and a local Git service. They sign
 with Ed25519 and establish local behavior, not deployed fault recovery.
@@ -1364,9 +1378,10 @@ extension depends on a hash-based proof system that is still under development.
 **Native BLAKE3 Git, standards and mechanized properties.** A native BLAKE3
 object format must preserve bytes and topology and state which signatures a
 conversion invalidates; no current result shows a speed or security gain over
-SHA-256. We also plan to publish the record and envelope formats, mapped to PROV
-and the Citation Typing Ontology, and to check the affected-set rule in a proof
-assistant.
+SHA-256. The port exports held contributions in PROV and the Citation Typing
+Ontology, as section 2 describes. We still plan to publish the record and
+envelope formats as a separate specification, and to check the affected-set
+rule in a proof assistant.
 
 # Use of AI tools {.unnumbered}
 

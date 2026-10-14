@@ -73,6 +73,8 @@ export async function handle(req: Request, o: ApiOptions): Promise<Response> {
     switch (`${req.method} ${url.pathname}`) {
       case "GET /api/state":
         return json(node.state());
+      case "GET /api/prov":
+        return json(await node.provenance());
       case "GET /api/log": {
         if (!o.log) return json({ error: "not-found" }, 404);
         const after = Math.max(0, Number(url.searchParams.get("after")) || 0);

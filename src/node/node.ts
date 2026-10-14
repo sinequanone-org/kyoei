@@ -11,6 +11,7 @@
 import { canonical, digest, randomId } from "../core/canonical.ts";
 import { pathBytes, type Entry } from "../core/content.ts";
 import { open as openEnvelope, seal } from "../core/envelope.ts";
+import { exportJsonLd, exportProv, type ProvArtifact } from "../core/prov.ts";
 import { signRecord, verifyRecord, verifySnapshot } from "../core/record.ts";
 import {
   Refusal, refuse,
@@ -322,6 +323,28 @@ export class OrgNode {
 
   ownRecords(): Contribution[] {
     return this.store.list<{ c: Contribution; own: boolean }>("c:").filter(([, r]) => r.own).map(([, r]) => r.c);
+  }
+
+  // PROV for the contributions this node holds. Grants, tokens, tasks and
+  // withdrawal reasons stay in the ledger; they are not origin.
+  async provenance(): Promise<{ prov: Record<string, unknown>; jsonld: Record<string, unknown> }> {
+    const artifacts: ProvArtifact[] = [];
+    for (const [, row] of this.store.list<{ c: Contribution }>("c:")) {
+      const body = row.c.body;
+      const known = this.config.actors.find(a => a.name === body.actor);
+      artifacts.push({
+        id: row.c.id,
+        line: body.line,
+        version: body.version,
+        actor: body.actor,
+        actorKind: known?.kind ?? "unknown",
+        org: body.org,
+        created: body.created,
+        withdrawnAt: this.status(row.c.id).withdrawn?.at ?? null,
+        inputs: body.inputs.map(i => ({ id: i.id, relation: i.relation })),
+      });
+    }
+    return { prov: await exportProv(artifacts), jsonld: await exportJsonLd(artifacts) };
   }
 
   // The effective state of a contribution, from this node's own knowledge.
