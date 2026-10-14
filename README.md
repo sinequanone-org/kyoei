@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" alt="Kyoei Logo" width="120" height="120">
+</p>
+
 # Kyoei
 
 Git records what changed. Kyoei records what each change depends on and who
