@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <style>
+      .bg { fill: #141916; }
+      .tile { fill: #242b25; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 64px; font-weight: 700; fill: #f0f4f1; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 400; fill: #b8c5be; }
+      .meta { font-family: "IBM Plex Mono", monospace; font-size: 22px; fill: #8a9e94; letter-spacing: 2px; text-transform: uppercase; }
+      .badge { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 600; fill: #e3efaa; }
+    </style>
+    <clipPath id="top"><rect width="96" height="48"/></clipPath>
+    <clipPath id="bottom"><rect y="48" width="96" height="48"/></clipPath>
+    <mask id="left"><rect width="96" height="96" fill="white"/><circle cx="62" cy="48" r="22" fill="none" stroke="black" stroke-width="11" clip-path="url(#top)"/></mask>
+    <mask id="right"><rect width="96" height="96" fill="white"/><circle cx="34" cy="48" r="22" fill="none" stroke="black" stroke-width="11" clip-path="url(#bottom)"/></mask>
+  </defs>
+  
+  <rect width="1200" height="675" class="bg"/>
+  
+  <!-- Decorative grid lines or ambient glow -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="200" y1="0" x2="200" y2="675"/>
+    <line x1="1000" y1="0" x2="1000" y2="675"/>
+  </g>
+
+  <!-- Top badge -->
+  <text x="120" y="140" class="meta">Build the Next GitHub Challenge · Cloudflare</text>
+
+  <!-- Logo and title lockup -->
+  <g transform="translate(120, 200)">
+    <!-- Logo Mark -->
+    <rect width="96" height="96" rx="28" class="tile"/>
+    <g fill="none" stroke-width="7">
+      <circle cx="34" cy="48" r="22" stroke="#a6afff" mask="url(#left)"/>
+      <circle cx="62" cy="48" r="22" stroke="#e3efaa" mask="url(#right)"/>
+    </g>
+    
+    <!-- Title -->
+    <text x="132" y="65" class="title">Kyoei <tspan fill="#a6afff" font-weight="400" font-size="44">共栄</tspan></text>
+  </g>
+
+  <!-- Subtitle / Value proposition -->
+  <text x="120" y="380" class="subtitle">Research together, across institutions.</text>
+  <text x="120" y="430" class="subtitle" fill="#8a9e94">People decide what to share and release.</text>
+
+  <!-- Footer metadata -->
+  <g transform="translate(120, 560)">
+    <text x="0" y="0" class="badge">sinequanone.org</text>
+    <text x="220" y="0" class="badge" fill="#6d8177">·</text>
+    <text x="250" y="0" class="badge" fill="#8a9e94">Open consortium</text>
+  </g>
+</svg>
